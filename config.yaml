@@ -1,0 +1,40 @@
+embedding:
+  model_name: "/home/dalhxwlyjsuo/Edushare/OpenModels/bce-embedding-base_v1"
+  device: "cuda"  # 或 "cpu"
+  batch_size: 64
+  normalize_embeddings: true
+
+faiss:
+  chunk_text_path: "/home/dalhxwlyjsuo/guest_zhangx/rag_exercise_generator/data/intro/intro_image_free.md"
+  chunk_index_path: "/home/dalhxwlyjsuo/guest_zhangx/rag_exercise_generator/data/intro_index_raw"
+  exercise_index_path: "/home/dalhxwlyjsuo/guest_zhangx/rag_exercise_generator/data/intro_index_raw"
+  overlap: 200
+  chunk_size: 2000
+  
+faiss_exercise:
+  index_path: "faiss_exercises_index"
+
+recall:
+  method: "faiss"  # 可选值: "faiss", "tfidf", "bm25", "faiss_exercises"
+  top_k: 10
+
+rerank:
+  cross_encoder_model: "cross-encoder/stsb-roberta-large"
+  device: "cuda"  # 或 "cpu"
+  top_n: 3
+
+question_generation:
+  strategies:
+    - "conceptual understanding"
+    - "application"
+    - "analysis"
+    - "synthesis"
+    - "evaluation"
+
+data:
+  all_passages_path: "data/all_passages.txt"
+  exercises_path: "data/exercises.txt"
+
+llm:
+  api_key: "your-openai-api-key"  # 替换为您的 API 密钥
+  model: "gpt-4"

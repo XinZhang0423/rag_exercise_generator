@@ -1,0 +1,5197 @@
+![](images/56c30984de1a6167d1c1205bbee40cb3a0f0c775d733880818fc470f73d6becc.jpg)  
+
+# 前言  
+
+“周志华老师的《机器学习》（西瓜书）是机器学习领域的经典入门教材之一，周老师为了使尽可能多的读者通过西瓜书对机器学习有所了解, 所以在书中对部分公式的推导细节没有详述，但是这对那些想深究公式推导细节的读者来说可能“不太友好”，本书旨在对西瓜书里比较难理解的公式加以解析，以及对部分公式补充具体的推导细节。”  
+
+读到这里，大家可能会疑问为啥前面这段话加了引号，因为这只是我们最初的遐想，后来我们了解到，周老师之所以省去这些推导细节的真实原因是，他本尊认为“理工科数学基础扎实点的大二下学生应该对西瓜书中的推导细节无困难吧，要点在书里都有了，略去的细节应能脑补或做练习”。所以...... 本南瓜书只能算是我等数学渣渣在自学的时候记下来的笔记，希望能够帮助大家都成为一名合格的“理工科数学基础扎实点的大二下学生”。  
+
+# 使用说明  
+
+• 南瓜书的所有内容都是以西瓜书的内容为前置知识进行表述的，所以南瓜书的最佳使用方法是以西瓜书为主线，遇到自己推导不出来或者看不懂的公式时再来查阅南瓜书；  
+• 对于初学机器学习的小白，西瓜书第1 章和第2 章的公式强烈不建议深究，简单过一下即可，等你学得有点飘的时候再回来啃都来得及；  
+• 每个公式的解析和推导我们都力(zhi) 争(neng) 以本科数学基础的视角进行讲解，所以超纲的数学知识我们通常都会以附录和参考文献的形式给出，感兴趣的同学可以继续沿着我们给的资料进行深入学习；  
+• 若南瓜书里没有你想要查阅的公式，或者你发现南瓜书哪个地方有错误，请毫不犹豫地去我们GitHub 的Issues（地址：https://github.com/datawhalechina/pumpkin-book/issues）进行反馈，在对应版块提交你希望补充的公式编号或者勘误信息，我们通常会在24 小时以内给您回复，超过24 小时未回复的话可以邮件联系我们（微信：at-Sm1les）；  
+
+在线阅读地址：https://datawhalechina.github.io/pumpkin-book（内容实时更新）最新版PDF 获取地址：https://github.com/datawhalechina/pumpkin-book/releases  
+
+# 编委会  
+
+主编：Sm1les、archwalker编委：jbb0523、juxiao、Majingmin、MrBigFan、shanry、Ye980226  
+
+# 致谢  
+
+特别感谢awyd234、feijuan、Ggmatch、Heitao5200、huaqing89、LongJH、LilRachel、LeoLRH、Nono17、spareribs、sunchaothu、StevenLzq 在最早期的时候对南瓜书所做的贡献。  
+
+扫描下方二维码，然后回复关键词“南瓜书”，即可加入“南瓜书读者交流群”  
+
+# 目录  
+
+# 第1 章绪论  
+
+公式(1.1)公式(1.2)  
+
+# 第2 章模型评估  
+
+公式(2.20) 2  
+公式(2.21) 3  
+公式(2.27) 3  
+公式(2.41) 4  
+附录 5  
+$\textcircled{\scriptsize{1}}$ 二项分布参数 $p$ 的检验 5  
+
+# 第3 章线性模型  
+
+公式(3.5) 7  
+公式(3.6) 7  
+公式(3.7) 8  
+公式(3.9) 9  
+公式(3.10) 9  
+公式(3.27) 10  
+公式(3.30) 11  
+公式(3.32) 11  
+公式(3.37) 12  
+公式(3.38) 12  
+公式(3.39) 12  
+公式(3.43) 12  
+公式(3.44) 13  
+公式(3.45) 13  
+
+# 第4 章决策树  
+
+公式(4.1) 15  
+公式(4.2) 17  
+公式(4.6) 17  
+公式(4.7) 18  
+公式(4.8) 19  
+附录 19  
+$\textcircled{\scriptsize{1}}$ 互信息 19  
+$\textcircled{2}$ CART 回归树 19  
+
+# 第5 章神经网络 21  
+
+公式(5.2) 21  
+公式(5.10) 22  
+公式(5.12) 23  
+公式(5.13) 23  
+公式(5.14) 24  
+公式(5.15) 25  
+公式(5.20) 25  
+公式(5.22) 25  
+公式(5.23) 26  
+公式(5.24) 26  
+附录. 29  
+$\textcircled{\scriptsize{1}}$ 数据集的线性可分 29  
+
+# 6 章支持向量机  
+
+30  
+公式(6.9) 30  
+公式(6.10) 30  
+公式(6.11) 30  
+公式(6.13) 31  
+公式(6.35) 31  
+公式(6.37) 32  
+公式(6.38) 32  
+公式(6.39) 32  
+公式(6.40) 32  
+公式(6.41) 33  
+公式(6.52) 33  
+公式(6.60) 34  
+公式(6.62) 34  
+公式(6.63) 34  
+公式(6.65) 34  
+公式(6.66) 35  
+公式(6.67) 36  
+公式(6.70) 36  
+附录 39  
+$\textcircled{\scriptsize{1}}$ KKT 条件 39  
+
+# 第7 章贝叶斯分类器  
+
+公式(7.5) 40  
+公式(7.6) 40  
+公式(7.12) 40  
+公式(7.13) 40  
+公式(7.19) 42  
+公式(7.20) 44  
+公式(7.24) 44  
+公式(7.25) 44  
+公式(7.27) 44  
+公式(7.34) 45  
+附录. 45  
+$\textcircled{\scriptsize{1}}$ 贝叶斯估计 45  
+$\textcircled{2}$ Categorical 分布 45  
+$\textcircled{3}$ Dirichlet 分布 46  
+8 章集成学习 47  
+公式(8.1) 47  
+公式(8.2) 47  
+公式(8.3) 47  
+公式(8.4) 48  
+公式(8.5) 48  
+公式(8.6) 49  
+公式(8.7) 49  
+公式(8.8) 49  
+公式(8.9) 50  
+公式(8.10) 50  
+公式(8.11) 50  
+公式(8.12) 50  
+公式(8.13) 50  
+公式(8.14) 51  
+公式(8.16) 51  
+公式(8.17) 51  
+公式(8.18) 52  
+公式(8.19) 52  
+公式(8.20) 52  
+公式(8.21) 52  
+公式(8.22) 52  
+公式(8.23) 53  
+公式(8.24) 53  
+公式(8.25) 53  
+公式(8.26) 53  
+公式(8.27) 53  
+公式(8.28) 53  
+公式(8.29) 53  
+公式(8.30) 54  
+公式(8.31) 54  
+公式(8.32) 54  
+公式(8.33) 54  
+公式(8.34) 55  
+公式(8.35) 55  
+公式(8.36) 55  
+早聚尖  
+公式(9.5) 56  
+公式(9.6) 57  
+公式(9.7) 57  
+公式(9.8) 57  
+公式(9.33) 57  
+公式(9.34) 58  
+公式(9.35) 58  
+
+公式(9.38) 60  
+
+# 第10 章降维与度量学习  
+
+公式(10.1) 62  
+公式(10.2) 62  
+公式(10.3) 62  
+公式(10.4) 62  
+公式(10.5) 63  
+公式(10.6) 63  
+公式(10.10) 63  
+公式(10.11) . 64  
+公式(10.14) 64  
+公式(10.17) . 65  
+公式(10.24) 67  
+公式(10.28) 67  
+公式(10.31) . 69  
+
+# 第11 章特征选择与稀疏学习  
+
+公式(11.1) 70  
+公式(11.2) 70  
+公式(11.5) 70  
+公式(11.6) 70  
+公式(11.7) 70  
+公式(11.10) 70  
+公式(11.11) 71  
+公式(11.12) 71  
+公式(11.13) 72  
+公式(11.14) 72  
+公式(11.15) 73  
+公式(11.16) 73  
+公式(11.17) 74  
+公式(11.18) 74  
+
+# 第12 章计算学习理论  
+
+76  
+公式(12.1) 76  
+公式(12.2) 76  
+公式(12.3) 76  
+公式(12.4) 76  
+公式(12.5) 76  
+公式(12.7) 77  
+公式(12.9) 77  
+公式(12.10) 77  
+公式(12.11) 77  
+公式(12.12) 78  
+公式(12.13) 78  
+公式(12.14) 78  
+公式(12.15) 79  
+公式(12.16) 79  
+公式(12.17) 79  
+公式(12.18) 79  
+公式(12.19) 79  
+公式(12.20) 80  
+公式(12.21) 80  
+公式(12.22) 80  
+公式(12.23) 81  
+公式(12.24) 81  
+公式(12.25) 82  
+公式(12.26) 82  
+公式(12.27) 82  
+公式(12.28) 83  
+公式(12.29) 83  
+公式(12.30) 83  
+公式(12.31) 84  
+公式(12.32) 85  
+公式(12.34) 85  
+公式(12.36) 85  
+公式(12.37) 85  
+公式(12.38) 85  
+公式(12.39) 85  
+公式(12.40) 86  
+公式(12.41) 86  
+公式(12.42) 86  
+公式(12.43) 88  
+公式(12.44) 88  
+公式(12.45) 88  
+公式(12.46) 88  
+公式(12.52) 88  
+公式(12.53) 88  
+公式(12.57) 88  
+公式(12.58) 89  
+公式(12.59) 89  
+公式(12.60) 89  
+定理(12.9) 89  
+第13 章半监督学习 91  
+公式(13.1) 91  
+公式(13.2) 91  
+公式(13.3) 91  
+公式(13.4) 91  
+公式(13.5) 92  
+公式(13.6) 92  
+公式(13.7) 93  
+公式(13.8) 94  
+公式(13.9) 96  
+公式(13.12) 96  
+公式(13.13) 97  
+公式(13.14) 97  
+公式(13.15) 97  
+公式(13.16) 98  
+公式(13.17) 98  
+公式(13.20) 98  
+14 章概率图模型 100  
+公式(14.1) 100  
+公式(14.2) 100  
+公式(14.3) 100  
+公式(14.4) 100  
+公式(14.5) 100  
+公式(14.6) 100  
+公式(14.7) 100  
+公式(14.8) 101  
+公式(14.9) 101  
+公式(14.10) 101  
+公式(14.14) . 101  
+公式(14.15) . 101  
+公式(14.16) 102  
+公式(14.17) . 102  
+公式(14.18) 102  
+公式(14.19) 102  
+公式(14.20) 102  
+公式(14.22) . 103  
+公式(14.26) 103  
+公式(14.27) 103  
+公式(14.28) 104  
+公式(14.29) 104  
+公式(14.30) 104  
+公式(14.31) . 104  
+公式(14.32) 104  
+公式(14.33) 105  
+公式(14.34) 105  
+公式(14.35) 105  
+公式(14.36) 105  
+公式(14.37) 106  
+公式(14.38) 106  
+公式(14.39) . 106  
+公式(14.40) 107  
+公式(14.41) . 107  
+公式(14.42) 107  
+公式(14.43) 107  
+公式(14.44) 107  
+公式(15.2) 108  
+公式(15.3) 108  
+公式(15.6) 108  
+公式(15.7) 108  
+公式(15.9) 108  
+公式(15.10) 108  
+公式(15.11) . 108  
+公式(15.12) 109  
+公式(15.13) 109  
+公式(15.14) 109  
+公式(15.16) 109  
+公式(16.2) 110  
+公式(16.3) 110  
+公式(16.4) 110  
+公式(16.7) 110  
+公式(16.8) 111  
+公式(16.10) 111  
+公式(16.14) 111  
+公式(16.16) 112  
+公式(16.31) 112  
+
+# 第1 章 绪论  
+
+# 公式(1.1)  
+
+$$
+E_{o t e}\left(\mathfrak{L}_{a}|X,f\right)=\sum_{h}\sum_{\pmb{x}\in\mathcal{X}-X}P(\pmb{x})\mathbb{I}(h(\pmb{x})\neq f(\pmb{x}))P\left(h|X,\mathfrak{L}_{a}\right)
+$$  
+
+[解析]：参见公式(1.2)  
+
+公式(1.2)  
+
+$$
+\begin{array}{r l}&{\displaystyle\sum_{f}E_{\mathrm{otc}}(\mathbb{S}_{a}|X,f)=\sum_{f}\sum_{h}\sum_{\boldsymbol{x}\in\mathcal{X}-X}P(\boldsymbol{x})\mathbb{I}(h(\boldsymbol{x})\neq f(\boldsymbol{x}))P(h|X,\mathbb{S}_{a})}\\ &{=\displaystyle\sum_{\boldsymbol{x}\in\mathcal{X}-X}P(\boldsymbol{x})\sum_{h}P(h|X,\mathbb{S}_{a})\sum_{f}\mathbb{I}(h(\boldsymbol{x})\neq f(\boldsymbol{x}))}\\ &{=\displaystyle\sum_{\boldsymbol{x}\in\mathcal{X}-X}P(\boldsymbol{x})\sum_{h}P(h|X,\mathbb{S}_{a})\frac{1}{2}\mathbb{I}^{|\mathcal{X}|}}\\ &{=\displaystyle\frac{1}{2}\mathbb{I}^{|\mathcal{X}|}\sum_{\boldsymbol{x}\in\mathcal{X}-X}P(\boldsymbol{x})\sum_{h}P(h|X,\mathbb{S}_{a})}\\ &{=2^{|\mathcal{X}|-1}\sum_{\boldsymbol{x}\in\mathcal{X}-X}P(\boldsymbol{x})\cdot1}\end{array}
+$$  
+
+[解析]：第1 步到第2 步：  
+
+$$
+\begin{array}{r l}&{\displaystyle\sum_{f}\sum_{h}\sum_{x\in\mathcal{X}-X}P(x)\mathbb{I}(h(x)\neq f(x))P(h|X,\mathfrak{L}_{a})}\\ &{=\displaystyle\sum_{x\in\mathcal{X}-X}P(x)\sum_{f}\sum_{h}\mathbb{I}(h(x)\neq f(x))P(h|X,\mathfrak{L}_{a})}\\ &{=\displaystyle\sum_{x\in\mathcal{X}-X}P(x)\sum_{h}P(h|X,\mathfrak{L}_{a})\sum_{f}\mathbb{I}(h(x)\neq f(x))}\end{array}
+$$  
+
+第2 步到第3 步：首先要知道此时我们对 $f$ 的假设是任何能将样本映射到0,1 的函数且服从均匀分布，也就是说不止一个 $f$ 且每个 $f$ 出现的概率相等，例如样本空间只有两个样本时： $\mathcal{X}=\{\pmb{x}_{1},\pmb{x}_{2}\},|\mathcal{X}|=2$ ，那么所有的真实目标函数 $f$ 为：  
+
+$$
+\begin{array}{r l r}&{}&{f_{1}:f_{1}(x_{1})=0,f_{1}(x_{2})=0;}\\ &{}&{f_{2}:f_{2}(x_{1})=0,f_{2}(x_{2})=1;}\\ &{}&{f_{3}:f_{3}(x_{1})=1,f_{3}(x_{2})=0;}\\ &{}&{f_{4}:f_{4}(x_{1})=1,f_{4}(x_{2})=1;}\end{array}
+$$  
+
+一共 $2^{|\mathcal{X}|}\;=\;2^{2}\;=\;4$ 个真实目标函数。所以此时通过算法 ${\mathfrak{L}}_{a}$ 学习出来的模型 $h(x)$ 对每个样本无论预测值为0 还是1 必然有一半的 $f$ 与之预测值相等，例如，现在学出来的模型 $h(x)$ 对 $x_{1}$ 的预测值为1，也即 $h(\pmb{x}_{1})\,=\,1$ ，那么有且只有 $f_{3}$ 和 $f_{4}$ 与 $h(x)$ 的预测值相等，也就是有且只有一半的 $f$ 与它预测值相等，所以 $\sum_{f}\mathbb{I}(h(\pmb{x})\,\neq\,f(\pmb{x}))\,=\,\frac{1}{2}2^{|\chi|}$ ；第3 步一直到最后显然成立。值得一提的是，在这里我们假设真实的目标函数 $f$ 为“任何能将样本映射到0,1 的函数且服从均匀分布”，但是实际情形并非如此，通常我们只认为能高度拟合已有样本数据的函数才是真实目标函数，例如，现在已有的样本数据为 $\{(x_{1},0),(x_{2},1)\}$ ，那么此时 $f_{2}$ 才是我们认为的真实目标函数，由于没有收集到或者压根不存在$\{(\pmb{x}_{1},0),(\pmb{x}_{2},0)\},\{(\pmb{x}_{1},1),(\pmb{x}_{2},0)\},\{(\pmb{x}_{1},1),(\pmb{x}_{2},1)\}$ 这类样本，所以 $f_{1},f_{3},f_{4}$ 都不算是真实目标函数。这也就是西瓜书公式(1.3) 下面的第3 段话举的“骑自行车”的例子所想表达的内容。  
+
+# 第2 章 模型评估  
+
+公式(2.20)  
+
+$$
+\mathrm{AUC}=\frac{1}{2}\sum_{i=1}^{m-1}(x_{i+1}-x_{i})\cdot(y_{i}+y_{i+1})
+$$  
+
+[解析]：在解释AUC 公式之前，我们需要先弄清楚ROC 曲线的具体绘制过程，下面我们就举个例子，按照西瓜书图2.4 下方给出的绘制方法来讲解一下ROC 曲线的具体绘制过程。假设我们已经训练得到一个学习器 $f(s)$ ，现在用该学习器来对我们的8 个测试样本（4 个正例，4 个反例，也即 $m^{+}=m^{-}=4$ ）进行预测，假设预测结果为：  
+
+$$
+1,0.77,+),(s_{2},0.62,-),(s_{3},0.58,+),(s_{4},0.47,+),(s_{5},0.47,-),(s_{6},0.33,-),(s_{7},0.23,+),(s_{8},0.13,+),(s_{9},0.13,-),(s_{10},0.33,+).
+$$  
+
+其中， $+$ 和−分别表示为正例和为反例，里面的数字表示学习器 $f(s)$ 预测该样本为正例的概率，例如对于反例 $s_{2}$ 来说，当前学习器 $f(s)$ 预测它是正例的概率为0.62。根据西瓜书上给出的绘制方法可知，首先需要对所有测试样本按照学习器给出的预测结果进行排序（上面给出的预测结果已经按照预测值从大到小排好），接着将分类阈值设为一个不可能取到的最大值，显然这时候所有样本预测为正例的概率都一定小于分类阈值，那么预测为正例的样本个数为0，相应的真正例率和假正例率也都为0，所以此时我们可以在坐标 $(0,0)$ 处打一个点。接下来我们需要把分类阈值从大到小依次设为每个样本的预测值，也就是依次设为 $0.77\:0.62\:0.58\:0.47\:0.33\:0.23\:0.15$ ，然后每次计算真正例率和假正例率，再在相应的坐标上打一个点，最后再将各个点用直线串连起来即可得到ROC 曲线。需要注意的是，在统计预测结果时，预测值等于分类阈值的样本也算作预测为正例。例如，当分类阈值为0.77 时，测试样本 $s_{1}$ 被预测为正例，由于它的真实标记也是正例，所以此时 $s_{1}$ 是一个真正例。为了便于绘图，我们将 $x$ 轴（假正例率轴）的“步长”定为$\frac{1}{m^{-}}$ ， $y$ 轴（真正例率轴）的“步长”定为 $\textstyle{\frac{1}{m^{+}}}$ ，这样的话，根据真正例率和假正例率的定义可知，每次变动分类阈值时，若新增 $i$ 个假正例，那么相应的 $x$ 轴坐标也就增加 $\frac{i}{m^{-}}$ ，同理，若新增 $j$ 个真正例，那么相应的 $y$ 轴坐标也就增加 $\textstyle{\frac{j}{m^{+}}}$ 。按照以上讲述的绘制流程，最终我们可以绘制出如下图所示的ROC 曲线y  
+
+![](images/463a5b5b472f757324a340e0f8cbb6bfb4ad63659afc760da79468664797276f.jpg)  
+
+在这里我们为了能在解析公式(2.21) 时复用此图所以没有写上具体地数值，转而用其数学符号代替。其中绿色线段表示在分类阈值变动的过程中只新增了真正例，红色线段表示只新增了假正例，蓝色线段表示既新增了真正例也新增了假正例。根据AUC 值的定义可知，此时的AUC 值其实就是所有红色线段和蓝色线段与 $x$ 轴围成的面积之和。观察上图可知，红色线段与 $x$ 轴围成的图形恒为矩形，蓝色线段与 $x$ 轴围成的图形恒为梯形，但是由于梯形面积公式既能算梯形面积，也能算矩形面积，所以无论是红色线段还是蓝色线段，其与 $x$ 轴围成的面积都能用梯形公式来计算，也即  
+
+$$
+{\frac{1}{2}}\cdot(x_{i+1}-x_{i})\cdot(y_{i}+y_{i+1})
+$$  
+
+其中， $\left(x_{i+1}-x_{i}\right)$ 表示“高”， $y_{i}$ 表示“上底”， $y_{i+1}$ 表示“下底”。那么  
+
+$$
+\sum_{i=1}^{m-1}\left[\frac{1}{2}\cdot\left(x_{i+1}-x_{i}\right)\cdot\left(y_{i}+y_{i+1}\right)\right]
+$$  
+
+表示的便是对所有红色线段和蓝色线段与 $x$ 轴围成的面积进行求和，此即为AUC  
+
+# 公式(2.21)  
+
+$$
+\ell_{r a n k}=\frac{1}{m^{+}m^{-}}\sum_{x^{+}\in D^{+}}\sum_{x^{-}\in D^{-}}\left(\mathbb{I}\left(f(\pmb{x}^{+})<f(\pmb{x}^{-})\right)+\frac{1}{2}\mathbb{I}\left(f(\pmb{x}^{+})=f(\pmb{x}^{-})\right)\right)
+$$  
+
+[解析]：按照我们上述对公式(2.20) 的解析思路， $\ell_{r a n k}$ 可以看作是所有绿色线段和蓝色线段与 $y$ 轴围成的面积之和，但是公式(2.21) 很难一眼看出其面积的具体计算方式，因此我们需要将公式(2.21) 进行恒等变形  
+
+$$
+\begin{array}{r l}{\lefteqn{\ell_{r a n k}=\frac{1}{m^{+}m^{-}}\sum_{x^{+}\in D^{+}}\sum_{x^{-}\in D^{-}}\left(\mathbb{I}\left(f({\pmb x}^{+})<f({\pmb x}^{-})\right)+\frac{1}{2}\mathbb{I}\left(f({\pmb x}^{+})=f({\pmb x}^{-})\right)\right)}}\\ &{=\frac{1}{m^{+}m^{-}}\sum_{x^{+}\in D^{+}}\left[\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})<f({\pmb x}^{-})\right)+\frac{1}{2}\cdot\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})=f({\pmb x}^{-})\right)\right]}\\ &{=\displaystyle\sum_{x^{+}\in D^{+}}\left[\frac{1}{m^{+}}\cdot\frac{1}{m^{-}}\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})<f({\pmb x}^{-})\right)+\frac{1}{2}\cdot\frac{1}{m^{+}}\cdot\frac{1}{m^{-}}\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})=f({\pmb x}^{-})\right)\right]}\\ &{=\displaystyle\sum_{x^{+}\in D^{+}}\frac{1}{2}\cdot\frac{1}{m^{+}}\cdot\left[\frac{2}{m^{-}}\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})<f({\pmb x}^{-})\right)+\frac{1}{m^{-}}\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})=f({\pmb x}^{-})\right)\right]}\end{array}
+$$  
+
+根据公式(2.20) 中给出的ROC 曲线图可知，在变动分类阈值的过程当中，如果有新增真正例，那么相应地就会增加一条绿色线段或蓝色线段，所以上式中的 $\sum_{x^{+}\in D^{+}}$ 可以看作是在遍历所有绿色和蓝色线段，那么相应地 $\sum_{x^{+}\in D^{+}}$ 后面的那一项便是在求绿色线段或者蓝色线段与 $y$ 轴围成的面积，也即  
+
+$$
+\frac{1}{2}\cdot\frac{1}{m^{+}}\cdot\left[\frac{2}{m^{-}}\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})<f({\pmb x}^{-})\right)+\frac{1}{m^{-}}\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f({\pmb x}^{+})=f({\pmb x}^{-})\right)\right]
+$$  
+
+同公式(2.20) 中的求解思路一样，不论是绿色线段还是蓝色线段，其与 $y$ 轴围成的图形面积都可以用梯形公式来进行计算，所以上式表示的依旧是一个梯形的面积求解公式。其中 $\textstyle{\frac{1}{m^{+}}}$ 即为梯形的“高”，中括号中的那一项便是“上底 $+$ 下底”，下面我们来分别推导一下“上底”（较短的那个底）和“下底”。由于在绘制ROC 曲线的过程中，每新增一个假正例时 $x$ 坐标也就新增一个单位，所以对于“上底”，也就是绿色或者蓝色线段的下端点到 $y$ 轴的距离，它就等于 $\frac{1}{m^{-}}$ 乘以预测值比 $x^{+}$ 大的假正例的个数，也即  
+
+$$
+\frac{1}{m^{-}}\sum_{{\pmb x}^{-}\in{\cal D}^{-}}\mathbb{I}\left(f({\pmb x}^{+})<f({\pmb x}^{-})\right)
+$$  
+
+而对于“下底”，它就等于 $\frac{1}{m^{-}}$ 乘以预测值大于等于 $x^{+}$ 的假正例的个数，也即  
+
+$$
+\frac{1}{m^{-}}\left(\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f(\pmb{x}^{+})<f(\pmb{x}^{-})\right)+\sum_{x^{-}\in D^{-}}\mathbb{I}\left(f(\pmb{x}^{+})=f(\pmb{x}^{-})\right)\right)
+$$  
+
+公式(2.27)  
+
+$$
+\overline{{\epsilon}}=\operatorname*{max}\epsilon\quad\mathrm{s.t.}\quad\sum_{i=\epsilon_{0}\times m+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)\epsilon^{i}(1-\epsilon)^{m-i}<\alpha
+$$  
+
+[推导]：截至2018 年12 月，第一版第30 次印刷，公式（2.27）应当勘误修正为  
+
+$$
+\overline{{\epsilon}}=\operatorname*{min}\epsilon\quad\mathrm{s.t.}\quad\sum_{i=\epsilon\times m+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)\epsilon_{0}^{i}(1-\epsilon_{0})^{m-i}<\alpha
+$$  
+
+具体推导过程如下：由西瓜书中的上下文可知，对 $\epsilon\leq\epsilon_{0}$ 进行假设检验，等价于附录 $\Phi$ 中所述的对 $p\leq p_{0}$ 进行假设检验，所以在西瓜书中求解最大错误率ϵ 等价于在附录 $\mathrm{\textregistered}$ 中求解事件最大发生频率 $\frac{\overline{{C}}}{m}$ 。由附录 $\Phi$ 可知  
+
+$$
+\overline{{C}}=\operatorname*{min}C\quad\mathrm{~s.t.~}\,\sum_{i=C+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)p_{0}^{i}(1-p_{0})^{m-i}<\alpha
+$$  
+
+所以  
+
+$$
+\frac{\overline{{C}}}{m}=\operatorname*{min}\frac{C}{m}\quad\mathrm{~s.t.~}\,\sum_{i=C+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)p_{0}^{i}(1-p_{0})^{m-i}<\alpha
+$$  
+
+将上式中的 $\frac{\d C}{m},\frac{\d C}{m},p_{0}$ 等价替换为 $\overline{{\epsilon}},\epsilon,\epsilon_{0}$ 可得  
+
+$$
+\overline{{\epsilon}}=\operatorname*{min}\epsilon\quad\mathrm{s.t.}\quad\sum_{i=\epsilon\times m+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)\epsilon_{0}^{i}(1-\epsilon_{0})^{m-i}<\alpha
+$$  
+
+# 公式(2.41)  
+
+$$
+\begin{array}{r l}&{E(f,D)=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-y{D}\big)^{2}\right]}\\ &{\quad=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-\bar{f}(\mathbf{x})+\bar{f}(\mathbf{x})-y{D}\big)^{2}\right]}\\ &{\quad=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-\bar{f}(\mathbf{x})\big)^{2}\right]+\mathbb{E}_{D}\left[\big(\bar{f}(\mathbf{x})-y{D}\big)^{2}\right]}\\ &{\quad\quad+\mathbb{E}_{D}\left[+2\left(f(\mathbf{x};D)-\bar{f}(\mathbf{x})\right)\big(\bar{f}(\mathbf{x})-y{D}\big)\right]}\\ &{\quad=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-\bar{f}(\mathbf{x})\big)^{2}\right]+\mathbb{E}_{D}\left[\big(\bar{f}(\mathbf{x})-y{D}\big)^{2}\right]}\\ &{\quad=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-\bar{f}(\mathbf{x})\big)^{2}\right]+\mathbb{E}_{D}\left[\big(\bar{f}(\mathbf{x})-y+y-y{D}\big)^{2}\right]}\\ &{\quad=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-\bar{f}(\mathbf{x})\big)^{2}\right]+\mathbb{E}_{D}\left[\big(\bar{f}(\mathbf{x})-y+\bar{f}(\mathbf{x})-\bar{f}{\mathbf{x}}\big)^{2}\right]}\\ &{\quad\quad+2\mathbb{E}_{D}\left[\big(\bar{f}(\mathbf{x})-\bar{y}\big)(y-y{D}\big)\right]}\\ &{\quad=\mathbb{E}_{D}\left[\big(f(\mathbf{x};D)-\bar{f}(\mathbf{x})\big)^{2}\right]+\left(\bar{f}(\mathbf{x})-y\right)^{2}+\mathbb{E}_{D}\left[\big(y_{D}-y\big)^{2}\right]}\end{array}
+$$  
+
+[解析]：第1-2 步：减一个 $\bar{f}({\pmb x})$ 再加一个 $\bar{f}({\pmb x})$ ，属于简单的恒等变形；  
+
+第2-3 步：首先将中括号里面的式子展开  
+
+$$
+\begin{array}{r}{\mathbb{E}_{D}\left[\left(f(x;D)-\bar{f}(x)\right)^{2}+\left(\bar{f}(x)-y_{D}\right)^{2}+2\left(f(x;D)-\bar{f}(x)\right)\left(\bar{f}(x)-y_{D}\right)\right]}\end{array}
+$$  
+
+然后根据期望的运算性质： $\mathbb{E}[X+Y]=\mathbb{E}[X]+\mathbb{E}[Y]$ 可将上式化为  
+
+$$
+\begin{array}{r}{\mathbb{E}_{D}\left[\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\pmb{x})-y_{D}\right)^{2}\right]+\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\left(\bar{f}(\pmb{x})-y_{D}\right)\right]}\end{array}
+$$  
+
+第3-4 步：再次利用期望的运算性质将第3 步得到的式子的最后一项展开  
+
+ED 2 $\begin{array}{r}{\big(f(x;D)-\bar{f}(x)\big)\left(\bar{f}(x)-y_{D}\right)\big]=\mathbb{E}_{D}\left[2\left(f(x;D)-\bar{f}(x)\right)\cdot\bar{f}(x)\right]-\mathbb{E}_{D}\left[2\left(f(x;D)-\bar{f}(x)\right)\cdot y\right]}\end{array}$ D  
+
+首先计算展开后得到的第一项  
+
+$$
+\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\cdot\bar{f}(\pmb{x})\right]=\mathbb{E}_{D}\left[2f(\pmb{x};D)\cdot\bar{f}(\pmb{x})-2\bar{f}(\pmb{x})\cdot\bar{f}(\pmb{x})\right]
+$$  
+
+由于 $\bar{f}({\pmb x})$ 是常量，所以由期望的运算性质： $\mathbb{E}[A X+B]=A\mathbb{E}[X]+B$ （其中 $A,B$ 均为常量）可得  
+
+$$
+\mathbb{E}_{D}\left[2\left(f(x;D)-\bar{f}(x)\right)\cdot\bar{f}(x)\right]=2\bar{f}(x)\cdot\mathbb{E}_{D}\left[f(x;D)\right]-2\bar{f}(x)\cdot\bar{f}(x)
+$$  
+
+由公式（2.37）可知： $\mathbb{E}_{D}\left[f(\pmb{x};D)\right]=\bar{f}(\pmb{x})$ ，所以  
+
+$$
+\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\cdot\bar{f}(\pmb{x})\right]=2\bar{f}(\pmb{x})\cdot\bar{f}(\pmb{x})-2\bar{f}(\pmb{x})\cdot\bar{f}(\pmb{x})=0
+$$  
+
+接着计算展开后得到的第二项  
+
+$$
+\begin{array}{r}{\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\cdot\pmb{y}_{D}\right]=2\mathbb{E}_{D}\left[f(\pmb{x};D)\cdot\pmb{y}_{D}\right]-2\bar{f}(\pmb{x})\cdot\mathbb{E}_{D}\left[y_{D}\right]}\end{array}
+$$  
+
+由于噪声和 $f$ 无关，所以 $f(\mathbf{{x};}D)$ 和 $y_{D}$ 是两个相互独立的随机变量，所以根据期望的运算性质： $\mathbb{E}[X Y]=$ $\mathbb{E}[X]\mathbb{E}[Y]$ （其中 $X$ 和 $Y$ 为相互独立的随机变量）可得  
+
+$$
+\begin{array}{r l}&{\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\cdot y_{D}\right]=2\mathbb{E}_{D}\left[f(\pmb{x};D)\cdot y_{D}\right]-2\bar{f}(\pmb{x})\cdot\mathbb{E}_{D}\left[y_{D}\right]}\\ &{\phantom{=}=2\mathbb{E}_{D}\left[f(\pmb{x};D)\right]\cdot\mathbb{E}_{D}\left[y_{D}\right]-2\bar{f}(\pmb{x})\cdot\mathbb{E}_{D}\left[y_{D}\right]}\\ &{\phantom{=2\mathbb{E}_{D}\left[f(\pmb{x})\cdot\mathbb{E}_{D}\left[y_{D}\right]-2\bar{f}(\pmb{x})\cdot\mathbb{E}_{D}\left[y_{D}\right]\right.}}\\ &{\phantom{=2}=0}\end{array}
+$$  
+
+所以  
+
+$$
+\begin{array}{r l}&{\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\left(\bar{f}(\pmb{x})-y_{D}\right)\right]=\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\cdot\bar{f}(\pmb{x})\right]-\mathbb{E}_{D}\left[2\left(f(\pmb{x};D)-\bar{f}(\pmb{x})\right)\right]}\\ &{\quad=0+0}\\ &{\quad=0}\end{array}
+$$  
+
+第4-5 步：同第1-2 步一样，减一个 $y$ 再加一个 $y$ ，属于简单的恒等变形；  
+
+第5-6 步：同第2-3 步一样，将最后一项利用期望的运算性质进行展开；  
+
+第6-7 步：因为 $\bar{f}({\pmb x})$ 和 $y$ 均为常量，所以根据期望的运算性质可知，第6 步中的第2 项可化为  
+
+$$
+\mathbb{E}_{D}\left[\left(\bar{f}(\pmb{x})-y\right)^{2}\right]=\left(\bar{f}(\pmb{x})-y\right)^{2}
+$$  
+
+同理，第6 步中的最后一项可化为  
+
+$$
+2\mathbb{E}_{D}\left[\left(\bar{f}(\pmb{x})-\pmb{y}\right)(y-y_{D})\right]=2\left(\bar{f}(\pmb{x})-\pmb{y}\right)\mathbb{E}_{D}\left[\left(y-y_{D}\right)\right]
+$$  
+
+由于此时假设噪声的期望为零，也即 $\mathbb{E}_{D}\left[(y-y_{D})\right]=0$ ，所以  
+
+$$
+2\mathbb{E}_{D}\left[\left(\bar{f}(\pmb{x})-\pmb{y}\right)(y-y_{D})\right]=2\left(\bar{f}(\pmb{x})-\pmb{y}\right)\cdot0=0
+$$  
+
+# 附录  
+
+# $\boldsymbol{\Phi}$ 二项分布参数 $p$ 的检验[1]  
+
+设某事件发生的概率为 $p$ ， $p$ 未知，作 $m$ 次独立试验，每次观察该事件是否发生，以 $X$ 记该事件发生的次数，则 $X$ 服从二项分布 $B(m,p)$ ，现根据 $X$ 检验如下假设：  
+
+$$
+\begin{array}{c}{{H_{0}:p\leq p_{0}}}\\ {{\nonumber}}\\ {{H_{1}:p>p_{0}}}\end{array}
+$$  
+
+由二项分布本身的特性可知： $p$ 越小， $X$ 取到较小值的概率越大。因此，对于上述假设，一个直观上合理的检验为  
+
+其中， $C\in N$ 表示事件最大发生次数。此检验对应的功效函数为  
+
+$$
+\begin{array}{l}{\displaystyle\beta_{\varphi}(p)=P(X>C)}\\ {\displaystyle\qquad=1-P(X\leq C)}\\ {\displaystyle\qquad=1-\sum_{i=0}^{C}\left(\begin{array}{c}{m}\\ {i}\end{array}\right)p^{i}(1-p)^{m-i}}\\ {\displaystyle\qquad=\sum_{i=C+1}^{m}\left(\begin{array}{c}{m}\\ {i}\end{array}\right)p^{i}(1-p)^{m-i}}\end{array}
+$$  
+
+由于“ $\dot{p}$ 越小， $X$ 取到较小值的概率越大”可以等价表示为： $P(X\leq C)$ 是关于 $p$ 的减函数（更为严格的数学证明参见参考文献[1] 中第二章习题7），所以 $\beta_{\varphi}(p)=P(X>C)=1-P(X\leq C)$ 是关于 $p$ 的增函数，那么当 $p\leq p_{0}$ 时， $\beta_{\varphi}(p_{0})$ 即为 $\beta_{\varphi}(p)$ 的上确界。又因为，根据参考文献[1] 中5.1.3 的定义1.2 可知，检验水平 $\alpha$ 默认取最小可能的水平，所以在给定检验水平 $\alpha$ 时，可以通过如下方程解得满足检验水平 $\alpha$ 的整数 $C$ ：  
+
+$$
+\alpha=\operatorname*{sup}\left\{\beta_{\varphi}(p)\right\}
+$$  
+
+显然，当 $p\leq p_{0}$ 时：  
+
+$$
+\begin{array}{r l}&{\alpha=\operatorname*{sup}\left\{\beta_{\varphi}(p)\right\}}\\ &{\quad=\beta_{\varphi}(p_{0})}\\ &{\quad=\displaystyle\sum_{i=C+1}^{m}\left(\begin{array}{l}{m}\\ {i}\end{array}\right)p_{0}^{i}(1-p_{0})^{m-i}}\end{array}
+$$  
+
+对于此方程，通常不一定正好解得一个整数 $C$ 使得方程成立，较常见的情况是存在这样一个 $\overline{C}$ 使得  
+
+$$
+\begin{array}{c}{{\displaystyle\sum_{i=\overline{{{C}}}+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)p_{0}^{i}(1-p_{0})^{m-i}<\alpha}}\\ {{\displaystyle\sum_{i=\overline{{{C}}}}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)p_{0}^{i}(1-p_{0})^{m-i}>\alpha}}\end{array}
+$$  
+
+此时， $C$ 只能取 $\overline{C}$ 或者 $\overline{{C}}+1$ ，若 $C$ 取 $\overline{{C}}$ ，则相当于升高了检验水平 $\alpha$ ，若 $C$ 取 $\overline{{C}}+1$ 则相当于降低了检验水平 $\alpha$ ，具体如何取舍需要结合实际情况，但是通常为了减小犯第一类错误的概率，会倾向于令 $C$ 取 $\overline{{C}}+1$ 。下面考虑如何求解 $\overline{{C}}$ ：易证 $\beta_{\varphi}(p_{0})$ 是关于 $C$ 的减函数，所以再结合上述关于 $\overline{C}$ 的两个不等式易推得  
+
+$$
+\overline{{C}}=\operatorname*{min}C\quad\mathrm{~s.t.~}\,\sum_{i=C+1}^{m}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)p_{0}^{i}(1-p_{0})^{m-i}<\alpha
+$$  
+
+# 参考文献  
+
+[1] 陈希孺. 概率论与数理统计. 中国科学技术大学出版社, 2009.  
+
+# 第3 章 线性模型  
+
+# 公式(3.5)  
+
+$$
+\frac{\partial E_{\left(w,b\right)}}{\partial w}=2\left(w\sum_{i=1}^{m}x_{i}^{2}-\sum_{i=1}^{m}\left(y_{i}-b\right)x_{i}\right)
+$$  
+
+[推导]：已知 $E_{(w,b)}=\sum_{i=1}^{m}\left(y_{i}-w x_{i}-b\right)^{2}$ ，所以  
+
+$$
+\begin{array}{r l}{\displaystyle\frac{\partial E_{\{\{\alpha,\nu\}}}}{\partial\nu}=\frac{\partial}{\partial\nu}\left[\sum_{i=1}^{m}(y_{i}-w x_{i}-b)^{2}\right]}\\ {\displaystyle}&{=\sum_{i=1}^{m}\frac{\partial}{\partial\nu}\left[(y_{i}-w x_{i}-b)^{2}\right]}\\ {\displaystyle}&{=\sum_{i=1}^{m}\left[(y_{i}-w x_{i}-b)\cdot(-x_{i})\right]}\\ &{=\displaystyle\sum_{i=1}^{m}\left[2\cdot(w x_{i}^{2}-y_{i}x_{i}+b x_{i})\right]}\\ &{=2\cdot\left(w\sum_{i=1}^{m}x_{i}^{2}-\sum_{i=1}^{m}y_{i}x_{i}+b\sum_{i=1}^{m}x_{i}\right)}\\ &{=2\left(w\sum_{i=1}^{m}x_{i}^{2}-\sum_{i=1}^{m}(y_{i}-b)x_{i}\right)}\end{array}
+$$  
+
+公式(3.6)  
+
+$$
+\frac{\partial E_{(w,b)}}{\partial b}=2\left(m b-\sum_{i=1}^{m}\left(y_{i}-w x_{i}\right)\right)
+$$  
+
+[推导]：已知E(w,b) = $E_{(w,b)}=\sum_{i=1}^{m}\left(y_{i}-w x_{i}-b\right)^{2}$ ，所以  
+
+$$
+\begin{array}{r l}{\frac{\partial E_{\mathrm{tr},k}}{\partial\theta}=\frac{\partial}{\partial\theta}\left[\displaystyle\sum_{i=1}^{m}\left(y_{i}-w x_{i}\right)^{2}\right]}&{{}}\\ {=\sum_{i=1}^{m}\frac{\partial}{\partial\theta}\left[(y_{i}-w x_{i}-b)^{2}\right]}&{{}}\\ {=\sum_{i=1}^{m}\left(2\cdot(y_{i}-w x_{i}-b)\cdot(-1)\right)}&{{}}\\ {=\sum_{i=1}^{m}\{2\cdot(b-y_{i}+w x_{i})\}}&{{}}\\ {=2\cdot\left[\displaystyle\sum_{i=1}^{m}b-\displaystyle\sum_{i=1}^{m}y_{i}+\displaystyle\sum_{i=1}^{m}w x_{i}\right]}&{{}}\\ {=2\cdot\left[\displaystyle\sum_{i=1}^{m}b-\displaystyle\sum_{i=1}^{m}(b+\displaystyle\sum_{i=1}^{m})w x_{i}\right]}&{{}}\\ {=2\left(m b-\displaystyle\sum_{i=1}^{m}(y_{i}-w x_{i})\right)}&{{}}\end{array}
+$$  
+
+# 公式(3.7)  
+
+$$
+w={\frac{\sum_{i=1}^{m}y_{i}(x_{i}-{\bar{x}})}{\sum_{i=1}^{m}x_{i}^{2}-{\frac{1}{m}}(\sum_{i=1}^{m}x_{i})^{2}}}
+$$  
+
+[推导]：令公式(3.5) 等于0  
+
+$$
+0=w\sum_{i=1}^{m}x_{i}^{2}-\sum_{i=1}^{m}(y_{i}-b)x_{i}
+$$  
+
+$$
+w\sum_{i=1}^{m}x_{i}^{2}=\sum_{i=1}^{m}y_{i}x_{i}-\sum_{i=1}^{m}b x_{i}
+$$  
+
+由于令公式(3.6) 等于0 可得 $b=\frac{1}{m}\sum_{i=1}^{m}(y_{i}\!-\!w x_{i})$ ，又因为 $\frac{1}{m}\sum_{i=1}^{m}y_{i}=\bar{y}\,,\frac{1}{m}\sum_{i=1}^{m}x_{i}=\bar{x}$ im=1 xi = x¯，则b = y¯−wx¯，代入上式可得  
+
+$$
+\begin{array}{c}{{\displaystyle w\sum_{i=1}^{m}x_{i}^{2}=\sum_{i=1}^{m}y_{i}x_{i}-\sum_{i=1}^{m}(\bar{y}-w\bar{x})x_{i}}}\\ {{\displaystyle w\sum_{i=1}^{m}x_{i}^{2}=\sum_{i=1}^{m}y_{i}x_{i}-\bar{y}\displaystyle\sum_{i=1}^{m}x_{i}+w\bar{x}\displaystyle\sum_{i=1}^{m}x_{i}}}\\ {{\displaystyle w(\sum_{i=1}^{m}x_{i}^{2}-\bar{x}\displaystyle\sum_{i=1}^{m}x_{i})=\sum_{i=1}^{m}y_{i}x_{i}-\bar{y}\displaystyle\sum_{i=1}^{m}x_{i}}}\end{array}
+$$  
+
+$$
+w=\frac{\sum_{i=1}^{m}y_{i}x_{i}-\bar{y}\sum_{i=1}^{m}x_{i}}{\sum_{i=1}^{m}x_{i}^{2}-\bar{x}\sum_{i=1}^{m}x_{i}}
+$$  
+
+$\bar{y}\sum_{i=1}^{m}x_{i}={\frac{1}{m}}\sum_{i=1}^{m}y_{i}\sum_{i=1}^{m}x_{i}=\bar{x}\sum_{i=1}^{m}y_{i},\;\,\bar{x}\sum_{i=1}^{m}x_{i}={\frac{1}{m}}\sum_{i=1}^{m}x_{i}\sum_{i=1}^{m}x_{i}={\frac{1}{m}}(\sum_{i=1}^{m}x_{i})^{2}$ ，代入上式即可得公式(3.7)  
+
+$$
+w={\frac{\sum_{i=1}^{m}y_{i}(x_{i}-{\bar{x}})}{\sum_{i=1}^{m}x_{i}^{2}-{\frac{1}{m}}(\sum_{i=1}^{m}x_{i})^{2}}}
+$$  
+
+如果要想用Python 来实现上式的话，上式中的求和运算只能用循环来实现，但是如果我们能将上式给向量化，也就是转换成矩阵（向量）运算的话，那么我们就可以利用诸如NumPy 这种专门加速矩阵运算的类库来进行编写。下面我们就尝试将上式进行向量化，将 $\frac{1}{m}(\sum_{i=1}^{m}x_{i})^{2}=\bar{x}\sum_{i=1}^{m}x_{i}$ 代入分母可得  
+
+$$
+\begin{array}{r l}&{w=\frac{\displaystyle\sum_{i=1}^{m}y_{i}\left(x_{i}-\bar{x}\right)}{\displaystyle\sum_{i=1}^{m}x_{i}^{2}-\bar{x}\sum_{i=1}^{m}x_{i}}}\\ &{\quad=\frac{\displaystyle\sum_{i=1}^{m}\(y_{i}x_{i}-y_{i}\bar{x})}{\displaystyle\sum_{i=1}^{m}(x_{i}^{2}-x_{i}\bar{x})}}\end{array}
+$$  
+
+又因为 $\begin{array}{r}{\bar{y}\sum_{i=1}^{m}x_{i}\;=\;\bar{x}\sum_{i=1}^{m}y_{i}\;=\;\sum_{i=1}^{m}\bar{y}x_{i}\;=\;\sum_{i=1}^{m}\bar{x}y_{i}\;=\;m\bar{x}\bar{y}\;=\;\sum_{i=1}^{m}\bar{x}\bar{y}\,,}\end{array}$ ， i=1 xix¯ = x¯ i=1 xi =$\begin{array}{r}{\bar{x}\cdot m\cdot\frac{1}{m}\cdot\sum_{i=1}^{m}x_{i}=m\bar{x}^{2}=\sum_{i=1}^{m}\bar{x}^{2}}\end{array}$ ，则上式可 化为  
+
+$$
+\begin{array}{r l}&{w=\frac{\sum_{i=1}^{m}\left(y_{i}x_{i}-y_{i}\bar{x}-x_{i}\bar{y}+\bar{x}\bar{y}\right)}{\sum_{i=1}^{m}\left(x_{i}^{2}-x_{i}\bar{x}-x_{i}\bar{x}+\bar{x}^{2}\right)}}\\ &{\quad=\frac{\sum_{i=1}^{m}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sum_{i=1}^{m}\left(x_{i}-\bar{x}\right)^{2}}}\end{array}
+$$  
+
+若令 $\pmb{x}\,=\,(x_{1},x_{2},...,x_{m})^{T}$ ， ${\pmb x}_{d}\,=\,(x_{1}\,-\,\bar{x},x_{2}\,-\,\bar{x},...,x_{m}\,-\,\bar{x})^{T}$ 为去均值后的 $\mathbfcal{x}$ ， $\pmb{y}\,=\,(y_{1},y_{2},...,y_{m})^{T}$ ，$\pmb{y}_{d}=(y_{1}-\bar{y},y_{2}-\bar{y},...,y_{m}-\bar{y})^{T}$ 为去均值后的 $\pmb{y}$ ，其中 $\pmb{x}\setminus\pmb{x}_{d},\ \pmb{y}\setminus\pmb{y}_{d}$ 均为 $\mathrm{m}$ 行1 列的列向量，代入上  
+
+式可得  
+
+$$
+w={\frac{\pmb{x}_{d}^{T}\pmb{y}_{d}}{\pmb{x}_{d}^{T}\pmb{x}_{d}}}
+$$  
+
+公式(3.9)  
+
+$$
+\hat{\boldsymbol{w}}^{*}=\underset{\hat{\boldsymbol{w}}}{\arg\operatorname*{min}}(\boldsymbol{y}-\mathbf{X}\hat{\boldsymbol{w}})^{\mathrm{{T}}}(\boldsymbol{y}-\mathbf{X}\hat{\boldsymbol{w}})
+$$  
+
+[推导]：公式(3.4) 是最小二乘法运用在一元线性回归上的情形，那么对于多元线性回归来说，我们可以类似得到  
+
+$$
+\begin{array}{r l}&{\left(\pmb{w}^{*},b^{*}\right)=\underset{\left(\pmb{w},b\right)}{\arg\operatorname*{min}}\sum_{i=1}^{m}\left(f\left(\pmb{x}_{i}\right)-y_{i}\right)^{2}}\\ &{\qquad\qquad=\underset{\left(\pmb{w},b\right)}{\arg\operatorname*{min}}\sum_{i=1}^{m}\left(y_{i}-f\left(\pmb{x}_{i}\right)\right)^{2}}\\ &{\qquad\qquad=\underset{\left(\pmb{w},b\right)}{\arg\operatorname*{min}}\sum_{i=1}^{m}\left(y_{i}-\left(\pmb{w}^{\mathrm{T}}\pmb{x}_{i}+b\right)\right)^{2}}\end{array}
+$$  
+
+为便于讨论，我们令 $\hat{w}=(w;b)=(w_{1};...;w_{d};b)\in\mathbb{R}^{(d+1)\times1},\hat{x}_{i}=(x_{1};...;x_{d};1)\in\mathbb{R}^{(d+1)\times1}$ ，那么上式可以简化为  
+
+$$
+\begin{array}{r}{\pmb{\hat{w}}^{*}=\underset{\pmb{\hat{w}}}{\arg\operatorname*{min}}\displaystyle\sum_{i=1}^{m}\left(y_{i}-\pmb{\hat{w}}^{\mathrm{T}}\pmb{\hat{x}}_{i}\right)^{2}}\\ {=\arg\operatorname*{min}_{\pmb{\hat{w}}}\displaystyle\sum_{i=1}^{m}\left(y_{i}-\pmb{\hat{x}}_{i}^{\mathrm{T}}\pmb{\hat{w}}\right)^{2}}\end{array}
+$$  
+
+根据向量内积的定义可知，上式可以写成如下向量内积的形式  
+
+$$
+\hat{\boldsymbol{w}}^{*}=\mathop{\arg\operatorname*{min}}_{\hat{\boldsymbol{w}}}\left[y_{1}-\hat{x}_{1}^{\mathrm{T}}\hat{\boldsymbol{w}}\quad\cdot\cdot\cdot\quad y_{m}-\hat{x}_{m}^{\mathrm{T}}\hat{\boldsymbol{w}}\right]\left[\begin{array}{c}{y_{1}-\hat{x}_{1}^{\mathrm{T}}\hat{\boldsymbol{w}}}\\ {\vdots}\\ {y_{m}-\hat{x}_{m}^{\mathrm{T}}\hat{\boldsymbol{w}}}\end{array}\right]
+$$  
+
+其中  
+
+$$
+\begin{array}{r l}&{\left[\begin{array}{l}{y_{1}-\hat{x}_{1}^{\mathrm{T}}\hat{w}}\\ {\vdots}\\ {y_{m}-\hat{x}_{m}^{\mathrm{T}}\hat{w}}\end{array}\right]=\left[\begin{array}{l}{y_{1}}\\ {\vdots}\\ {y_{m}}\end{array}\right]-\left[\begin{array}{l}{\hat{x}_{1}^{\mathrm{T}}\hat{w}}\\ {\vdots}\\ {\hat{x}_{m}^{\mathrm{T}}\hat{w}}\end{array}\right]}\\ &{=y-\left[\begin{array}{l}{\hat{x}_{1}^{\mathrm{T}}}\\ {\vdots}\\ {\hat{x}_{m}^{\mathrm{T}}}\end{array}\right]\cdot\hat{w}}\\ &{=y-\mathbf{X}\hat{w}}\end{array}
+$$  
+
+所以  
+
+$$
+\hat{\boldsymbol{w}}^{*}=\underset{\hat{\boldsymbol{w}}}{\arg\operatorname*{min}}(\boldsymbol{y}-\mathbf{X}\hat{\boldsymbol{w}})^{\mathrm{{T}}}(\boldsymbol{y}-\mathbf{X}\hat{\boldsymbol{w}})
+$$  
+
+公式(3.10)  
+
+$$
+\frac{\partial E_{\hat{w}}}{\partial\hat{w}}=2\mathbf{X}^{\mathrm{T}}(\mathbf{X}\hat{w}-\pmb{y})
+$$  
+
+[推导]：将 $E_{\hat{\pmb w}}=(\pmb{y}-\mathbf{X}\hat{\pmb w})^{\mathrm{T}}(\pmb{y}-\mathbf{X}\hat{\pmb w})$ 展开可得  
+
+$$
+E_{\hat{w}}=\boldsymbol{y}^{\mathrm{{T}}}\boldsymbol{y}-\boldsymbol{y}^{\mathrm{{T}}}\mathbf{X}\hat{w}-\hat{w}^{\mathrm{{T}}}\mathbf{X}^{\mathrm{{T}}}\boldsymbol{y}+\hat{w}^{\mathrm{{T}}}\mathbf{X}^{\mathrm{{T}}}\mathbf{X}\hat{w}
+$$  
+
+对 $\hat{w}$ 求导可得  
+
+$$
+\frac{\partial E_{\hat{w}}}{\partial\hat{w}}=\frac{\partial\pmb{y}^{\mathrm{T}}\pmb{y}}{\partial\hat{\pmb{w}}}-\frac{\partial\pmb{y}^{\mathrm{T}}\mathbf{X}\hat{\pmb{w}}}{\partial\hat{\pmb{w}}}-\frac{\partial\hat{\pmb{w}}^{\mathrm{T}}\mathbf{X}^{\mathrm{T}}\pmb{y}}{\partial\hat{\pmb{w}}}+\frac{\partial\hat{\pmb{w}}^{\mathrm{T}}\mathbf{X}^{\mathrm{T}}\mathbf{X}\hat{\pmb{w}}}{\partial\hat{\pmb{w}}}
+$$  
+
+由矩阵微分公式 $\frac{\partial\pmb{a}^{\mathrm{T}}\pmb{x}}{\partial\pmb{x}}=\frac{\partial\pmb{x}^{\mathrm{T}}\pmb{a}}{\partial\pmb{x}}=\pmb{a},\frac{\partial\pmb{x}^{\mathrm{T}}\mathbf{A}\pmb{x}}{\partial\pmb{x}}=(\mathbf{A}+\mathbf{A}^{\mathrm{T}})\pmb{x}$ 可得  
+
+$$
+\frac{\partial E_{\hat{w}}}{\partial\hat{\mathbf{w}}}=0-\mathbf{X}^{\mathrm{{T}}}\mathbf{\boldsymbol{y}}-\mathbf{X}^{\mathrm{{T}}}\mathbf{\boldsymbol{y}}+(\mathbf{X}^{\mathrm{{T}}}\mathbf{X}+\mathbf{X}^{\mathrm{{T}}}\mathbf{X})\hat{\boldsymbol{w}}
+$$  
+
+$$
+\frac{\partial E_{\hat{w}}}{\partial\hat{w}}=2\mathbf{X}^{\mathrm{T}}(\mathbf{X}\hat{w}-\pmb{y})
+$$  
+
+# 公式(3.27)  
+
+$$
+\ell(\beta)=\sum_{i=1}^{m}(-y_{i}\beta^{\mathrm{T}}\hat{\pmb{x}}_{i}+\ln(1+e^{\beta^{\mathrm{T}}\hat{\pmb{x}}_{i}}))
+$$  
+
+[推导]：将公式(3.26) 代入公式(3.25) 可得  
+
+$$
+\ell(\beta)=\sum_{i=1}^{m}\ln\left(y_{i}p_{1}(\hat{x}_{i};\beta)+(1-y_{i})p_{0}(\hat{x}_{i};\beta)\right)
+$$  
+
+其中 $p_{1}(\hat{\pmb{x}}_{i};\beta)=\frac{e^{\beta^{\mathrm{T}}\hat{\pmb{x}}_{i}}}{1+e^{\beta^{\mathrm{T}}\hat{\pmb{x}}_{i}}},p_{0}(\hat{\pmb{x}}_{i};\beta)=\frac{1}{1+e^{\beta^{\mathrm{T}}\hat{\pmb{x}}_{i}}}$ βT ˆxi，代入上式可得  
+
+$$
+\begin{array}{r l r}{\lefteqn{\ell(\beta)=\sum_{i=1}^{m}\ln\left(\frac{y_{i}e^{\beta^{\mathrm{T}}\hat{\boldsymbol{x}}_{i}}+1-y_{i}}{1+e^{\beta^{\mathrm{T}}\hat{\boldsymbol{x}}_{i}}}\right)}}\\ &{}&{=\sum_{i=1}^{m}\left(\ln(y_{i}e^{\beta^{\mathrm{T}}\hat{\boldsymbol{x}}_{i}}+1-y_{i})-\ln(1+e^{\beta^{\mathrm{T}}\hat{\boldsymbol{x}}_{i}})\right)}\end{array}
+$$  
+
+由于 $y_{i}{=}0$ 或1，则  
+
+$$
+\ell(\beta)={\left\{\begin{array}{l l}{\sum_{i=1}^{m}(-\ln(1+e^{\beta^{\mathrm{T}}{\hat{x}}_{i}})),}&{y_{i}=0}\\ {\sum_{i=1}^{m}(\beta^{\mathrm{T}}{\hat{x}}_{i}-\ln(1+e^{\beta^{\mathrm{T}}{\hat{x}}_{i}})),}&{y_{i}=1}\end{array}\right.}
+$$  
+
+两式综合可得  
+
+$$
+\ell(\boldsymbol{\beta})=\sum_{i=1}^{m}\Big(y_{i}\beta^{\mathrm{T}}\hat{\mathbf{x}}_{i}-\ln(1+e^{\beta^{\mathrm{T}}\hat{\mathbf{x}}_{i}})\Big)
+$$  
+
+由于此式仍为极大似然估计的似然函数，所以最大化似然函数等价于最小化似然函数的相反数，也即在似然函数前添加负号即可得公式(3.27)。值得一提的是，若将公式(3.26) 这个似然项改写为 $p(y_{i}|\pmb{x}_{i};\pmb{w},b)=$  
+
+$[p_{1}(\hat{\pmb{x}}_{i};\beta)]^{y_{i}}[p_{0}(\hat{\pmb{x}}_{i};\beta)]^{1-y_{i}}$ ，再将其代入公式(3.25) 可得  
+
+$$
+\begin{array}{r l}{\lefteqn{\ell(\beta)=\frac{\sqrt{\gamma}}{i\alpha}\ln\left(|p_{i}(\hat{x}_{i};\beta)|^{n}|p_{0}(\hat{x}_{i};\beta)|^{1-n}\right)}\quad}&{}\\ &{=\frac{\sqrt{\gamma}}{i\alpha}\left[\ell_{1}\ln\left(p_{1}(\hat{x}_{i};\beta)\right)+(1-\beta_{1})\ln\left(p_{0}(\hat{x}_{i};\beta)\right)\right]}\\ &{=\frac{\sqrt{\gamma}}{i\alpha}\left\{y_{i}\ln\left(p_{1}(\hat{x}_{i};\beta)\right)-\ln\left(p_{0}(\hat{x}_{i};\beta)\right)+\ln\left(p_{0}(\hat{x}_{i};\beta)\right)\right\}}\\ &{=\frac{\sqrt{\gamma}}{i\alpha}\left[y_{i}\ln\left(\frac{p_{1}(\hat{x}_{i};\beta)}{p_{0}(\hat{x}_{i};\beta)}\right)+\ln\left(p_{0}(\hat{x}_{i};\beta)\right)\right]}\\ &{=\frac{\sqrt{\gamma}}{i\alpha}\left[y_{i}\ln\left(e^{\sigma^{\alpha}\hat{x}_{i}}\right)+\ln\left(\frac{1}{1+e^{\sigma^{\alpha}\hat{x}_{i}}}\right)\right]}\\ &{=\sum_{i=1}^{n}\bigg(y_{i}\beta^{\tau}\hat{x}_{i}-\ln(1+e^{\sigma^{\alpha}\hat{x}_{i}})\bigg)}\end{array}
+$$  
+
+显然，此种方式更易推导出公式(3.27)  
+
+# 公式(3.30)  
+
+$$
+\frac{\partial\ell(\beta)}{\partial\beta}=-\sum_{i=1}^{m}\pmb{\hat{x}}_{i}(y_{i}-p_{1}(\pmb{\hat{x}}_{i};\beta))
+$$  
+
+[解析]：此式可以进行向量化，令 $p_{1}(\hat{\pmb{x}}_{i};\beta)=\hat{y}_{i}$ ，代入上式得  
+
+$$
+\begin{array}{l}{\displaystyle\frac{\partial\ell(\boldsymbol\beta)}{\partial\boldsymbol\beta}=-\sum_{i=1}^{m}\hat{\mathbf{x}}_{i}(y_{i}-\hat{y}_{i})}\\ {\displaystyle=\sum_{i=1}^{m}\hat{\mathbf{x}}_{i}(\hat{y}_{i}-y_{i})}\\ {\displaystyle=\mathbf{X}^{\mathrm{T}}(\hat{\mathbf{y}}-\pmb{y})}\\ {\displaystyle=\mathbf{X}^{\mathrm{T}}(p_{1}(\mathbf{X};\boldsymbol\beta)-y)}\end{array}
+$$  
+
+公式(3.32)  
+
+$$
+J=\frac{{\pmb w}^{\mathrm{T}}({\pmb\mu}_{0}-{\pmb\mu}_{1})({\pmb\mu}_{0}-{\pmb\mu}_{1})^{\mathrm{T}}{\pmb w}}{{\pmb w}^{\mathrm{T}}({\pmb\Sigma}_{0}+{\pmb\Sigma}_{1}){\pmb w}}
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l}&{\boldsymbol{J}=\frac{\|\boldsymbol{w}^{\top}\boldsymbol{\mu}_{0}-\boldsymbol{w}^{\top}\boldsymbol{\mu}_{1}\|_{2}^{2}}{w^{\top}(\sum_{0}+\sum_{1})w}}\\ &{\quad=\frac{\|(\boldsymbol{w}^{\top}\boldsymbol{\mu}_{0}-\boldsymbol{w}^{\top}\boldsymbol{\mu}_{1})^{\top}\|_{2}^{2}}{w^{\top}(\sum_{0}+\sum_{1})w}}\\ &{\quad=\frac{\|(\boldsymbol{\mu}_{0}-\boldsymbol{\mu}_{1})^{\top}\boldsymbol{w}\|_{2}^{2}}{w^{\top}(\sum_{0}+\sum_{1})w}}\\ &{\quad=\frac{\|(\boldsymbol{\mu}_{0}-\boldsymbol{\mu}_{1})^{\top}\boldsymbol{w}\|_{2}^{2}}{w^{\top}(\sum_{0}+\sum_{1})w}}\\ &{\quad=\frac{\|(\boldsymbol{\mu}_{0}-\boldsymbol{\mu}_{1})^{\top}\boldsymbol{w}\|_{2}^{\top}\,(\mu_{0}-\mu_{1})^{\top}w}{w^{\top}(\sum_{0}+\sum_{1})w}}\\ &{\quad=\frac{w^{\top}(\mu_{0}-\mu_{1})(\mu_{0}-\mu_{1})^{\top}w}{w^{\top}(\sum_{0}+\sum_{1})w}}\end{array}
+$$  
+
+# 公式(3.37)  
+
+$$
+\mathbf{S}_{b}\pmb{w}=\lambda\mathbf{S}_{w}\pmb{w}
+$$  
+
+[推导]：由公式(3.36) 可得拉格朗日函数为  
+
+$$
+L(\pmb{w},\lambda)=-\pmb{w}^{\mathrm{T}}\mathbf{S}_{b}\pmb{w}+\lambda(\pmb{w}^{\mathrm{T}}\mathbf{S}_{w}\pmb{w}-1)
+$$  
+
+对 $\mathbf{\nabla}w$ 求偏导可得  
+
+$$
+\begin{array}{r}{\frac{\partial L(\pmb{w},\lambda)}{\partial\pmb{w}}=-\frac{\partial(\pmb{w}^{\mathrm{T}}\mathbf{S}_{b}\pmb{w})}{\partial\pmb{w}}+\lambda\frac{\partial(\pmb{w}^{\mathrm{T}}\mathbf{S}_{w}\pmb{w}-1)}{\partial\pmb{w}}}\\ {=-(\mathbf{S}_{b}+\mathbf{S}_{b}^{\mathrm{T}})\pmb{w}+\lambda(\mathbf{S}_{w}+\mathbf{S}_{w}^{\mathrm{T}})\pmb{w}}\end{array}
+$$  
+
+由于 $\mathbf{S}_{b}=\mathbf{S}_{b}^{\mathrm{T}},\mathbf{S}_{w}=\mathbf{S}_{w}^{\mathrm{T}}$ ，所以  
+
+$$
+\frac{\partial L(\pmb{w},\lambda)}{\partial\pmb{w}}=-2\mathbf{S}_{b}\pmb{w}+2\lambda\mathbf{S}_{w}\pmb{w}
+$$  
+
+令上式等于0 即可得  
+
+$$
+-2{\bf S}_{b}{\bf w}+2\lambda{\bf S}_{w}{\bf w}=0
+$$  
+
+$$
+\mathbf{S}_{b}\pmb{w}=\lambda\mathbf{S}_{w}\pmb{w}
+$$  
+
+$$
+(\pmb{\mu}_{0}-\pmb{\mu}_{1})(\pmb{\mu}_{0}-\pmb{\mu}_{1})^{\mathrm{T}}\pmb{w}=\lambda\pmb{\mathrm{S}}_{w}\pmb{w}
+$$  
+
+若令 $(\pmb{\mu}_{0}-\pmb{\mu}_{1})^{\mathrm{T}}\pmb{w}=\gamma$ ，则  
+
+$$
+\gamma(\pmb{\mu}_{0}-\pmb{\mu}_{1})=\lambda\mathbf{S}_{w}\pmb{w}
+$$  
+
+$$
+\pmb{w}=\frac{\gamma}{\lambda}\mathbf{S}_{\boldsymbol{w}}^{-1}(\pmb{\mu}_{0}-\pmb{\mu}_{1})
+$$  
+
+由于最终要求解的 $\mathbf{\nabla}w$ 不关心其大小，只关心其方向，所以 $\frac{\gamma}{\lambda}$ 这个常数项可以任意取值，西瓜书中所说的“不妨令 $\mathbf{S}_{b}\pmb{w}=\lambda(\pmb{\mu}_{0}-\pmb{\mu}_{1})^{,}$ ”就等价于令 $\textstyle{\frac{\gamma}{\lambda}}=1$ ，此时求解出的 $\mathbf{\nabla}w$ 即为公式(3.39)  
+
+# 公式(3.38)  
+
+$$
+\mathbf{S}_{b}\pmb{w}=\lambda(\pmb{\mu}_{0}-\pmb{\mu}_{1})
+$$  
+
+[推导]：参见公式(3.37)  
+
+公式(3.39)  
+
+$$
+\pmb{w}=\mathbf{S}_{\boldsymbol{w}}^{-1}(\pmb{\mu}_{0}-\pmb{\mu}_{1})
+$$  
+
+[推导]：参见公式(3.37)  
+
+公式(3.43)  
+
+$$
+\begin{array}{r l}&{\mathbf{S}_{b}=\mathbf{S}_{t}-\mathbf{S}_{w}}\\ &{\quad=\displaystyle\sum_{i=1}^{N}m_{i}(\pmb{\mu}_{i}-\pmb{\mu})(\pmb{\mu}_{i}-\pmb{\mu})^{\mathrm{T}}}\end{array}
+$$  
+
+[推导]：由公式(3.40)、公式(3.41)、公式(3.42) 可得：  
+
+$$
+\begin{array}{r l}&{-\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)\left(x_{i}-y_{i}\right)^{\top}-\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)\left(x_{i}-y_{i}\right)^{\top}}\\ &{-\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)\left(x_{i}-y_{i}\right)^{\top}-\left(x_{i}-y_{i}\right)\left(x_{i}-y_{i}\right)^{\top}\right)}\\ &{=\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)\left(x_{i}-y_{i}-\alpha_{i}\right)\left(x_{i}-y_{i}^{\top}-\alpha_{i}\right)\right)}\\ &{-\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(\sum_{i=1}^{n}\left(x_{i}^{\top}-y_{i}^{\top}-\alpha_{i}\right)^{\top}\left(x_{i}^{\top}-x_{i}^{\top}+\alpha_{i}\right)^{\top}+\mu_{i}\alpha_{i}^{\top}-\mu_{i}\alpha_{i}^{\top}\right)}\\ &{-\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(\sum_{i=1}^{n}\left(x_{i}^{\top}-y_{i}^{\top}-\mu_{i}^{\top}+\mu_{i}^{\top}+\mu_{i}^{\top}\right)-\mu_{i}\alpha_{i}^{\top}\alpha_{i}^{\top}\alpha_{i}^{\top}\alpha_{i}\right)}\\ &{=\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(\sum_{i=1}^{n}\left(x_{i}^{\top}-y_{i}^{\top}-\mu_{i}^{\top}+\mu_{i}^{\top}+\mu_{i}^{\top}+\mu_{i}^{\top}-\mu_{i}\alpha_{i}^{\top}\right)\right)}\\ &{-\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}\left(-\sum_{i=1}^{n}x_{i}^{\top}-y_{i}^{\top}-\alpha_{i}^{ 
+$$  
+
+# 公式(3.44)  
+
+$$
+\operatorname*{max}_{\mathbf{W}}\frac{\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{b}\mathbf{W})}{\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{w}\mathbf{W})}
+$$  
+
+[解析]：此式是公式(3.35) 的推广形式，证明如下：设 $\mathbf{W}=\left(\pmb{w}_{1},\pmb{w}_{2},...,\pmb{w}_{i},...,\pmb{w}_{N-1}\right)\in\mathbb{R}^{d\times(N-1)}$ ，其中$\pmb{w}_{i}\in\mathbb{R}^{d\times1}$ 为 $d$ 行1 列的列向量，则  
+
+$$
+\left\{\begin{array}{l l}{\displaystyle\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{b}\mathbf{W})=\sum_{i=1}^{N-1}\pmb{w}_{i}^{\mathrm{T}}\mathbf{S}_{b}\pmb{w}_{i}}\\ {\displaystyle\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{w}\mathbf{W})=\sum_{i=1}^{N-1}\pmb{w}_{i}^{\mathrm{T}}\mathbf{S}_{w}\pmb{w}_{i}}\end{array}\right.
+$$  
+
+所以公式(3.44) 可变形为  
+
+$$
+\operatorname*{max}_{\mathbf{W}}\frac{\sum_{i=1}^{N-1}{\pmb w}_{i}^{\mathrm{T}}{\bf S}_{b}{\pmb w}_{i}}{\sum_{i=1}^{N-1}{\pmb w}_{i}^{\mathrm{T}}{\bf S}_{w}{\pmb w}_{i}}
+$$  
+
+对比公式(3.35) 易知上式即公式(3.35) 的推广形式  
+
+# 公式(3.45)  
+
+$$
+\mathbf{S}_{b}\mathbf{W}=\lambda\mathbf{S}_{w}\mathbf{W}
+$$  
+
+[推导]：同公式(3.35) 一样，我们在此处也固定公式(3.44) 的分母为1，那么公式(3.44) 此时等价于如下优化问题  
+
+$$
+\begin{array}{r l}{\operatorname*{min}_{\boldsymbol{w}}}&{{}-\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{b}\mathbf{W})}\\ {\mathrm{s.t.}\quad}&{{}\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{w}\mathbf{W})=1}\end{array}
+$$  
+
+根据拉格朗日乘子法可知，上述优化问题的拉格朗日函数为  
+
+$$
+L(\mathbf{W},\lambda)=-\operatorname{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{b}\mathbf{W})+\lambda(\operatorname{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{w}\mathbf{W})-1)
+$$  
+
+根据矩阵微分公式 ${\frac{\partial}{\partial\mathbf{X}}}\operatorname{tr}\left(\mathbf{X}^{\mathrm{{T}}}\mathbf{B}\mathbf{X}\right)=(\mathbf{B}+\mathbf{B}^{\mathrm{{T}}})\mathbf{X}$ 对上式关于W 求偏导可得  
+
+$$
+\begin{array}{r}{\frac{\partial L(\mathbf{W},\lambda)}{\partial\mathbf{W}}=-\frac{\partial\left(\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{b}\mathbf{W})\right)}{\partial\mathbf{W}}+\lambda\frac{\partial\left(\mathrm{tr}(\mathbf{W}^{\mathrm{T}}\mathbf{S}_{w}\mathbf{W})-1\right)}{\partial\mathbf{W}}}\\ {=-(\mathbf{S}_{b}+\mathbf{S}_{b}^{\mathrm{T}})\mathbf{W}+\lambda(\mathbf{S}_{w}+\mathbf{S}_{w}^{\mathrm{T}})\mathbf{W}\mathbf{\Sigma}\ \ }\end{array}
+$$  
+
+由于 $\mathbf{S}_{b}=\mathbf{S}_{b}^{\mathrm{T}},\mathbf{S}_{w}=\mathbf{S}_{w}^{\mathrm{T}}$ ，所以  
+
+$$
+\frac{\partial L(\mathbf{W},\boldsymbol{\lambda})}{\partial\mathbf{W}}=-2\mathbf{S}_{b}\mathbf{W}+2\boldsymbol{\lambda}\mathbf{S}_{w}\mathbf{W}
+$$  
+
+令上式等于0 即可得  
+
+$$
+-2\mathbf{S}_{b}\mathbf{W}+2\lambda\mathbf{S}_{w}\mathbf{W}=\mathbf{0}
+$$  
+
+$$
+\mathbf{S}_{b}\mathbf{W}=\lambda\mathbf{S}_{w}\mathbf{W}
+$$  
+
+# 第4 章 决策树  
+
+# 公式(4.1)  
+
+$$
+\operatorname{Ent}(D)=-\sum_{k=1}^{|\mathcal{V}|}p_{k}\log_{2}p_{k}
+$$  
+
+[解析]：证明 $0\leq\mathrm{Ent}(D)\leq\log_{2}|\mathcal{D}|$ ：已知集合 $D$ 的信息熵的定义为  
+
+$$
+\operatorname{Ent}(D)=-\sum_{k=1}^{|\mathcal{V}|}p_{k}\log_{2}p_{k}
+$$  
+
+其中， $|\mathcal{D}|$ 表示样本类别总数， $p_{k}$ 表示第 $k$ 类样本所占的比例，且 $\begin{array}{r}{0\;\leq\;p_{k}\;\leq\;1,\sum_{k=1}^{n}p_{k}\;=\;1}\end{array}$ 。若令$|y|=n,p_{k}=x_{k}$ ，那么信息熵 $\operatorname{Ent}(D)$ 就可以看作一个 $n$ 元实值函数，也即  
+
+$$
+\operatorname{Ent}(D)=f{\big(}x_{1},...,x_{n}{\big)}=-\sum_{k=1}^{n}x_{k}\log_{2}x_{k}
+$$  
+
+其中， $0\leq x_{k}\leq1,\textstyle\sum_{k=1}^{n}x_{k}=1$ ，下面考虑求该多元函数的最值。首先我们先来求最大值，如果不考虑约束 $0\leq x_{k}\leq1$ ，仅考虑 $\textstyle\sum_{k=1}^{n}x_{k}=1$ 的话，对 $f(x_{1},...,x_{n})$ 求最大值等价于如下最小化问题  
+
+$$
+\begin{array}{r l}{\operatorname*{min}}&{\ \displaystyle\sum_{k=1}^{n}x_{k}\log_{2}x_{k}}\\ {\mathrm{s.t.}}&{\displaystyle\sum_{k=1}^{n}x_{k}=1}\end{array}
+$$  
+
+显然，在 $0\leq x_{k}\leq1$ 时，此问题为凸优化问题，而对于凸优化问题来说，能令其拉格朗日函数的一阶偏导数等于0 的点即为最优解。根据拉格朗日乘子法可知，该优化问题的拉格朗日函数为  
+
+$$
+L(x_{1},...,x_{n},\lambda)=\sum_{k=1}^{n}x_{k}\log_{2}x_{k}+\lambda(\sum_{k=1}^{n}x_{k}-1)
+$$  
+
+其中， $\lambda$ 为拉格朗日乘子。对 $L(x_{1},...,x_{n},\lambda)$ 分别关于 $x_{1},...,x_{n},\lambda$ 求一阶偏导数，并令偏导数等于0 可得  
+
+$$
+\begin{array}{l}{\displaystyle\frac{\partial{\cal L}(x_{1},\dots,x_{n},\lambda)}{\partial x_{1}}\!=\!\frac{\partial}{\partial x_{1}}\left[\sum_{k=1}^{n}x_{k}\log_{2}x_{k}+\lambda(\sum_{k=1}^{n}x_{k}-1)\right]=0}\\ {\displaystyle\qquad\qquad\qquad\quad\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\
+$$  
+
+$$
+{\cfrac{\partial L(x_{1},...,x_{n},\lambda)}{\partial x_{2}}}={\cfrac{\partial}{\partial x_{2}}}\left[\sum_{k=1}^{n}x_{k}\log_{2}x_{k}+\lambda(\sum_{k=1}^{n}x_{k}-1)\right]=0
+$$  
+
+$$
+\Rightarrow\lambda=-\log_{2}x_{2}-{\frac{1}{\ln2}}
+$$  
+
+$$
+{\cfrac{\partial L(x_{1},...,x_{n},\lambda)}{\partial x_{n}}}={\cfrac{\partial}{\partial x_{n}}}\left[\sum_{k=1}^{n}x_{k}\log_{2}x_{k}+\lambda(\sum_{k=1}^{n}x_{k}-1)\right]=0
+$$  
+
+$$
+\Rightarrow\lambda=-\log_{2}x_{n}-{\frac{1}{\ln2}}
+$$  
+
+$$
+\begin{array}{c}{\displaystyle\frac{\partial L(x_{1},...,x_{n},\lambda)}{\partial\lambda}\!=\!\frac{\partial}{\partial\lambda}\!\left[\displaystyle\sum_{k=1}^{n}x_{k}\log_{2}x_{k}+\lambda(\sum_{k=1}^{n}x_{k}-1)\right]=0}\\ {\displaystyle\Rightarrow\sum_{k=1}^{n}x_{k}=1}\end{array}
+$$  
+
+整理一下可得  
+
+$$
+\left\{\begin{array}{l l}{\displaystyle{\lambda=-\log_{2}x_{1}-\frac{1}{\ln2}=-\log_{2}x_{2}-\frac{1}{\ln2}=\ldots=-\log_{2}x_{n}-\frac{1}{\ln2}}}\\ {\displaystyle{\sum_{k=1}^{n}x_{k}=1}}\end{array}\right.
+$$  
+
+由以上两个方程可以解得  
+
+$$
+x_{1}=x_{2}=\ldots=x_{n}={\frac{1}{n}}
+$$  
+
+又因为 $x_{k}$ 还需满足约束 $0\leq x_{k}\leq1$ ，显然 $0\leq{\frac{1}{n}}\leq1$ ，所以 $x_{1}=x_{2}=\ldots=x_{n}={\frac{1}{n}}$ 是满足所有约束的最优解，也即为当前最小化问题的最小值点，同时也是 $f(x_{1},...,x_{n})$ 的最大值点。将 $x_{1}=x_{2}=\ldots=x_{n}={\frac{1}{n}}$ 代入 $f(x_{1},...,x_{n})$ 中可得  
+
+$$
+f({\frac{1}{n}},\ldots,{\frac{1}{n}})=-\sum_{k=1}^{n}{\frac{1}{n}}\mathrm{log}_{2}\,{\frac{1}{n}}=-n\cdot{\frac{1}{n}}\mathrm{log}_{2}\,{\frac{1}{n}}=\log_{2}n
+$$  
+
+所以 $f(x_{1},...,x_{n})$ 在满足约束 $0\leq x_{k}\leq1,\textstyle\sum_{k=1}^{n}x_{k}=1$ 时的最大值为 $\log_{2}n$ 。求完最大值后下面我们再来求最小值，如果不考虑约束 $\textstyle\sum_{k=1}^{n}x_{k}=1$ ，仅考虑 $0\leq x_{k}\leq1$ 的话， $f(x_{1},...,x_{n})$ 可以看做是 $n$ 个互不相关的一元函数的加和，也即  
+
+$$
+f(x_{1},...,x_{n})=\sum_{k=1}^{n}g(x_{k})
+$$  
+
+其中， $g(x_{k})=-x_{k}\log_{2}x_{k},0\leq x_{k}\leq1.$ 。那么当 $g(x_{1}),g(x_{2}),...,g(x_{n})$ 分别取到其最小值时， $f(x_{1},...,x_{n})$ 也就取到了最小值。所以接下来考虑分别求 $g(x_{1}),g(x_{2}),...,g(x_{n})$ 各自的最小值，由于 $g(x_{1}),g(x_{2}),...,g(x_{n})$ 的定义域和函数表达式均相同，所以只需求出 $g(x_{1})$ 的最小值也就求出了 $g(x_{2}),...,g(x_{n})$ 的最小值。下面考虑求 $g(x_{1})$ 的最小值，首先对 $g(x_{1})$ 关于 $x_{1}$ 求一阶和二阶导数  
+
+$$
+g^{\prime}(x_{1})={\frac{d(-x_{1}\log_{2}x_{1})}{d x_{1}}}=-\log_{2}x_{1}-x_{1}\cdot{\frac{1}{x_{1}\ln2}}=-\log_{2}x_{1}-{\frac{1}{\ln2}}
+$$  
+
+$$
+g^{\prime\prime}(x_{1})={\frac{d\,(g^{\prime}(x_{1}))}{d x_{1}}}={\frac{d\left(-\log_{2}x_{1}-{\frac{1}{\ln2}}\right)}{d x_{1}}}=-{\frac{1}{x_{1}\ln2}}
+$$  
+
+显然，当 $0\leq x_{k}\leq1$ 时 $g^{\prime\prime}(x_{1})=-\frac{1}{x_{1}\ln2}$ 恒小于0，所以 $g(x_{1})$ 是一个在其定义域范围内开口向下的凹函数，那么其最小值必然在边界取，于是分别取 $x_{1}=0$ 和 $x_{1}=1$ ，代入 $g(x_{1})$ 可得  
+
+$$
+\begin{array}{r}{g(0)=-0\log_{2}0=0}\\ {~~}\\ {g(1)=-1\log_{2}1=0}\end{array}
+$$  
+
+所以， $g(x_{1})$ 的最小值为0，同理可得 $g(x_{2}),...,g(x_{n})$ 的最小值也为0，那么 $f(x_{1},...,x_{n})$ 的最小值此时也为0。但是，此时是不考虑约束 $\textstyle\sum_{k=1}^{n}x_{k}=1$ ，仅考虑 $0\leq x_{k}\leq1$ 时取到的最小值，若考虑约束 $\textstyle\sum_{k=1}^{n}x_{k}=1$ 的话，那么 $f(x_{1},...,x_{n})$ 的最小值一定大于等于0。如果令某个 $x_{k}=1$ ，那么根据约束 $\textstyle\sum_{k=1}^{n}x_{k}=1$ 可知$x_{1}=x_{2}=...=x_{k-1}=x_{k+1}=...=x_{n}=0$ ，将其代入 $f(x_{1},...,x_{n})$ 可得  
+
+$$
+f(0,0,\ldots,0,1,0,\ldots,0)=-0\log_{2}0-0\log_{2}0...-0\log_{2}0-1\log_{2}1-0\log_{2}0...-0\log_{2}0=0
+$$  
+
+所以 $\displaystyle{x_{k}=1,x_{1}=x_{2}=...=x_{k-1}=x_{k+1}=...=x_{n}=0}$ 一定是 $f(x_{1},...,x_{n})$ 在满足约束 $\textstyle\sum_{k=1}^{n}x_{k}=1$ 和 $0\,\leq\,x_{k}\,\leq\,1$ 的条件下的最小值点，其最小值为0。<br> 综上可知，当 $f(x_{1},...,x_{n})$ 取到最大值时：$x_{1}=x_{2}=...=x_{n}={\frac{1}{\binom{n}{n}}}$ ，此时样本集合纯度最低；当 $f(x_{1},...,x_{n})$ 取到最小值时： $x_{k}=1,x_{1}=x_{2}=...=$ $x_{k-1}=x_{k+1}=...=x_{n}=0$ ，此时样本集合纯度最高。  
+
+# 公式(4.2)  
+
+$$
+\operatorname{Gain}(D,a)=\operatorname{Ent}(D)-\sum_{v=1}^{V}{\frac{|D^{v}|}{|D|}}\operatorname{Ent}(D^{v})
+$$  
+
+[解析]：这个是信息增益的定义公式，在信息论中信息增益也称为互信息（参见附录 $\mathrm{\textregistered}$ ），其表示已知一个随机变量的信息后使得另一个随机变量的不确定性减少的程度。所以在这里，这个公式可以理解为在属性$a$ 的取值已知后，样本类别这个随机变量的不确定性减小的程度。若根据某个属性计算得到的信息增益越大，则说明在知道其取值后样本集的不确定性减小的程度越大，也即为书上所说的“纯度提升”越大。  
+
+# 公式(4.6)  
+
+$$
+{\mathrm{Gini~}}\operatorname{index}(D,a)=\sum_{v=1}^{V}{\frac{|D^{v}|}{|D|}}\operatorname{Gini}(D^{v})
+$$  
+
+[解析]：这个是数据集 $D$ 中属性 $a$ 的基尼指数的定义，它表示在属性 $a$ 的取值已知的条件下，数据集 $D$ 按照属性 $a$ 的所有可能取值划分后的纯度，不过在构造CART 分类树时并不会严格按照此公式来选择最优划分属性，主要是因为CART 分类树是一颗二叉树，如果用上面的公式去选出最优划分属性，无法进一步选出最优划分属性的最优划分点。CART 分类树的构造算法如下：  
+
+• 首先，对每个属性 $a$ 的每个可能取值 $v$ ，将数据集 $D$ 分为 $a=v$ 和 $a\neq v$ 两部分来计算基尼指数，即  
+
+$$
+\mathrm{Gini\_index}(D,a)={\frac{|D^{a=v}|}{|D|}}\,\mathrm{Gini}(D^{a=v})+{\frac{|D^{a\neq v}|}{|D|}}\,\mathrm{Gini}(D^{a\neq v})
+$$  
+
+• 然后，选择基尼指数最小的属性及其对应取值作为最优划分属性和最优划分点；  
+
+• 最后，重复以上两步，直至满足停止条件。  
+
+下面以西瓜书中表4.2 中西瓜数据集2.0 为例来构造CART 分类树，其中第一个最优划分属性和最优划分点的计算过程如下：以属性“色泽”为例，它有3 个可能的取值： $\left\{\begin{array}{l l}\end{array}\right.$ 青绿￿乌黑￿浅白 $\}$ ，若使用该属性的属性值是否等于“青绿”对数据集 $D$ 进行划分，则可得到2 个子集，分别记为 $D^{1}$ (色泽 $=$ 青绿), $D^{2}$ (色泽 $\neq$ 青绿)。子集 $D^{1}$ 包含编号 $\{1,4,6,10,13,17\}$ 共6 个样例，其中正例占 $\begin{array}{r}{p_{1}=\frac{3}{6}}\end{array}$ ，反例占 $\begin{array}{r}{p_{2}=\frac{3}{6}}\end{array}$ ；子集 $D^{2}$ 包含编号 $\{2,3,5,7,8,9,11,12,14,15,16\}$ 共11 个样例，其中正例占 $\begin{array}{r}{p_{1}=\frac{5}{11}}\end{array}$ ，反例占 $\begin{array}{r}{p_{2}=\frac{6}{11}}\end{array}$ ，根据公式（4.5）可计算出用“色泽 $=$ 青绿”划分之后得到基尼指数为  
+
+$$
+)={\frac{6}{17}}\times\left(1-({\frac{3}{6}})^{2}-({\frac{3}{6}})^{2}\right)+{\frac{11}{17}}\times\left(1-({\frac{5}{11}})^{2}-({\frac{6}{11}})^{2}\right)=0.497
+$$  
+
+类似的，可以计算出以下不同属性取不同值的基尼指数  
+
+$$
+\begin{array}{c}{{\displaystyle)=\frac{6}{17}\times\left(1-(\frac{4}{6})^{2}-(\frac{2}{6})^{2}\right)+\frac{11}{17}\times\left(1-(\frac{4}{11})^{2}-(\frac{7}{11})^{2}\right)=0.456}}\\ {{\mathrm{}}}\\ {{\displaystyle)=\frac{5}{17}\times\left(1-(\frac{1}{5})^{2}-(\frac{4}{5})^{2}\right)+\frac{12}{17}\times\left(1-(\frac{7}{12})^{2}-(\frac{5}{12})^{2}\right)=0.426}}\end{array}
+$$  
+
+Gini_index( $D$ , 根蒂 $=$ 蜷缩) $=0.456$ Gini_index $\mathit{\Delta}^{\prime}D$ , 根蒂 $=$ 稍蜷) $=0.496$ Gini_index( $D$ , 根蒂 $=$ 硬挺) $=0.439$ Gini_index(D, 敲声 $=$ 浊响) $=0.450$ Gini_index(D, 敲声 $=$ 沉闷) $=0.494$ Gini_index(D, 敲声 $=$ 清脆) $=0.439$ Gini_index(D, 纹理 $=$ 清晰) $=0.286$ Gini_index(D, 纹理 $=$ 稍稀) $=0.437$ Gini_index(D, 纹理 $=$ 模糊) $=0.403$ Gini_index(D, 脐部 $=$ 凹陷) $=0.415$ Gini_index(D, 脐部 $=$ 稍凹) $=0.497$ Gini_index(D, 脐部 $=$ 平坦) $=0.362$ Gini_index $(D,$ 触感 $=$ 硬挺) $=0.494$ Gini_index( $D$ , 触感 $=$ 软粘) $=0.494$  
+
+特别地，对于属性“触感”，由于它的可取值个数为2，所以其实只需计算其中一个取值的基尼指数即可。根据上面的计算结果可知Gini_index( $D$ , 纹理 $=$ 清晰) $=0.286$ 最小，所以选择属性“纹理”为最优划分属性并生成根节点，接着以“纹理 $=$ 清晰”为最优划分点生成 $D^{1}$ (纹理 $=$ 清晰), $D^{2}$ (纹理 $\neq$ 清晰) 两个子节点，对于两个子节点分别重复上述步骤继续生成下一层子节点，直至满足停止条件。以上便是CART分类树的构建过程，从构建过程中可以看出，CART 分类树最终构造出来的是一颗二叉树。CART 决策树除了能处理分类问题以外，它还可以处理回归问题，附录 $\textcircled{2}$ 中给出了CART 回归树的构造算法。  
+
+# 公式(4.7)  
+
+$$
+T_{a}=\{\frac{a^{i}+a^{i+1}}{2}|1\leq i\leq n-1\}
+$$  
+
+[解析]：这个公式所表达的思想很简单，就是以每两个相邻取值的中点作为划分点，下面以西瓜书中表4.3 中西瓜数据集3.0 为例来说明此公式的用法。对于“密度”这个连续属性，已观测到的可能取值为{0.243, 0.245, 0.343, 0.360, 0.403, 0.437, 0.481, 0.556, 0.593, 0.608, 0.634, 0.639, 0.657, 0.666, 0.697, 0.719, 0.774}  
+
+共17 个值，根据公式（4.7）可知，此时 $i$ 依次取1 到16，那么“密度”这个属性的候选划分点集合为 Ta = { (0.243+0.245), (0.245+0.343), (0.343+0.360), (0.360+0.403), (0.403+0.437), (0.437+0.481), (0.481+0.556), (0.556+0.593), $\textstyle\frac{3.593+0.608}{2},\stackrel{-[0.608+0.634]}{\frac{7}{2}},\stackrel{-[0.634+0.639]}{\frac{(0.634+0.639)}{2}},\stackrel{-[0.639+0.657]}{\frac{7}{2}},\stackrel{-[0.657+0.666]}{\frac{7}{2}},\stackrel{-[0.666+0.697]}{\frac{7}{2}},\stackrel{-[0.697+0.719]}{\frac{(0.697+0.719)}{2}},\stackrel{-[0.719+0.77]}{\frac{7}{2}}$ 4)  
+
+公式(4.8)  
+
+$$
+\begin{array}{l}{\displaystyle\mathrm{Gain}(D,a)=\operatorname*{max}_{t\in T_{a}}\mathrm{Gain}(D,a,t)}\\ {\displaystyle\qquad\qquad=\operatorname*{max}_{t\in T_{a}}\mathrm{Ent}(D)-\sum_{\lambda\in\{-,+\}}\frac{|D_{t}^{\lambda}|}{|D|}\operatorname{Ent}(D_{t}^{\lambda})}\end{array}
+$$  
+
+[解析]：此公式是公式（4.2）用于离散化后的连续属性的版本，其中 $T_{a}$ 由公式（4.7）计算得来， $\lambda\in\{-,+\}$ 表示属性 $a$ 的取值分别小于等于和大于候选划分点 $t$ 时的情形，也即当 $\lambda=-$ 时： $D_{t}^{\lambda}=D_{t}^{a\leq t}$ ，当 $\lambda=+$ 时： $D_{t}^{\lambda}=D_{t}^{a>t}$ 。  
+
+# 附录  
+
+# $\boldsymbol{\Phi}$ 互信息[1]  
+
+在解释互信息之前，需要先解释一下什么是条件熵。条件熵表示的是在已知一个随机变量的条件下，另一个随机变量的不确定性。具体地，假设有随机变量 $X$ 和 $Y$ ，且它们服从以下联合概率分布  
+
+$$
+P(X=x_{i},Y=y_{j})=p_{i j}\quad i=1,2,....,n;j=1,2,...,m
+$$  
+
+那么在已知 $X$ 的条件下，随机变量 $Y$ 的条件熵为  
+
+$$
+\operatorname{Ent}(Y|X)=\sum_{i=1}^{n}{p_{i}\operatorname{Ent}(Y|X=x_{i})}
+$$  
+
+其中， $p_{i}=P(X=x_{i})\;i=1,2,...,n$ 。互信息定义为信息熵和条件熵的差，它表示的是已知一个随机变量的信息后使得另一个随机变量的不确定性减少的程度。具体地，假设有随机变量 $X$ 和 $Y$ ，那么在已知 $X$ 的信息后， $Y$ 的不确定性减少的程度为  
+
+$$
+\operatorname{I}(Y;X)=\operatorname{Ent}(Y)-\operatorname{Ent}(Y|X)
+$$  
+
+此即为互信息的数学定义。  
+
+# $\circleddash$ CART 回归树[1]  
+
+假设给定数据集  
+
+$$
+D=({\pmb x}_{1},y_{1}),({\pmb x}_{2},y_{2})...,({\pmb x}_{N},y_{N})
+$$  
+
+其中 $\pmb{x}\in\mathbb{R}^{d}$ 为 $d$ 维特征向量， $y\in\mathbb R$ 是连续型随机变量，这是一个标准的回归问题的数据集。若把每个属性视为坐标空间中的一个坐标轴，则 $d$ 个属性就构成了一个 $d$ 维的特征空间，而每个 $d$ 维特征向量 $\textbf{\em x}$ 就对应了 $d$ 维的特征空间中的一个数据点。CART 回归树的目标是将特征空间划分成若干个子空间，每个子空间都有一个固定的输出值，也就是凡是落在同一个子空间内的数据点 $\pmb{x}_{i}$ ，他们所对应的输出值 $y_{i}$ 恒相等，且都为该子空间的输出值。那么如何划分出若干个子空间呢？这里采用一种启发式的方法：  
+
+• 任意选择一个属性 $a$ ，遍历其所有可能取值，根据如下公式找出属性 $a$ 最优划分点 $v^{*}$ ：  
+
+$$
+v^{*}=\arg\operatorname*{min}_{v}\left[\operatorname*{min}_{c_{1}}\sum_{x_{i}\in R_{1}(a,v)}\left(y_{i}-c_{1}\right)^{2}+\operatorname*{min}_{c_{2}}\sum_{x_{i}\in R_{2}(a,v)}\left(y_{i}-c_{2}\right)^{2}\right]
+$$  
+
+其中， $R_{1}(a,v)=\{{\pmb x}|{\pmb x}\in D^{a\leq v}\},R_{2}(a,v)=\{{\pmb x}|{\pmb x}\in D^{a>v}\}$ ， $c_{1}$ 和 $c_{2}$ 分别为集合 $R_{1}(a,v)$ 和 $R_{2}(a,v)$ 中的样本 $\pmb{x}_{i}$ 对应的输出值 $y_{i}$ 的均值，也即  
+
+$$
+c_{1}=\operatorname{ave}(y_{i}|x\in R_{1}(a,v))={\frac{1}{|R_{1}(a,v)|}}\sum_{x_{i}\in R_{1}(a,v)}y_{i}
+$$  
+
+$$
+c_{2}=\mathrm{ave}(y_{i}|x\in R_{2}(a,v))=\frac{1}{|R_{2}(a,v)|}\sum_{x_{i}\in R_{2}(a,v)}y_{i}
+$$  
+
+• 遍历所有属性，找到最优划分属性 $a^{*}$ ，然后根据 $a^{*}$ 的最优划分点 $v^{*}$ 将特征空间划分为两个子空间，接着对每个子空间重复上述步骤，直至满足停止条件。这样就生成了一颗CART 回归树，假设最终将特征空间被划分为了 $M$ 个子空间 $R_{1},R_{2},...,R_{M}$ ，那么CART 回归树的模型公式可以表示为  
+
+$$
+f(\pmb{x})=\sum_{m=1}^{M}c_{m}\mathbb{I}(\pmb{x}\in R_{m})
+$$  
+
+同理，其中的 $c_{m}$ 表示的也是集合 $R_{m}$ 中的样本 $\mathbf{\Delta}x_{i}$ 对应的输出值 $y_{i}$ 的均值。此公式直观上的理解就是，对于一个给定的样本 $\pmb{x}_{i}$ ，首先判断其属于哪个子空间，然后将其所属的子空间对应的输出值作为该样本的预测值 $y_{i}$ 。  
+
+# 参考文献  
+
+[1] 李航. 统计学习方法. 清华大学出版社, 2012.  
+
+# 第5 章 神经网络  
+
+# 公式(5.2)  
+
+$$
+\Delta w_{i}=\eta(y-\hat{y})x_{i}
+$$  
+
+[解析]：此公式是感知机学习算法中的参数更新公式，下面依次给出感知机模型、学习策略和学习算法的具体介绍[1]：  
+
+# 感知机模型  
+
+已知感知机由两层神经元组成，故感知机模型的公式可表示为  
+
+$$
+y=f(\sum_{i=1}^{n}w_{i}x_{i}-\theta)=f(w^{\mathrm{T}}x-\theta)
+$$  
+
+其中， $\pmb{x}\in\mathbb{R}^{n}$ 为样本的特征向量，是感知机模型的输入； ${\pmb w},{\pmb\theta}$ 是感知机模型的参数， $\pmb{w}\in\mathbb{R}^{n}$ 为权重， $\theta$ 为阈值。上式中的 $f$ 通常设为符号函数，那么感知机模型的公式可进一步表示为  
+
+$$
+y=\operatorname{sign}(\boldsymbol{\mathbf{{w}}}^{\mathrm{{T}}}\boldsymbol{\mathbf{{x}}}-\boldsymbol{\theta})=\left\{\begin{array}{l l}{1,}&{\boldsymbol{\mathbf{{w}}}^{\mathrm{{T}}}\boldsymbol{\mathbf{{x}}}-\boldsymbol{\theta}\ge0}\\ {0,}&{\boldsymbol{\mathbf{{w}}}^{\mathrm{{T}}}\boldsymbol{\mathbf{{x}}}-\boldsymbol{\theta}<0}\end{array}\right.
+$$  
+
+由于 $n$ 维空间中的超平面方程为  
+
+$$
+w_{1}x_{1}+w_{2}x_{2}+\cdot\cdot\cdot+w_{n}x_{n}+b={\pmb w}^{\mathrm{T}}{\pmb x}+b=0
+$$  
+
+所以此时感知机模型公式中的 ${\pmb w}^{\mathrm{T}}{\pmb x}-{\boldsymbol\theta}$ 可以看作是 $n$ 维空间中的一个超平面，通过它将 $n$ 维空间划分为${\pmb w}^{\mathrm{T}}{\pmb x}-{\pmb\theta}\geq0$ 和 ${\pmb w}^{\mathrm{T}}{\pmb x}-{\pmb\theta}<0$ 两个子空间，落在前一个子空间的样本对应的模型输出值为1，落在后一个子空间的样本对应的模型输出值为0，以此来实现分类功能。  
+
+# 感知机学习策略  
+
+给定一个线性可分的数据集 $T$ （参见附录 $\textcircled{\scriptsize{1}}$ ），感知机的学习目标是求得能对数据集 $T$ 中的正负样本完全正确划分的分离超平面：  
+
+$$
+{\pmb w}^{\mathrm{T}}{\pmb x}-{\pmb\theta}=0
+$$  
+
+假设此时误分类样本集合为 $M\subseteq T$ ，对任意一个误分类样本 $(x,y)\in M$ 来说，当 ${\pmb w}^{\mathrm{T}}{\pmb x}-{\pmb\theta}\geq0$ 时，模型输出值为 $\hat{y}=1$ ，样本真实标记为 $y=0$ ；反之，当 ${\pmb w}^{\mathrm{T}}{\pmb x}-{\pmb\theta}<0$ 时，模型输出值为 $\hat{y}=0$ ，样本真实标记为 $y=1$ 。综合两种情形可知，以下公式恒成立  
+
+$$
+(\hat{y}-y)(\pmb{w}^{\mathrm{T}}\pmb{x}-\theta)\geq0
+$$  
+
+所以，给定数据集 $T$ ，其损失函数可以定义为：  
+
+$$
+L(\pmb{w},\theta)=\sum_{\pmb{x}\in M}(\hat{y}-y)(\pmb{w}^{\mathrm{T}}\pmb{x}-\theta)
+$$  
+
+显然，此损失函数是非负的。如果没有误分类点，损失函数值是0。而且，误分类点越少，误分类点离超平面越近，损失函数值就越小。因此，给定数据集 $T$ ，损失函数 $L({\pmb w},\theta)$ 是关于 ${\pmb w},{\pmb\theta}$ 的连续可导函数。  
+
+# 感知机学习算法  
+
+感知机模型的学习问题可以转化为求解损失函数的最优化问题，具体地，给定数据集  
+
+$$
+T=\{(\pmb{x}_{1},y_{1}),(\pmb{x}_{2},y_{2}),\ldots,(\pmb{x}_{N},y_{N})\}
+$$  
+
+其中 $\pmb{x}_{i}\in\mathbb{R}^{n},y_{i}\in\{0,1\}$ ，求参数 ${\pmb w},{\pmb\theta}$ ，使其为极小化损失函数的解：  
+
+$$
+\operatorname*{min}_{\pmb{w},\pmb{\theta}}L(\pmb{w},\pmb{\theta})=\operatorname*{min}_{\pmb{w},\pmb{\theta}}\sum_{\pmb{x}_{i}\in M}(\hat{y}_{i}-\pmb{y}_{i})(\pmb{w}^{\mathrm{T}}\pmb{x}_{i}-\pmb{\theta})
+$$  
+
+其中 $M\subseteq T$ 为误分类样本集合。若将阈值 $\theta$ 看作一个固定输入为 $-1$ 的“哑节点”，即  
+
+$$
+-\theta=-1\cdot w_{n+1}=x_{n+1}\cdot w_{n+1}
+$$  
+
+那么 ${\pmb w}^{\mathrm{T}}{\pmb x}_{i}-{\boldsymbol\theta}$ 可化简为  
+
+$$
+\begin{array}{r l}&{\pmb{w}^{\mathrm{T}}\pmb{x}_{i}-\pmb{\theta}=\displaystyle\sum_{j=1}^{n}w_{j}\pmb{x}_{j}+\pmb{x}_{n+1}\cdot\pmb{w}_{n+1}}\\ &{\qquad\qquad=\displaystyle\sum_{j=1}^{n+1}w_{j}x_{j}}\\ &{\qquad\qquad=\pmb{w}^{\mathrm{T}}\pmb{x}_{i}}\end{array}
+$$  
+
+其中 $\pmb{x}_{i}\in\mathbb{R}^{n+1},\pmb{w}\in\mathbb{R}^{n+1}$ 。根据该式，可将要求解的极小化问题进一步简化为  
+
+$$
+\operatorname*{min}_{\pmb{w}}L(\pmb{w})=\operatorname*{min}_{\pmb{w}}\sum_{\pmb{x}_{i}\in M}(\hat{y}_{i}-y_{i})\pmb{w}^{\mathrm{T}}\pmb{x}_{i}
+$$  
+
+假设误分类样本集合 $M$ 固定，那么可以求得损失函数 $L(w)$ 的梯度为：  
+
+$$
+\nabla_{w}L(\pmb{w})=\sum_{\pmb{x}_{i}\in M}(\hat{y}_{i}-y_{i})\pmb{x}_{i}
+$$  
+
+感知机的学习算法具体采用的是随机梯度下降法，也就是极小化过程中不是一次使 $M$ 中所有误分类点的梯度下降，而是一次随机选取一个误分类点使其梯度下降。所以权重 $\mathbf{\nabla}w$ 的更新公式为  
+
+$$
+\pmb{w}\leftarrow\pmb{w}+\Delta\pmb{w}
+$$  
+
+$$
+\Delta{\pmb w}=-\eta({\hat{y}}_{i}-y_{i}){\pmb x}_{i}=\eta(y_{i}-{\hat{y}}_{i}){\pmb x}_{i}
+$$  
+
+相应地， $\mathbf{\nabla}w$ 中的某个分量 $w_{i}$ 的更新公式即为公式(5.2)。  
+
+# 公式(5.10)  
+
+$$
+\begin{array}{l}{\displaystyle g_{j}=-\frac{\partial E_{k}}{\partial\hat{y}_{j}^{k}}\cdot\frac{\partial\hat{y}_{j}^{k}}{\partial\beta_{j}}}\\ {\displaystyle\quad=-(\hat{y}_{j}^{k}-y_{j}^{k})f^{\prime}(\beta_{j}-\theta_{j})}\\ {\displaystyle\quad=\hat{y}_{j}^{k}(1-\hat{y}_{j}^{k})(y_{j}^{k}-\hat{y}_{j}^{k})}\end{array}
+$$  
+
+[推导]：参见公式(5.12)  
+
+# 公式(5.12)  
+
+[推导]：因为  
+
+$$
+\Delta\theta_{j}=-\eta g_{j}
+$$  
+
+$$
+\Delta\theta_{j}=-\eta\frac{\partial E_{k}}{\partial\theta_{j}}
+$$  
+
+又  
+
+$$
+\begin{array}{r l}{E_{\eta}}&{=\frac{\partial E_{\eta}}{\partial\eta},}\\ &{=\theta_{i}^{*},}\\ &{=\frac{\partial E_{\eta}}{\partial\eta},\frac{\partial E_{\eta}(1-\theta_{i})}{\partial\eta},}\\ &{=\frac{\partial E_{\eta}}{\partial\eta},\frac{\partial E_{\eta}(1-\theta_{i})}{\partial\eta},}\\ &{=\frac{\partial E_{\eta}}{\partial\eta},\frac{\partial E_{\eta}(1-\theta_{i})\times(1-\eta)}{\partial\eta},}\\ &{=\frac{\partial E_{\eta}}{\partial\eta},\frac{\partial E_{\eta}(1-\theta_{i})\times(1-\eta)}{\partial\eta},}\\ &{=\frac{\partial E_{\eta}\tilde{E}_{\eta}(1-\theta_{i})\times(1-\eta)}{\partial\eta},}\\ &{=\frac{\partial E_{\eta}\tilde{E}_{\eta}(1-\theta_{i})\times(1-\eta)}{\partial\eta},}\\ &{=-\frac{\partial E_{\eta}\tilde{E}_{\eta}(1-\theta_{i})}{\partial\eta},\frac{\partial E_{\eta}^{2}(1-\eta)}{\partial\eta},}\\ &{=\frac{1-\eta^{2}}{\partial\eta},}\\ &{=\frac{\rho_{\eta}(1-\theta_{i})\times(1-\eta)}{\rho\eta},}\end{array}
+$$  
+
+所以  
+
+$$
+\Delta\theta_{j}=-\eta\frac{\partial E_{k}}{\partial\theta_{j}}=-\eta g_{j}
+$$  
+
+公式(5.13)  
+
+[推导]：因为  
+
+$$
+\Delta v_{i h}=\eta e_{h}x_{i}
+$$  
+
+$$
+\Delta v_{i h}=-\eta\frac{\partial E_{k}}{\partial v_{i h}}
+$$  
+
+又  
+
+$$
+\begin{array}{r l}{\frac{d}{d t_{n}}=}&{\frac{1}{\displaystyle\int_{\mathbb{R}_{n}}}\rho\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial\tilde{\mathbf{x}}_{e}}{\partial z_{e}}~\frac{\partial\tilde{\mathbf{x}}_{e}}{\partial y_{e}}~\frac{\partial\tilde{\mathbf{x}}_{e}}{\partial z_{e}}}\\ {\frac{\partial}{\partial t_{n}}=}&{\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial z_{e}}~\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial z_{e}}}\\ {-\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial z_{e}}}&{\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial z_{e}}}\\ {-\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial y_{e}}~\rho(\alpha_{e}-\alpha_{e})=}\\ {-\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial y_{e}}~\frac{\partial L_{e_{1}}}{\partial y_{e}}~\rho(\alpha_{e}-\alpha_{e})}\\ {-\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial z_{e}}~\frac{\partial L_{e_{1}}}{\partial y_{e}}~\rho(\alpha_{e}-\alpha_{e})}\\ {-\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial y_{e}}~\rho(\alpha_{e}-\alpha_{e})}\\ {=}&{-r(\alpha_{e}-\alpha_{e})\cdot\frac{1}{\displaystyle\int_{0}}\frac{\partial L_{e_{1}}}{\partial y_{e}}~\alpha_{e}}\\ {=}&{-b((1-b_{1})\cdot\sum_{a_{1}=1}^{B}~\rho_{(a_{1}
+$$  
+
+所以  
+
+$$
+\Delta v_{i h}=-\eta\frac{\partial E_{k}}{\partial v_{i h}}=\eta e_{h}x_{i}
+$$  
+
+公式(5.14)  
+
+$$
+\Delta\gamma_{h}=-\eta e_{h}
+$$  
+
+[推导]：因为  
+
+$$
+\Delta\gamma_{h}=-\eta\frac{\partial E_{k}}{\partial\gamma_{h}}
+$$  
+
+又  
+
+$$
+\begin{array}{r l}{\frac{\partial E_{k}}{\partial\gamma_{k}}=}&{\!\!\frac{l}{\gamma-1}\frac{\partial E_{k}}{\partial l}\frac{\partial E_{k}}{\partial l^{2}}\frac{\partial\hat{\beta}_{k}^{2}}{\partial b_{k}}\frac{\partial\hat{\beta}_{l}}{\partial b_{k}}\frac{\partial\hat{\beta}_{l}}{\partial r_{k}}\,}\\ &{\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!
+$$  
+
+所以  
+
+$$
+\Delta\gamma_{h}=-\eta\frac{\partial E_{k}}{\partial\gamma_{h}}=-\eta e_{h}
+$$  
+
+# 公式(5.15)  
+
+$$
+\begin{array}{l l r}{\displaystyle e_{h}=-\frac{\partial E_{k}}{\partial b_{h}}\cdot\frac{\partial b_{h}}{\partial\alpha_{h}}}&\\ {\displaystyle}&{\displaystyle=-\sum_{j=1}^{l}\frac{\partial E_{k}}{\partial\beta_{j}}\cdot\frac{\partial\beta_{j}}{\partial b_{h}}f^{\prime}(\alpha_{h}-\gamma_{h})}&\\ {\displaystyle}&{\displaystyle=\sum_{j=1}^{l}w_{h j}g_{j}f^{\prime}(\alpha_{h}-\gamma_{h})}&\\ &{\displaystyle=b_{h}(1-b_{h})\sum_{j=1}^{l}w_{h j}g_{j}}&\end{array}
+$$  
+
+[推导]：参见公式(5.13)  
+
+# 公式(5.20)  
+
+$$
+E(\pmb{s})=-\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}w_{i j}s_{i}s_{j}-\sum_{i=1}^{n}\theta_{i}s_{i}
+$$  
+
+[解析]：Boltzmann 机本质上是一个引入了隐变量的无向图模型，无向图的能量可理解为  
+
+$$
+E_{g r a p h}=E_{e d g e s}+E_{n o d e s}
+$$  
+
+其中， $E_{g r a p h}$ 表示图的能量， $E_{e d g e s}$ 表示图中边的能量， $E_{n o d e s}$ 表示图中结点的能量；边能量由两连接结点的值及其权重的乘积确定： $E_{e d g e_{i j}}=-w_{i j}s_{i}s_{j}$ ，结点能量由结点的值及其阈值的乘积确定： $E_{n o d e_{i}}=-\theta_{i}s_{i}$ ；图中边的能量为图中所有边能量之和  
+
+$$
+E_{e d g e s}=\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}E_{e d g e_{i j}}=-\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}w_{i j}s_{i}s_{j}
+$$  
+
+图中结点的能量为图中所有结点能量之和  
+
+$$
+E_{n o d e s}=\sum_{i=1}^{n}E_{n o d e_{i}}=-\sum_{i=1}^{n}\theta_{i}s_{i}
+$$  
+
+故状态向量 $\pmb{s}$ 所对应的Boltzmann 机能量为  
+
+$$
+E_{g r a p h}=E_{e d g e s}+E_{n o d e s}=-\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}w_{i j}s_{i}s_{j}-\sum_{i=1}^{n}\theta_{i}s_{i}
+$$  
+
+# 公式(5.22)  
+
+$$
+P(\pmb{v}|\pmb{h})=\prod_{i=1}^{d}P(v_{i}\,|\,\pmb{h})
+$$  
+
+[解析]：受限Boltzmann 机仅保留显层与隐层之间的连接，显层的状态向量为 $\pmb{v}$ ，隐层的状态向量为 $^h$ 。  
+
+$$
+\boldsymbol{v}=\left[\begin{array}{c}{v_{1}}\\ {v_{2}}\\ {\vdots}\\ {v_{d}}\end{array}\right]\qquad\boldsymbol{h}=\left[\begin{array}{c}{h_{1}}\\ {h_{2}}\\ {\vdots}\\ {h_{q}}\end{array}\right]
+$$  
+
+对于显层状态向量 $\pmb{v}$ 中的变量 $v_{i}$ ，其仅与隐层状态向量 $^h$ 有关，所以给定隐层状态向量 $^h$ ， $v_{1},v_{2},...,v_{d}$ 相互独立。  
+
+# 公式(5.23)  
+
+$$
+P(\pmb{h}|\pmb{v})=\prod_{j=1}^{q}P(h_{i}\,|\,\pmb{v})
+$$  
+
+[解析]：由公式5.22 的解析同理可得：给定显层状态向量 ${\pmb v}\,,\,\,\,h_{1},h_{2},\cdots\,,h_{q}$ 相互独立。  
+
+# 公式(5.24)  
+
+$$
+\Delta w=\eta({\boldsymbol{v}}h^{\mathrm{T}}-{\boldsymbol{v}}^{\prime}h^{\mathrm{Tilde{T}}})
+$$  
+
+[推导]：由公式(5.20) 可推导出受限Boltzmann 机（以下简称RBM）的能量函数为：  
+
+$$
+\begin{array}{r l}&{{\displaystyle E({\boldsymbol{v}},{\boldsymbol{h}})=-\sum_{i=1}^{d}\sum_{j=1}^{q}w_{i j}v_{i}h_{j}-\sum_{i=1}^{d}\alpha_{i}v_{i}-\sum_{j=1}^{q}\beta_{j}h_{j}}}\\ &{{\displaystyle=-h^{\mathrm{T}}\mathbf{W}{\boldsymbol{v}}-\alpha^{\mathrm{T}}{\boldsymbol{v}}-\beta^{\mathrm{T}}{\boldsymbol{h}}}}\end{array}
+$$  
+
+其中  
+
+$$
+\mathbf{W}=\left[\begin{array}{l}{\mathbf{\omega}_{1}}\\ {\mathbf{\omega}_{2}}\\ {\vdots}\\ {\mathbf{\omega}_{q}}\end{array}\right]\in\mathbb{R}^{q\ast d}
+$$  
+
+再由公式(5.21) 可知，RBM 的联合概率分布为  
+
+$$
+P(v,h)=\frac{1}{Z}e^{-E(v,h)}
+$$  
+
+其中 $Z$ 为规范化因子  
+
+$$
+Z=\sum_{v,h}e^{-E(v,h)}
+$$  
+
+给定含 $m$ 个独立同分布数据的数据集 $V=\{\pmb{v}_{1},\pmb{v}_{2},\cdot\cdot\cdot,\pmb{v}_{m}\}$ ，记 $\mathbf{\theta}\mathbf{\theta}=\left\{\mathbf{W},\alpha,\beta\right\}$ ，学习RBM 的策略是求出参数 $\pmb{\theta}$ 的值，使得如下对数似然函数最大化  
+
+$$
+\begin{array}{l}{\displaystyle{\cal L}(\pmb\theta)=\ln\left(\prod_{k=1}^{m}P(v_{k})\right)}\\ {\displaystyle=\sum_{k=1}^{m}\ln P(v_{k})}\\ {\displaystyle=\sum_{k=1}^{m}L_{k}(\pmb\theta)}\end{array}
+$$  
+
+具体采用的是梯度上升法来求解参数 $\pmb{\theta}$ ，因此，下面来考虑求对数似然函数 $L(\theta)$ 的梯度。对于 $V$ 中的任意一个样本 $\pmb{v}_{k}$ 来说，其 $L_{k}(\pmb\theta)$ 的具体形式为  
+
+$$
+\begin{array}{r l}&{L_{k}(\theta)=\ln P(v_{k})}\\ &{\qquad=\ln\left(\displaystyle\sum_{h}P(v_{k},h)\right)}\\ &{\qquad=\ln\left(\displaystyle\sum_{h}\frac{1}{Z}e^{-E(v_{k},h)}\right)}\\ &{\qquad=\ln\left(\displaystyle\sum_{h}e^{-E(v_{k},h)}\right)-\ln Z}\\ &{\qquad=\ln\left(\displaystyle\sum_{h}e^{-E(v_{k},h)}\right)-\ln\left(\displaystyle\sum_{v,h}e^{-E(v,h)}\right)}\end{array}
+$$  
+
+对 $L_{k}(\pmb\theta)$ 进行求导  
+
+$$
+{\begin{array}{r l}&{{\frac{\partial L_{k}(\theta)}{\partial\theta}}={\frac{\partial}{\partial\theta}}\left[\ln\sum_{h}e^{-E(v_{k},h)}\right]-{\frac{\partial}{\partial\theta}}\left[\ln\sum_{v,h}e^{-E(v,h)}\right]}\\ &{\qquad\qquad=-{\frac{\sum_{h}e^{-E(v_{k},h)}{\frac{\partial E(v_{k},h)}{\partial\theta}}}{\sum_{h}e^{-E(v_{k},h)}}}+{\frac{\sum_{v,h}e^{-E(v,h)}{\frac{\partial E(v,h)}{\partial\theta}}}{\sum_{v,h}e^{-E(v,h)}}}}\\ &{\qquad\qquad=-\sum_{h}{\frac{e^{-E(v_{k},h)}{\frac{\partial E(v_{k},h)}{\partial\theta}}}{\sum_{h}e^{-E(v_{k},h)}}}+\sum_{v,h}{\frac{e^{-E(v,h)}{\frac{\partial E(v,h)}{\partial\theta}}}{\sum_{v,h}e^{-E(v,h)}}}}\end{array}}
+$$  
+
+由于  
+
+$$
+\frac{e^{-E(v_{k},h)}}{\sum_{h}e^{-E(v_{k},h)}}=\frac{\frac{e^{-E(v_{k},h)}}{Z}}{\frac{\sum_{h}e^{-E(v_{k},h)}}{Z}}=\frac{\frac{e^{-E(v_{k},h)}}{Z}}{\sum_{h}\frac{e^{-E(v_{k},h)}}{Z}}=\frac{P(v_{k},h)}{\sum_{h}P(v_{k},h)}=P(h|v_{k})
+$$  
+
+$$
+{\frac{e^{-E(v,h)}}{\sum_{v,h}e^{-E(v,h)}}}={\frac{\frac{e^{-E(v,h)}}{Z}}{\frac{\sum_{v,h}e^{-E(v,h)}}{Z}}}={\frac{\frac{e^{-E(v,h)}}{Z}}{\sum_{v,h}{\frac{e^{-E(v,h)}}{Z}}}}={\frac{P(v,h)}{\sum_{v,h}P(v,h)}}=P(v,h)
+$$  
+
+故  
+
+$$
+{\begin{array}{r l}&{{\cfrac{\partial L_{k}(\pmb{\theta})}{\partial\pmb{\theta}}}=-\sum_{h}P(h|v_{k}){\cfrac{\partial E(v_{k},h)}{\partial\pmb{\theta}}}+\sum_{v,h}P(v,h){\cfrac{\partial E(v,h)}{\partial\pmb{\theta}}}}\\ &{\qquad\qquad=-\sum_{h}P(h|v_{k}){\cfrac{\partial E(v_{k},h)}{\partial\pmb{\theta}}}+\sum_{v}\sum_{h}P(v)P(h|v){\cfrac{\partial E(v,h)}{\partial\pmb{\theta}}}}\\ &{\qquad\qquad=-\sum_{h}P(h|v_{k}){\cfrac{\partial E(v_{k},h)}{\partial\pmb{\theta}}}+\sum_{v}P(v)\sum_{h}P(h|v){\cfrac{\partial E(v,h)}{\partial\pmb{\theta}}}}\end{array}}
+$$  
+
+由于 $\theta=\{\mathbf{W},\alpha,\beta\}$ 包含三个参数，在这里我们仅以W 中的任意一个分量 $w_{i j}$ 为例进行详细推导。首先将上式中的 $\pmb{\theta}$ 替换为 $w_{i j}$ 可得  
+
+$$
+{\frac{\partial L_{k}(\pmb\theta)}{\partial w_{i j}}}=-\sum_{h}{P(h|v_{k}){\frac{\partial E(v_{k},h)}{\partial w_{i j}}}}+\sum_{v}{P(v)\sum_{h}{P(h|v){\frac{\partial E(v,h)}{\partial w_{i j}}}}}
+$$  
+
+根据公式(5.23) 可知  
+
+$$
+\begin{array}{r l}&{\underset{=}{\sum}P(h)\|\rho\underset{=0}{\overset{\partial}{\prod}}(e),}\\ &{=-\underset{k}{\sum}P(h)\|\rho_{k^{\prime}},}\\ &{=-\underset{k}{\sum}\Bigg[\underset{i=1}{\overset{\partial}{\prod}}\big(p_{i}|\nu_{i}\big)_{i},}\\ &{=-\underset{k}{\sum}P(h)\big)\underset{=0}{\overset{\partial}{\prod}}\big(P(h)\big)h,}\\ &{=-\underset{k}{\sum}P(h)\big)\underset{=1}{\overset{\partial}{\prod}}\big(P(h)\big)h\,\underset{=0}{\sum}}\\ &{=-\underset{k}{\sum}P(h)\big)P(h_{1},\ldots,h_{k-1},\ldots,h_{k}|\nu_{i})\lambda_{i},}\\ &{=-\underset{k}{\sum}P(h)\|\rho_{k^{\prime}}\|_{\partial\Omega_{k-1},\ldots,h_{k-1},\ldots,h_{k}}\,\hat{P}(h_{1},\ldots,h_{k-1},h_{k+1},\ldots,h_{k}|\nu)}\\ &{=-\underset{k}{\sum}P(h)\|\rho_{k^{\prime}}\|_{\partial\Omega_{k},\mathcal{V}_{k-1},\ldots,\mathcal{V}_{k}}\,\hat{P}(h_{1},\ldots,h_{k-1},h_{k+1},\ldots,h_{k}|\nu)}\\ &{=-\underset{k}{\sum}P(h_{1}|\rho_{k})\|\lambda_{i},}\\ &{=-\underset{k}{\sum}P(h_{i}=0|\nu_{i})\,,}\end{array}
+$$  
+
+同理可推得  
+
+$$
+\sum_{h}P(h|v_{k})\frac{\partial E(v_{k},h)}{\partial w_{i j}}=-P(h_{i}=1|v_{k})v_{j}^{k}
+$$  
+
+将以上两式代回 ∂Lk(θ)中可得  
+
+$$
+\frac{\partial L_{k}(\pmb\theta)}{\partial w_{i j}}=P(h_{i}=1|\pmb{v}_{k})\pmb{v}_{j}^{k}-\sum_{\pmb{v}}P(\pmb{v})P(h_{i}=1|\pmb{v})\pmb{v}_{j}
+$$  
+
+观察此式可知，通过枚举所有可能的 $\pmb{v}$ 来计算 $\begin{array}{r}{\sum_{v}P(v)P(h_{i}=1|v)v_{j}}\end{array}$ 的复杂度太高，因此可以考虑求其近似值来简化计算。具体地，RBM 通常采用的是西瓜书上所说的“对比散度”（Contrastive Divergence，简称CD）算法。CD 算法的核心思想[2] 是：用步长为 $s$ （通常设为1）的CD 算法  
+
+$$
+C D_{s}(\pmb\theta,\pmb v)=-\sum_{h}P(h|\pmb v^{(0)})\frac{\partial E(\pmb v^{(0)},h)}{\partial\pmb\theta}+\sum_{h}P(h|\pmb v^{(s)})\frac{\partial E(\pmb v^{(s)},h)}{\partial\pmb\theta}
+$$  
+
+近似代替  
+
+$$
+{\frac{\partial L_{k}(\theta)}{\partial\theta}}=-\sum_{h}{P(h|v_{k}){\frac{\partial E(v_{k},h)}{\partial\theta}}}+\sum_{v}{P(v)\sum_{h}{P(h|v){\frac{\partial E(v,h)}{\partial\theta}}}}
+$$  
+
+由此可知对于 $w_{i j}$ 来说，就是用  
+
+$$
+\begin{array}{r}{C D_{s}(w_{i j},\pmb{v})=P(h_{i}=1|\pmb{v}^{(0)})v_{j}^{(0)}-P(h_{i}=1|\pmb{v}^{(s)})v_{j}^{(s)}}\end{array}
+$$  
+
+近似代替  
+
+$$
+\frac{\partial L_{k}(\pmb\theta)}{\partial w_{i j}}=P(h_{i}=1|\pmb{v}_{k})\pmb{v}_{j}^{k}-\sum_{\pmb{v}}P(\pmb{v})P(h_{i}=1|\pmb{v})\pmb{v}_{j}
+$$  
+
+$\begin{array}{r}{\Delta w_{i j}\;:=\;\frac{\partial L_{k}(\pmb\theta)}{\partial w_{i j}}}\end{array}$ ， $R B M(\pmb\theta)$ 表示参数为 $\pmb{\theta}$ 的RBM 网络，则 $C D_{s}(w_{i j},\pmb{v})$ 的具体算法为Algorithm1。其中函数 $h_{-}$ _given_ ${\boldsymbol v}({\boldsymbol v},R B M(\pmb{\theta}))$ 表示在给定 $\pmb{v}$ 的条件下，从 $R B M(\pmb\theta)$ 中采样生成 $^h$ ，同理，函数v_given_ $h(\pmb{h},R B M(\pmb{\theta}))$ 表示在给定 $^h$ 的条件下，从 $R B M(\pmb\theta)$ 中采样生成 $\pmb{v}$ 。由于两个函数的算法可以互相类比推得，因此，下面仅给出函数 $h\_g i v e n\_v(\pmb{v},R B M(\pmb{\theta}))$ 的具体算法Algorithm 2。综上可知，公式(5.24) 其实就是带有学习率为 $\eta$ 的 $\Delta w_{i j}$ 的一种形式化的表示。  
+
+Algorithm 1 $C D_{s}(w_{i j},\pmb{v})$  
+
+输入: $s,V=\{v_{1},v_{2},\cdot\cdot\cdot,v_{m}\},R B M(\pmb\theta)$  
+
+1: 初始化： $\Delta w_{i j}=0$   
+2: for $\pmb{v}\in V$ do  
+3: ${\pmb v}^{(0)}:={\pmb v}$   
+4: for $t=1,2,...,s-1$ do  
+5: $\begin{array}{r l}&{\pmb{h}^{(t)}=h\textunderscore g i v e n\textunderscore v(\pmb{v}^{(t)},R B M(\pmb{\theta}))}\\ &{\pmb{v}^{(t+1)}=v\textunderscore g i v e n\textunderscore h(\pmb{h}^{(t)},R B M(\pmb{\theta}))}\end{array}$   
+6:  
+7: for $i=1,2,...,q;j=1,2,...,d$ do  
+8: $\Delta w_{i j}=\Delta w_{i j}+\Big[P(h_{i}=1|v^{(0)})v_{j}^{(0)}-P(h_{i}=1|v^{(s)})v_{j}^{(s)}\Big]$  
+
+输出: $\Delta w_{i j}$  
+
+Algorithm 2 h_given_ $v(\pmb{v},R B M(\pmb{\theta}))$  
+
+输入: ${\pmb v},R B M({\pmb\theta})$  
+
+# 过程:  
+
+1: for $i=1,2,...,q$ do  
+
+2: 随机生成 $0\leq\alpha_{i}\leq1$   
+3: $h_{j}={\left\{\begin{array}{l l}{1,}&{{\mathrm{~if~}}\alpha_{i}<P(h_{i}=1|v)}\\ {0,}&{{\mathrm{~otherwise}}}\end{array}\right.}$  
+
+输出: $\pmb{h}=(h_{1},h_{2},...,h_{q})^{\mathrm{T}}$  
+
+附录  
+
+$\boldsymbol{\Phi}$ 数据集的线性可分[1]  
+
+给定一个数据集  
+
+$$
+T=\{(\pmb{x}_{1},y_{1}),(\pmb{x}_{2},y_{2}),...,(\pmb{x}_{N},y_{N})\}
+$$  
+
+其中， $\pmb{x}_{i}\in\mathbb{R}^{n},y_{i}\in\{0,1\},i=1,2,...,N$ ，如果存在某个超平面  
+
+$$
+{\pmb w}^{\mathrm{T}}{\pmb x}+{\pmb b}=0
+$$  
+
+能将数据集 $T$ 中的正样本和负样本完全正确地划分到超平面两侧，即对所有 $y_{i}=1$ 的样本 $\mathbf{\Delta}x_{i}$ ，有 ${\pmb w}^{\mathrm{T}}{\pmb x}_{i}+$ $b\geq0$ ，对所有 $y_{i}=0$ 的样本 $\pmb{x}_{i}$ ，有 ${\pmb w}^{\mathrm{T}}{\pmb x}_{i}+b<0$ ，则称数据集 $T$ 线性可分，否则称数据集 $T$ 线性不可分。  
+
+# 参考文献  
+
+[1] 李航. 统计学习方法. 清华大学出版社, 2012.  
+
+[2] 皮果提. 受限玻尔兹曼机（rbm）学习笔记（六）对比散度算法, 2014. URL: https://blog.csdn.net/ itplus/article/details/19408143.  
+
+# 第6 章 支持向量机  
+
+# 公式(6.9)  
+
+$$
+\pmb{w}=\sum_{i=1}^{m}\alpha_{i}y_{i}\pmb{x}_{i}
+$$  
+
+[推导]：公式(6.8) 可作如下展开  
+
+$$
+\begin{array}{l}{{\displaystyle{\cal L}({\boldsymbol w},{\boldsymbol b},{\boldsymbol\alpha})=\frac{1}{2}||{\boldsymbol w}||^{2}+\sum_{i=1}^{m}\alpha_{i}(1-y_{i}({\boldsymbol w}^{T}{\boldsymbol x}_{i}+{\boldsymbol b}))}}\\ {~~}\\ {{\displaystyle~=\frac{1}{2}||{\boldsymbol w}||^{2}+\sum_{i=1}^{m}(\alpha_{i}-\alpha_{i}y_{i}{\boldsymbol w}^{T}{\boldsymbol x}_{i}-\alpha_{i}y_{i}{\boldsymbol b})}}\\ {~~}\\ {{\displaystyle~=\frac{1}{2}{\boldsymbol w}^{T}{\boldsymbol w}+\sum_{i=1}^{m}\alpha_{i}-\sum_{i=1}^{m}\alpha_{i}y_{i}{\boldsymbol w}^{T}{\boldsymbol x}_{i}-\sum_{i=1}^{m}\alpha_{i}y_{i}{\boldsymbol b}}}\end{array}
+$$  
+
+对 $\mathbf{\nabla}w$ 和 $b$ 分别求偏导数 并令其等于0  
+
+$$
+{\frac{\partial L}{\partial{\pmb w}}}={\frac{1}{2}}\times2\times{\pmb w}+0-\sum_{i=1}^{m}\alpha_{i}y_{i}{\pmb x}_{i}-0=0\Longrightarrow{\pmb w}=\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}
+$$  
+
+$$
+{\frac{\partial L}{\partial b}}=0+0-0-\sum_{i=1}^{m}\alpha_{i}y_{i}=0\Longrightarrow\sum_{i=1}^{m}\alpha_{i}y_{i}=0
+$$  
+
+值得一提的是，上述求解过程遵循的是西瓜书附录B 中公式(B.7) 左边的那段话“在推导对偶问题时，常通过将拉格朗日函数 $L(\pmb{x},\lambda,\pmb{\mu})$ 对 $\textbf{\em x}$ 求导并令导数为0，来获得对偶函数的表达形式”。那么这段话背后的缘由是啥呢？在这里我认为有两种说法可以进行解释：  
+
+1. 对于强对偶性成立的优化问题，其主问题的最优解 $x^{*}$ 一定满足附录 $\textcircled{\scriptsize{1}}$ 给出的KKT 条件（证明参见参考文献[2] 的 $\S\ 5.5)$ ），而KKT 条件中的条件(1) 就要求最优解 $x^{*}$ 能使得拉格朗日函数 $L(\pmb{x},\lambda,\mu)$ 关于 $\mathbfcal{x}$ 的一阶导数等于0；  
+
+2. 对于任意优化问题，若拉格朗日函数 $L(\pmb{x},\lambda,\mu)$ 是关于 $\textbf{\em x}$ 的凸函数，那么此时对 $L(\pmb{x},\lambda,\mu)$ 关于$\mathbfcal{x}$ 求导并令导数等于0 解出来的点一定是最小值点。根据对偶函数的定义可知，将最小值点代回$L(\pmb{x},\lambda,\pmb{\mu})$ 即可得到对偶函数。  
+
+显然，对于SVM 来说，从以上任意一种说法都能解释得通。  
+
+# 公式(6.10)  
+
+$$
+0=\sum_{i=1}^{m}\alpha_{i}y_{i}
+$$  
+
+[解析]：参见公式(6.9)  
+
+公式(6.11)  
+
+$$
+\begin{array}{r l}&{\displaystyle\operatorname*{max}_{\boldsymbol{\alpha}}\sum_{i=1}^{m}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}y_{i}y_{j}x_{i}^{T}\mathbf{x}_{j}}\\ &{\mathrm{~s.t.~}\displaystyle\sum_{i=1}^{m}\alpha_{i}y_{i}=0}\end{array}
+$$  
+
+$$
+\alpha_{i}\geq0\quad i=1,2,\ldots,m
+$$  
+
+[推导]：将公式(6.9) 和公式(6.10) 代入公式(6.8) 即可将 $L({\boldsymbol{w}},{\boldsymbol{b}},{\boldsymbol{\alpha}})$ 中的 $\mathbf{\nabla}w$ 和 $b$ 消去，再考虑公式(6.10)的约束，就得到了公式(6.6) 的对偶问题  
+
+$$
+\begin{array}{l}{{\displaystyle\operatorname*{inf}_{w,b}L({\pmb w},b,{\pmb\alpha})=\frac{1}{2}{\pmb w}^{T}{\pmb w}+\sum_{i=1}^{m}\alpha_{i}-\sum_{i=1}^{m}\alpha_{i}y_{i}{\pmb w}^{T}{\pmb x}_{i}-\sum_{i=1}^{m}\alpha_{i}y_{i}b}}\\ {{\displaystyle=\frac{1}{2}{\pmb w}^{T}\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}-{\pmb w}^{T}\sum_{i=1}^{m}\alpha_{i}y_{i}{\pmb x}_{i}+\sum_{i=1}^{m}\alpha_{i}-b\sum_{i=1}^{m}\alpha_{i}y_{i}}}\\ {{\displaystyle=-\frac{1}{2}{\pmb w}^{T}\sum_{i=1}^{m}\alpha_{i}y_{i}\pmb x_{i}+\sum_{i=1}^{m}\alpha_{i}-b\sum_{i=1}^{m}\alpha_{i}y_{i}}}\end{array}
+$$  
+
+由于 $\sum_{i=1}^{m}\alpha_{i}y_{i}=0$ ，所以上式最后一项可化为0，于是得  
+
+$$
+\begin{array}{l l}{\displaystyle\operatorname*{inf}_{w,b}L(w,b,\alpha)=-\frac{1}{2}w^{T}\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}+\sum_{i=1}^{m}\alpha_{i}}\\ {\displaystyle}&{=-\frac{1}{2}(\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i})^{T}\binom{m}{i=1}\alpha_{i}y_{i}x_{i})+\sum_{i=1}^{m}\alpha_{i}}\\ {\displaystyle}&{=-\frac{1}{2}\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}^{T}\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}+\sum_{i=1}^{m}\alpha_{i}}\\ {\displaystyle}&{=\sum_{i=1}^{m}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{m}\alpha_{i}\alpha_{j}y_{i}y_{j}x_{i}^{T}x_{j}}\end{array}
+$$  
+
+所以  
+
+$$
+\operatorname*{max}_{{\boldsymbol{\alpha}}}\operatorname*{inf}_{w,b}L({\boldsymbol{w}},{\boldsymbol{b}},{\boldsymbol{\alpha}})=\operatorname*{max}_{{\boldsymbol{\alpha}}}\sum_{i=1}^{m}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}y_{i}y_{j}\pmb{x}_{i}^{T}\pmb{x}_{j}
+$$  
+
+公式(6.13)  
+
+$$
+\left\{\begin{array}{l l}{\alpha_{i}\geqslant0}\\ {y_{i}f\left(\pmb{x}_{i}\right)-1\geqslant0}\\ {\alpha_{i}\left(y_{i}f\left(\pmb{x}_{i}\right)-1\right)=0}\end{array}\right.
+$$  
+
+[解析]：参见公式(6.9) 中给出的第1 点理由  
+
+# 公式(6.35)  
+
+$$
+\operatorname*{min}_{\pmb{w},b,\xi_{i}}\frac{1}{2}\|\pmb{w}\|^{2}+C\sum_{i=1}^{m}\xi_{i}
+$$  
+
+$y_{i}\left(\pmb{w}^{\mathrm{T}}\pmb{x}_{i}+b\right)\geqslant1-\xi_{i}$  
+
+$$
+\xi_{i}\geqslant0,i=1,2,\ldots,m
+$$  
+
+[解析]：令  
+
+$$
+\operatorname*{max}\left(0,1-y_{i}\left(\boldsymbol{w}^{\mathrm{T}}\boldsymbol{x}_{i}+b\right)\right)=\xi_{i}
+$$  
+
+显然 $\xi_{i}\geq0$ ，而且当 $1-y_{i}\left({\pmb w}^{\mathrm{T}}{\pmb x}_{i}+b\right)>0$ 时  
+
+$$
+1-y_{i}\left(\pmb{w}^{\mathrm{T}}\pmb{x}_{i}+b\right)=\xi_{i}
+$$  
+
+当 $1-y_{i}\left({\pmb w}^{\mathrm{T}}{\pmb x}_{i}+b\right)\leq0$ 时  
+
+$$
+\xi_{i}=0
+$$  
+
+所以综上可得  
+
+$$
+1-y_{i}\left(\boldsymbol{w}^{\mathrm{T}}\boldsymbol{x}_{i}+b\right)\leq\xi_{i}\Rightarrow y_{i}\left(\boldsymbol{w}^{\mathrm{T}}\boldsymbol{x}_{i}+b\right)\geqslant1-\xi_{i}
+$$  
+
+公式(6.37)  
+
+$$
+\pmb{w}=\sum_{i=1}^{m}\alpha_{i}y_{i}\pmb{x}_{i}
+$$  
+
+[解析]：参见公式(6.9)  
+
+公式(6.38)  
+
+$$
+0=\sum_{i=1}^{m}\alpha_{i}y_{i}
+$$  
+
+[解析]：参见公式(6.10)  
+
+# 公式(6.39)  
+
+$$
+C=\alpha_{i}+\mu_{i}
+$$  
+
+[推导]：公式(6.36) 关于 $\xi_{i}$ 求偏导并令其等于0 可得：  
+
+$$
+\frac{\partial L}{\partial\xi_{i}}=0+C\times1-\alpha_{i}\times1-\mu_{i}\times1=0\Longrightarrow C=\alpha_{i}+\mu_{i}
+$$  
+
+公式(6.40)  
+
+$$
+\begin{array}{r l}&{\displaystyle\operatorname*{max}_{\boldsymbol{\alpha}}\sum_{i=1}^{m}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}y_{i}y_{j}x_{i}^{T}x_{j}}\\ &{\displaystyle\qquad\sum_{i=1}^{m}\alpha_{i}y_{i}=0}\end{array}
+$$  
+
+$$
+0\leq\alpha_{i}\leq C\quad i=1,2,\dots,m
+$$  
+
+将公式(6.37)-(6.39) 代入公式(6.36) 可以得到公式(6.35) 的对偶问题：  
+
+$$
+\begin{array}{r l}&{\quad\displaystyle\frac{1}{2}\|w\|^{2}+C\displaystyle\sum_{i=1}^{m}\xi_{i}+\displaystyle\sum_{i=1}^{m}\alpha_{i}(1-\xi_{i}-y_{i}(w^{T}x_{i}+b))-\displaystyle\sum_{i=1}^{m}\mu_{i}\xi_{i}}\\ &{=\displaystyle\frac{1}{2}\|w\|^{2}+\displaystyle\sum_{i=1}^{m}\alpha_{i}(1-y_{i}(w^{T}x_{i}+b))+C\displaystyle\sum_{i=1}^{m}\xi_{i}-\displaystyle\sum_{i=1}^{m}\alpha_{i}\xi_{i}-\displaystyle\sum_{i=1}^{m}\mu_{i}\xi_{i}}\\ &{=-\displaystyle\frac{1}{2}\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}^{\frac{m}{i}}\displaystyle\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}+\displaystyle\sum_{i=1}^{m}\alpha_{i}+\displaystyle\sum_{i=1}^{m}C\xi_{i}-\displaystyle\sum_{i=1}^{m}\alpha_{i}\xi_{i}}\\ &{=-\displaystyle\frac{1}{2}\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}^{\frac{m}{i}}\displaystyle\sum_{i=1}^{m}\alpha_{i}y_{i}x_{i}+\displaystyle\sum_{i=1}^{m}\alpha_{i}+\displaystyle\sum_{i=1}^{m}(C-\alpha_{i}-\mu_{i})\xi_{i}}\\ &{=\displaystyle\sum_{i=1}^{m}\alpha_{i}-\displaystyle\frac{1}{2}\displaystyle\sum_{i=1}^{m}\alpha_{i}\alpha_{i}y_{i}y_{i}x_{i}^{\frac{m}{i}}\displaystyle\sum_{i=1}^{m}\alpha_{i}}\\ &{=\displaystyle\operatorname*{min}_{i=1}^{m}L(w,b,\alpha,\xi,\mu)}\end{array}
+$$  
+
+所以  
+
+$$
+\begin{array}{r}{\displaystyle\operatorname*{max}_{\alpha,\mu}\displaystyle\operatorname*{min}_{w,b,\xi}{L}({\pmb w},b,\alpha,\xi,\mu)=\displaystyle\operatorname*{max}_{\alpha,\mu}\sum_{i=1}^{m}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}y_{i}y_{j}x_{i}^{T}x_{j}}\\ {\displaystyle=\operatorname*{max}_{\alpha}\sum_{i=1}^{m}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}y_{i}y_{j}x_{i}^{T}x_{j}}\end{array}
+$$  
+
+又  
+
+$$
+\begin{array}{l}{\alpha_{i}\geq0}\\ {\ \ \ \mu_{i}\geq0}\\ {\,\,\,C=\alpha_{i}+\mu_{i}}\end{array}
+$$  
+
+消去 $\mu_{i}$ 可得等价约束条件为：  
+
+$$
+0\leq\alpha_{i}\leq C\quad i=1,2,\dots,m
+$$  
+
+公式(6.41)  
+
+$$
+\left\{\begin{array}{l}{{\alpha_{i}\geqslant0,\quad\mu_{i}\geqslant0}}\\ {{y_{i}f\left({x_{i}}\right)-1+\xi_{i}\geqslant0}}\\ {{\alpha_{i}\left(y_{i}f\left({x_{i}}\right)-1+\xi_{i}\right)=0}}\\ {{\xi_{i}\geqslant0,\mu_{i}\xi_{i}=0}}\end{array}\right.
+$$  
+
+[解析]：参见公式(6.13)  
+
+# 公式(6.52)  
+
+$$
+\left\{\begin{array}{l}{\alpha_{i}\left(f\left(\pmb{x}_{i}\right)-y_{i}-\epsilon-\xi_{i}\right)=0}\\ {\hat{\alpha}_{i}\left(y_{i}-f\left(\pmb{x}_{i}\right)-\epsilon-\hat{\xi}_{i}\right)=0}\\ {\alpha_{i}\hat{\alpha}_{i}=0,\xi_{i}\hat{\xi}_{i}=0}\\ {\left(C-\alpha_{i}\right)\xi_{i}=0,\left(C-\hat{\alpha}_{i}\right)\hat{\xi}_{i}=0}\end{array}\right.
+$$  
+
+[推导]：将公式(6.45) 的约束条件全部恒等变形为小于等于0 的形式可得：  
+
+$$
+\left\{\begin{array}{l l}{f\left(\pmb{x}_{i}\right)-y_{i}-\epsilon-\xi_{i}\leq0}\\ {y_{i}-f\left(\pmb{x}_{i}\right)-\epsilon-\hat{\xi}_{i}\leq0}\\ {-\xi_{i}\leq0}\\ {-\hat{\xi}_{i}\leq0}\end{array}\right.
+$$  
+
+由于以上四个约束条件的拉格朗日乘子分别为 $\alpha_{i},\hat{\alpha}_{i},\mu_{i},\hat{\mu}_{i}$ ，所以由附录 $\textcircled{\scriptsize{1}}$ 可知，以上四个约束条件可相应转化为以下KKT 条件：  
+
+$$
+\left\{\begin{array}{l l}{\alpha_{i}\left(f\left(\pmb{x}_{i}\right)-y_{i}-\epsilon-\xi_{i}\right)=0}\\ {\hat{\alpha}_{i}\left(y_{i}-f\left(\pmb{x}_{i}\right)-\epsilon-\hat{\xi}_{i}\right)=0}\\ {-\mu_{i}\xi_{i}=0\Rightarrow\mu_{i}\xi_{i}=0}\\ {-\hat{\mu}_{i}\hat{\xi}_{i}=0\Rightarrow\hat{\mu}_{i}\hat{\xi}_{i}=0}\end{array}\right.
+$$  
+
+由公式(6.49) 和公式(6.50) 可知：  
+
+$$
+\begin{array}{r}{\mu_{i}=C-\alpha_{i}}\\ {\hat{\mu}_{i}=C-\hat{\alpha}_{i}}\end{array}
+$$  
+
+所以上述KKT 条件可以进一步变形为：  
+
+$$
+\left\{\begin{array}{l l}{\alpha_{i}\left(f\left(\pmb{x}_{i}\right)-y_{i}-\epsilon-\xi_{i}\right)=0}\\ {\hat{\alpha}_{i}\left(y_{i}-f\left(\pmb{x}_{i}\right)-\epsilon-\hat{\xi}_{i}\right)=0}\\ {(C-\alpha_{i})\xi_{i}=0}\\ {(C-\hat{\alpha}_{i})\hat{\xi}_{i}=0}\end{array}\right.
+$$  
+
+又因为样本 $({\pmb x}_{i},y_{i})$ 只可能处在间隔带的某一侧，那么约束条件 $f\left({\pmb x}_{i}\right)-y_{i}\!-\!\epsilon\!-\!\xi_{i}=0$ 和 $y_{i}-f\left(\mathbf{\boldsymbol{x}}_{i}\right)-\epsilon-\hat{\xi}_{i}=$ 0 不可能同时成立，所以 $\alpha_{i}$ 和 ${\hat{\alpha}}_{i}$ 中至少有一个为0，也即 $\alpha_{i}\hat{\alpha}_{i}=0$ 。在此基础上再进一步分析可知，如果 $\alpha_{i}=0$ 的话，那么根据约束 $(C-\alpha_{i})\xi_{i}=0$ 可知此时 $\xi_{i}=0$ ，同理，如果 $\hat{\alpha}_{i}=0$ 的话，那么根据约束$(C-\hat{\alpha}_{i})\hat{\xi}_{i}=0$ 可知此时 $\hat{\xi}_{i}=0$ ，所以 $\xi_{i}$ 和 $\hat{\xi}_{i}$ 中也是至少有一个为0，也即 $\xi_{i}\hat{\xi}_{i}=0$ 。将 $\alpha_{i}\hat{\alpha}_{i}=0,\xi_{i}\hat{\xi}_{i}=0$ 整合进上述KKT 条件中即可得到公式(6.52)。  
+
+# 公式(6.60)  
+
+$$
+\operatorname*{max}_{\pmb{w}}J(\pmb{w})=\frac{\pmb{w}^{\mathrm{T}}\mathbf{S}_{b}^{\phi}\pmb{w}}{\pmb{w}^{\mathrm{T}}\mathbf{S}_{w}^{\phi}\pmb{w}}
+$$  
+
+[解析]：类似于第3 章的公式(3.35)。  
+
+# 公式(6.62)  
+
+$$
+\mathbf{S}_{b}^{\phi}=\left(\pmb{\mu}_{1}^{\phi}-\pmb{\mu}_{0}^{\phi}\right)\left(\pmb{\mu}_{1}^{\phi}-\pmb{\mu}_{0}^{\phi}\right)^{\mathrm{T}}
+$$  
+
+[解析]：类似于第3 章的公式(3.34)。  
+
+# 公式(6.63)  
+
+$$
+\mathbf{S}_{w}^{\phi}=\sum_{i=0}^{1}\sum_{x\in X_{i}}\left(\phi(\pmb{x})-\pmb{\mu}_{i}^{\phi}\right)\left(\phi(\pmb{x})-\pmb{\mu}_{i}^{\phi}\right)^{\mathrm{T}}
+$$  
+
+[解析]：类似于第3 章的公式(3.33)。  
+
+# 公式(6.65)  
+
+$$
+\pmb{w}=\sum_{i=1}^{m}\alpha_{i}\phi\left(\pmb{x}_{i}\right)
+$$  
+
+[推导]：由表示定理可知，此时二分类KLDA 最终求得的投影直线方程总可以写成如下形式  
+
+$$
+h(\pmb{x})=\sum_{i=1}^{m}\alpha_{i}\kappa\left(\pmb{x},\pmb{x}_{i}\right)
+$$  
+
+又因为直线方程的固定形式为  
+
+$$
+h({\pmb x})={\pmb w}^{\mathrm{T}}\phi({\pmb x})
+$$  
+
+所以  
+
+$$
+{\pmb w}^{\mathrm{T}}\phi({\pmb x})=\sum_{i=1}^{m}\alpha_{i}\kappa\left({\pmb x},{\pmb x}_{i}\right)
+$$  
+
+将 $\kappa\left(\pmb{x},\pmb{x}_{i}\right)=\phi(\pmb{x})^{\mathrm{T}}\phi(\pmb{x}_{i})$ 代入可得  
+
+$$
+\pmb{w}^{\mathrm{T}}\phi(\pmb{x})=\sum_{i=1}^{m}\alpha_{i}\phi(\pmb{x})^{\mathrm{T}}\phi(\pmb{x}_{i})
+$$  
+
+$$
+\pmb{w}^{\mathrm{T}}\phi(\pmb{x})=\phi(\pmb{x})^{\mathrm{T}}\cdot\sum_{i=1}^{m}\alpha_{i}\phi(\pmb{x}_{i})
+$$  
+
+由于 ${\pmb w}^{\mathrm{T}}\phi({\pmb x})$ 的计算结果为标量，而标量的转置等于其本身，所以  
+
+$$
+\pmb{w}^{\mathrm{T}}\phi(\pmb{x})=\left(\pmb{w}^{\mathrm{T}}\phi(\pmb{x})\right)^{\mathrm{T}}=\phi(\pmb{x})^{\mathrm{T}}\cdot\sum_{i=1}^{m}\alpha_{i}\phi(\pmb{x}_{i})
+$$  
+
+$$
+\pmb{w}^{\mathrm{T}}\phi(\pmb{x})=\phi(\pmb{x})^{\mathrm{T}}\pmb{w}=\phi(\pmb{x})^{\mathrm{T}}\cdot\sum_{i=1}^{m}\alpha_{i}\phi(\pmb{x}_{i})
+$$  
+
+$$
+{\pmb w}=\sum_{i=1}^{m}\alpha_{i}\phi({\pmb x}_{i})
+$$  
+
+# 公式(6.66)  
+
+$$
+\hat{\pmb{\mu}}_{0}=\frac{1}{m_{0}}{\bf K}{\bf1}_{0}
+$$  
+
+[解析]：为了详细地说明此公式的计算原理，下面首先先举例说明，然后再在例子的基础上延展出其一般形式。假设此时仅有4 个样本，其中第1 和第3 个样本的标记为0，第2 和第4 个样本的标记为1，那么此时：  
+
+$$
+m=4
+$$  
+
+$$
+m_{0}=2,m_{1}=2
+$$  
+
+$$
+X_{0}=\{{\pmb x}_{1},{\pmb x}_{3}\},X_{1}=\{{\pmb x}_{2},{\pmb x}_{4}\}
+$$  
+
+$$
+\mathbf{K}=\left[{\begin{array}{c c c c}{\kappa\left(x_{1},x_{1}\right)}&{\kappa\left(x_{1},x_{2}\right)}&{\kappa\left(x_{1},x_{3}\right)}&{\kappa\left(x_{1},x_{4}\right)}\\ {\kappa\left(x_{2},x_{1}\right)}&{\kappa\left(x_{2},x_{2}\right)}&{\kappa\left(x_{2},x_{3}\right)}&{\kappa\left(x_{2},x_{4}\right)}\\ {\kappa\left(x_{3},x_{1}\right)}&{\kappa\left(x_{3},x_{2}\right)}&{\kappa\left(x_{3},x_{3}\right)}&{\kappa\left(x_{3},x_{4}\right)}\\ {\kappa\left(x_{4},x_{1}\right)}&{\kappa\left(x_{4},x_{2}\right)}&{\kappa\left(x_{4},x_{3}\right)}&{\kappa\left(x_{4},x_{4}\right)}\end{array}}\right]\in\mathbb{R}^{4\times4}
+$$  
+
+$$
+\mathbf{1}_{0}={\left[\begin{array}{l}{1}\\ {0}\\ {1}\\ {0}\end{array}\right]}\in\mathbb{R}^{4\times1}
+$$  
+
+$$
+\mathbf{1}_{1}=\left[\begin{array}{l}{0}\\ {1}\\ {0}\\ {1}\end{array}\right]\in\mathbb{R}^{4\times1}
+$$  
+
+所以  
+
+$$
+\hat{\pmb{\mu}}_{0}=\frac{1}{m_{0}}\mathbf{K}\mathbf{1}_{0}=\frac{1}{2}\left[\begin{array}{l}{\kappa\left(\pmb{x}_{1},\pmb{x}_{1}\right)+\kappa\left(\pmb{x}_{1},\pmb{x}_{3}\right)}\\ {\kappa\left(\pmb{x}_{2},\pmb{x}_{1}\right)+\kappa\left(\pmb{x}_{2},\pmb{x}_{3}\right)}\\ {\kappa\left(\pmb{x}_{3},\pmb{x}_{1}\right)+\kappa\left(\pmb{x}_{3},\pmb{x}_{3}\right)}\\ {\kappa\left(\pmb{x}_{4},\pmb{x}_{1}\right)+\kappa\left(\pmb{x}_{4},\pmb{x}_{3}\right)}\end{array}\right]\in\mathbb{R}^{4\times1}
+$$  
+
+$$
+\hat{\pmb{\mu}}_{1}=\frac{1}{m_{1}}\mathbf{K}\mathbf{1}_{1}=\frac{1}{2}\left[\begin{array}{l}{\kappa\left(\pmb{x}_{1},\pmb{x}_{2}\right)+\kappa\left(\pmb{x}_{1},\pmb{x}_{4}\right)}\\ {\kappa\left(\pmb{x}_{2},\pmb{x}_{2}\right)+\kappa\left(\pmb{x}_{2},\pmb{x}_{4}\right)}\\ {\kappa\left(\pmb{x}_{3},\pmb{x}_{2}\right)+\kappa\left(\pmb{x}_{3},\pmb{x}_{4}\right)}\\ {\kappa\left(\pmb{x}_{4},\pmb{x}_{2}\right)+\kappa\left(\pmb{x}_{4},\pmb{x}_{4}\right)}\end{array}\right]\in\mathbb{R}^{4\times1}
+$$  
+
+根据此结果易得 $\hat{\pmb{\mu}}_{0},\hat{\pmb{\mu}}_{1}$ 的一般形式为  
+
+$$
+\hat{\boldsymbol{\mu}}_{0}=\frac{1}{m_{0}}\mathbf{K}\mathbf{1}_{0}=\frac{1}{m_{0}}\left[\begin{array}{c}{\sum_{x\in X_{0}}\kappa\left(\boldsymbol{x}_{1},\boldsymbol{x}\right)}\\ {\sum_{x\in X_{0}}\kappa\left(\boldsymbol{x}_{2},\boldsymbol{x}\right)}\\ {\vdots}\\ {\sum_{x\in X_{0}}\kappa\left(\boldsymbol{x}_{m},\boldsymbol{x}\right)}\end{array}\right]\in\mathbb{R}^{m\times1}
+$$  
+
+$$
+\hat{\mu}_{1}=\frac{1}{m_{1}}\mathbf{K}\mathbf{1}_{1}=\frac{1}{m_{1}}\left[\begin{array}{c}{\sum_{x\in X_{1}}\kappa\left(x_{1},x\right)}\\ {\sum_{x\in X_{1}}\kappa\left(x_{2},x\right)}\\ {\vdots}\\ {\sum_{x\in X_{1}}\kappa\left(x_{m},x\right)}\end{array}\right]\in\mathbb{R}^{m\times1}
+$$  
+
+公式(6.67)  
+
+$$
+\hat{\pmb{\mu}}_{1}=\frac{1}{m_{1}}{\bf K}{\bf1}_{1}
+$$  
+
+[解析]：参见公式(6.66) 的解析。  
+
+# 公式(6.70)  
+
+$$
+\operatorname*{max}_{\alpha}J(\alpha)=\frac{\alpha^{\mathrm{T}}\mathbf{M}\alpha}{\alpha^{\mathrm{T}}\mathbf{N}\alpha}
+$$  
+
+[推导]：此公式是将公式(6.65) 代入公式(6.60) 后推得而来的，下面给出详细地推导过程。首先将公式(6.65) 代入公式(6.60) 的分子可得：  
+
+$$
+\begin{array}{c}{{{\displaystyle w^{\mathrm{T}}{\bf S}_{b}^{\phi}w=\left(\sum_{i=1}^{m}\alpha_{i}\phi\left({\pmb x}_{i}\right)\right)^{\mathrm{T}}\cdot{\bf S}_{b}^{\phi}\cdot\sum_{i=1}^{m}\alpha_{i}\phi\left({\pmb x}_{i}\right)}}}\\ {{{\displaystyle=\sum_{i=1}^{m}\alpha_{i}\phi\left({\pmb x}_{i}\right)^{\mathrm{T}}\cdot{\bf S}_{b}^{\phi}\cdot\sum_{i=1}^{m}\alpha_{i}\phi\left({\pmb x}_{i}\right)}}}\end{array}
+$$  
+
+其中  
+
+$$
+\begin{array}{l}{{\displaystyle{\bf S}_{b}^{\phi}=\left(\mu_{1}^{\phi}-\mu_{0}^{\phi}\right)\left(\mu_{1}^{\phi}-\mu_{0}^{\phi}\right)^{\mathrm{T}}}}\\ {{\displaystyle\quad=\left(\frac{1}{m_{1}}\sum_{x\in X_{1}}\phi(x)-\frac{1}{m_{0}}\sum_{x\in X_{0}}\phi(x)\right)\left(\frac{1}{m_{1}}\sum_{x\in X_{1}}\phi(x)-\frac{1}{m_{0}}\sum_{x\in X_{0}}\phi(x)\right)^{\mathrm{T}}}}\\ {{\displaystyle\quad=\left(\frac{1}{m_{1}}\sum_{x\in X_{1}}\phi(x)-\frac{1}{m_{0}}\sum_{x\in X_{0}}\phi(x)\right)\left(\frac{1}{m_{1}}\sum_{x\in X_{1}}\phi(x)^{\mathrm{T}}-\frac{1}{m_{0}}\sum_{x\in X_{0}}\phi(x)^{\mathrm{T}}\right)}}\end{array}
+$$  
+
+将其代入上式可得  
+
+$$
+\begin{array}{l}{\displaystyle{\psi_{b}^{\phi}w=\sum_{i=1}^{m}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}\cdot\left(\frac{1}{m_{1}}\sum_{\alpha\in X_{1}}\phi(x)-\frac{1}{m_{0}}\sum_{\alpha\in X_{0}}\phi(x)\right)\cdot\left(\frac{1}{m_{1}}\sum_{\alpha\in X_{1}}\phi(x)^{\mathrm{T}}-\frac{1}{m_{0}}\sum_{\alpha\in X_{0}}\phi(x)^{\mathrm{T}}\right)}\ }\\ {\displaystyle{\qquad=\left(\frac{1}{m_{1}}\sum_{\alpha\in X_{1}}\sum_{i=1}^{m}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}\phi(x)-\frac{1}{m_{0}}\sum_{\alpha\in X_{0}}\sum_{i=1}^{m}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}\phi(x)\right)}\ }\\ {\displaystyle{\qquad\cdot\left(\frac{1}{m_{1}}\sum_{\alpha\in X_{1}}\sum_{i=1}^{m}\alpha_{i}\phi(x)^{\mathrm{T}}\phi\left(x_{i}\right)-\frac{1}{m_{0}}\sum_{\alpha\in X_{0}}\sum_{i=1}^{m}\alpha_{i}\phi(x)^{\mathrm{T}}\phi\left(x_{i}\right)\right)}\ }\end{array}
+$$  
+
+由于 $\kappa\left(\pmb{x}_{i},\pmb{x}\right)=\phi(\pmb{x}_{i})^{\mathrm{T}}\phi(\pmb{x})$ 为标量，所以其转置等于本身，也即 $\kappa\left(\pmb{x}_{i},\pmb{x}\right)=\phi(\pmb{x}_{i})^{\mathrm{T}}\phi(\pmb{x})=\left(\phi(\pmb{x}_{i})^{\mathrm{T}}\phi(\pmb{x})\right)^{\mathrm{T}}=$ $\phi(\pmb{x})^{\mathrm{T}}\phi(\pmb{x}_{i})=\kappa\left(\pmb{x}_{i},\pmb{x}\right)^{\mathrm{T}}$ ，将其代入上式可得  
+
+$$
+\begin{array}{r}{\displaystyle w^{\mathrm{T}}\mathbf{S}_{b}^{\phi}w=\left(\frac{1}{m_{1}}\sum_{i=1}^{m}\sum_{\boldsymbol{x}\in X_{1}}\alpha_{i}\kappa\left(\boldsymbol{x}_{i},\boldsymbol{x}\right)-\frac{1}{m_{0}}\sum_{i=1}^{m}\sum_{\boldsymbol{x}\in X_{0}}\alpha_{i}\kappa\left(\boldsymbol{x}_{i},\boldsymbol{x}\right)\right)\quad}\\ {\displaystyle\cdot\left(\frac{1}{m_{1}}\sum_{i=1}^{m}\sum_{\boldsymbol{x}\in X_{1}}\alpha_{i}\kappa\left(\boldsymbol{x}_{i},\boldsymbol{x}\right)-\frac{1}{m_{0}}\sum_{i=1}^{m}\sum_{\boldsymbol{x}\in X_{0}}\alpha_{i}\kappa\left(\boldsymbol{x}_{i},\boldsymbol{x}\right)\right)}\end{array}
+$$  
+
+令 $\pmb{\alpha}=(\alpha_{1};\alpha_{2};...;\alpha_{m})^{\mathrm{T}}\in\mathbb{R}^{m\times1}$ ，同时结合公式(6.66) 的解析中得到的 $\hat{\pmb{\mu}}_{0},\hat{\pmb{\mu}}_{1}$ 的一般形式，上式可以化简为  
+
+$$
+\begin{array}{r l}&{w^{\mathrm{T}}\mathbf{S}_{b}^{\phi}w=\left({\alpha^{\mathrm{T}}}\hat{\mu}_{1}-{\alpha^{\mathrm{T}}}\hat{\mu}_{0}\right)\cdot\left(\hat{\mu}_{1}^{\mathrm{T}}\boldsymbol{\alpha}-\hat{\mu}_{0}^{\mathrm{T}}\boldsymbol{\alpha}\right)}\\ &{\quad\quad\quad={\alpha^{\mathrm{T}}}\cdot\left(\hat{\mu}_{1}-\hat{\mu}_{0}\right)\cdot\left(\hat{\mu}_{1}^{\mathrm{T}}-\hat{\mu}_{0}^{\mathrm{T}}\right)\cdot\boldsymbol{\alpha}}\\ &{\quad\quad\quad={\alpha^{\mathrm{T}}}\cdot\left(\hat{\mu}_{1}-\hat{\mu}_{0}\right)\cdot\left(\hat{\mu}_{1}-\hat{\mu}_{0}\right)^{\mathrm{T}}\cdot\boldsymbol{\alpha}}\\ &{\quad\quad\quad={\alpha^{\mathrm{T}}}\mathbf{M}\boldsymbol{\alpha}}\end{array}
+$$  
+
+以上便是公式(6.70) 分子部分的推导，下面继续推导公式(6.70) 的分母部分。将公式(6.65) 代入公式(6.60) 的分母可得：  
+
+$$
+\begin{array}{r}{\begin{array}{c}{{\boldsymbol{w}}^{\mathrm{T}}{\mathbf{S}}_{w}^{\phi}{\boldsymbol{w}}=\left(\displaystyle\sum_{i=1}^{m}\alpha_{i}\phi\left(\boldsymbol{x}_{i}\right)\right)^{\mathrm{T}}\cdot{\mathbf{S}}_{w}^{\phi}\cdot\displaystyle\sum_{i=1}^{m}\alpha_{i}\phi\left(\boldsymbol{x}_{i}\right)}\\ {=\displaystyle\sum_{i=1}^{m}\alpha_{i}\phi\left(\boldsymbol{x}_{i}\right)^{\mathrm{T}}\cdot{\mathbf{S}}_{w}^{\phi}\cdot\displaystyle\sum_{i=1}^{m}\alpha_{i}\phi\left(\boldsymbol{x}_{i}\right)}\end{array}}\end{array}
+$$  
+
+其中  
+
+$$
+\begin{array}{l}{{\displaystyle{\bf S}_{w}^{\phi}=\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\left(\phi({\bf x})-\mu_{i}^{\phi}\right)\left(\phi({\bf x})-\mu_{i}^{\phi}\right)^{\mathrm{T}}}\ ~}\\ {{\displaystyle~~~=\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\left(\phi({\bf x})-\mu_{i}^{\phi}\right)\left(\phi({\bf x})^{\mathrm{T}}-\left(\mu_{i}^{\phi}\right)^{\mathrm{T}}\right)}\ ~}\\ {{\displaystyle~~~=\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\left(\phi({\bf x})\phi({\bf x})^{\mathrm{T}}-\phi({\bf x})\left(\mu_{i}^{\phi}\right)^{\mathrm{T}}-\mu_{i}^{\phi}\phi({\bf x})^{\mathrm{T}}+\mu_{i}^{\phi}\left(\mu_{i}^{\phi}\right)^{\mathrm{T}}\right)}\ ~}\\ {{\displaystyle~~~=\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\phi({\bf x})\phi({\bf x})^{\mathrm{T}}-\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\phi({\bf x})\left(\mu_{i}^{\phi}\right)^{\mathrm{T}}-\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\mu_{i}^{\phi}\phi({\bf x})^{\mathrm{T}}+\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\mu_{i}^{\phi}\left(\mu_{i}^{\phi}\right)^{\mathrm{T}}}\ ~}\end{array}
+$$  
+
+由于  
+
+$$
+\begin{array}{c}{{\displaystyle\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\phi\big(x\big)\left(\mu_{i}^{\phi}\right)^{\mathrm{T}}=\sum_{\alpha\in X_{0}}\phi(x)\left(\mu_{0}^{\phi}\right)^{\mathrm{T}}+\displaystyle\sum_{\alpha\in X_{1}}\phi(x)\left(\mu_{1}^{\phi}\right)^{\mathrm{T}}}}\\ {{\displaystyle}}\\ {{\displaystyle}}\\ {{\displaystyle\sum_{i=0}^{1}\sum_{\alpha\in X_{i}}\mu_{i}^{\phi}\phi(x)^{\mathrm{T}}=\sum_{i=0}^{1}\mu_{i}^{\phi}\sum_{\alpha\in X_{i}}\phi(x)^{\mathrm{T}}}}\\ {{\displaystyle}}\\ {{\displaystyle}}\\ {{\displaystyle}}\\ {{\qquad=\mu_{0}^{\phi}\sum_{\alpha\in X_{0}}\phi(x)^{\mathrm{T}}+\mu_{1}^{\phi}\sum_{\alpha\in X_{1}}\phi(x)^{\mathrm{T}}}}\\ {{\displaystyle}}\\ {{\displaystyle}}\end{array}
+$$  
+
+所以  
+
+$$
+\begin{array}{l}{{{\bf S}_{w}^{\phi}=\displaystyle\sum_{x\in D}\phi(x)\phi(x)^{\mathrm{T}}-2\left[m_{0}\mu_{0}^{\phi}\left({\mu_{0}^{\phi}}\right)^{\mathrm{T}}+m_{1}\mu_{1}^{\phi}\left({\mu_{1}^{\phi}}\right)^{\mathrm{T}}\right]+m_{0}\mu_{0}^{\phi}\left({\mu_{0}^{\phi}}\right)^{\mathrm{T}}+m_{1}\mu_{1}^{\phi}\left({\mu_{1}^{\phi}}\right)^{\mathrm{T}}}}\\ {{\mathrm{\boldmath~\alpha~}=\displaystyle\sum_{x\in D}\phi(x)\phi(x)^{\mathrm{T}}-m_{0}\mu_{0}^{\phi}\left({\mu_{0}^{\phi}}\right)^{\mathrm{T}}-m_{1}\mu_{1}^{\phi}\left({\mu_{1}^{\phi}}\right)^{\mathrm{T}}}}\end{array}
+$$  
+
+再将此式代回 $w^{\mathrm{T}}\mathbf{S}_{b}^{\phi}w$ 可得  
+
+$$
+\begin{array}{l}{{{\displaystyle w^{\mathrm{T}}{\bf S}_{w}^{\phi}w=\sum_{i=1}^{m}\alpha_{i}\phi\left({\bf x}_{i}\right)^{\mathrm{T}}\cdot{\bf S}_{w}^{\phi}\cdot\sum_{i=1}^{m}\alpha_{i}\phi\left(x_{i}\right)}}\ ~}\\ {{\displaystyle~~~~~~~~=\sum_{i=1}^{m}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}\cdot\left(\sum_{\alpha\in D}\phi\left(x\right)\phi\left(x\right)^{\mathrm{T}}-m_{0}\mu_{0}^{\phi}\left(\mu_{0}^{\phi}\right)^{\mathrm{T}}-m_{1}\mu_{1}^{\phi}\left(\mu_{1}^{\phi}\right)^{\mathrm{T}}\right)\cdot\sum_{i=1}^{m}\alpha_{i}\phi\left(x_{i}\right)}}\\ {{\displaystyle~~~~~~~=\sum_{i=1}^{m}\sum_{j=1}^{m}\sum_{x\in D}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}\phi\left(x\right)\phi\left(x\right)^{\mathrm{T}}\alpha_{j}\phi\left(x_{j}\right)-\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}m_{0}\mu_{0}^{\phi}\left(\mu_{0}^{\phi}\right)^{\mathrm{T}}\alpha_{j}\phi\left(x_{j}\right)}}\\ {{\displaystyle~~~~~~~~~~-\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}m_{1}\mu_{1}^{\phi}\left(\mu_{1}^{\phi}\right)^{\mathrm{T}}\alpha_{j}\phi\left(x_{j}\right)}}\end{array}
+$$  
+
+其中，第1 项可化简为  
+
+$$
+\begin{array}{r l}{\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}\sum_{\pmb{x}\in D}\alpha_{i}\phi\left(\pmb{x}_{i}\right)^{\mathrm{T}}\phi(\pmb{x})\phi(\pmb{x})^{\mathrm{T}}\alpha_{j}\phi\left(\pmb{x}_{j}\right)=\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}\sum_{\pmb{x}\in D}\alpha_{i}\alpha_{j}\kappa\left(\pmb{x}_{i},\pmb{x}\right)\kappa\left(\pmb{x}_{j},\pmb{x}\right)}&{}\\ {=\alpha^{\mathrm{T}}\mathbf{K}\mathbf{K}^{\mathrm{T}}\alpha}&{}\end{array}
+$$  
+
+第2 项可化简为  
+
+$$
+\begin{array}{l}{\displaystyle\alpha_{i}\phi\left(x_{i}\right)^{\mathrm{T}}m_{0}\mu_{0}^{\phi}\left(\mu_{0}^{\phi}\right)^{\mathrm{T}}\alpha_{j}\phi\left(x_{j}\right)=m_{0}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}\phi\left(x_{i}\right)^{\mathrm{T}}\mu_{0}^{\phi}\left(\mu_{0}^{\phi}\right)^{\mathrm{T}}\phi\left(x_{j}\right)}\\ {\displaystyle=\mathstrut m_{0}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}\phi\left(x_{i}\right)^{\mathrm{T}}\left[\displaystyle\frac{1}{m_{0}}\sum_{\bf{x}\in X_{0}}\phi(x)\right]\left[\displaystyle\frac{1}{m_{0}}\sum_{\bf{x}\in X_{0}}\phi(x)\right]^{\mathrm{T}}\phi}\\ {\displaystyle=\mathstrut m_{0}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}\left[\displaystyle\frac{1}{m_{0}}\sum_{\bf{x}\in X_{0}}\phi\left(x\right)^{\mathrm{T}}\phi(x)\right]\left[\displaystyle\frac{1}{m_{0}}\sum_{\bf{x}\in X_{0}}\phi(x)^{\mathrm{T}}\phi\left(x\right)\right]}\\ {\displaystyle=m_{0}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\alpha_{j}\left[\displaystyle\frac{1}{m_{0}}\sum_{\bf{x}\in X_{0}}\kappa\left(x_{i},x\right)\right]\left[\displaystyle\frac{1}{m_{0}}\sum_{\bf{x}\in X_{0}}\kappa\left(x_{j},x\right)\right]}\\ {\displaystyle=m_{0}\alpha^{\mathrm{T}}\hat{\mu}_{0}\hat{\mu}_{0}^{\mathrm{T}}\alpha}\end{array}
+$$  
+
+同理可得，第3 项可化简为  
+
+$$
+\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_{i}\phi\left(\pmb{x}_{i}\right)^{\mathrm{T}}m_{1}\pmb{\mu}_{1}^{\phi}\left(\pmb{\mu}_{1}^{\phi}\right)^{\mathrm{T}}\alpha_{j}\phi\left(\pmb{x}_{j}\right)=m_{1}\pmb{\alpha}^{\mathrm{T}}\hat{\pmb{\mu}}_{1}\hat{\pmb{\mu}}_{1}^{\mathrm{T}}\pmb{\alpha}
+$$  
+
+将上述三项的化简结果代回再将此式代回 $w^{\mathrm{T}}\mathbf{S}_{b}^{\phi}w$ 可得  
+
+$$
+\begin{array}{r l}&{w^{\mathrm{T}}\mathbf{S}_{b}^{\phi}w=\alpha^{\mathrm{T}}\mathbf{K}\mathbf{K}^{\mathrm{T}}\alpha-m_{0}\alpha^{\mathrm{T}}\hat{\mu}_{0}\hat{\mu}_{0}^{\mathrm{T}}\alpha-m_{1}\alpha^{\mathrm{T}}\hat{\mu}_{1}\hat{\mu}_{1}^{\mathrm{T}}\alpha}\\ &{\quad\quad\quad\quad=\alpha^{\mathrm{T}}\cdot\left(\mathbf{K}\mathbf{K}^{\mathrm{T}}-m_{0}\hat{\mu}_{0}\hat{\mu}_{0}^{\mathrm{T}}-m_{1}\hat{\mu}_{1}\hat{\mu}_{1}^{\mathrm{T}}\right)\cdot\alpha}\\ &{\quad\quad\quad\quad=\alpha^{\mathrm{T}}\cdot\left(\mathbf{K}\mathbf{K}^{\mathrm{T}}-\displaystyle\sum_{i=0}^{1}m_{i}\hat{\mu}_{i}\hat{\mu}_{i}^{\mathrm{T}}\right)\cdot\alpha}\\ &{\quad\quad\quad=\alpha^{\mathrm{T}}\mathbf{N}\alpha}\end{array}
+$$  
+
+# 附录  
+
+# $\scriptstyle{\frac{\mathrm{{\textregistered}}}{\mathrm{{\textcentering}}}}\mathbf{K}\mathbf{K}\mathbf{T}$ 条件[3]  
+
+对于一般地约束优化问题  
+
+$$
+{\begin{array}{r l l}{\operatorname*{min}}&{f(\pmb{x})}\\ {{\mathrm{s.t.}}}&{g_{i}(\pmb{x})\leq0}&{(i=1,\ldots,m)}\\ &{h_{j}(\pmb{x})=0}&{(j=1,\ldots,n)}\end{array}}
+$$  
+
+其中，自变量 $\pmb{x}\in\mathbb{R}^{n}$ 。设 $f({\pmb x}),g_{i}({\pmb x}),h_{j}({\pmb x})$ 具有连续的一阶偏导数， $x^{*}$ 是优化问题的局部可行解。若该优化问题满足任意一个约束限制条件（constraint qualifications or regularity conditions）[1]，则一定存在$\pmb{\mu}^{*}=(\mu_{1}^{*},\mu_{2}^{*},...,\mu_{m}^{*})^{T},\pmb{\lambda}^{*}=(\lambda_{1}^{*},\lambda_{2}^{*},...,\lambda_{n}^{*})^{T}$ , 使得  
+
+$$
+\left\{\begin{array}{l l}{\displaystyle\nabla_{x}L({\pmb x}^{*},{\pmb\mu}^{*},{\pmb\lambda}^{*})=\nabla f({\pmb x}^{*})+\sum_{i=1}^{m}\mu_{i}^{*}\nabla g_{i}({\pmb x}^{*})+\sum_{j=1}^{n}\lambda_{j}^{*}\nabla h_{j}({\pmb x}^{*})=0}\\ {\displaystyle h_{j}({\pmb x}^{*})=0}\\ {g_{i}({\pmb x}^{*})\leq0}\\ {\displaystyle\mu_{i}^{*}\geq0}\\ {\displaystyle\mu_{i}^{*}g_{i}({\pmb x}^{*})=0}\end{array}\right.
+$$  
+
+其中 $L(x,\pmb{\mu},\lambda)$ 为拉格朗日函数  
+
+$$
+L({\pmb x},{\pmb\mu},{\pmb\lambda})=f({\pmb x})+\sum_{i=1}^{m}\mu_{i}g_{i}({\pmb x})+\sum_{j=1}^{n}\lambda_{j}h_{j}({\pmb x})
+$$  
+
+以上5 条即为KKT 条件，严格数学证明参见参考文献[3] 的 $\S\ 4.2.1$ 。  
+
+# 参考文献  
+
+[1] Wikipedia contributors. Karush–kuhn–tucker conditions, 2020. URL: https://en.wikipedia.org/ w/index.php?title $=$ Karush%E2%80%93Kuhn%E2%80%93Tucker_conditions&oldid $\equiv$ 936587706.  
+
+[2] 王书宁. 凸优化. 清华大学出版社, 2013.  
+[3] 王燕军. 最优化基础理论与方法. 复旦大学出版社, 2011.  
+
+# 第7 章 贝叶斯分类器  
+
+# 公式(7.5)  
+
+$$
+R(c|{\pmb x})=1{-}P(c|{\pmb x})
+$$  
+
+[推导]：由公式(7.1) 和公式(7.4) 可得：  
+
+$R(c_{i}|x)=1*P(c_{1}|x)+...+1*P(c_{i-1}|x)+0*P(c_{i}|x)+1*P(c_{i+1}|x)+...+1*P(c_{N}|x)$ 又 $\begin{array}{r}{\sum_{j=1}^{N}P(c_{j}|\pmb{x})=1}\end{array}$ ，则：  
+
+$$
+R(c_{i}|\pmb{x})=1-P(c_{i}|\pmb{x})
+$$  
+
+此即为公式(7.5）  
+
+# 公式(7.6)  
+
+$$
+h^{*}(\pmb{x})=\underset{\pmb{c}\in\mathcal{Y}}{\arg\operatorname*{max}}P(c|\pmb{x})
+$$  
+
+[推导]：将公式(7.5) 带入公式(7.3) 即可推得此式。  
+
+# 公式(7.12)  
+
+$$
+\hat{\pmb{\mu}}_{c}=\frac{1}{|D_{c}|}\sum_{\pmb{x}\in D_{c}}\pmb{x}
+$$  
+
+[推导]：参见公式(7.13)  
+
+# 公式(7.13)  
+
+$$
+\hat{\pmb{\sigma}}_{c}^{2}=\frac{1}{|D_{c}|}\sum_{{\pmb{x}}\in D_{c}}\left({\pmb{x}}-\hat{\pmb{\mu}}_{c}\right)\left({\pmb{x}}-\hat{\pmb{\mu}}_{c}\right)^{\mathrm{T}}
+$$  
+
+[推导]：根据公式(7.11) 和公式(7.10) 可知参数求解公式为  
+
+$$
+\begin{array}{l}{\displaystyle\hat{\pmb{\theta}}_{c}=\arg\operatorname*{max}_{\pmb{\theta}_{c}}L L\left(\pmb{\theta}_{c}\right)}\\ {\displaystyle\qquad=\arg\operatorname*{min}_{\pmb{\theta}_{c}}-L L\left(\pmb{\theta}_{c}\right)}\\ {\displaystyle\qquad=\arg\operatorname*{min}_{\pmb{\theta}_{c}}-\sum_{x\in D_{c}}\log P\left(\pmb{x}|\pmb{\theta}_{c}\right)}\end{array}
+$$  
+
+由西瓜书上下文可知，此时假设概率密度函数 $p(\mathbf{\boldsymbol{x}}|c)\sim\mathcal{N}\left(\pmb{\mu}_{c},\pmb{\sigma}_{c}^{2}\right)$ ，其等价于假设  
+
+$$
+P\left(x|\theta_{c}\right)=P\left(x|\mu_{c},\sigma_{c}^{2}\right)=\frac{1}{\sqrt{(2\pi)^{d}|{\Sigma}_{c}|}}\exp\left(-\frac{1}{2}(x-\mu_{c})^{\mathrm{T}}{\Sigma}_{c}^{-1}(x-\mu_{c})\right)
+$$  
+
+其中， $d$ 表示 $\mathbfcal{x}$ 的维数， $\Sigma_{c}=\pmb{\sigma}_{c}^{2}$ 为对称正定协方差矩阵， $|\Sigma_{c}|$ 表示 $\Sigma_{c}$ 的行列式。将其代入参数求解公式可得  
+
+$$
+\begin{array}{r l}&{\displaystyle(\hat{\mu}_{c},\hat{\Sigma}_{c})=\arg\operatorname*{min}_{(\mu_{c},\Sigma_{c})}-\sum_{\alpha\in D_{c}}\log\left[\frac{1}{\sqrt{(2\pi)^{d}|\Sigma_{c}|}}\exp\left(-\frac{1}{2}(x-\mu_{c})^{\mathrm{T}}\Sigma_{c}^{-1}(x-\mu_{c})\right)\right]}\\ &{\quad\quad=\arg\operatorname*{min}_{(\mu_{c},\Sigma_{c})}-\sum_{\alpha\in D_{c}}\left[-\frac{d}{2}\log(2\pi)-\frac{1}{2}\log|\Sigma_{c}|-\frac{1}{2}(x-\mu_{c})^{\mathrm{T}}\Sigma_{c}^{-1}(x-\mu_{c})\right]}\\ &{\displaystyle\quad\quad=\arg\operatorname*{min}_{(\mu_{c},\Sigma_{c})}\sum_{\alpha\in D_{c}}\left[\frac{d}{2}\log(2\pi)+\frac{1}{2}\log|\Sigma_{c}|+\frac{1}{2}(x-\mu_{c})^{\mathrm{T}}\Sigma_{c}^{-1}(x-\mu_{c})\right]}\\ &{\displaystyle\quad\quad=\arg\operatorname*{min}_{(\mu_{c},\Sigma_{c})}\sum_{\alpha\in D_{c}}\left[\frac{1}{2}\log|\Sigma_{c}|+\frac{1}{2}(x-\mu_{c})^{\mathrm{T}}\Sigma_{c}^{-1}(x-\mu_{c})\right]}\\ &{\displaystyle\quad\quad=\arg\operatorname*{min}_{(\mu_{c},\Sigma_{c})}\sum_{\alpha\in D_{c}}\left[\frac{1}{2}\log|\Sigma_{c}|+\frac{1}{2}(x-\mu_{c})^{\mathrm{T}}\Sigma_{c}^{-1}(x-\mu_{c})\right]}\end{array}
+$$  
+
+假设此时数据集 $D_{c}$ 中的样本个数为 $n$ ，也即 $|D_{c}|=n$ ，则上式可以改写为  
+
+$$
+\begin{array}{r l}&{\displaystyle(\hat{\pmb{\mu}}_{c},\hat{\pmb{\Sigma}}_{c})=\arg\operatorname*{min}_{({\pmb{\mu}}_{c},{\pmb{\Sigma}}_{c})}\sum_{i=1}^{n}\left[\frac{1}{2}\log|\pmb{\Sigma}_{c}|+\frac{1}{2}({\pmb x}_{i}-{\pmb\mu}_{c})^{\mathrm{T}}\pmb{\Sigma}_{c}^{-1}({\pmb x}_{i}-{\pmb\mu}_{c})\right]}\\ &{\displaystyle~~~~~~~~=\arg\operatorname*{min}_{({\pmb{\mu}}_{c},{\pmb\Sigma}_{c})}\log|\pmb{\Sigma}_{c}|+\sum_{i=1}^{n}\frac{1}{2}({\pmb x}_{i}-{\pmb\mu}_{c})^{\mathrm{T}}\pmb{\Sigma}_{c}^{-1}({\pmb x}_{i}-{\pmb\mu}_{c})}\end{array}
+$$  
+
+为了便于分别求解 $\hat{\pmb{\mu}}_{c}$ 和 $\hat{\Sigma}_{c}$ ，在这里我们根据公式 $\begin{array}{r}{x^{\mathrm{{T}}}\mathbf{A}x=\mathrm{tr}(\mathbf{A}x x^{\mathrm{{T}}}),\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_{i}}\end{array}$ 将上式中的最后一项作如下恒等变形  
+
+$$
+\begin{array}{r l}&{\frac{1}{\sqrt{2}}\frac{1}{\left(\alpha-\eta\right)}\Bigg[\frac{\eta}{\sqrt{2}}\Bigg(z_{t}-\eta\right)\zeta^{*}(z_{t}-\eta_{t},z_{t})}\\ &{+\frac{1}{2}\left(\alpha-\eta\right)\zeta^{*}(z_{t}-\eta_{t},z_{t})\Bigg]}\\ &{-\frac{1}{2}\left(\alpha^{2}\right)\Bigg[\frac{\zeta^{*}}{2}\frac{1}{\left(\alpha-\eta\right)^{2}}\frac{\zeta^{*}(z_{t}-\eta_{t},z_{t})\zeta^{*}}{\left(\alpha-\eta\right)}\Bigg]}\\ &{+\frac{1}{2}\left(\alpha^{2}-\eta\right)\zeta^{*}\left(z_{t}-\eta\right)\zeta^{*}-\beta\alpha\beta^{2}\Bigg[\alpha\right]}\\ &{-\frac{1}{2}\frac{1}{\left(\alpha^{2}\right)}\Bigg[\frac{\zeta^{*}}{2}\Bigg(z_{t}^{2}-z_{t}^{2}-2\alpha\beta^{2}\zeta^{*}-2\alpha\beta^{2}\zeta^{*}\eta\left(z_{t},z_{t}^{2}\right)\Bigg)\Bigg]}\\ &{-\frac{1}{2}\frac{1}{\left(\alpha^{2}\right)}\Bigg[\frac{\zeta^{*}}{2}\Bigg(z_{t}^{2}-z_{t}^{2}-2\alpha\beta^{2}\zeta^{*}+\alpha\mu\beta^{2}\zeta^{*}\left(2\alpha\beta^{2}-2\alpha\beta\right)^{2}\Bigg)\Bigg]}\\ &{+\frac{1}{2}\Bigg[\alpha^{2}\Bigg]\Bigg[\frac{\zeta^{*}}{2}\Bigg(\frac{\zeta^{*}}{2}z_{t}^{2}-2\alpha\beta^{2}\zeta^{*}\left(2\alpha\beta^{2}-2\alpha\beta^{2}\right)+\left(\alpha\mu\beta^{2}\zeta^{*}-2\alpha\beta\right)\zeta^{*}+\alpha\beta^{2}\Bigg)\Bigg]}\\ &{-\frac{1}{2}\Bigg[\alpha^{2}\Bigg]\Bigg[\frac{\zeta^{*}}{2}\Bigg(\frac{\zeta^{*}}{2}z_{t}-\alpha^{2}\left(2\alpha\beta^{2}-\alpha\right)\zeta^{*}+\frac{\zeta^{*}}{2}\Bigg)\Bigg(\alpha\mu\Bigg)\zeta^{
+$$  
+
+所以  
+
+$$
+\begin{array}{r}{\hat{\mu}_{c},\hat{\Sigma}_{c})=\underset{(\mu_{c},\Sigma_{c})}{\arg\operatorname*{min}}\frac{n}{2}\log\left|\Sigma_{c}\right|+\frac{1}{2}\operatorname{tr}\left[\sum_{c}^{-1}\displaystyle\sum_{i=1}^{n}(x_{i}-\bar{x})(x_{i}-\bar{x})^{\mathrm{T}}\right]+\frac{n}{2}(\mu_{c}-\bar{x})^{\mathrm{T}}\Sigma_{c}^{-1}(\mu_{c}-\bar{x})}\end{array}
+$$  
+
+观察上式可知，由于此时 $\Sigma_{c}^{-1}$ 和 $\Sigma_{c}$ 一样均为正定矩阵，所以当 ${\pmb{\mu}}_{c}-\bar{\pmb{x}}\neq{\bf0}$ 时，上式最后一项为正定二次型。根据正定二次型的性质可知，上式最后一项取值的大小此时仅与 $\pmb{\mu}_{c}-\bar{\pmb{x}}$ 相关，而且当且仅当${\pmb{\mu}}_{c}-\bar{\pmb{x}}=\mathbf{0}$ 时，上式最后一项取到最小值0，此时可以解得  
+
+$$
+\hat{\pmb{\mu}}_{c}=\bar{\pmb{x}}=\frac{1}{n}\sum_{i=1}^{n}{\pmb{x}}_{i}
+$$  
+
+将求解出来的 $\hat{\pmb{\mu}}_{c}$ 代回参数求解公式可得新的参数求解公式为  
+
+$$
+{\hat{\pmb{\Sigma}}}_{c}=\underset{\pmb{\Sigma}_{c}}{\arg\operatorname*{min}}{\frac{n}{2}}\log\left|{\pmb{\Sigma}}_{c}\right|+\frac{1}{2}\operatorname{tr}\left[{\pmb{\Sigma}}_{c}^{-1}\sum_{i=1}^{n}({\pmb x}_{i}-{\pmb\bar{\pmb{x}}})({\pmb x}_{i}-{\pmb\bar{\pmb{x}}})^{\mathrm{T}}\right]
+$$  
+
+此时的参数求解公式是仅与 $\Sigma_{c}$ 相关的函数。为了求解 $\hat{\Sigma}_{c}$ ，在这里我们不加证明地给出一个引理（具体证明参见参考文献[6]）：设 $\mathbf{B}$ 为 $p$ 阶正定矩阵， $n>0$ 为实数，在对所有 $p$ 阶正定矩阵 $\Sigma$ 有  
+
+$$
+{\frac{n}{2}}\log|\Sigma|+{\frac{1}{2}}\operatorname{tr}\left[\Sigma^{-1}\mathbf{B}\right]\geq{\frac{n}{2}}\log|\mathbf{B}|+{\frac{p n}{2}}(1-\log n)
+$$  
+
+当且仅当 $\textstyle\Sigma={\frac{1}{n}}\mathbf{B}$ 时等号成立。所以根据此引理可知，当且仅当 $\begin{array}{r}{\pmb{\Sigma}_{c}=\frac{1}{n}\sum_{i=1}^{n}(\pmb{x}_{i}-\bar{\pmb{x}})(\pmb{x}_{i}-\bar{\pmb{x}})^{\mathrm{T}}}\end{array}$ 时，上述参数求解公式中arg min 后面的式子取到最小值，那么此时的 $\Sigma_{c}$ 即为我们想要求解的 $\hat{\Sigma}_{c}$ 。  
+
+# 公式(7.19)  
+
+$$
+\hat{P}(c)=\frac{|D_{c}|+1}{|D|+N}
+$$  
+
+[推导]：从贝叶斯估计（参见附录 $\mathrm{\textregistered}$ ）的角度来说，拉普拉斯修正就等价于先验概率为Dirichlet 分布（参见附录 $\textcircled{3}$ ）的后验期望值估计。为了接下来的叙述方便，我们重新定义一下相关数学符号。设包含 $m$ 个独立同分布样本的训练集为 $D$ ， $D$ 中可能的类别数为 $k$ ，其类别的具体取值范围为 $\{c_{1},c_{2},...,c_{k}\}$ 。若令随机变量 $C$ 表示样本所属的类别，且 $C$ 取到每个值的概率分别为 $P(C=c_{1})=\theta_{1},P(C=c_{2})=\theta_{2},...,P(C=c_{k})=\theta_{k}$ ，那么显然 $C$ 服从参数为 $\pmb{\theta}=(\theta_{1},\theta_{2},...,\theta_{k})\in\mathbb{R}^{k}$ 的Categorical 分布（参见附录 $\textcircled{2}$ ），其概率质量函数为  
+
+$$
+P(C=c_{i})=P(c_{i})=\theta_{i}
+$$  
+
+其中 $P(c_{i})=\theta_{i}$ 就是公式(7.9) 所要求解的 $\hat{P}(c)$ ，下面我们用贝叶斯估计中的后验期望值估计来估计 $\theta_{i}$ 。根据贝叶斯估计的原理可知，在进行参数估计之前，需要先主观预设一个先验概率 $P(\pmb\theta)$ ，通常为了方便计算[7] 后验概率 $P(\pmb\theta|D)$ ，我们会用似然函数 $P(D|\pmb\theta)$ 的共轭先验[3] 作为我们的先验概率。显然，此时的似然函数 $P(D|\pmb\theta)$ 是一个基于Categorical 分布的似然函数，而Categorical 分布的共轭先验为Dirichlet分布，所以此时只需要预设先验概率 $P(\pmb\theta)$ 为Dirichlet 分布，然后使用后验期望值估计就能估计出 $\theta_{i}$ 。具体地，记 $D$ 中样本类别取值为 $c_{i}$ 的样本个数为 $y_{i}$ ，则似然函数 $P(D|\pmb\theta)$ 可展开为  
+
+$$
+P(D|\pmb\theta)=\theta_{1}^{y_{1}}\cdot\cdot\cdot\theta_{k}^{y_{k}}=\prod_{i=1}^{k}\theta_{i}^{y_{i}}
+$$  
+
+那么后验概率 $P(D|\pmb\theta)$ 为  
+
+$$
+\begin{array}{l}{{P(\pmb\theta|D)=\displaystyle\frac{P(D|\pmb\theta)P(\pmb\theta)}{P(D)}}}\\ {{\qquad\quad=\displaystyle\frac{P(D|\pmb\theta)P(\pmb\theta)}{\sum_{\pmb\theta}P(D|\pmb\theta)P(\pmb\theta)}}}\\ {{\qquad\quad=\displaystyle\frac{\prod_{i=1}^{k}\theta_{i}^{y_{i}}\cdot P(\pmb\theta)}{\sum_{\pmb\theta}\left[\prod_{i=1}^{k}\theta_{i}^{y_{i}}\cdot P(\pmb\theta)\right]}}}\end{array}
+$$  
+
+假设此时先验概率 $P(\pmb\theta)$ 是参数为 $\pmb{\alpha}=(\alpha_{1},\alpha_{2},...,\alpha_{k})\in\mathbb{R}^{k}$ 的Dirichlet 分布，则 $P(\pmb\theta)$ 可写为  
+
+$$
+P(\pmb{\theta};\pmb{\alpha})=\frac{\Gamma\left(\sum_{i=1}^{k}\alpha_{i}\right)}{\prod_{i=1}^{k}\Gamma(\alpha_{i})}\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}-1}
+$$  
+
+将其代入 $P(D|\pmb\theta)$ 可得  
+
+$$
+\begin{array}{r l}{P(\theta|D)=\frac{\prod_{i=1}^{K}\theta_{i}^{n}\cdot P(\theta)}{\sum_{j=1}^{K}\left[\prod_{i=1}^{K}\theta_{i}^{n}\cdot P^{*}(\theta)\right]}}&{}\\ {=\frac{\prod_{i=1}^{K}\theta_{i}^{n}\cdot\frac{P(\sum_{i=1}^{K}\alpha_{i}^{n})}{\prod_{s=1}^{K}\Gamma(\sum_{i=1}^{K}\alpha_{i}^{n})}\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot}{\sum_{j=1}^{K}\prod_{s=1}^{K}\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot}}\\ &{\ \ \ \ \ \ \ \ \ \frac{\prod_{i=1}^{K}\theta_{i}^{n}\cdot\frac{\Gamma(\sum_{i=1}^{K}\alpha_{i}^{n})}{\prod_{s=1}^{K}\Gamma(\sum_{i=1}^{K}\alpha_{i}^{n})}\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot\prod_{j=1}^{K}\bigg]}{\sum_{j=1}^{K}\prod_{i=1}^{K}\theta_{i}^{n}\cdot\frac{\Gamma(\sum_{i=1}^{K}\alpha_{i}^{n})}{\prod_{s=1}^{K}\Gamma(\sum_{i=1}^{K}\alpha_{i}^{n})}\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot}}\\ &{=\frac{\prod_{i=1}^{K}\theta_{i}^{n}\cdot\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot\prod_{j=1}^{K}\theta_{i}^{n+1}\cdot\prod_{i=1}^{K}\Gamma(\sum_{i=1}^{K}\alpha_{i}^{n})}{\sum_{j=1}^{K}\prod_{i=1}^{K}\theta_{i}^{n}\cdot\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot\prod_{j=1}^{K}\theta_{i}^{n+1}}}\\ &{=\frac{\prod_{i=1}^{K}\theta_{i}^{n}\cdot\prod_{i=1}^{K}\theta_{i}^{n+1}\cdot\prod_{i=1}^{K}\theta_{i}^{n+1}}{\sum_{j=1}^{K}\prod_{i 
+$$  
+
+此时若设 $\alpha+\pmb{y}=(\alpha_{1}+y_{1},\alpha_{2}+y_{2},...,\alpha_{k}+y_{k})\in\mathbb{R}^{k}$ ，则根据Dirichlet 分布的定义可知  
+
+$$
+\begin{array}{r l r}&{}&{P(\theta;\alpha+y)=\frac{\displaystyle\Gamma\left(\sum_{i=1}^{k}(\alpha_{i}+y_{i})\right)}{\displaystyle\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}\displaystyle\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}}\\ &{}&{\sum_{\varphi}P(\theta;\alpha+y)=\displaystyle\sum_{\varphi}\frac{\displaystyle\Gamma\left(\sum_{i=1}^{k}(\alpha_{i}+y_{i})\right)}{\displaystyle\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}\displaystyle\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}}\\ &{}&{1=\displaystyle\sum_{\varphi}\frac{\displaystyle\Gamma\left(\sum_{i=1}^{k}(\alpha_{i}+y_{i})\right)}{\displaystyle\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}\displaystyle\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}}\\ &{}&{1=\displaystyle\frac{\displaystyle\Gamma\left(\sum_{i=1}^{k}(\alpha_{i}+y_{i})\right)}{\displaystyle\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}\displaystyle\sum_{\varphi}\left[\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}\right]}\\ &{}&{\frac{\displaystyle\Gamma\left(\sum_{i=1}^{k}(\alpha_{i}+y_{i})\right)}{\displaystyle\sum_{i=1}^{k}\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}=\frac{\displaystyle\Gamma\left(\sum_{i=1}^{k}\alpha_{i}+y_{i}\right)}{\displaystyle\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}.}\end{array}
+$$  
+
+将此结论代入 $P(D|\pmb\theta)$ 可得  
+
+$$
+\begin{array}{l}{{P(\pmb\theta|D)=\displaystyle\frac{\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}}{\sum_{\theta}\Big[\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}\Big]}}}\\ {{\ \ \ \ \ \ \ \ =\displaystyle\frac{\Gamma\Big(\sum_{i=1}^{k}(\alpha_{i}+y_{i})\Big)}{\prod_{i=1}^{k}\Gamma(\alpha_{i}+y_{i})}\prod_{i=1}^{k}\theta_{i}^{\alpha_{i}+y_{i}-1}}}\\ {{\ \ \ \ \ \ =P(\pmb\theta;\alpha+y)}}\end{array}
+$$  
+
+综上可知，对于服从Categorical 分布的 $\pmb{\theta}$ 来说，假设其先验概率 $P(\pmb\theta)$ 是参数为 $_{\alpha}$ 的Dirichlet 分布时，得到的后验概率 $P(\pmb\theta|D)$ 是参数为 $\alpha+y$ 的Dirichlet 分布，通常我们称这种先验概率分布和后验概率分布形式相同的这对分布为共轭分布[3]。在推得后验概率 $P(\pmb\theta|D)$ 的具体形式以后，根据后验期望值估计  
+
+可得 $\theta_{i}$ 的估计值为  
+
+$$
+\begin{array}{r l}&{\mathfrak{h}_{i}=\mathbb{E}_{P}(\theta|D)\big[\theta_{i}\big]}\\ &{\quad=\mathbb{E}_{P}(\theta;\alpha+y)\big[\theta_{i}\big]}\\ &{\quad=\frac{\alpha_{i}+y_{i}}{\sum_{j=1}^{k}(\alpha_{j}+y_{j})}}\\ &{\quad=\frac{\alpha_{i}+y_{i}}{\sum_{j=1}^{k}\alpha_{j}+\sum_{j=1}^{k}y_{j}}}\\ &{\quad=\frac{\alpha_{i}+y_{i}}{\sum_{j=1}^{k}\alpha_{j}+m}}\end{array}
+$$  
+
+显然，公式(7.9) 是当 ${\pmb{\alpha}}=(1,1,...,1)$ 时推得的具体结果，此时等价于我们主观预设的先验概率 $P(\pmb\theta)$ 服从均匀分布，此即为拉普拉斯修正。同理，当我们调整 $\pmb{\alpha}$ 的取值后，即可推得其他数据平滑的公式。  
+
+# 公式(7.20)  
+
+$$
+\hat{P}\left(x_{i}|c\right)=\frac{|D_{c,x_{i}}|+1}{|D_{c}|+N_{i}}
+$$  
+
+[推导]：参见公式(7.19)  
+
+# 公式(7.24)  
+
+$$
+\hat{P}\left(c,x_{i}\right)=\frac{|D_{c,x_{i}}|+1}{|D|+N_{i}}
+$$  
+
+[推导]：参见公式(7.19)  
+
+# 公式(7.25)  
+
+$$
+\hat{P}\left(x_{j}|\boldsymbol{c},x_{i}\right)=\frac{\left|D_{\boldsymbol{c},x_{i},x_{j}}\right|+1}{|D_{\boldsymbol{c},x_{i}}|+N_{j}}
+$$  
+
+[推导]：参见公式(7.20)  
+
+# 公式(7.27)  
+
+$$
+{\begin{array}{r l}&{P\left(x_{1},x_{2}\right)=\displaystyle\sum_{x_{4}}P\left(x_{1},x_{2},x_{4}\right)}\\ &{\qquad\qquad=\displaystyle\sum_{x_{4}}P\left(x_{4}|x_{1},x_{2}\right)P\left(x_{1}\right)P\left(x_{2}\right)}\\ &{\qquad=P\left(x_{1}\right)P\left(x_{2}\right)}\end{array}}
+$$  
+
+[解析]：在这里补充一下同父结构和顺序结构的推导。同父结构：在给定父节点 $x_{1}$ 的条件下 $x_{3},x_{4}$ 独立  
+
+$$
+\begin{array}{r l}&{P(x_{3},x_{4}|x_{1})=\cfrac{P(x_{1},x_{3},x_{4})}{P(x_{1})}}\\ &{\qquad\qquad\qquad=\cfrac{P(x_{1})P(x_{3}|x_{1})P(x_{4}|x_{1})}{P(x_{1})}}\\ &{\qquad\qquad\qquad=P(x_{3}|x_{1})P(x_{4}|x_{1})}\end{array}
+$$  
+
+顺序结构：在给定节点 $x$ 的条件下 $y,z$ 独立  
+
+$$
+\begin{array}{r l}&{P(y,z|x)=\cfrac{P(x,y,z)}{P(x)}}\\ &{\qquad\qquad=\cfrac{P(z)P(x|z)P(y|x)}{P(x)}}\\ &{\qquad=\cfrac{P(z,x)P(y|x)}{P(x)}}\\ &{\qquad=P(z|x)P(y|x)}\end{array}
+$$  
+
+公式(7.34)  
+
+$$
+L L(\Theta|\mathbf{X},\mathbf{Z})=\ln P(\mathbf{X},\mathbf{Z}|\Theta)
+$$  
+
+[解析]：EM 算法这一节建议以李航老师的《统计学习方法》为主，西瓜书为辅进行学习。  
+
+# 附录  
+
+# $\boldsymbol{\Phi}$ 贝叶斯估计[8]  
+
+贝叶斯学派视角下的一类点估计法称为贝叶斯估计，常用的贝叶斯估计有最大后验估计（MaximumA Posteriori Estimation，简称MAP）、后验中位数估计和后验期望值估计这3 种参数估计方法，下面给出这3 种方法的具体定义。设总体的概率质量函数（若总体的分布为连续型时则改为概率密度函数，此处以离散型为例）为 $P(x|\theta)$ ，从该总体中抽取出的 $n$ 个独立同分布的样本构成的样本集为 $D=\{x_{1},x_{2},...,x_{n}\}$ ，则根据贝叶斯公式可得在给定样本集 $D$ 的条件下， $\theta$ 的条件概率为  
+
+$$
+P(\theta|D)={\frac{P(D|\theta)P(\theta)}{P(D)}}={\frac{P(D|\theta)P(\theta)}{\sum_{\theta}P(D|\theta)P(\theta)}}
+$$  
+
+其中 $P(D|\theta)$ 为似然函数，由于样本集 $D$ 中的样本是独立同分布的，所以似然函数可以进一步展开  
+
+$$
+P(\theta|D)={\frac{P(D|\theta)P(\theta)}{\sum_{\theta}P(D|\theta)P(\theta)}}={\frac{\prod_{i=1}^{n}P(x_{i}|\theta)P(\theta)}{\sum_{\theta}\prod_{i=1}^{n}P(x_{i}|\theta)P(\theta)}}
+$$  
+
+根据贝叶斯学派的观点，此条件概率代表了我们在已知样本集 $D$ 后对 $\theta$ 产生的新的认识，它综合了我们对 $\theta$ 主观预设的先验概率 $P(\theta)$ 和样本集 $D$ 带来的信息，通常称其为 $\theta$ 的后验概率。贝叶斯学派认为，在得到 $P(\theta|D)$ 以后，对参数 $\theta$ 的任何统计推断，都只能基于 $P(\theta|D)$ 。至于具体如何去使用它，可以结合某种准则一起去进行，统计学家也有一定的自由度。对于点估计来说，求使得 $P(\theta|D)$ 达到最大值的 ${\hat{\theta}}_{M A P}$ 作为 $\theta$ 的估计称为最大后验估计；求 $P(\theta|D)$ 的中位数 $\widehat{\theta}_{M e d i a n}$ 作为 $\theta$ 的估计称为后验中位数估计；求$P(\theta|D)$ 的期望值（均值） ${\hat{\theta}}_{M e a n}$ 作为 $\theta$ 的估计称为后验期望值估计。  
+
+# $\circled{2}$ Categorical 分布[1]  
+
+Categorical 分布又称为广义伯努利分布，是将伯努利分布中的随机变量可取值个数由两个泛化为多个得到的分布。具体地，设离散型随机变量 $X$ 共有 $k$ 种可能的取值 $\{x_{1},x_{2},...,x_{k}\}$ ，且 $X$ 取到每个值的概率分别为 $P(X\,=\,x_{1})\,=\,\theta_{1},P(X\,=\,x_{2})\,=\,\theta_{2},...,P(X\,=\,x_{k})\,=\,\theta_{k}\,.$ ，则称随机变量 $X$ 服从参数为$\theta_{1},\theta_{2},...,\theta_{k}$ 的Categorical 分布，其概率质量函数为  
+
+$$
+P(X=x_{i})=P(x_{i})=\theta_{i}
+$$  
+
+# $\circledast$ Dirichlet 分布[4]  
+
+类似于Categorical 分布是伯努利分布的泛化形式，Dirichlet 分布是Beta 分布[2] 的泛化形式。对于一个 $k$ 维随机变量 $\pmb{x}=(x_{1},x_{2},...,x_{k})\in\mathbb{R}^{k}$ ，其中 $x_{i}(i=1,2,...,k)$ 满足 $0\leqslant x_{i}\leqslant1,\textstyle\sum_{i=1}^{k}x_{i}=1$ ，若 $\textbf{\em x}$ 服从参数为 $\pmb{\alpha}=(\alpha_{1},\alpha_{2},...,\alpha_{k})\in\mathbb{R}^{k}$ 的Dirichlet 分布，则其概率密度函数为  
+
+$$
+p(\pmb{x};\pmb{\alpha})=\frac{\Gamma\left(\sum_{i=1}^{k}\alpha_{i}\right)}{\prod_{i=1}^{k}\Gamma(\alpha_{i})}\prod_{i=1}^{k}x_{i}^{\alpha_{i}-1}
+$$  
+
+其中 $\textstyle\Gamma(z)=\int_{0}^{\infty}x^{z-1}e^{-x}d x$ 为Gamma 函数[5]，当 ${\pmb{\alpha}}=(1,1,...,1)$ 时，Dirichlet 分布等价于均匀分布。  
+
+# 参考文献  
+
+[1] Wikipedia contributors. Categorical distribution, 2019. URL: https://en.wikipedia.org/w/index. php?title=Categorical_distribution&oldid=905316786.   
+[2] Wikipedia contributors. Beta distribution, 2020. URL: https://en.wikipedia.org/w/index.php? title=Beta_distribution&oldid=953406542.   
+[3] Wikipedia contributors. Conjugate prior, 2020. URL: https://en.wikipedia.org/w/index.php? title=Conjugate_prior&oldid $\cdot$ 946918786.   
+[4] Wikipedia contributors. Dirichlet distribution, 2020. URL: https://en.wikipedia.org/w/index. php?title=Dirichlet_distribution&oldid $\cdot$ 954542610.   
+[5] Wikipedia contributors. Gamma function, 2020. URL: https://en.wikipedia.org/w/index.php? title $=$ Gamma_function&oldid $\bar{\cdot}$ 953059892.   
+[6] 张伟平. 多元正态分布参数的估计和数据的清洁与变换, 2020. URL: http://staff.ustc.edu.cn/ \~zwp/teach/MVA/Lec5_slides.pdf.   
+[7] 百度百科. 共轭先验分布, 2020. URL: https://baike.baidu.com/item/%E5%85%B1%E8%BD%AD%E5% 85%88%E9%AA%8C%E5%88%86%E5%B8%83.   
+[8] 陈希孺. 概率论与数理统计. 中国科学技术大学出版社, 2009.  
+
+# 第8 章 集成学习  
+
+# 公式(8.1)  
+
+$$
+P\left(h_{i}(\pmb{x})\neq f(\pmb{x})\right)=\epsilon
+$$  
+
+[解析]： $h_{i}({\pmb x})$ 是编号为 $i$ 的基分类器给 $x$ 的预测标记， $f(x)$ 是 $x$ 的真实标记，它们之间不一致的概率记为 $\epsilon$ 。  
+
+# 公式(8.2)  
+
+$$
+H(\pmb{x})=\mathrm{sign}\left(\sum_{i=1}^{T}h_{i}(\pmb{x})\right)
+$$  
+
+[解析]： $h_{i}({\pmb x})$ 当把 $\textbf{\em x}$ 分成1 时， $h_{i}(\pmb{x})=1$ ，否则 $h_{i}(\pmb{x})=-1$ 。各个基分类器 $h_{i}$ 的分类结果求和之后数字的正、负或0，代表投票法产生的结果，即“少数服从多数”，符号函数 $\mathrm{sign}$ ，将正数变成1，负数变成-1，0 仍然是0，所以 $H(x)$ 是由投票法产生的分类结果。  
+
+# 公式(8.3)  
+
+$$
+\begin{array}{r l r}{\lefteqn{P(H(\pmb{x})\neq f(\pmb{x}))=\sum_{k=0}^{\lfloor T/2\rfloor}\left(\begin{array}{c}{T}\\ {k}\end{array}\right)(1-\epsilon)^{k}\epsilon^{T-k}}}\\ &{}&{\leqslant\exp\left(-\frac{1}{2}T(1-2\epsilon)^{2}\right)}\end{array}
+$$  
+
+[推导]：由基分类器相互独立，假设随机变量 $X$ 为 $T$ 个基分类器分类正确的次数，因此随机变量X 服从二项分布： $\mathrm{X}\sim B(\mathrm{T},1-\epsilon)$ ，设 $x_{i}$ 为每一个分类器分类正确的次数，则 $x_{i}\sim\mathcal{B}(1,1-\epsilon)\;i=1\mathrm{~2~3~}...\mathrm{~T~}$ ，那么有  
+
+$$
+\begin{array}{c}{\displaystyle\mathrm{X}=\sum_{i=1}^{\mathrm{T}}x_{i}}\\ {\displaystyle\mathbb{E}(X)=\sum_{i=1}^{\mathrm{T}}\mathbb{E}(x_{i})=(1-\epsilon)T}\end{array}
+$$  
+
+证明过程如下：  
+
+$$
+\begin{array}{r l}{P(H(x)\neq f(x))=P(X\leq|T/2|)}\\ {\leqslant P(X\leq T/2)}\\ {=P\left[X-(1-\epsilon)T\leqslant\frac{T}{2}-(1-\epsilon)T\right]}\\ {=P\left[X-(1-\epsilon)T\leqslant-\frac{T}{2}\left(1-2\epsilon\right)\right]}\\ {=P\left[\underset{i=1}{\overset{\top}{\sum}}x_{i}-\underset{i=1}{\overset{\top}{\sum}}\mathbb{E}(x_{i})\leqslant-\frac{T}{2}\left(1-2\epsilon\right)\right]}\\ {=P\left[\frac{1}{\underset{i=1}{\overset{\top}{\sum}}}\underset{i=1}{\overset{\sum}{\sum}}x_{i}-\frac{1}{\underset{i=1}{\overset{\top}{\sum}}}\underset{i=1}{\overset{\sum}{\sum}}\mathbb{E}(x_{i})\leqslant-\frac{1}{2}\left(1-2\epsilon\right)\right]}\end{array}
+$$  
+
+根据Hoeffding 不等式知  
+
+$$
+P\left({\frac{1}{m}}\sum_{i=1}^{m}x_{i}-{\frac{1}{m}}\sum_{i=1}^{m}\mathbb{E}\left(x_{i}\right)\leqslant-\delta\right)\leqslant\exp\left(-2m\delta^{2}\right)
+$$  
+
+$\begin{array}{r}{\delta=\frac{(1-2\epsilon)}{2},m=T}\end{array}$ 得  
+
+$$
+\begin{array}{r l r}{\lefteqn{P(H(\pmb{x})\neq f(\pmb{x}))=\sum_{k=0}^{\lfloor T/2\rfloor}\left(\begin{array}{c}{T}\\ {k}\end{array}\right)(1-\epsilon)^{k}\epsilon^{T-k}}}\\ &{}&{\leqslant\exp\left(-\frac{1}{2}T(1-2\epsilon)^{2}\right)}\end{array}
+$$  
+
+公式(8.4)  
+
+$$
+H(\pmb{x})=\sum_{t=1}^{T}\alpha_{t}h_{t}(\pmb{x})
+$$  
+
+[解析]：这个式子是集成学习的加性模型，加性模型不采用梯度下降的思想，而是 $\begin{array}{r}{H(\pmb{x})=\sum_{t=1}^{T-1}\alpha_{t}h_{t}(\pmb{x})+}\end{array}$ $\alpha_{T}h_{T}(x)$ 每次更新求解一个理论上最优的 $h_{T}$ （见式8.18）和 $\alpha_{T}$ （见式8.11）  
+
+# 公式(8.5)  
+
+$$
+\ell_{\mathrm{exp}}(H|\mathcal{D})=\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}\left[e^{-f(\mathbf{x})H(\mathbf{x})}\right]
+$$  
+
+[解析]：由式(8.4) 知  
+
+$$
+H(\pmb{x})=\sum_{t=1}^{T}\alpha_{t}h_{t}(\pmb{x})
+$$  
+
+又由式(8.11) 可知  
+
+$$
+\alpha_{t}=\frac{1}{2}\ln\left(\frac{1-\epsilon_{t}}{\epsilon_{t}}\right)
+$$  
+
+由ln 函数的单调性可知，该分类器的权重只与分类器的错误率负相关(即错误率越大，权重越低)，下面解释指数损失函数的意义：  
+
+1. 先考虑指数损失函数 $e^{-f(x)H(x)}$ 的含义： $f$ 为真实函数，对于样本 $x$ 来说， $f(\pmb{x})\;\in\;\{+1,-1\}$ 只能取 $+1$ 和 $-1$ ，而 $H(x)$ 是一个实数；当 $H(x)$ 的符号与 $f(x)$ 一致时， $f({\bf{x}})H({\bf{x}})\;>\;0$ ，因此$e^{-f({\pmb x})H({\pmb x})}\,=\,e^{-|H({\pmb x})|}\,<\,1$ ，且 $|H(x)|$ 越大指数损失函数 $e^{-f(\mathbf{x})H(\mathbf{x})}$ 越小（这很合理：此时 $|H(x)|$ 越大意味着分类器本身对预测结果的信心越大，损失应该越小；若 $|H(x)|$ 在零附近，虽然预测正确，但表示分类器本身对预测结果信心很小，损失应该较大）；当 $H(x)$ 的符号与 $f(x)$ 不一致时，$f({\boldsymbol{x}})H({\boldsymbol{x}})<0$ ，因此 $e^{-f(\mathbf{x})H(\mathbf{x})}=e^{|H(\mathbf{x})|}>1$ ，且 $|H(x)|$ 越大指数损失函数越大（这很合理：此时$|H(x)|$ 越大意味着分类器本身对预测结果的信心越大，但预测结果是错的，因此损失应该越大；若$|H(x)|$ 在零附近，虽然预测错误，但表示分类器本身对预测结果信心很小，虽然错了，损失应该较小）  
+
+2. 符号 $\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}[\cdot]$ 的含义： $\mathcal{D}$ 为概率分布，可简单理解为在数据集 $D$ 中进行一次随机抽样，每个样本被取到的概率； $\mathbb{E}[\cdot]$ 为经典的期望，则综合起来 $\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}[\cdot]$ 表示在概率分布 $\mathcal{D}$ 上的期望，可简单理解为对数据集 $D$ 以概率 $\mathcal{D}$ 进行加权后的期望。即  
+
+$$
+\begin{array}{l}{\displaystyle\ell_{\mathrm{exp}}(H|\mathcal{D})=\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[e^{-f(\pmb{x})H(\pmb{x})}\right]}\\ {\displaystyle=\sum_{\pmb{x}\in D}\mathcal{D}(\pmb{x})e^{-f(\pmb{x})H(\pmb{x})}}\end{array}
+$$  
+
+# 公式(8.6)  
+
+$$
+\frac{\partial\ell_{\mathrm{exp}}(H|\mathcal{D})}{\partial H(\pmb{x})}=-e^{-H(\pmb{x})}P(f(\pmb{x})=1|\pmb{x})+e^{H(\pmb{x})}P(f(\pmb{x})=-1|\pmb{x})
+$$  
+
+[解析]：由公式(8.5) 中对于符号 $\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}[\cdot]$ 的解释可知  
+
+$$
+\begin{array}{r l}&{\ell_{\mathrm{exp}}(H|\mathcal{D})=\mathbb{E}_{\alpha\sim\mathcal{D}}\left[e^{-f(\alpha)H(\alpha)}\right]}\\ &{\qquad\qquad=\displaystyle\sum_{x\in D}\mathcal{D}(x)e^{-f(\alpha)H(\alpha)}}\\ &{\qquad\qquad=\displaystyle\sum_{i=1}^{|D|}\mathcal{D}\left(x_{i}\right)\left(e^{-H(x_{i})}\mathbb{I}\left(f\left(x_{i}\right)=1\right)+e^{H(x_{i})}\mathbb{I}\left(f\left(x_{i}\right)=-1\right)\right)}\\ &{\qquad\qquad=\displaystyle\sum_{i=1}^{|D|}\left(e^{-H(x_{i})}\mathcal{D}\left(x_{i}\right)\mathbb{I}\left(f\left(x_{i}\right)=1\right)+e^{H(x_{i})}\mathcal{D}\left(x_{i}\right)\mathbb{I}\left(f\left(x_{i}\right)=-1\right)\right)}\\ &{\qquad\qquad=\displaystyle\sum_{i=1}^{|D|}\left(e^{-H(x_{i})}P\left(f\left(x_{i}\right)=1\mid x_{i}\right)+e^{H(x_{i})}P\left(f\left(x_{i}\right)=-1\mid x_{i}\right)\right)}\end{array}
+$$  
+
+其中 $\mathcal{D}\left(\pmb{x}_{i}\right)\mathbb{I}\left(f\left(\pmb{x}_{i}\right)=1\right)=P\left(f\left(\pmb{x}_{i}\right)=1\mid\pmb{x}_{i}\right)$ 可以这样理解： $\mathcal{D}(x_{i})$ 表示在数据集 $D$ 中进行一次随机抽样，样本 $x_{i}$ 被取到的概率， $\mathcal{D}\left(\pmb{x}_{i}\right)\mathbb{I}\left(f\left(\pmb{x}_{i}\right)=1\right)$ 表示在数据集 $D$ 中进行一次随机抽样，使得 $f(x_{i})=1$ 的样本 $x_{i}$ 被抽到的概率，即为 $P\left(f\left(\mathbf{x}_{i}\right)=1\mid\mathbf{x}_{i}\right)$ 。  
+
+当对 $H(x_{i})$ 求导时，求和号中只有含 $x_{i}$ 项不为0，由求导公式  
+
+$$
+\frac{\partial e^{-H(\pmb{x})}}{\partial H(\pmb{x})}=-e^{-H(\pmb{x})}\qquad\frac{\partial e^{H(\pmb{x})}}{\partial H(\pmb{x})}=e^{H(\pmb{x})}
+$$  
+
+有  
+
+$$
+\frac{\partial\ell_{\mathrm{exp}}(H|\mathcal{D})}{\partial H(\pmb{x})}=-e^{-H(\pmb{x})}P(f(\pmb{x})=1|\pmb{x})+e^{H(\pmb{x})}P(f(\pmb{x})=-1|\pmb{x})
+$$  
+
+公式(8.7)  
+
+$$
+H(\pmb{x})=\frac{1}{2}\ln\frac{P(f(\pmb{x})=1|\pmb{x})}{P(f(\pmb{x})=-1|\pmb{x})}
+$$  
+
+[解析]：令式(8.6) 等于0，移项并分离 $H(x)$ ，即可得到式(8.7)。  
+
+# 公式(8.8)  
+
+$$
+\begin{array}{r l}&{\mathrm{sign}(H(x))=\mathrm{sign}\left(\frac{1}{2}\ln\frac{P(f(x)=1|x)}{P(f(x)=-1|x)}\right)}\\ &{\qquad\qquad=\left\{\begin{array}{l l}{1,}&{P(f(x)=1|x)>P(f(x)=-1|x)}\\ {-1,}&{P(f(x)=1|x)<P(f(x)=-1|x)}\end{array}\right.}\\ &{\qquad\qquad=\arg\operatorname*{max}P(f(x)=y|x)}\\ &{\qquad\qquad\qquad\qquad\qquad\qquad\quad}\end{array}
+$$  
+
+[解析]：第一行到第二行显然成立，第二行到第三行是利用了arg max 函数的定义。 $\arg\operatorname*{max}P(f(x)=y|\pmb{x})$ y∈{−1,1}表示使得函数 $P(f(x)=y|\mathbf{x})$ 取得最大值的 $y$ 的值，展开刚好是第二行的式子。  
+
+# 公式(8.9)  
+
+$$
+\begin{array}{r l}&{\ell_{\mathrm{exp}}\left(\alpha_{t}h_{t}|\mathcal{D}_{t}\right)=\mathbb{E}_{\mathbf{x}\sim\mathcal{D}_{t}}\left[e^{-f(\mathbf{x})\alpha_{t}h_{t}(\mathbf{x})}\right]}\\ &{\qquad\qquad\qquad=\mathbb{E}_{\mathbf{x}\sim\mathcal{D}_{t}}\left[e^{-\alpha_{t}}\mathbb{I}\left(f(\mathbf{x})=h_{t}(\mathbf{x})\right)+e^{\alpha_{t}}\mathbb{I}\left(f(\mathbf{x})\neq h_{t}(\mathbf{x})\right)\right]}\\ &{\qquad\qquad\qquad=e^{-\alpha_{t}}P_{\mathbf{x}\sim\mathcal{D}_{t}}\left(f(\mathbf{x})=h_{t}(\mathbf{x})\right)+e^{\alpha_{t}}P_{\mathbf{x}\sim\mathcal{D}_{t}}\left(f(\mathbf{x})\neq h_{t}(\mathbf{x})\right)}\\ &{\qquad\qquad\qquad=e^{-\alpha_{t}}\left(1-\epsilon_{t}\right)+e^{\alpha_{t}}\epsilon_{t}}\end{array}
+$$  
+
+[解析]： $\epsilon_{t}$ 与式(8.1) 一致，表示 $h_{t}({\pmb x})$ 分类错误的概率。  
+
+# 公式(8.10)  
+
+$$
+\frac{\partial\ell_{\mathrm{exp}}\left(\alpha_{t}h_{t}|\mathcal{D}_{t}\right)}{\partial\alpha_{t}}=-e^{-\alpha_{t}}\left(1-\epsilon_{t}\right)+e^{\alpha_{t}}\epsilon_{t}
+$$  
+
+[解析]：指数损失函数对 $\alpha_{t}$ 求偏导，为了得到使得损失函数取最小值时 $\alpha_{t}$ 的值。  
+
+# 公式(8.11)  
+
+$$
+\alpha_{t}=\frac{1}{2}\ln\left(\frac{1-\epsilon_{t}}{\epsilon_{t}}\right)
+$$  
+
+[解析]：令公式(8.10) 等于0 移项即得到的该式。此时 $\alpha_{t}$ 的取值使得该基分类器经 $\alpha_{t}$ 加权后的损失函数最小。  
+
+# 公式(8.12)  
+
+$$
+\begin{array}{r l}&{\ell_{\mathrm{exp}}\left(H_{t-1}+h_{t}|\mathcal{D}\right)=\mathbb{E}_{x\sim\mathcal{D}}\left[e^{-f(x)(H_{t-1}(x)+h_{t}(x))}\right]}\\ &{\qquad\qquad\qquad\qquad=\mathbb{E}_{x\sim\mathcal{D}}\left[e^{-f(x)H_{t-1}(x)}e^{-f(x)h_{t}(x)}\right]}\end{array}
+$$  
+
+[解析]：将 $H_{t}(\pmb{x})=H_{t-1}(\pmb{x})+h_{t}(\pmb{x})$ 带入公式(8.5) 即可，因为理想的 $h_{t}$ 可以纠正 $H_{t-1}$ 的全部错误，所以这里指定其权重系数为1。如果权重系数 $\alpha_{t}$ 是个常数的话，对后续结果也没有影响。  
+
+# 公式(8.13)  
+
+$$
+\ell_{\mathrm{exp}}\left(H_{t-1}+h_{t}|\mathcal{D}\right)=\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}\left[e^{-f(\mathbf{x})H_{t-1}(\mathbf{x})}\left(1-f(\mathbf{x})h_{t}(\pmb{x})+\frac{1}{2}\right)\right]
+$$  
+
+[推导]：由 $e^{x}$ 的二阶泰勒展开为 $\begin{array}{r}{1+x+\frac{x^{2}}{2}+o(x^{2})}\end{array}$ 得:  
+
+$$
+\begin{array}{r l}&{\ell_{\exp}\left(H_{t-1}+h_{t}|\mathcal{D}\right)=\mathbb{E}_{x\sim\mathcal{D}}\left[e^{-f(x)H_{t-1}(x)}e^{-f(x)h_{t}(x)}\right]}\\ &{\qquad\qquad\qquad\qquad\simeq\mathbb{E}_{x\sim\mathcal{D}}\left[e^{-f(x)H_{t-1}(x)}\left(1-f(x)h_{t}(x)+\frac{f^{2}(x)h_{t}^{2}(x)}{2}\right)\right]}\end{array}
+$$  
+
+因为 $f(x)$ 与 $h_{t}({\pmb x})$ 取值都为1 或-1，所以 $f^{2}({\pmb x})=h_{t}^{2}({\pmb x})=1$ ，所以得:  
+
+$$
+\ell_{\mathrm{exp}}\left(H_{t-1}+h_{t}|\mathcal{D}\right)=\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}\left[e^{-f(\mathbf{x})H_{t-1}(\mathbf{x})}\left(1-f(\mathbf{x})h_{t}(\pmb{x})+\frac{1}{2}\right)\right]
+$$  
+
+# 公式(8.14)  
+
+$$
+\begin{array}{r l}&{h_{t}(\pmb{x})=\underset{h}{\arg\operatorname*{min}}\ell_{\exp}\left(H_{t-1}+h\vert\mathcal{D}\right)}\\ &{\qquad=\underset{h}{\arg\operatorname*{min}}\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[e^{-f(\pmb{x})H_{t-1}(\pmb{x})}\left(1-f(\pmb{x})h(\pmb{x})+\frac{1}{2}\right)\right]}\\ &{\qquad=\underset{h}{\arg\operatorname*{max}}\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[e^{-f(\pmb{x})H_{t-1}(\pmb{x})}f(\pmb{x})h(\pmb{x})\right]}\\ &{\qquad=\underset{h}{\arg\operatorname*{max}}\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[\frac{e^{-f(\pmb{x})H_{t-1}(\pmb{x})}}{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[e^{-f(\pmb{x})H_{t-1}(\pmb{x})}\right]}f(\pmb{x})h(\pmb{x})\right]}\end{array}
+$$  
+
+[解析]：理想的 $h_{t}({\pmb x})$ 是使得 $H_{t}(x)$ 的指数损失函数取得最小值时的 $h_{t}({\pmb x})$ ，该式将此转化成某个期望的最大值。第二个式子到第三个式子是因为 $\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}\left[\frac{3}{2}e^{-f(\mathbf{x})H_{t-1}(\mathbf{x})}\right]$ 与 $h(x)$ 无关，是一个常数。第三个式子到最后一个式子是因为 $\frac{1}{\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}\left[\frac{3}{2}e^{-f\left(\mathbf{x}\right)H_{t-1}\left(\mathbf{x}\right)}\right]}$ 与 $h(x)$ 无关因此可以引入进来。  
+
+# 公式(8.16)  
+
+$$
+\begin{array}{r l}&{h_{t}(\pmb{x})=\underset{h}{\arg\operatorname*{max}}\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[\frac{e^{-f(\pmb{x})H_{t-1}(\pmb{x})}}{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[e^{-f(\pmb{x})H_{t-1}(\pmb{x})}\right]}f(\pmb{x})h(\pmb{x})\right]}\\ &{\qquad=\underset{h}{\arg\operatorname*{max}}\mathbb{E}_{\pmb{x}\sim\mathcal{D}_{t}}[f(\pmb{x})h(\pmb{x})]}\end{array}
+$$  
+
+[推导]：首先解释下符号 $\mathbb{E}_{x\sim\mathcal{D}}$ 的含义，注意在本章中有两个符号 $D$ 和 $\mathcal{D}$ ，其中 $D$ 表示数据集，而 $\mathcal{D}$ 表示数据集 $D$ 的样本分布，可以理解为在数据集 $D$ 上进行一次随机采样，样本 $x$ 被抽到的概率是 ${\mathcal{D}}(x)$ ，那么符号 $\mathbb{E}_{x\sim\mathcal{D}}$ 表示的是在概率分布 $\mathcal{D}$ 上的期望，可以简单地理解为对数据及 $D$ 以概率 $\mathcal{D}$ 加权之后的期望，因此有：  
+
+$$
+\mathbb{E}(g(\pmb{x}))=\sum_{i=1}^{|D|}f(\pmb{x}_{i})g(\pmb{x}_{i})
+$$  
+
+故可得  
+
+$$
+\mathbb{E}_{\mathbf{x}\sim\mathcal{D}}\left[e^{-f\left(\mathbf{x}\right)H\left(\mathbf{x}\right)}\right]=\sum_{i=1}^{|D|}\mathcal{D}\left(\pmb{x}_{i}\right)e^{-f\left(\pmb{x}_{i}\right)H\left(\pmb{x}_{i}\right)}
+$$  
+
+由式(8.15) 可知  
+
+$$
+\mathcal{D}_{t}\left(\pmb{x}_{i}\right)=\mathcal{D}\left(\pmb{x}_{i}\right)\frac{e^{-f\left(\pmb{x}_{i}\right)H_{t-1}\left(\pmb{x}_{i}\right)}}{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\left[e^{-f\left(\pmb{x}\right)H_{t-1}\left(\pmb{x}\right)}\right]}
+$$  
+
+所以式(8.16) 可以表示为  
+
+$$
+\begin{array}{r l}&{\quad\mathbb{E}_{x\sim\mathcal{D}}\left[\frac{e^{-f\left(x\right)H_{t-1}\left(x\right)}}{\mathbb{E}_{x\sim\mathcal{D}}\left[e^{-f\left(x\right)H_{t-1}\left(x\right)}\right]}f(x)h(x)\right]}\\ &{=\displaystyle\sum_{i=1}^{|D|}\mathcal{D}\left(x_{i}\right)\frac{e^{-f\left(x_{i}\right)H_{t-1}\left(x_{i}\right)}}{\mathbb{E}_{x\sim\mathcal{D}}\left[e^{-f\left(x\right)H_{t-1}\left(x\right)}\right]}f(x_{i})h(x_{i})}\\ &{=\displaystyle\sum_{i=1}^{|D|}D_{t}\left(x_{i}\right)f\left(x_{i}\right)h\left(x_{i}\right)}\\ &{=\mathbb{E}_{x\sim\mathcal{D}_{t}}[f(x)h(x)]}\end{array}
+$$  
+
+公式(8.17)  
+
+$$
+f(\pmb{x})h(\pmb{x})=1-2\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))
+$$  
+
+[解析]：当 $f({\pmb x})=h({\pmb x})$ 时， $\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))=0$ ， $f({\boldsymbol{x}})h({\boldsymbol{x}})=1$ ，当 $f({\pmb x})\neq h({\pmb x})$ 时， $\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))=1$ ，$f({\pmb x})h({\pmb x})=-1.$ 。  
+
+# 公式(8.18)  
+
+$$
+h_{t}(\pmb{x})=\arg\operatorname*{min}_{h}\mathbb{E}_{\pmb{x}\sim\mathcal{D}_{t}}[\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))]
+$$  
+
+[解析]：由公式(8.16) 和公式(8.17) 有：  
+
+$$
+\begin{array}{r l}&{h_{t}(\pmb{x})=\arg\underset{h}{\operatorname*{max}}\,\mathbb{E}_{\pmb{x}\sim\mathcal{D}_{t}}[f(\pmb{x})h(\pmb{x})]}\\ &{\quad\quad\quad=\arg\underset{h}{\operatorname*{max}}\,\big(1-2\mathbb{E}_{\pmb{x}\sim\mathcal{D}_{t}}[\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))]\big)}\\ &{\quad\quad\quad=\arg\underset{h}{\operatorname*{max}}\,\big(-2\mathbb{E}_{\pmb{x}\sim\mathcal{D}_{t}}[\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))]\big)}\\ &{\quad\quad\quad=\arg\underset{h}{\operatorname*{min}}\,\mathbb{E}_{\pmb{x}\sim\mathcal{D}_{t}}[\mathbb{I}(f(\pmb{x})\neq h(\pmb{x}))]}\end{array}
+$$  
+
+# 公式(8.19)  
+
+$$
+\begin{array}{r l}&{\mathcal{D}_{t+1}(\pmb{x})=\cfrac{\mathcal{D}(\pmb{x})e^{-f(\pmb{x})H_{t}(\pmb{x})}}{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\,\left[e^{-f(\pmb{x})H_{t}(\pmb{x})}\right]}}\\ &{\qquad\qquad=\cfrac{\mathcal{D}(\pmb{x})e^{-f(\pmb{x})H_{t-1}(\pmb{x})}e^{-f(\pmb{x})\alpha_{t}h_{t}(\pmb{x})}}{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\,\left[e^{-f(\pmb{x})H_{t}(\pmb{x})}\right]}}\\ &{\qquad\qquad=\mathcal{D}_{t}(\pmb{x})\cdot e^{-f(\pmb{x})\alpha_{t}h_{t}(\pmb{x})}\cfrac{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\,\left[e^{-f(\pmb{x})H_{t-1}(\pmb{x})}\right]}{\mathbb{E}_{\pmb{x}\sim\mathcal{D}}\,\left[e^{-f(\pmb{x})H_{t}(\pmb{x})}\right]}}\end{array}
+$$  
+
+[解析]：boosting 算法是根据调整后的样本再去训练下一个基分类器，这就是“重赋权法”的样本分布的调整公式。  
+
+# 公式(8.20)  
+
+$$
+H^{\mathrm{oob}}(\pmb{x})=\underset{y\in\mathcal{Y}}{\arg\operatorname*{max}}\sum_{t=1}^{\mathrm{T}}\mathbb{I}\left(h_{t}(\pmb{x})=y\right)\cdot\mathbb{I}\left(\pmb{x}\notin D_{t}\right)
+$$  
+
+[解析]： $\mathbb{I}\left(h_{t}({\pmb x})={\boldsymbol y}\right)$ 表示对 $\mathrm{T}$ 个基学习器，每一个都判断结果是否与 $y$ 一致， $y$ 的取值一般是 $-1$ 和1，如果基学习器结果与 $y$ 一致，则 $\mathbb{I}\left(h_{t}(\pmb{x})=\pmb{y}\right)=1$ ，如果样本不在训练集内，则 $\mathbb{I}\left(\pmb{x}\notin\boldsymbol{D}_{t}\right)=1$ ，综合起来看就是，对包外的数据，用“投票法”选择包外估计的结果，即1 或-1。  
+
+# 公式(8.21)  
+
+$$
+\epsilon^{\mathrm{oob}}=\frac{1}{|D|}\sum_{(\pmb{x},y)\in D}\mathbb{I}\left(H^{\mathrm{oob}}(\pmb{x})\neq y\right)
+$$  
+
+[解析]：由8.20 知， $H^{\mathrm{oob}}(x)$ 是对包外的估计，该式表示估计错误的个数除以总的个数，得到泛化误差的包外估计。  
+
+# 公式(8.22)  
+
+$$
+H(\pmb{x})=\frac{1}{T}\sum_{i=1}^{T}h_{i}(\pmb{x})
+$$  
+
+[解析]：对基分类器的结果进行简单的平均。  
+
+# 公式(8.23)  
+
+$$
+H(\pmb{x})=\sum_{i=1}^{T}w_{i}h_{i}(\pmb{x})
+$$  
+
+[解析]：对基分类器的结果进行加权平均。  
+
+公式(8.24)  
+
+$$
+\begin{array}{r}{H(\pmb{x})=\left\{\begin{array}{l l}{c_{j},}&{\mathrm{~if~}\sum_{i=1}^{T}h_{i}^{j}(\pmb{x})>0.5\sum_{k=1}^{N}\sum_{i=1}^{T}h_{i}^{k}(\pmb{x})}\\ {\mathrm{~reject},}&{\mathrm{~otherwise}.}\end{array}\right.}\end{array}
+$$  
+
+[解析]：当某一个类别 $j$ 的基分类器的结果之和，大于所有结果之和的 $\frac{1}{2}$ ，则选择该类别 $j$ 为最终结果。  
+
+公式(8.25)  
+
+$$
+\begin{array}{r}{H(\pmb{x})=c_{\arg\operatorname*{max}}\sum_{i=1}^{T}h_{i}^{j}(\pmb{x})}\end{array}
+$$  
+
+[解析]：相比于其他类别，该类别 $j$ 的基分类器的结果之和最大，则选择类别 $j$ 为最终结果。  
+
+# 公式(8.26)  
+
+$$
+\begin{array}{r}{H(\pmb{x})=c_{\arg\operatorname*{max}{\sum_{i=1}^{T}w_{i}h_{i}^{j}(\pmb{x})}}\end{array}
+$$  
+
+[解析]：相比于其他类别，该类别 $j$ 的基分类器的结果之和最大，则选择类别 $j$ 为最终结果，与式(8.25)不同的是，该式在基分类器前面乘上一个权重系数，该系数大于等于0，且 $\mathrm{T}$ 个权重之和为1。  
+
+# 公式(8.27)  
+
+$$
+A\left(h_{i}|x\right)=\left(h_{i}(\pmb{x})-H(\pmb{x})\right)^{2}
+$$  
+
+[解析]：该式表示个体学习器结果与预测结果的差值的平方，即为个体学习器的“分歧”。  
+
+公式(8.28)  
+
+$$
+\begin{array}{l}{{\displaystyle\bar{A}(h|\pmb{x})=\sum_{i=1}^{T}w_{i}A\left(h_{i}|\pmb{x}\right)}}\\ {{\displaystyle\qquad\qquad=\sum_{i=1}^{T}w_{i}\left(h_{i}(\pmb{x})-H(\pmb{x})\right)^{2}}}\end{array}
+$$  
+
+[解析]：该式表示对各个个体学习器的“分歧”加权平均的结果，即集成的“分歧”。  
+
+# 公式(8.29)  
+
+$$
+E\left(h_{i}|\mathbfit{x}\right)=\left(f(\mathbfit{x})-h_{i}(\mathbfit{x})\right)^{2}
+$$  
+
+[解析]：该式表示个体学习器与真实值之间差值的平方，即个体学习器的平方误差。  
+
+# 公式(8.30)  
+
+$$
+E(H|\pmb{x})=(f(\pmb{x})-H(\pmb{x}))^{2}
+$$  
+
+[解析]：该式表示集成与真实值之间差值的平方，即集成的平方误差。  
+
+公式(8.31)  
+
+$$
+\bar{A}(h|\mathbf{x})=\sum_{i=1}^{T}w_{i}E\left(h_{i}|\pmb{x}\right)-E(H|\pmb{x})
+$$  
+
+[推导]：由(8.28) 知  
+
+$$
+\begin{array}{l}{\displaystyle{\bar{A}(h|x)=\sum_{i=1}^{T}w_{i}\left(h_{i}(x)-H(x)\right)^{2}}}\\ {\displaystyle{=\sum_{i=1}^{T}w_{i}(h_{i}(x)^{2}-2h_{i}(x)H(x)+H(x)^{2})}}\\ {\displaystyle{=\sum_{i=1}^{T}w_{i}h_{i}(x)^{2}-H(x)^{2}}}\end{array}
+$$  
+
+又因为  
+
+$$
+\begin{array}{l}{{\displaystyle\sum_{i=1}^{T}w_{i}E\left(h_{i}|x\right)-E(H|x)}}\\ {{\displaystyle=\sum_{i=1}^{T}w_{i}\left(f(\pmb{x})-h_{i}(\pmb{x})\right)^{2}-\left(f(\pmb{x})-H(\pmb{x})\right)^{2}}}\\ {{\displaystyle=\sum_{i=1}^{T}w_{i}h_{i}(\pmb{x})^{2}-H(\pmb{x})^{2}}}\end{array}
+$$  
+
+所以  
+
+$$
+\bar{A}(h|\mathbf{x})=\sum_{i=1}^{T}w_{i}E\left(h_{i}|\pmb{x}\right)-E(H|\pmb{x})
+$$  
+
+# 公式(8.32)  
+
+$$
+\sum_{i=1}^{T}w_{i}\int A\left(h_{i}|x\right)p(x)d x=\sum_{i=1}^{T}w_{i}\int E\left(h_{i}|x\right)p(x)d x-\int E(H|x)p(x)d x
+$$  
+
+[解析]： $\textstyle\int A\left(h_{i}|\pmb{x}\right)p(\pmb{x})d\pmb{x}$ 表示个体学习器在全样本上的“分歧”， $\begin{array}{r}{\sum_{i=1}^{T}w_{i}\int A\left(h_{i}|\pmb{x}\right)p(\pmb{x})d\pmb{x}}\end{array}$ 表示集成在全样本上的“分歧”，然后根据式(8.31) 拆成误差的形式。  
+
+# 公式(8.33)  
+
+$$
+E_{i}=\int E\left(h_{i}|\pmb{x}\right)p(\pmb{x})d\pmb{x}
+$$  
+
+[解析]：表示个体学习器在全样本上的泛化误差。  
+
+公式(8.34)  
+
+$$
+A_{i}=\int A\left(h_{i}|x\right)p(x)d x
+$$  
+
+[解析]：表示个体学习器在全样本上的分歧。  
+
+公式(8.35)  
+
+$$
+E=\int E(H|\mathbf{x})p(\mathbf{x})d\mathbf{x}
+$$  
+
+[解析]：表示集成在全样本上的泛化误差。  
+
+# 公式(8.36)  
+
+$$
+E=\bar{E}-\bar{A}
+$$  
+
+[解析]： $\bar{E}$ 表示个体学习器泛化误差的加权均值， $\bar{A}$ 表示个体学习器分歧项的加权均值，该式称为“误差-分歧分解”。  
+
+# 第9 章 聚类  
+
+# 公式(9.5)  
+
+$$
+\mathrm{JC}={\frac{a}{a+b+c}}
+$$  
+
+[解析]：给定两个集合 $A$ 和 $B$ ，则Jaccard 系数定义为如下公式  
+
+$$
+J C={\frac{|A{\bigcap}B|}{|A{\bigcup}B|}}={\frac{|A{\bigcap}B|}{|A|+|B|-|A{\bigcap}B|}}
+$$  
+
+Jaccard 系数可以用来描述两个集合的相似程度。推论：假设全集 $U$ 共有 $n$ 个元素，且 $A\subseteq U,\ B\subseteq U$ ，则每一个元素的位置共有四种情况：  
+
+1. 元素同时在集合 $A$ 和 $B$ 中，这样的元素个数记为 $M_{11}$   
+2. 元素出现在集合 $A$ 中，但没有出现在集合 $B$ 中，这样的元素个数记为 $M_{10}$   
+3. 元素没有出现在集合 $A$ 中，但出现在集合 $B$ 中，这样的元素个数记为 $M_{01}$   
+4. 元素既没有出现在集合 $A$ 中，也没有出现在集合 $B$ 中，这样的元素个数记为 $M_{00}$  
+
+根据Jaccard 系数的定义，此时的Jaccard 系数为如下公式  
+
+$$
+\mathrm{JC}={\frac{M_{11}}{M_{11}+M_{10}+M_{01}}}
+$$  
+
+由于聚类属于无监督学习，事先并不知道聚类后样本所属类别的类别标记所代表的意义，即便参考模型的类别标记意义是已知的，我们也无法知道聚类后的类别标记与参考模型的类别标记是如何对应的，况且聚类后的类别总数与参考模型的类别总数还可能不一样，因此只用单个样本无法衡量聚类性能的好坏。  
+
+由于外部指标的基本思想就是以参考模型的类别划分为参照，因此如果某一个样本对中的两个样本在聚类结果中同属于一个类，在参考模型中也同属于一个类，或者这两个样本在聚类结果中不同属于一个类，在参考模型中也不同属于一个类，那么对于这两个样本来说这是一个好的聚类结果。  
+
+总的来说所有样本对中的两个样本共存在四种情况：  
+
+1. 样本对中的两个样本在聚类结果中属于同一个类，在参考模型中也属于同一个类  
+2. 样本对中的两个样本在聚类结果中属于同一个类，在参考模型中不属于同一个类  
+3. 样本对中的两个样本在聚类结果中不属于同一个类，在参考模型中属于同一个类  
+4. 样本对中的两个样本在聚类结果中不属于同一个类，在参考模型中也不属于同一个类  
+
+综上所述，即所有样本对存在着书中公式(9.1)-(9.4) 的四种情况，现在假设集合 $A$ 中存放着两个样本都同属于聚类结果的同一个类的样本对，即 $A=S S\cup S D$ ，集合 $B$ 中存放着两个样本都同属于参考模型的同一个类的样本对，即 $B=S S\cup D S$ ，那么根据Jaccard 系数的定义有：  
+
+$$
+\mathrm{JC}={\frac{|A{\bigcap}B|}{|A{\bigcup}B|}}={\frac{|S S|}{|S S{\bigcup}S D\bigcup D S|}}={\frac{a}{a+b+c}}
+$$  
+
+也可直接将书中公式(9.1)-(9.4) 的四种情况类比推论，即 $M_{11}=a\,,\,\,\,M_{10}=b\,,\,\,\,M_{01}=c$ ，所以  
+
+$$
+\mathrm{JC}={\frac{M_{11}}{M_{11}+M_{10}+M_{01}}}={\frac{a}{a+b+c}}
+$$  
+
+# 公式(9.6)  
+
+$$
+\mathrm{FMI}={\sqrt{{\frac{a}{a+b}}\cdot{\frac{a}{a+c}}}}
+$$  
+
+[解析]：其中 $\frac{a}{a+b}$ 和 $\frac{a}{a+c}$ 为Wallace 提出的两个非对称指标， $a$ 代表两个样本在聚类结果和参考模型中均属于同一类的样本对的个数， $a+b$ 代表两个样本在聚类结果中属于同一类的样本对的个数， $a+c$ 代表两个样本在参考模型中属于同一类的样本对的个数，这两个非对称指标均可理解为样本对中的两个样本在聚类结果和参考模型中均属于同一类的概率。由于指标的非对称性，这两个概率值往往不一样，因此Fowlkes 和Mallows 提出利用几何平均数将这两个非对称指标转化为一个对称指标，即Fowlkes andMallows Index, FMI。  
+
+# 公式(9.7)  
+
+$$
+\mathrm{RI}={\frac{2(a+d)}{m(m-1)}}
+$$  
+
+[解析]：Rand Index 定义如下：  
+
+$$
+\mathrm{RI}={\frac{a+d}{a+b+c+d}}={\frac{a+d}{m(m-1)/2}}={\frac{2(a+d)}{m(m-1)}}
+$$  
+
+其可以理解为两个样本都属于聚类结果和参考模型中的同一类的样本对的个数与两个样本都分别不属于聚类结果和参考模型中的同一类的样本对的个数的总和在所有样本对中出现的频率，可以简单理解为聚类结果与参考模型的一致性。  
+
+# 公式(9.8)  
+
+$$
+\arg(C)={\frac{2}{|C|(|C|-1)}}\sum_{1\leqslant i<j\leqslant|C|}\operatorname{dist}\left(\mathbf{X}_{i},\mathbf{X}_{j}\right)
+$$  
+
+[解析]：簇内距离的定义式：求和号左边是 $(x_{i},x_{j})$ 组合个数的倒数，求和号右边是这些组合的距离和，所以两者相乘定义为平均距离。  
+
+# 公式(9.33)  
+
+$$
+\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p\left(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}{\sum_{l=1}^{k}\alpha_{l}\cdot p\left(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l}\right)}\left(\pmb{x}_{j}-\pmb{\mu}_{i}\right)=0
+$$  
+
+[推导]：根据公式(9.28) 可知：  
+
+$$
+p\left(\boldsymbol{x}_{j}|\boldsymbol{\mu}_{i},\boldsymbol{\Sigma}_{i}\right)=\frac{1}{\left(2\pi\right)^{\frac{n}{2}}\left|\boldsymbol{\Sigma}_{i}\right|^{\frac{1}{2}}}\exp\left(-\frac{1}{2}\left(\boldsymbol{x}_{j}-\boldsymbol{\mu}_{i}\right)^{T}\boldsymbol{\Sigma}_{i}^{-1}\left(\boldsymbol{x}_{j}-\boldsymbol{\mu}_{i}\right)\right)
+$$  
+
+又根据公式(9.32)，由  
+
+$$
+{\frac{\partial L L(D)}{\partial\pmb{\mu}_{i}}}={\frac{\partial L L(D)}{\partial p\left(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}}\cdot{\frac{\partial p\left(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}{\partial\pmb{\mu}_{i}}}=0
+$$  
+
+其中：  
+
+$$
+\begin{array}{r l r}{\lefteqn{\frac{\partial L L(D)}{\partial p\left(x_{j}|\mu_{i},\,\Sigma_{l}\right)}=\frac{\partial\sum_{j=1}^{m}\ln\left(\sum_{l=1}^{k}\alpha_{l}\cdot p\left(x_{j}|\mu_{l},\,\Sigma_{l}\right)\right)}{\partial p\left(x_{j}|\mu_{i},\,\Sigma_{i}\right)}}}\\ &{}&{\quad=\displaystyle\sum_{j=1}^{m}\frac{\partial\ln\left(\sum_{l=1}^{k}\alpha_{l}\cdot p\left(x_{j}|\mu_{l},\,\Sigma_{l}\right)\right)}{\partial p\left(x_{j}|\mu_{i},\,\Sigma_{i}\right)}}\\ &{}&{\quad=\displaystyle\sum_{j=1}^{m}\frac{\alpha_{i}}{\sum_{l=1}^{k}\alpha_{l}\cdot p\left(x_{j}|\mu_{l},\,\Sigma_{l}\right)}}\end{array}
+$$  
+
+$$
+{\begin{array}{r l}&{{\frac{\partial p\left(x_{j}\left|\mu_{i},\Sigma_{i}\right|\right)}{\partial\mu_{i}}}={\frac{\partial{\frac{1}{\left(2\pi\right)^{\frac{1}{2}}|\Sigma_{i}|^{\frac{1}{2}}}}\exp\left(-{\frac{1}{2}}\left(x_{j}-\mu_{i}\right)^{\top}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\right)}{\partial\mu_{i}}}}\\ &{\ \ \ \ \ \ \ \ ={\frac{1}{\left(2\pi\right)^{\frac{1}{2}}|\Sigma_{i}|^{\frac{1}{2}}}}\cdot{\frac{\partial\exp\left(-{\frac{1}{2}}\left(x_{j}-\mu_{i}\right)^{\top}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\right)}{\partial\mu_{i}}}}\\ &{\ \ \ \ \ \ \ ={\frac{1}{\left(2\pi\right)^{\frac{1}{2}}|\Sigma_{i}|^{\frac{1}{2}}}}\cdot{\frac{\exp\left(-{\frac{1}{2}}\left(x_{j}-\mu_{i}\right)^{\top}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\right)\cdot-{\frac{1}{2}}{\frac{\partial\left(x_{j}-\mu_{i}\right)^{\top}\Sigma_{i}^{-1}}{\partial\mu_{i}}}\left(x_{j}-\mu_{i}\right)}{\partial\mu_{i}}}}\\ &{\ \ \ \ \ \ \ ={\frac{1}{\left(2\pi\right)^{\frac{1}{2}}|\Sigma_{i}|^{\frac{1}{2}}}}\cdot{\exp\left(-{\frac{1}{2}}\left(x_{j}-\mu_{i}\right)^{\top}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\right)}\cdot\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)}\\ &{\ \ \ \ \ \ \ =p\left(x_{j}\right)\left|\mu_{i},\Sigma_{i}\right|\cdot\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)}\end{array}}
+$$  
+
+其中，由矩阵求导的法则 $\begin{array}{r}{\frac{\partial\mathbf{a}^{T}\mathbf{X}\mathbf{a}}{\partial\mathbf{a}}=2\mathbf{X}\mathbf{a}}\end{array}$ 可得：  
+
+$$
+-{\frac{1}{2}}{\frac{\partial\left(\mathbf{x}_{j}-{\boldsymbol{\mu}}_{i}\right)^{\top}\Sigma_{i}^{-1}\left({\boldsymbol{x}}_{j}-{\boldsymbol{\mu}}_{i}\right)}{\partial{\boldsymbol{\mu}}_{i}}}=-{\frac{1}{2}}\cdot2\Sigma_{i}^{-1}\left({\boldsymbol{\mu}}_{i}-{\boldsymbol{x}}_{j}\right)
+$$  
+
+因此有：  
+
+$$
+{\frac{\partial L L(D)}{\partial\mu_{i}}}=\sum_{j=1}^{m}{\frac{\alpha_{i}}{\sum_{l=1}^{k}\alpha_{l}\cdot p\left(x_{j}|\mu_{l},\mathbf{\lambda}_{l}\right)}}\cdot p\left(x_{j}|\mu_{i},\Sigma_{i}\right)\cdot\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)=0
+$$  
+
+公式(9.34)  
+
+$$
+\mu_{i}=\frac{\sum_{j=1}^{m}\gamma_{j i}\mathbf{X}_{j}}{\sum_{j=1}^{m}\gamma_{j i}}
+$$  
+
+[推导]：由式9.30  
+
+$$
+\gamma_{j i}=p_{\mathcal{M}}\left(z_{j}=i|\mathbf{X}_{j}\right)=\frac{\boldsymbol{\alpha}_{i}\cdot p\left(\mathbf{X}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}{\sum_{l=1}^{k}\boldsymbol{\alpha}_{l}\cdot p\left(\mathbf{X}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l}\right)}
+$$  
+
+带入9.33  
+
+$$
+\sum_{j=1}^{m}\gamma_{j i}\left(\mathbf{X}_{j}-\pmb{\mu}_{i}\right)=0
+$$  
+
+因此有  
+
+$$
+\mu_{i}=\frac{\sum_{j=1}^{m}\gamma_{j i}\mathbf{X}_{j}}{\sum_{j=1}^{m}\gamma_{j i}}
+$$  
+
+公式(9.35)  
+
+$$
+\Sigma_{i}=\frac{\sum_{j=1}^{m}\gamma_{j i}(\pmb{x}_{j}-\pmb{\mu}_{i})(\pmb{x}_{j}-\pmb{\mu}_{i})^{T}}{\sum_{j=1}^{m}\gamma_{j i}}
+$$  
+
+[推导]：根据公式(9.28) 可知：  
+
+$$
+p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})=\frac{1}{(2\pi)^{\frac{n}{2}}\left|\pmb{\Sigma}_{i}\right|^{\frac{1}{2}}}\mathrm{exp}\left(-\frac{1}{2}(\pmb{x}_{j}-\pmb{\mu}_{i})^{T}\pmb{\Sigma}_{i}^{-1}(\pmb{x}_{j}-\pmb{\mu}_{i})\right)
+$$  
+
+又根据公式(9.32)，由  
+
+$$
+{\frac{\partial L L(D)}{\partial\Sigma_{i}}}=0
+$$  
+
+可得  
+
+$$
+{\begin{array}{r l}&{{\cfrac{\partial L L(D)}{\partial\Sigma_{i}}}={\cfrac{\partial}{\partial\Sigma_{i}}}\left[\displaystyle\sum_{j=1}^{m}\ln\left(\displaystyle\sum_{i=1}^{k}\alpha_{i}\cdot p(\mathbf{x}_{j}|\mu_{i},\Sigma_{i})\right)\right]}\\ &{\qquad\qquad=\displaystyle\sum_{j=1}^{m}{\cfrac{\partial}{\partial\Sigma_{i}}}\left[\ln\left(\displaystyle\sum_{i=1}^{k}\alpha_{i}\cdot p(\mathbf{x}_{j}|\mu_{i},\Sigma_{i})\right)\right]}\\ &{\qquad\qquad=\displaystyle\sum_{j=1}^{m}{\cfrac{\alpha_{i}\cdot{\cfrac{\partial}{\partial\Sigma_{i}}}(p(\mathbf{x}_{j}|\mu_{i},\Sigma_{i}))}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\mathbf{x}_{j}|\mu_{l},\Sigma_{l})}}}\end{array}}
+$$  
+
+其中  
+
+$$
+\begin{array}{r l}{\frac{\partial}{\partial\Sigma_{i}}(p(x_{j}|\mu_{i},\Sigma_{i}))=}&{\frac{\partial}{\partial\Sigma_{i}}\left[\frac{1}{(2\pi)^{\frac{3}{2}}|\Sigma_{i}|^{\frac{1}{3}}}\exp\left(-\frac{1}{2}(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}(x_{j}-\mu_{i})\right)\right]}\\ &{=\frac{\partial}{\partial\Sigma_{i}}\left\{\exp\left[\ln\left(\frac{1}{(2\pi)^{\frac{3}{2}}|\Sigma_{i}|^{\frac{1}{3}}}\exp\left(-\frac{1}{2}(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}(x_{j}-\mu_{i})\right)\right)\right]\right\}}\\ &{=p(x_{j}|\mu_{i},\Sigma_{i})\cdot\frac{\partial}{\partial\Sigma_{i}}\left[\ln\left(\frac{1}{(2\pi)^{\frac{3}{2}}|\Sigma_{i}|^{\frac{1}{3}}}\exp\left(-\frac{1}{2}(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}(x_{j}-\mu_{i})\right)\right)\right]}\\ &{=p(x_{j}|\mu_{i},\Sigma_{i})\cdot\frac{\partial}{\partial\Sigma_{i}}\left[\ln\frac{1}{(2\pi)^{\frac{3}{2}}}-\frac{1}{2}\ln|\Sigma_{i}|-\frac{1}{2}(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}(x_{j}-\mu_{i})\right]}\\ &{=p(x_{j}|\mu_{i},\Sigma_{i})\cdot\left[-\frac{1}{2}\frac{\partial\left(|\Sigma_{i}|\right)}{\partial\Sigma_{i}}-\frac{1}{2}\frac{\partial\left[(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}(x_{j}-\mu_{i})\right]}{\partial\Sigma_{i}}\right]}\end{array}
+$$  
+
+由矩阵微分公式 $\cfrac{\partial|\mathbf{X}|}{\partial\mathbf{X}}=|\mathbf{X}|\cdot(\mathbf{X}^{-1})^{T},\cfrac{\partial\mathbf{\boldsymbol{a}}^{T}\mathbf{X}^{-1}\mathbf{B}}{\partial\mathbf{X}}=-\mathbf{X}^{-T}\mathbf{\boldsymbol{a}}\boldsymbol{b}^{T}\mathbf{X}^{-T}$ 可得  
+
+$$
+\frac{\partial}{\partial\Sigma_{i}}(p(x_{j}|\mu_{i},\Sigma_{i}))=p(x_{j}|\mu_{i},\Sigma_{i})\cdot\left[-\frac{1}{2}\Sigma_{i}^{-1}+\frac{1}{2}\Sigma_{i}^{-1}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}\right]
+$$  
+
+将此式代回 $\frac{\partial L L(D)}{\partial{\pmb{\Sigma}}_{i}}$ 中可得  
+
+$$
+\frac{\partial L L(D)}{\partial\Sigma_{i}}=\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p(x_{j}|\mu_{i},\Sigma_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(x_{j}|\mu_{l},\Sigma_{l})}\cdot\left[-\frac{1}{2}\Sigma_{i}^{-1}+\frac{1}{2}\Sigma_{i}^{-1}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}\right]
+$$  
+
+又由公式(9.30) 可知 $\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}=\gamma_{j i}$ ，所以上式可进一步化简为  
+
+$$
+\frac{\partial L L(D)}{\partial\Sigma_{i}}\!=\!\sum_{j=1}^{m}\gamma_{j i}\cdot\left[-\frac{1}{2}\!\!\sum_{i}^{-1}+\frac{1}{2}\!\!\sum_{i}^{-1}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}\!\!\right]
+$$  
+
+令上式等于0 可得  
+
+$$
+\frac{\partial L L(D)}{\partial\Sigma_{i}}=\sum_{j=1}^{m}\gamma_{j i}\cdot\left[-\frac{1}{2}\Sigma_{i}^{-1}+\frac{1}{2}\Sigma_{i}^{-1}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}\right]=0
+$$  
+
+移项推导有：  
+
+$$
+\begin{array}{c}{{\displaystyle\sum_{j=1}^{m}\gamma_{j\,i}\cdot\left[-I+(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}\right]=0}}\\ {{\displaystyle\sum_{j=1}^{m}\gamma_{j i}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}\Sigma_{i}^{-1}=\displaystyle\sum_{j=1}^{m}\gamma_{j i}I}}\\ {{\displaystyle\sum_{j=1}^{m}\gamma_{j i}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}=\displaystyle\sum_{j=1}^{m}\gamma_{j i}\Sigma_{i}}}\\ {{\displaystyle\sum_{j=1}^{m-1}\gamma_{j i}(x_{j}-\mu_{i})(x_{j}-\mu_{i})^{T}=\displaystyle\sum_{j=1}^{m}\gamma_{j i}}}\end{array}
+$$  
+
+$$
+\pmb{\Sigma}_{i}=\frac{\sum_{j=1}^{m}\gamma_{j i}(\pmb{x}_{j}-\pmb{\mu}_{i})(\pmb{x}_{j}-\pmb{\mu}_{i})^{T}}{\sum_{j=1}^{m}\gamma_{j i}}
+$$  
+
+此即为公式(9.35)。  
+
+# 公式(9.38)  
+
+$$
+\alpha_{i}=\frac{1}{m}\sum_{j=1}^{m}\gamma_{j i}
+$$  
+
+[推导]：对公式(9.37) 两边同时乘以 $\alpha_{i}$ 可得  
+
+$$
+\begin{array}{r}{\displaystyle\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}+\lambda\alpha_{i}=0}\\ {\displaystyle\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}=-\lambda\alpha_{i}}\end{array}
+$$  
+
+两边对所有混合成分求和可得  
+
+$$
+\begin{array}{l}{{\displaystyle\sum_{i=1}^{k}\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}=-\lambda\sum_{i=1}^{k}\alpha_{i}}}\\ {{\displaystyle\sum_{j=1}^{m}\sum_{i=1}^{k}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}=-\lambda\sum_{i=1}^{k}\alpha_{i}}}\end{array}
+$$  
+
+因为  
+
+$$
+\sum_{i=1}^{k}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\mathbf{\xi}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\mathbf{\xi}_{l})}=\frac{\sum_{i=1}^{k}\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\mathbf{\xi}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\mathbf{\xi}_{l})}=1
+$$  
+
+且 $\textstyle\sum_{i=1}^{k}\alpha_{i}=1$ ，所以有 $m=-\lambda$ ，因此  
+
+$$
+\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}=-\lambda\alpha_{i}=m\alpha_{i}
+$$  
+
+因此  
+
+$$
+\alpha_{i}=\frac{1}{m}\sum_{j=1}^{m}\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}
+$$  
+
+又由公式(9.30) 可知 $\frac{\alpha_{i}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{l=1}^{k}\alpha_{l}\cdot p(\pmb{x}_{j}|\pmb{\mu}_{l},\pmb{\Sigma}_{l})}=\gamma_{j i}$ ，所以上式可进一步化简为  
+
+$$
+\alpha_{i}=\frac{1}{m}\sum_{j=1}^{m}\gamma_{j i}
+$$  
+
+此即为公式(9.38)。  
+
+# 第10 章 降维与度量学习  
+
+# 公式(10.1)  
+
+$$
+P(e r r)=1-\sum_{c\in\mathcal{V}}P(c|x)P(c|z)
+$$  
+
+[解析]： $P(c|\mathbfit{x})P(c|\boldsymbol{z})$ 表示 $x$ 和 $z$ 同属类 $c$ 的概率，对所有可能的类别 $c\in\mathcal{V}$ 求和，则得到 $x$ 和 $z$ 同属相同类别的概率，因此 $\begin{array}{r}{1-\sum_{c\in\mathcal{Y}}P(c|\pmb{x})P(c|\pmb{z})}\end{array}$ 表示 $x$ 和 $z$ 分属不同类别的概率。  
+
+公式(10.2)  
+
+$$
+\begin{array}{l}{P(e r r)=1-\displaystyle\sum_{c\in\mathcal{V}}P(c|x)P(c|z)}\\ {\simeq1-\displaystyle\sum_{c\in\mathcal{V}}P^{2}(c|x)}\\ {\leqslant1-P^{2}\left(c^{*}|x\right)}\\ {=\left(1+P\left(c^{*}|x\right)\right)\left(1-P\left(c^{*}|x\right)\right)}\\ {\leqslant2\times\left(1-P\left(c^{*}|x\right)\right)}\end{array}
+$$  
+
+[解析]：第二个式子是来源于前提假设” 假设样本独立同分布，且对任意 $x$ 和任意小正数 $\delta$ ，在 $x$ 附近 $\delta$ 距离范围内总能找到一个训练样本”，假设所有 $\delta$ 中最小的 $\delta$ 组成和 $\mathbfcal{x}$ 同一维度的向量 $\delta$ 则 $\begin{array}{r}{P(c|z)=}\end{array}$ $P(c|{\pmb x}\pm\delta)\simeq P(c|{\pmb x})$ 。第三个式子是应为 $c^{*}\in\mathcal{V}$ ，因此 $P^{2}\left(c^{*}|x\right)$ 是 $\textstyle\sum_{c\in\mathcal{Y}}P^{2}(c|\mathbf{\boldsymbol{x}})$ 的一个分量，所以$\begin{array}{r}{\sum_{c\in\mathcal{Y}}P^{2}(c|\pmb{x})\geqslant P^{2}\left(c^{*}|\pmb{x}\right)}\end{array}$ 。第四个式子是平方差公式展开，最后一个式子因为 $1+P^{2}\left(c^{*}|\pmb{x}\right)\leqslant2$ 。  
+
+公式(10.3)  
+
+$$
+\begin{array}{c}{\mathrm{dist}_{i j}^{2}=\left\|z_{i}\right\|^{2}+\left\|z_{j}\right\|^{2}-2z_{i}^{\mathrm{T}}z_{j}}\\ {=b_{i i}+b_{j j}-2b_{i j}}\end{array}
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l}&{\operatorname{dist}_{i j}^{2}=\left\|z_{i}-z_{j}\right\|^{2}=\left(z_{i}-z_{j}\right)^{\top}\left(z_{i}-z_{j}\right)}\\ &{\qquad=z_{i}^{\top}z_{i}-z_{i}^{\top}z_{j}-z_{j}^{\top}z_{i}+z_{j}^{\top}z_{j}}\\ &{\qquad=z_{i}^{\top}z_{i}+z_{j}^{\top}z_{j}-2z_{i}^{\top}z_{j}}\\ &{\qquad=\left\|z_{i}\right\|^{2}+\left\|z_{j}\right\|^{2}-2z_{i}^{\top}z_{j}}\\ &{\qquad=b_{i i}+b_{j j}-2b_{i j}}\end{array}
+$$  
+
+# 公式(10.4)  
+
+$$
+\sum_{i=1}^{m}d i s t_{i j}^{2}=t r(\pmb{B})+m b_{j j}
+$$  
+
+[解析]：首先根据式10.3 有  
+
+$$
+\sum_{i=1}^{m}d i s t_{i j}^{2}=\sum_{i=1}^{m}b_{i i}+\sum_{i=1}^{m}b_{j j}-2\sum_{i=1}^{m}b_{i j}
+$$  
+
+对于第一项，根据矩阵迹的定义， $\textstyle\sum_{i=1}^{m}b_{i i}\;=\;t r(B)$ ，对于第二项，由于求和号内元素和 $i$ 无关，因此$\textstyle\sum_{i=1}^{m}b_{j j}=m b_{j j}$ ，对于第三项有，  
+
+$$
+\sum_{i=1}^{m}b_{i j}=\sum_{i=1}^{m}z_{i}^{\top}z_{j}=\sum_{i=1}^{m}z_{j}^{\top}z_{i}=z_{j}^{\top}\sum_{i=1}^{m}z_{i}=z_{j}^{\top}\cdot\mathbf{0}=0
+$$  
+
+其中 $\textstyle\sum_{i=1}^{m}z_{i}=\mathbf{0}$ 是利用了书上的前提条件，即将降维后的样本被中心化。  
+
+公式(10.5)  
+
+$$
+\sum_{j=1}^{m}\mathrm{dist}_{i j}^{2}=\mathrm{tr}(\mathbf{B})+m b_{i i}
+$$  
+
+[解析]：参考10.4  
+
+# 公式(10.6)  
+
+$$
+\sum_{i=1}^{m}\sum_{j=1}^{m}\operatorname{dist}_{i j}^{2}=2m\operatorname{tr}(\mathbf B)
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l}&{\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}\operatorname{dist}_{i j}^{2}=\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}\left(\left|\boldsymbol{|z_{i}|}\right|^{2}+\left|\boldsymbol{|z_{j}|}\right|^{2}-2\boldsymbol{z}_{i}^{\top}\boldsymbol{z}_{j}\right)}\\ &{\displaystyle\qquad\qquad\qquad=\sum_{i=1}^{m}\sum_{j=1}^{m}\left|\left|\boldsymbol{z_{i}}\right|\right|^{2}+\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}\left|\left|\boldsymbol{z_{j}}\right|\right|^{2}-2\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}\boldsymbol{z}_{i}^{\top}\boldsymbol{z}_{j}}\end{array}
+$$  
+
+其中  
+
+$$
+\sum_{i=1}^{m}\sum_{j=1}^{m}\left\|z_{i}\right\|^{2}=m\sum_{i=1}^{m}\left\|z_{i}\right\|^{2}=m\operatorname{tr}(\mathbf{B})
+$$  
+
+$$
+\sum_{i=1}^{m}\sum_{j=1}^{m}\|z_{j}\|^{2}=m\sum_{j=1}^{m}\|z_{j}\|^{2}=m\operatorname{tr}(\mathbf{B})
+$$  
+
+$$
+\sum_{i=1}^{m}\sum_{j=1}^{m}z_{i}^{\top}z_{j}=0
+$$  
+
+最后一个式子是来自于书中的假设，假设降维后的样本 $\mathbf{Z}$ 被中心化。  
+
+# 公式(10.10)  
+
+$$
+b_{i j}=-\frac{1}{2}(d i s t_{i j}^{2}-d i s t_{i\cdot}^{2}-d i s t_{\cdot j}^{2}+d i s t_{\cdot\cdot}^{2})
+$$  
+
+[推导]：由公式（10.3）可得  
+
+$$
+b_{i j}=-\frac{1}{2}(d i s t_{i j}^{2}-b_{i i}-b_{j j})
+$$  
+
+由公式（10.6）和（10.9）可得  
+
+$$
+\begin{array}{c}{t r(B)=\displaystyle\frac{1}{2m}\sum_{i=1}^{m}\sum_{j=1}^{m}d i s t_{i j}^{2}}\\ {=\displaystyle\frac{m}{2}d i s t_{.}^{2}}\end{array}
+$$  
+
+由公式（10.4）和（10.8）可得  
+
+由公式（10.5）和（10.7）可得  
+
+$$
+\begin{array}{l}{{\displaystyle b_{j j}=\frac{1}{m}\sum_{i=1}^{m}d i s t_{i j}^{2}-\frac{1}{m}t r({\bf B})}}\\ {{\displaystyle\qquad=d i s t_{\cdot j}^{2}-\frac{1}{2}d i s t_{\cdot}^{2}}}\end{array}
+$$  
+
+$$
+\begin{array}{l}{{\displaystyle b_{i i}=\frac{1}{m}\sum_{j=1}^{m}d i s t_{i j}^{2}-\frac{1}{m}t r({\bf{\boldsymbol{B}}})}}\\ {{\displaystyle\qquad=d i s t_{i\cdot}^{2}-\frac{1}{2}d i s t_{\cdot}^{2}}}\end{array}
+$$  
+
+综合可得  
+
+$$
+\begin{array}{l}{{\displaystyle b_{i j}=-\frac12(d i s t_{i j}^{2}-b_{i i}-b_{j j})}}\\ {{\displaystyle\quad=-\frac12(d i s t_{i j}^{2}-d i s t_{i\cdot}^{2}+\frac12d i s t_{\cdot\cdot}^{2}-d i s t_{\cdot\cdot j}^{2}+\frac12d i s t_{\cdot\cdot}^{2})}}\\ {{\displaystyle\quad=-\frac12(d i s t_{i j}^{2}-d i s t_{i\cdot}^{2}-d i s t_{\cdot\cdot j}^{2}+d i s t_{\cdot\cdot}^{2})}}\end{array}
+$$  
+
+公式(10.11)  
+
+$$
+\mathbf{Z}=\mathbf{\Omega}_{\ast}^{1/2}\mathbf{V}_{\ast}^{\mathrm{T}}\in\mathbb{R}^{d^{\ast}\times m}
+$$  
+
+[解析]：由题设知， $d^{*}$ 为 $\mathbf{V}$ 的非零特征值，因此 $\mathbf{B}=\mathbf{V}\mathbf{\Sigma}\mathbf{V}^{\top}$ 可以写成 $\mathbf{B}=\mathbf{V}_{*}\mathbf{\Sigma}_{*}\mathbf{V}_{*}^{\top}$ ，其中￿∗ $\in\mathbb{R}^{d\times d}$ 为 $d$ 个非零特征值构成的特征值对角矩阵，而 $\mathbf{V}_{\ast}\in\mathbb{R}^{m\times d}$ 为￿ $\in\mathbb{R}^{d\times d}$ 对应的特征值向量矩阵，因此有  
+
+$$
+\mathbf{B}=\left(\mathbf{V}_{*}\mathbf{\Sigma}_{*}^{1/2}\right)\left(\mathbf{A}_{*}^{1/2}\mathbf{V}_{*}^{\top}\right)
+$$  
+
+故而 $\mathbf{Z}=\mathbf{\Sigma}_{\ast}^{1/2}\mathbf{V}_{\ast}^{\top}\in\mathbb{R}^{d\times m}$  
+
+# 公式(10.14)  
+
+$$
+\begin{array}{r l r}{\lefteqn{\sum_{i=1}^{m}\left\|\sum_{j=1}^{d^{\prime}}z_{i j}\pmb{w}_{j}-\pmb{x}_{i}\right\|_{2}^{2}=\sum_{i=1}^{m}z_{i}^{\mathrm{T}}\pmb{z}_{i}-2\sum_{i=1}^{m}z_{i}^{\mathrm{T}}\pmb{\mathrm{W}}^{\mathrm{T}}\pmb{x}_{i}+\mathrm{~const}}}\\ &{}&{\propto-\operatorname{tr}(\pmb{\mathrm{W}}^{\mathrm{T}}(\sum_{i=1}^{m}x_{i}\pmb{x}_{i}^{\mathrm{T}})\pmb{\mathrm{W}})}\end{array}
+$$  
+
+[推导]：已知 $\mathbf{W}^{\mathrm{T}}\mathbf{W}=\mathbf{I},z_{i}=\mathbf{W}^{\mathrm{T}}\mathbf{x}_{i}$ ，则  
+
+$$
+\begin{array}{r l}{\sum_{k=1}^{n}\left|\displaystyle\sum_{i=1}^{j-1}w_{i}\right|_{\infty}-\sum_{i=1}^{j-1}\sum_{s=1}^{i-1}\left|\left(W_{k-1,i}-z\right)\right|^{2}}\\ &{=\sum_{i=1}^{n}\left(w_{k-1,i}\right)^{2}\left(W_{k-1,i}-z\right)}\\ &{=\frac{\sum_{i=1}^{n}\left(\imath^{2}\nabla w_{i}\nabla w_{i}-z\right)^{2}\nabla w_{k-1,i}^{2}}{\sqrt{2}}\,}\\ &{=\frac{\sum_{i=1}^{n}\left(\imath^{4}\nabla w_{i}-z\right)^{2}\nabla w_{k-1,i}^{2}+z\nabla\eta_{i}}{\sqrt{2}}}\\ &{=-\frac{\sum_{i=1}^{n}\xi_{i}\xi_{i}-z\frac{\sqrt{2}}{2}\xi_{i}\nabla\eta_{i}+z\frac{\sqrt{2}}{2}\xi_{i}\nabla\eta_{i}}{\sqrt{2}}}\\ &{=\frac{\sum_{i=1}^{n}\xi_{i}\xi_{i}-z\frac{\sqrt{2}}{2}\xi_{i}\nabla\eta_{i}+z\cos\left(z\right)}{\sqrt{2}}}\\ &{=\frac{\sum_{i=1}^{n}\xi_{i}\xi_{i}-z\frac{\sqrt{2}}{2}\xi_{i}\nabla\eta_{i}}{\sqrt{2}}\xi_{i}+\frac{r_{0}\sqrt{2}}{2}\xi_{i}\nabla\eta_{i}}\\ &{=\frac{\sum_{i=1}^{n}\xi_{i}}{\sqrt{2}}\xi_{i}-\frac{r_{0}\sqrt{2}}{2}\xi_{i}\nabla\eta_{i}}\\ &{=-\frac{\sum_{i=1}^{n}\xi_{i}}{\sqrt{2}}\xi_{i}+\frac{r_{0}\sqrt{2}}{2}\xi_{i}+\cos\left(z\right)}\\ &{=-\frac{\sqrt{2}}{\sqrt{2}}\xi_{i}\xi_{i}+\operatorname{cond}}\\ &{=-\frac{\sqrt{2}}{\sqrt{2}}\xi_{i}\xi_{i}+\frac{r_{0}\sqrt{2}}{2}+\cosh}\end{array}
+$$$$
+\begin{array}{r l}&{\begin{array}{r l}&{-\frac{\sinh^{2}}{m}\left(X_{t}^{T}-2\mathrm{e}^{-\pi}\right)\cos^{2}\theta_{i}+X_{i}^{\mathrm{p}}\cos^{2}\theta_{i}}\\ &{=\frac{\sin^{2}\theta_{i}}{m}\sin^{2}\theta_{i}}\\ &{=\frac{\sin^{2}\theta_{i}}{m}\sin^{2}\theta_{i}\sin^{2}\theta_{i}+\frac{\sinh^{2}}{m}\sin^{2}\theta_{i}}\\ &{-\frac{\sinh^{2}}{m}\sin^{2}\theta_{i}\sin^{2}\theta_{i}+\frac{\sinh^{2}}{m}\sin^{2}\theta_{i}}\end{array}}\\ &{\begin{array}{r l}&{+\frac{\sinh^{2}}{m}\sin^{2}\theta_{i}\sin^{2}\theta_{i}+\cos^{2}\theta_{i}}\\ &{=\frac{\sinh^{2}}{m}\sin^{2}\theta_{i}\sin^{2}\theta_{i}+\cos^{2}\theta_{i}}\end{array}}\\ &{\begin{array}{r l}&{-\frac{\sinh^{2}}{m}\sin^{2}\theta_{i}+\cos^{2}\theta_{i}}\\ &{=-\frac{\sinh^{2}}{m}\left(\frac{\sinh^{2}}{2}+\frac{\sinh^{2}}{2}\right)\cos^{2}\theta_{i}}\end{array}}\\ &{\begin{array}{r l}&{-\frac{\sinh^{2}}{m}\left(u_{\theta}\right)\sin^{2}\theta_{i}+\cos^{2}\theta_{i}}\\ &{=-u\left(\frac{\sinh^{2}}{m}\frac{\sinh^{2}}{2}+u_{\theta}\right)\cos\theta_{i}}\end{array}}\\ &{\begin{array}{r l}&{+u_{\theta}\left(\frac{\sinh^{2}}{m}\right)\cos^{2}\theta_{i}+\sin^{2}\theta_{i}}\\ &{=-u\left(\frac{\sinh^{2}}{m}\frac{\sinh^{2}}{2}+u_{\theta}\right)\sin^{2}\theta_{i}}\end{array}}\\ &{\begin{array}{r l}&{+u_{\theta}\left(\frac{\sinh^{2}}{m}\right)\sin\theta_{i}+u_{\theta}\left(\frac{\sinh^{2}}{m}\right)\sin\theta_{i}}\\ &{=\frac{u_{\theta}\sinh^{2}} 
+$$  
+
+公式(10.17)  
+
+$$
+\mathbf{X}\mathbf{X}^{\mathrm{{T}}}\pmb{w}_{i}=\lambda_{i}\pmb{w}_{i}
+$$  
+
+[推导]：由式（10.15）可知，主成分分析的优化目标为  
+
+$$
+\begin{array}{r l}{\underset{\mathbf{W}}{\operatorname*{min}}}&{{}-\,\mathrm{tr}\,\left(\mathbf{W}^{\mathrm{T}}\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W}\right)}\end{array}
+$$  
+
+$$
+s.t.\quad\mathbf{W}^{\mathrm{T}}\mathbf{W}=\mathbf{I}
+$$  
+
+其中， $\mathbf{X}=(x_{1},x_{2},\ldots,x_{m})\in\mathbb{R}^{d\times m},\mathbf{W}=(w_{1},w_{2},\ldots,w_{d^{\prime}})\in\mathbb{R}^{d\times d^{\prime}},\ \mathbf{I}\in\mathbb{R}^{d^{\prime}\times d^{\prime}}$ 为单位矩阵。对于带矩阵约束的优化问题，根据[1] 中讲述的方法可得此优化目标的拉格朗日函数为  
+
+$$
+\begin{array}{r l}&{L(\mathbf{W},\boldsymbol{\Theta})=-\mathrm{~tr~}(\mathbf{W}^{\mathrm{T}}\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W})+\left\langle\boldsymbol{\Theta},\mathbf{W}^{\mathrm{T}}\mathbf{W}-\mathbf{I}\right\rangle}\\ &{\quad\quad\quad=-\mathrm{~tr~}(\mathbf{W}^{\mathrm{T}}\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W})+\mathrm{~tr~}\left(\boldsymbol{\Theta}^{\mathrm{T}}(\mathbf{W}^{\mathrm{T}}\mathbf{W}-\mathbf{I})\right)}\end{array}
+$$  
+
+其中， $\Theta\,\in\,\mathbb{R}^{d^{\prime}\times d^{\prime}}$ 为拉格朗日乘子矩阵，其维度恒等于约束条件的维度，且其中的每个元素均为未知的拉格朗日乘子， $\langle\Theta,\mathbf{W}^{\mathrm{T}}\mathbf{W}\mathbf{-I}\rangle=\mathbf{\tau}\mathrm{tr}$ $\left(\Theta^{\mathrm{T}}(\mathbf{W}^{\mathrm{T}}\mathbf{W}-\mathbf{I})\right)$ 为矩阵的内积[2]。若此时仅考虑约束 $\pmb{w}_{i}^{\mathrm{T}}\pmb{w}_{i}=1(i=$  
+
+$1,2,...,d^{\prime})$ ，则拉格朗日乘子矩阵 $\Theta$ 此时为对角矩阵，令新的拉格朗日乘子矩阵为 $\Lambda=d i a g(\lambda_{1},\lambda_{2},...,\lambda_{d^{\prime}})\in$ $\mathbb{R}^{d^{\prime}\times d^{\prime}}$ ，则新的拉格朗日函数为  
+
+$$
+L(\mathbf{W},\Lambda)=-\mathrm{~tr~}(\mathbf{W}^{\mathrm{T}}\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W})+\mathrm{~tr~}\left(\boldsymbol{\Lambda}^{\mathrm{T}}(\mathbf{W}^{\mathrm{T}}\mathbf{W}-\mathbf{I})\right)
+$$  
+
+对拉格朗日函数关于W 求导可得  
+
+$$
+\begin{array}{r l}&{\displaystyle\frac{\partial{\cal L}({\bf W},\boldsymbol{\Lambda})}{\partial{\bf W}}=\frac{\partial}{\partial{\bf W}}\left[-\mathrm{~tr~}({\bf W}^{\mathrm{T}}{\bf X}{\bf X}^{\mathrm{T}}{\bf W})+\mathrm{~tr~}\left(\boldsymbol{\Lambda}^{\mathrm{T}}({\bf W}^{\mathrm{T}}{\bf W}-{\bf I})\right)\right]}\\ &{\quad\quad\quad\quad=-\frac{\partial}{\partial{\bf W}}\mathrm{~tr~}({\bf W}^{\mathrm{T}}{\bf X}{\bf X}^{\mathrm{T}}{\bf W})+\frac{\partial}{\partial{\bf W}}\mathrm{~tr~}\left(\boldsymbol{\Lambda}^{\mathrm{T}}({\bf W}^{\mathrm{T}}{\bf W}-{\bf I})\right)}\end{array}
+$$  
+
+由矩阵微分公式 $\frac{\partial}{\partial{\bf X}}$ tr $\mathbf{\boldsymbol{X}}^{\mathrm{{T}}}\mathbf{\boldsymbol{B}}\mathbf{\boldsymbol{X}})=\mathbf{\boldsymbol{B}}\mathbf{\boldsymbol{X}}+\mathbf{\boldsymbol{B}}^{\mathrm{{T}}}\mathbf{\boldsymbol{X}},\frac{\partial}{\partial\mathbf{\boldsymbol{X}}}\operatorname{tr}\ \left(\mathbf{\boldsymbol{B}}\mathbf{\boldsymbol{X}}^{\mathrm{{T}}}\mathbf{\boldsymbol{X}}\right)=\mathbf{\boldsymbol{X}}\mathbf{\boldsymbol{B}}^{\mathrm{{T}}}+\mathbf{\boldsymbol{X}}\mathbf{\boldsymbol{B}}$ 可得  
+
+$$
+\begin{array}{r l}{\lefteqn{\frac{\partial L(\mathbf{W},\boldsymbol{\Lambda})}{\partial\mathbf{W}}=-2\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W}+\mathbf{W}\boldsymbol{\Lambda}+\mathbf{W}\boldsymbol{\Lambda}^{\mathrm{T}}}}\\ &{=-2\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W}+\mathbf{W}(\boldsymbol{\Lambda}+\boldsymbol{\Lambda}^{\mathrm{T}})}\\ &{=-2\mathbf{X}\mathbf{X}^{\mathrm{T}}\mathbf{W}+2\mathbf{W}\boldsymbol{\Lambda}}\end{array}
+$$  
+
+$\frac{\partial L(\mathbf{W},\boldsymbol{\Lambda})}{\partial\mathbf{W}}=\mathbf{0}$ 可得  
+
+$$
+\begin{array}{c}{\mathbf{-2XX^{\mathrm{T}}W+2W}\mathbb{\Lambda}=\mathbf{0}}\\ {\mathbf{XX^{\mathrm{T}}W}=\mathbf{W}\mathbb{\Lambda}}\end{array}
+$$  
+
+将W 和 $\Lambda$ 展开可得  
+
+$$
+\mathbf{X}\mathbf{X}^{\mathrm{{T}}}\pmb{w}_{i}=\lambda_{i}\pmb{w}_{i},\quad i=1,2,...,d^{\prime}
+$$  
+
+显然，此式为矩阵特征值和特征向量的定义式，其中 $\lambda_{i},{\pmb w}_{i}$ 分别表示矩阵 $\mathbf{X}\mathbf{X}^{\mathrm{{T}}}$ 的特征值和单位特征向量。由于以上是仅考虑约束 ${\pmb w}_{i}^{\mathrm{T}}{\pmb w}_{i}=1$ 所求得的结果，而 $\pmb{w}_{i}$ 还需满足约束 $\pmb{w}_{i}^{\mathrm{T}}\pmb{w}_{j}=0(i\neq j)$ 。观察 $\mathbf{XX^{\mathrm{T}}}$ 的定义可知， $\mathbf{XX^{\mathrm{T}}}$ 是一个实对称矩阵，实对称矩阵的不同特征值所对应的特征向量之间相互正交，同一特征值的不同特征向量可以通过施密特正交化使其变得正交，所以通过上式求得的 $\pmb{w}_{i}$ 可以同时满足约束${\pmb w}_{i}^{\mathrm{T}}{\pmb w}_{i}=1,{\pmb w}_{i}^{\mathrm{T}}{\pmb w}_{j}=0(i\neq j)$ 。根据拉格朗日乘子法的原理可知，此时求得的结果仅是最优解的必要条件，而且 $\mathbf{X}\mathbf{X}^{\mathrm{{T}}}$ 有 $d$ 个相互正交的单位特征向量，所以还需要从这 $d$ 个特征向量里找出 $d^{\prime}$ 个能使得目标函数达到最优值的特征向量作为最优解。将 $\mathbf{X}\mathbf{X}^{\mathrm{{T}}}\pmb{w}_{i}=\lambda_{i}\pmb{w}_{i}$ 代入目标函数可得  
+
+$$
+\begin{array}{r l}{\underset{\mathbf{W}}{\mathrm{min}}-\mathrm{~tr~}(\mathbf{W}^{\top}\mathbf{X}\mathbf{X}^{\top}\mathbf{W})=\underset{\mathbf{W}}{\mathrm{max}}\,\mathrm{~tr~}(\mathbf{W}^{\top}\mathbf{X}\mathbf{X}^{\top}\mathbf{W})}&{}\\ &{\;=\underset{\mathbf{W}}{\mathrm{max}}\,\underset{i=1}{\overset{d}{\sum}}w_{i}^{T}\mathbf{X}\mathbf{X}^{\top}w_{i}}\\ &{\;=\underset{\mathbf{W}}{\mathrm{max}}\,\underset{i=1}{\overset{d^{\prime}}{\sum}}w_{i}^{T}\cdot\lambda_{i}w_{i}}\\ &{\;=\underset{\mathbf{W}}{\mathrm{max}}\,\underset{i=1}{\overset{d^{\prime}}{\sum}}\,\lambda_{i}w_{i}^{T}w_{i}}\\ &{\;=\underset{\mathbf{W}}{\mathrm{max}}\,\underset{i=1}{\overset{d^{\prime}}{\sum}}\,\lambda_{i}w_{i}^{T}w_{i}}\\ &{\;=\underset{\mathbf{W}}{\mathrm{max}}\,\underset{i=1}{\overset{d^{\prime}}{\sum}}\,\lambda_{i}}\end{array}
+$$  
+
+显然，此时只需要令 $\lambda_{1},\lambda_{2},...,\lambda_{d^{\prime}}$ 和 $\pmb{w}_{1},\pmb{w}_{2},\dots,\pmb{w}_{d^{\prime}}$ 分别为矩阵 $\mathbf{XX^{\mathrm{T}}}$ 的前 $d^{\prime}$ 个最大的特征值和单位特征向量就能使得目标函数达到最优值。  
+
+# 公式(10.24)  
+
+$$
+{\bf K}\alpha^{j}=\lambda_{j}{\pmb\alpha}^{j}
+$$  
+
+[推导]：已知 $z_{i}=\phi(x_{i})$ ，类比 $\mathbf{X}=\{x_{1},x_{2},...,x_{m}\}$ 可以构造 $\mathbf{Z}=\{z_{1},z_{2},...,z_{m}\}$ ，所以公式(10.21) 可变换为  
+
+$$
+\left(\sum_{i=1}^{m}\phi(\pmb{x}_{i})\phi(\pmb{x}_{i})^{\mathrm{T}}\right)\pmb{w}_{j}=\left(\sum_{i=1}^{m}z_{i}z_{i}^{\mathrm{T}}\right)\pmb{w}_{j}=\pmb{\mathrm{Z}}\pmb{\mathrm{Z}}^{\mathrm{T}}\pmb{w}_{j}=\lambda_{j}\pmb{w}_{j}
+$$  
+
+又由公式(10.22) 可知  
+
+$$
+\pmb{w}_{j}=\sum_{i=1}^{m}\phi\left(\pmb{x}_{i}\right)\alpha_{i}^{j}=\sum_{i=1}^{m}z_{i}\alpha_{i}^{j}=\mathbf{Z}\pmb{\alpha}^{j}
+$$  
+
+其中， $\pmb{\alpha}^{j}=(\alpha_{1}^{j};\alpha_{2}^{j};...;\alpha_{m}^{j})\in\mathbb{R}^{m\times1}$ 。所以公式(10.21) 可以进一步变换为  
+
+$$
+\begin{array}{r}{\mathbf{Z}\mathbf{Z}^{\mathrm{T}}\mathbf{Z}\alpha^{j}=\lambda_{j}\mathbf{Z}\alpha^{j}}\\ {\mathbf{Z}\mathbf{Z}^{\mathrm{T}}\mathbf{Z}\alpha^{j}=\mathbf{Z}\lambda_{j}\alpha^{j}}\end{array}
+$$  
+
+由于此时的目标是要求出 ${\pmb w}_{j}$ ，也就等价于要求出满足上式的 $\alpha^{j}$ ，显然，此时满足 ${\bf Z}^{\mathrm{T}}{\bf Z}\alpha^{j}=\lambda_{j}{\pmb\alpha}^{j}$ 的 $\alpha^{j}$ 一定满足上式，所以问题转化为了求解满足下式的 $\alpha^{j}$ ：  
+
+$$
+\mathbf{Z}^{\mathrm{T}}\mathbf{Z}\alpha^{j}=\lambda_{j}\pmb{\alpha}^{j}
+$$  
+
+令 ${\bf Z}^{\mathrm{T}}{\bf Z}={\bf K}$ ，那么上式可化为  
+
+$$
+{\bf K}\alpha^{j}=\lambda_{j}{\pmb\alpha}^{j}
+$$  
+
+此式即为公式(10.24)，其中矩阵 $\mathbf{K}$ 的第i 行第j 列的元素 $(\mathbf{K})_{i j}=z_{i}^{\mathrm{T}}z_{j}=\phi(\pmb{x}_{i})^{\mathrm{T}}\phi(\pmb{x}_{j})=\kappa\left(\pmb{x}_{i},\pmb{x}_{j}\right)$  
+
+公式(10.28)  
+
+$$
+w_{i j}=\frac{\displaystyle\sum_{k\in Q_{i}}C_{j k}^{-1}}{\displaystyle\sum_{l,s\in Q_{i}}C_{l s}^{-1}}
+$$  
+
+[推导]：由书中上下文可知，式(10.28) 是如下优化问题的解。  
+
+$$
+\begin{array}{r l}{\displaystyle\operatorname*{min}_{w_{1},w_{2},\ldots,w_{m}}\sum_{i=1}^{m}\left\|x_{i}-\sum_{j\in Q_{i}}w_{i j}x_{j}\right\|_{2}^{2}}&{}\\ {\mathrm{s.t.~}\displaystyle\sum_{j\in Q_{i}}w_{i j}=1}&{}\end{array}
+$$  
+
+若令 $\pmb{x}_{i}\in\mathbb{R}^{d\times1},Q_{i}=\{q_{i}^{1},q_{i}^{2},...,q_{i}^{n}\}$ ，则上述优化问题的目标函数可以进行如下恒等变形  
+
+$$
+\begin{array}{c}{{\displaystyle\sum_{i=1}^{m}\left\|x_{i}-\sum_{j\in Q_{i}}w_{i j}x_{j}\right\|_{2}^{2}=\displaystyle\sum_{i=1}^{m}\left\|\sum_{j\in Q_{i}}w_{i j}x_{i}-\sum_{j\in Q_{i}}w_{i j}x_{j}\right\|_{2}^{2}}}\\ {{\displaystyle=\sum_{i=1}^{m}\left\|\sum_{j\in Q_{i}}w_{i j}(x_{i}-x_{j})\right\|_{2}^{2}}}\\ {{\displaystyle=\sum_{i=1}^{m}\|\mathbf{X}_{i}w_{i}\|_{2}^{2}}}\\ {{\displaystyle=\sum_{i=1}^{m}w_{i}^{-1}\mathbf{X}_{i}^{\mathrm{T}}\mathbf{X}_{i}w_{i}}}\end{array}
+$$  
+
+其中 $w_{i}=(w_{i q_{i}^{1}},w_{i q_{i}^{2}},...,w_{i q_{i}^{n}})\in\mathbb{R}^{n\times1},\ \mathbf{X}_{i}=\left(x_{i}-x_{q_{i}^{1}},x_{i}-x_{q_{i}^{2}},...,x_{i}-x_{q_{i}^{n}}\right)\in\mathbb{R}^{d\times n}$ 。同理，约束条件也可以进行如下恒等变形  
+
+$$
+\sum_{j\in Q_{i}}w_{i j}={w_{i}}^{\mathrm{T}}I=1
+$$  
+
+其中 $\pmb{I}=(1,1,...,1)\in\mathbb{R}^{n\times1}$ 为 $n$ 行1 列的单位向量。因此，上述优化问题可以重写为  
+
+$$
+\operatorname*{min}_{{\pmb w}_{1},{\pmb w}_{2},\dots,{\pmb w}_{m}}\sum_{i=1}^{m}{\pmb w}_{i}^{\mathrm{~T~}}{\pmb X}_{i}^{\mathrm{T}}{\pmb X}_{i}{\pmb w}_{i}
+$$  
+
+${w_{i}}^{\mathrm{T}}I=1$  
+
+显然，此问题为带约束的优化问题，因此可以考虑使用拉格朗日乘子法来进行求解。由拉格朗日乘子法可得此优化问题的拉格朗日函数为  
+
+$$
+L(\mathbf{w}_{1},\mathbf{w}_{2},\ldots,\mathbf{w}_{m},\boldsymbol{\lambda})=\sum_{i=1}^{m}{w_{i}}^{\mathrm{T}}\mathbf{X}_{i}^{\mathrm{T}}\mathbf{X}_{i}w_{i}+{\boldsymbol{\lambda}}\left({w_{i}}^{\mathrm{T}}\pmb{I}-1\right)
+$$  
+
+对拉格朗日函数关于 $\pmb{w}_{i}$ 求偏导并令其等于0 可得  
+
+$$
+\begin{array}{r l}&{\frac{\partial L\left(w_{1},w_{2},\ldots,w_{m},\lambda\right)}{\partial w_{i}}=\frac{\partial\left[\sum_{i=1}^{m}w_{i}^{\mathrm{\tiny~T}}\mathbf{X}_{i}^{\mathrm{\tiny~T}}\mathbf{X}_{i}w_{i}+\lambda\left(w_{i}^{\mathrm{\tiny~T}}I-1\right)\right]}{\partial w_{i}}=0}\\ &{\qquad\qquad\qquad\qquad=\frac{\partial\left[w_{i}^{\mathrm{\tiny~T}}\mathbf{X}_{i}^{\mathrm{\tiny~T}}\mathbf{X}_{i}w_{i}+\lambda\left(w_{i}^{\mathrm{\tiny~T}}I-1\right)\right]}{\partial w_{i}}=0}\end{array}
+$$  
+
+又由矩阵微分公式 $\cfrac{\partial\mathbf{x}^{T}\mathbf{B}\ensuremath{\boldsymbol{x}}}{\partial\ensuremath{\boldsymbol{x}}}=\left(\mathbf{B}+\mathbf{B}^{\mathrm{T}}\right)\ensuremath{\boldsymbol{x}},\cfrac{\partial\ensuremath{\boldsymbol{x}}^{T}\ensuremath{\boldsymbol{a}}}{\partial\ensuremath{\boldsymbol{x}}}=\ensuremath{\boldsymbol{a}}$ 可得  
+
+$$
+\frac{\partial\left[\boldsymbol{w}_{i}^{\mathrm{\tiny{T}}}\mathbf{X}_{i}^{\mathrm{\tiny{T}}}\mathbf{X}_{i}\boldsymbol{w}_{i}+\lambda\left(\boldsymbol{w}_{i}^{\mathrm{\tiny{T}}}\boldsymbol{I}-1\right)\right]}{\partial\boldsymbol{w}_{i}}=2\mathbf{X}_{i}^{\mathrm{\tiny{T}}}\mathbf{X}_{i}\boldsymbol{w}_{i}+\lambda\boldsymbol{I}=0}
+$$  
+
+若 ${\bf X}_{i}^{\mathrm{T}}{\bf X}_{i}$ 可逆，则  
+
+$$
+\pmb{w}_{i}=-\frac{1}{2}\lambda(\mathbf{X}_{i}^{\mathrm{T}}\mathbf{X}_{i})^{-1}\pmb{I}
+$$  
+
+又因为 ${{\pmb w}_{i}}^{\mathrm{T}}{\pmb I}={\pmb I}^{\mathrm{T}}{\pmb w}_{i}=1$ ，则上式两边同时左乘 $I^{\mathrm{T}}$ 可得  
+
+$$
+\begin{array}{l}{{\displaystyle{\cal I}^{\mathrm{T}}w_{i}=-\frac{1}{2}\lambda{\cal I}^{\mathrm{T}}({\bf X}_{i}^{\mathrm{T}}{\bf X}_{i})^{-1}{\cal I}=1}\ ~}\\ {~~}\\ {{\displaystyle-\frac{1}{2}\lambda=\frac{1}{{\cal I}^{\mathrm{T}}({\bf X}_{i}^{\mathrm{T}}{\bf X}_{i})^{-1}{\cal I}}}}\end{array}
+$$  
+
+将其代回 $\begin{array}{r}{{\pmb w}_{i}=-\frac{1}{2}\lambda({\pmb X}_{i}^{\mathrm{T}}{\pmb X}_{i})^{-1}{\pmb I}}\end{array}$ 即可解得  
+
+$$
+w_{i}=\frac{(\mathbf{X}_{i}^{\mathrm{T}}\mathbf{X}_{i})^{-1}I}{I^{\mathrm{T}}(\mathbf{X}_{i}^{\mathrm{T}}\mathbf{X}_{i})^{-1}I}
+$$  
+
+若令矩阵 $(\mathbf{X}_{i}^{\mathrm{{T}}}\mathbf{X}_{i})^{-1}$ 第 $j$ 行第 $k$ 列的元素为 $C_{j k}^{-1}$ ，则  
+
+$$
+w_{i j}=w_{i q_{i}^{j}}=\frac{\sum_{k\in Q_{i}}C_{j k}^{-1}}{\sum_{l,s\in Q_{i}}C_{l s}^{-1}}
+$$  
+
+此即为公式(10.28)。显然，若 ${\bf X}_{i}^{\mathrm{T}}{\bf X}_{i}$ 可逆，此优化问题即为凸优化问题，且此时用拉格朗日乘子法求得的 $\mathbf{\nabla}w_{i}$ 为全局最优解。  
+
+# 公式(10.31)  
+
+$$
+\operatorname*{min}_{Z}t r(Z M Z^{T})
+$$  
+
+$$
+s.t.Z^{T}Z=I.
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l}{\underset{\rightharpoondown}{\operatorname*{min}}\frac{\mathrm{in}}{2}\Vert z_{i}-\underset{\rightharpoondown}{\sum}w_{i j}z_{j}\Vert_{2}^{2}=\underset{i=1}{\overset{\rightharpoonup}{\sum}}\Vert Z I_{i}-Z W_{i}\Vert_{2}^{2}}\\ &{\rightharpoonup}\\ &{\rightharpoonup\sum_{i=1}^{m}\Vert Z(I_{i}-W_{i})\Vert_{2}^{2}}\\ &{\rightharpoonup\sum_{i=1}^{m}\Bigl(Z(I_{i}-W_{i})\Bigr)^{T}Z(I_{i}-W_{i})}\\ &{\rightharpoonup\sum_{i=1}^{m}(I_{i}-W_{i})^{T}Z^{T}Z(I_{i}-W_{i})}\\ &{\rightharpoonup\sum_{i=1}^{m}(I_{i}-W_{i})^{T}Z^{T}Z(I_{i}-W_{i})}\\ &{\rightharpoonup t r((I-W)^{T}Z^{T}Z(I-W))}\\ &{\rightharpoonup t r(Z(I-W)(I-W)^{T}Z^{T})}\\ &{\rightharpoonup t r(Z M Z^{T})}\end{array}
+$$  
+
+其中， $M=(I-W)(I-W)^{T}$ 。[解析]：约束条件 $Z^{T}Z=I$ 是为了得到标准化（标准正交空间）的低维数据。  
+
+# 参考文献  
+
+[1] Michael Grant. Lagrangian optimization with matrix constrains, 2015. URL: https://math.stackexchange.com/questions/1104376/ how-to-set-up-lagrangian-optimization-with-matrix-constrains.  
+
+[2] Wikipedia contributors. Frobenius inner product, 2020. URL: https://en.wikipedia.org/wiki/ Frobenius_inner_product.  
+
+# 第11 章 特征选择与稀疏学习  
+
+# 公式(11.1)  
+
+$$
+\operatorname{Gain}(A)=\operatorname{Ent}(D)-\sum_{v=1}^{V}{\frac{|D^{v}|}{|D|}}\operatorname{Ent}\left(D^{v}\right)
+$$  
+
+[解析]：此为信息熵的定义式，其中 $p_{k},k=1,2,\ldots|\mathcal{V}|$ 表示 $D$ 中第 $i$ 类样本所占的比例。可以看出，样本越纯，即 $p_{k}\to0$ 或 $p_{k}\to1$ 时， $\operatorname{Ent}(D)$ 越小，其最小值为0（约定 $0\log_{2}0=0$ ）。  
+
+# 公式(11.2)  
+
+$$
+\operatorname{Ent}(D)=-\sum_{i=1}^{|\mathcal{V}|}p_{k}\log_{2}{p_{k}}
+$$  
+
+[解析]：此为信息熵的定义式，其中 $p_{k},k=1,2,\ldots|\mathcal{V}|$ 表示 $D$ 中第 $i$ 类样本所占的比例。可以看出，样本越纯，即 $p_{k}\to0$ 或 $p_{k}\to1$ 时， $\operatorname{Ent}(D)$ 越小，其最小值为0。此时必有 $p_{i}=1,p_{\backslash i}=0,i=1,2,\ldots,|\mathcal{V}|.$ 。  
+
+# 公式(11.5)  
+
+$$
+\operatorname*{min}_{{\pmb{w}}}\sum_{i=1}^{m}\left({\boldsymbol{y}}_{i}-{\pmb{w}}^{\mathrm{{T}}}{\pmb{x}}_{i}\right)^{2}
+$$  
+
+[解析]：该式为线性回归的优化目标式， $y_{i}$ 表示样本 $i$ 的真实值，而 $w^{\top}x_{i}$ 表示其预测值，这里使用预测值和真实值差的平方衡量预测值偏离真实值的大小。  
+
+# 公式(11.6)  
+
+$$
+\operatorname*{min}_{\pmb{w}}\sum_{i=1}^{m}\left(y_{i}-\pmb{w}^{\mathrm{T}}\pmb{x}_{i}\right)^{2}+\lambda\|\pmb{w}\|_{2}^{2}
+$$  
+
+[解析]：该式为加入了 $\mathrm{L_{2}}$ 正规化项的优化目标，也叫“岭回归”， $\lambda$ 用来调节误差项和正规化项的相对重要性，引入正规化项的目的是为了防止 $w$ 的分量过太而导致过拟合的风险。  
+
+# 公式(11.7)  
+
+$$
+\operatorname*{min}_{\pmb{w}}\sum_{i=1}^{m}\left(y_{i}-\pmb{w}^{\mathrm{T}}\pmb{x}_{i}\right)^{2}+\lambda\|\pmb{w}\|_{1}
+$$  
+
+[解析]：该式将11.6 中的 $\mathrm{L_{2}}$ 正规化项替换成了 $\mathrm{L_{1}}$ 正规化项，也叫LASSO 回归。关于 $\mathrm{L_{2}}$ 和 $\mathrm{L_{1}}$ 两个正规化项的区别，原书图11.2 给出了很形象的解释。具体来说，结合 $\mathrm{L_{1}}$ 范数优化的模型参数分量更偏向于取0，因此更容易取得稀疏解。  
+
+# 公式(11.10)  
+
+$$
+\begin{array}{l}{{\displaystyle\hat{f}({\pmb x})\simeq f\left({\pmb x}_{k}\right)+\left\langle\nabla f\left({\pmb x}_{k}\right),{\pmb x}-{\pmb x}_{k}\right\rangle+\frac{L}{2}\left\|{\pmb x}-{\pmb x}_{k}\right\|^{2}}\ ~}\\ {{\displaystyle=\frac{L}{2}\left\|{\pmb x}-\left({\pmb x}_{k}-\frac{1}{L}\nabla f\left({\pmb x}_{k}\right)\right)\right\|_{2}^{2}+\mathrm{const}}}\end{array}
+$$  
+
+[解析]：首先注意优化目标式和11.7 LASSO 回归的联系和区别，该式中的 $x$ 对应到式11.7 的 $w$ ，即我们优化的目标。再解释下什么是L−Lipschitz 条件，根据维基百科的定义：它是一个比通常连续更强的光滑性条件。直觉上，利普希茨连续函数限制了函数改变的速度，符合利普希茨条件的函数的斜率，必小于一个称为利普希茨常数的实数（该常数依函数而定）。注意这里存在一个笔误，在wiki 百科的定义中，式11.9 应该写成  
+
+$$
+\begin{array}{r l}{|\nabla f\left(\pmb{x}^{\prime}\right)-\nabla f(\pmb{x})|\leqslant L\left|\pmb{x}^{\prime}-\pmb{x}\right|}&{{}\left(\forall\pmb{x},\pmb{x}^{\prime}\right)}\end{array}
+$$  
+
+移项得  
+
+$$
+{\frac{|\nabla f\left(\mathbf{x}^{\prime}\right)-\nabla f(\mathbf{x})|}{|x^{\prime}-x|}}\leqslant L\quad(\forall\mathbf{x},\mathbf{x}^{\prime})
+$$  
+
+由于上式对所有的 $x,x^{\prime}$ 都成立，由导数的定义，上式可以看成是 $f(x)$ 的二阶导数恒不大于 $L$ 。即  
+
+$$
+\nabla^{2}f(x)\leqslant L
+$$  
+
+得到这个结论之后，我们来推导式11.10。由泰勒公式， $x_{k}$ 附近的 $f(x)$ 通过二阶泰勒展开式可近似为  
+
+$$
+\begin{array}{l}{\displaystyle({\boldsymbol x})\simeq f\left({\boldsymbol x}_{k}\right)+\left\langle\nabla f\left({\boldsymbol x}_{k}\right),{\boldsymbol x}-{\boldsymbol x}_{k}\right\rangle+\frac{\nabla f\left(x_{k}\right)}{2}\left\|{\boldsymbol x}-{\boldsymbol x}_{k}\right\|^{2}}\\ {\displaystyle~~\leqslant f\left({\boldsymbol x}_{k}\right)+\left\langle\nabla f\left({\boldsymbol x}_{k}\right),{\boldsymbol x}-{\boldsymbol x}_{k}\right\rangle+\frac{1}{2}\left\|{\boldsymbol x}-{\boldsymbol x}_{k}\right\|^{2}}\\ {\displaystyle~~=f\left({\boldsymbol x}_{k}\right)+\nabla f\left({\boldsymbol x}_{k}\right)^{\top}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)+\frac{L}{2}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)^{\top}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)}\\ {\displaystyle~~=f\left({\boldsymbol x}_{k}\right)+\frac{L}{2}\left(\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)^{\top}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)+\frac{2}{L}\nabla f\left({\boldsymbol x}_{k}\right)^{\top}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)\right)}\\ {\displaystyle~~=f\left({\boldsymbol x}_{k}\right)+\frac{L}{2}\left(\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)^{\top}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)+\frac{2}{L}\nabla f\left({\boldsymbol x}_{k}\right)^{\top}\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)+\frac{1}{L^{2}}\nabla f\left({\boldsymbol x}_{k}\right)^{\top}\nabla f({\boldsymbol x}_{k})\right)-\frac{1}{2L}\nabla}\\ {\displaystyle~~=f\left({\boldsymbol x}_{k}\right)+\frac{L}{2}\left(\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)+\frac{1}{L}\nabla f\left({\boldsymbol x}_{k}\right)\right)^{\top}\left(\left({\boldsymbol x}-{\boldsymbol x}_{k}\right)+\frac{1}{L}\nabla f\left({\boldsymbol x}_{k}\right)\right)-\frac{1}{2L}\nabla f\left({\boldsymbol x}_{k}\right)}\\ {\displaystyle~~=\frac{L}{2}\left\|{\boldsymbol x}-\left({\boldsymbol x}_{k}-\frac{1}{L}\nabla f\left({\boldsymbol x}_{k}\right)\right)\right\|_{2}^{2}+\mathrm{c o n s
+$$  
+
+其中 ${\mathrm{const}}=f{\big(}x_{k}{\big)}-{\textstyle{\frac{1}{2L}}}\nabla f\left(x_{k}\right)^{\top}\nabla f\left(x_{k}\right)$  
+
+# 公式(11.11)  
+
+$$
+{\pmb x}_{k+1}={\pmb x}_{k}-\frac{1}{L}\nabla f\left({\pmb x}_{k}\right)
+$$  
+
+[解析]：这个很容易理解，因为2 范数的最小值为0，当 $\begin{array}{r}{{\bf{\boldsymbol{x}}}_{k+1}={\bf{\boldsymbol{x}}}_{k}-\frac{1}{L}\nabla f\left({\bf{\boldsymbol{x}}}_{k}\right)}\end{array}$ 时， ${\hat{f}}(x_{k+1})\leqslant{\hat{f}}(x_{k})$ 恒成立，同理 $\hat{f}(x_{k+2})\leqslant\hat{f}(x_{k+1}),\cdot\cdot\cdot$ ，因此反复迭代能够使 $\hat{f}(x)$ 的值不断下降。  
+
+# 公式(11.12)  
+
+$$
+{\pmb x}_{k+1}=\arg\operatorname*{min}_{{\pmb x}}\frac{L}{2}\left\|{\pmb x}-\left({\pmb x}_{k}-\frac{1}{L}\nabla f\left({\pmb x}_{k}\right)\right)\right\|_{2}^{2}+\lambda\|{\pmb x}\|_{1}
+$$  
+
+[解析]：式11.11 是用来优化 $\hat{f}(x)$ 的，而对于式11.8，优化的函数为 $f(x)+\lambda\left\|x\right\|_{1}$ ，由泰勒展开公式，优化的目标可近似为 ${\hat{f}}(x)+\lambda\|x\|_{1}$ ，根据式11.10 可知， $x$ 的更新由式11.12 决定。  
+
+# 公式(11.13)  
+
+$$
+\displaystyle{\pmb{x}}_{k+1}=\arg\operatorname*{min}_{\pmb{x}}\frac{L}{2}\|\pmb{x}-\pmb{z}\|_{2}^{2}+\lambda\|\pmb{x}\|
+$$  
+
+[解析]：这里将式11.12 的优化步骤拆分成了两步，首先令 $\begin{array}{r}{z=x_{k}\,-\frac{1}{L}\nabla f\left(x_{k}\right)}\end{array}$ 以计算 $z$ ，然后再求解式11.13，得到的结果是一致的。  
+
+公式(11.14)  
+
+$$
+x_{k+1}^{i}=\left\{\begin{array}{l l}{z^{i}-\lambda/L,}&{\lambda/L<z^{i}}\\ {0,}&{|z^{i}|\leqslant\lambda/L}\\ {z^{i}+\lambda/L,}&{z^{i}<-\lambda/L}\end{array}\right.
+$$  
+
+[解析]：令优化函数  
+
+$$
+\begin{array}{l}{{\displaystyle{g({\pmb x})=\frac{L}{2}\|{\pmb x}-{\pmb z}\|_{2}^{2}+\lambda\|{\pmb x}\|_{1}}}}\\ {{\displaystyle{=\frac{L}{2}\sum_{i=1}^{d}\left\|{\pmb x}^{i}-{\pmb z}^{i}\right\|_{2}^{2}+\lambda\sum_{i=1}^{d}\left\|{\pmb x}^{i}\right\|_{1}}}}\\ {{\displaystyle{=\sum_{i=1}^{d}\left(\frac{L}{2}\left({\pmb x}^{i}-{\pmb z}^{i}\right)^{2}+\lambda\left|{\pmb x}^{i}\right|\right)}}}\end{array}
+$$  
+
+这个式子表明优化 $g(x)$ 可以被拆解成优化 $\textbf{\em x}$ 的各个分量的形式，对分量 $x_{i}$ ，其优化函数  
+
+$$
+g\left(x^{i}\right)=\frac L2\left(x^{i}-z^{i}\right)^{2}+\lambda\left\vert x^{i}\right\vert
+$$  
+
+求导得  
+
+$$
+\frac{d g\left(x^{i}\right)}{d x^{i}}=L\left(x^{i}-z^{i}\right)+\lambda s g n\left(x^{i}\right)
+$$  
+
+其中  
+
+$$
+\mathrm{sign}\left(x^{i}\right)=\left\{\begin{array}{l l}{{1,}}&{{x^{i}>0}}\\ {{-1,}}&{{x^{i}<0}}\end{array}\right.
+$$  
+
+称为符号函数[1]，对于 $x_{i}=0$ 的特殊情况，由于 $\left|x_{i}\right|$ 在 $x_{i}=0$ 点出不光滑，所以其不可导，需单独讨论。令 ${\frac{d g\left(x^{i}\right)}{d x^{i}}}={\dot{0}}$ 有  
+
+$$
+x^{i}=z^{i}-\frac{\lambda}{L}\,\mathrm{sign}\left(x^{i}\right)
+$$  
+
+此式的解即为优化目标 $g(x^{i})$ 的极值点，因为等式两端均含有未知变量 $x^{i}$ ，故分情况讨论。  
+
+1. 当 $z^{i}>\frac{\lambda}{L}$ 时：a. 假设 $x^{i}<0$ ，则 $\mathrm{sign}(x^{i})\,=\,-1$ ，那么有 $\begin{array}{r}{x^{i}=z^{i}+\frac{\lambda}{L}>0}\end{array}$ 与假设矛盾；b. 假设$x^{i}>0$ ，则 $\mathrm{sign}(x^{i})=1$ ，那么有 $\begin{array}{r}{x^{i}=z^{i}-\frac{\lambda}{L}>0}\end{array}$ 和假设相符和，下面来检验 $\begin{array}{r}{x^{i}=z^{i}-\frac{\lambda}{L}}\end{array}$ 是否是使函数 $g(x^{i})$ 的取得最小值。当 $x^{i}>0$ 时，  
+
+$$
+\frac{d g\left(x^{i}\right)}{d x^{i}}=L\left(x^{i}-z^{i}\right)+\lambda
+$$  
+
+在定义域内连续可导，则 $g(x^{i})$ 的二阶导数  
+
+$$
+{\frac{d^{2}g\left(x^{i}\right)}{d x^{i^{2}}}}=L
+$$  
+
+由于 $L$ 是Lipschitz 常数恒大于 $0$ ，因为 $\begin{array}{r}{x^{i}=z^{i}-\frac{\lambda}{L}}\end{array}$ 是函数 $g(x^{i})$ 的最小值。  
+
+2. 当 $z_{i}<-\frac{\lambda}{L}$ 时：a. 假设 $x^{i}>0$ ，则 $\operatorname{sign}(x^{i})\,=\,1$ ，那么有 $\begin{array}{r}{x^{i}=z^{i}-\frac{\lambda}{L}<0}\end{array}$ 与假设矛盾；b. 假设$x^{i}<0$ ，则 $\mathrm{sign}(x^{i})\,=\,-1$ ，那么有 $\begin{array}{r}{x^{i}\,=\,z^{i}+\frac{\lambda}{L}\,<\,0}\end{array}$ 与假设相符，由上述二阶导数恒大于0 可知，$\begin{array}{r}{x^{i}=z^{i}+\frac{\lambda}{L}}\end{array}$ 是 $g(x^{i})$ 的最小值。  
+
+3. 当 $\begin{array}{r}{-\frac{\lambda}{L}\leqslant z_{i}\leqslant\frac{\lambda}{L}}\end{array}$ 时：a. 假设 $x^{i}>0$ ，则 $\mathrm{sign}(x^{i})=1$ ，那么有 $\begin{array}{r}{x^{i}=z^{i}-\frac{\lambda}{L}\leqslant0}\end{array}$ 与假设矛盾；b. 假设$x^{i}<0$ ，则 $\mathrm{sign}(x^{i})=-1$ ，那么有 $\begin{array}{r}{x^{i}=z^{i}+\frac{\lambda}{L}\geqslant0}\end{array}$ 与假设矛盾。  
+
+4. 最后讨论 $x_{i}=0$ 的情况，此时 $\begin{array}{r}{g(x^{i})=\frac{L}{2}\left(z^{i}\right)^{2}}\end{array}$  
+
+• 当 $\left|z^{i}\right|>{\frac{\lambda}{L}}$ 时，由上述推导可知 $g(x_{i})$ 的最小值在 $\begin{array}{r}{x^{i}=z^{i}-\frac{\lambda}{L}}\end{array}$ 处取得，因为  
+
+$$
+\begin{array}{l}{{g(x^{i})|_{x^{i}=0}-g(x^{i})|_{x_{i}=z^{i}-\frac{\lambda}{L}}=\displaystyle\frac{L}{2}\left(z^{i}\right)^{2}-\left(\lambda z^{i}-\frac{\lambda^{2}}{2L}\right)}}\\ {{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}}\\ {{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}}\\ {{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}}\\ {{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}}\\ {{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}}\\ {{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}}\\ {{\displaystyle\displaystyle{\displaystyle{\displaystyle{\displaystyle\displaystyle{\displaystyle\displaystyle{\displaystyle\displaystyle{\displaystyle\displaystyle{\lambda}}}}}}\displaystyle\displaystyle\displaystyle{{\displaystyle{\lambda}}}}\end{array}{{\displaystyle\displaystyle{\displaystyle{\lambda}}}}}\end{array}
+$$  
+
+因此当 $\begin{array}{r}{|z^{i}|>\frac{\lambda}{L}}\end{array}$ 时， $x_{i}=0$ 不会是函数 $g(x_{i})$ 的最小值。  
+
+当 $\begin{array}{r}{-\frac{\lambda}{L}\leqslant z_{i}\leqslant\frac{\lambda}{L}}\end{array}$ 时，对于任何 $\Delta x\neq0$ 有  
+
+$$
+\begin{array}{r l}&{g(\Delta x)=\cfrac{L}{2}\left(\Delta x-z^{i}\right)^{2}+\lambda|\Delta x|}\\ &{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}=\cfrac{L}{2}\left((\Delta x)^{2}-2\Delta x\cdot z^{i}+\cfrac{2\lambda}{L}|\Delta x|\right)+\cfrac{L}{2}\left(z^{i}\right)^{2}}\\ &{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}\geq\cfrac{L}{2}\left((\Delta x)^{2}-2\Delta x\cdot z^{i}+\cfrac{2\lambda}{L}\Delta x\right)+\cfrac{L}{2}\left(z^{i}\right)^{2}}\\ &{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}\geq\cfrac{L}{2}\left((\Delta x)^{2}+\cfrac{L}{2}\right)^{2}}\\ &{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}\geq\cfrac{L}{2}\left(z^{i}\right)^{2}}\\ &{\phantom{a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a}}>\ln a_{2}}\\ &{\phantom{a a a a a a a a a a a a a a}\geq\operatorname{aaaaaaaaa}}\\ &{>\geq{g a b a a a a a a a a}^{a b i a b i a a a}=}\end{array}
+$$  
+
+因此 $x^{i}=0$ 是 $g(x^{i})$ 的最小值点。  
+
+综上所述，11.14 成立  
+
+# 公式(11.15)  
+
+$$
+\operatorname*{min}_{\mathbf{B},\alpha_{i}}\sum_{i=1}^{m}\|\pmb{x}_{i}-\mathbf{B}\pmb{\alpha}_{i}\|_{2}^{2}+\lambda\sum_{i=1}^{m}\|\pmb{\alpha}_{i}\|_{1}
+$$  
+
+[解析]：这个式子表达的意思很容易理解，即希望样本 $x_{i}$ 的稀疏表示 $\alpha_{i}$ 通过字典 $\mathbf{B}$ 重构后和样本 $x_{i}$ 的原始表示尽量相似，如果满足这个条件，那么稀疏表示 $\pmb{\alpha}_{i}$ 是比较好的。后面的1 范数项是为了使表示更加稀疏。  
+
+# 公式(11.16)  
+
+$$
+\operatorname*{min}_{\pmb{\alpha}_{i}}\|\pmb{x}_{i}-\mathbf{B}\pmb{\alpha}_{i}\|_{2}^{2}+\lambda\,\|\pmb{\alpha}_{i}\|_{1}
+$$  
+
+[解析]：为了优化11.15，我们采用变量交替优化的方式(有点类似EM 算法)，首先固定变量 $\mathbf{B}$ ，则11.15求解的是 $m$ 个样本相加的最小值，因为公式里没有样本之间的交互(即文中所述 $\alpha_{i}^{u}\alpha_{i}^{v}(u\ne v)$ 这样的形式)，因此可以对每个变量做分别的优化求出 $\alpha_{i}$ ，求解方法见11.13，11.14。  
+
+# 公式(11.17)  
+
+$$
+\operatorname*{min}_{\mathbf{B}}\|\mathbf{X}-\mathbf{B}\mathbf{A}\|_{F}^{2}
+$$  
+
+[解析]：这是优化11.15 的第二步，固定住 $\alpha_{i},i=1,2,\ldots,m$ ，此时式11.15 的第二项为一个常数，优化11.15 即优化 $\begin{array}{r}{\operatorname*{min}_{\mathbf{B}}\sum_{i=1}^{m}\left\|\pmb{x}_{i}-\mathbf{B}\pmb{\alpha}_{i}\right\|_{2}^{2}}\end{array}$ 。其写成矩阵相乘的形式为 $\operatorname*{min}_{\mathbf{B}}\|\mathbf{X}-\mathbf{B}\mathbf{A}\|_{2}^{2}$ ，将2 范数扩展到 $F$ 范数即得优化目标为 $\operatorname*{min}_{\mathbf{B}}\|\mathbf{X}-\mathbf{B}\mathbf{A}\|_{F}^{2}$ 。  
+
+公式(11.18)  
+
+$$
+\begin{array}{r l}{\underset{\mathbf{B}}{\operatorname*{min}}\left\|\mathbf{X}-\mathbf{BA}\right\|_{F}^{2}=\underset{b_{i}}{\operatorname*{min}}\left\|\mathbf{X}-\sum_{j=1}^{k}b_{j}\alpha^{j}\right\|_{F}^{2}}&\\ &{\qquad\qquad=\underset{b_{i}}{\operatorname*{min}}\left\|\left(\mathbf{X}-\sum_{j\neq i}b_{j}\alpha^{j}\right)-b_{i}\alpha^{i}\right\|_{F}^{2}}\\ &{\qquad=\underset{b_{i}}{\operatorname*{min}}\left\|\mathbf{E}_{i}-b_{i}\alpha^{i}\right\|_{F}^{2}}\end{array}
+$$  
+
+[解析]：这个公式难点在于推导 $\begin{array}{r}{\mathbf{B}\mathbf{A}=\sum_{j=1}^{k}b_{j}\alpha^{j}}\end{array}$ 。大致的思路是 $b_{j}\alpha^{j}$ 会生成和矩阵BA 同样维度的矩阵，这个矩阵对应位置的元素是BA 中对应位置元素的一个分量，这样的分量矩阵一共有 $k$ 个，把所有分量矩阵加起来就得到了最终结果。推导过程如下：  
+
+$$
+B A=\left[\begin{array}{l l l l l l l l}{b_{1}^{1}}&{b_{2}^{1}}&{\cdot}&{\cdot}&{\cdot}&{b_{k}^{1}}\\ {b_{1}^{2}}&{b_{2}^{2}}&{\cdot}&{\cdot}&{\cdot}&{b_{k}^{2}}\\ {\cdot}&{\cdot}&{\cdot}&&{\cdot}&{\cdot}\\ {\cdot}&{\cdot}&&{\cdot}&&{\cdot}\\ {\cdot}&{\cdot}&&&{\cdot}&&{\cdot}\\ {\cdot}&{\cdot}&&&&{\cdot}&{\cdot}\\ {b_{1}^{d}}&{b_{2}^{d}}&{\cdot}&{\cdot}&{\cdot}&{b_{k}^{d}}\end{array}\right]_{\scriptstyle\ \ d\times\ d}\cdot\left[\begin{array}{l l l l l l l}{\alpha_{1}^{1}}&{\alpha_{2}^{1}}&{\cdot}&{\cdot}&{\cdot}&{\alpha_{m}^{1}}\\ {\alpha_{1}^{2}}&{\alpha_{2}^{2}}&{\cdot}&{\cdot}&{\cdot}&{\alpha_{m}^{2}}\\ {\cdot}&{\cdot}&{\cdot}&&&{\cdot}\\ {\cdot}&{\cdot}&&{\cdot}&&{\cdot}\\ {\cdot}&{\cdot}&&&{\cdot}&&{\cdot}\\ {\cdot}&{\cdot}&&&{\cdot}&{\cdot}\\ {\alpha_{1}^{k}}&{\alpha_{2}^{k}}&{\cdot}&{\cdot}&{\cdot}&{\alpha_{m}^{k}}\end{array}\right]_{\scriptstyle\ k\times m}
+$$  
+
+$$
+\mathbf{\Psi}=\left[\begin{array}{c c c c c c c}{\sum_{j=1}^{k}b_{j}^{1}\alpha_{1}^{j}}&{\sum_{j=1}^{k}b_{j}^{1}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{\cdot}&{\sum_{j=1}^{k}b_{j}^{1}\alpha_{m}^{j}}\\ {\sum_{j=1}^{k}b_{j}^{2}\alpha_{1}^{j}}&{\sum_{j=1}^{k}b_{j}^{2}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{\cdot}&{\sum_{j=1}^{k}b_{j}^{2}\alpha_{m}^{j}}\\ {.}&{.}&{.}&{.}&{.}&{.}\\ {.}&{.}&{.}&{.}&{.}&{.}\\ {.}&{.}&{.}&{.}&{.}&{.}\\ {\sum_{j=1}^{k}b_{j}^{d}\alpha_{1}^{j}}&{\sum_{j=1}^{k}b_{j}^{d}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{\sum_{j=1}^{k}b_{j}^{d}\alpha_{m}^{j}\rfloor_{d\times m}}\end{array}\right]_{d\times m}
+$$  
+
+$$
+b_{j}\alpha^{j}=\left[\begin{array}{c}{{b_{j}^{1}}}\\ {{b_{j}^{2}}}\\ {{\cdot}}\\ {{\cdot}}\\ {{\cdot}}\\ {{\cdot}}\\ {{b_{j}^{d}}}\end{array}\right]\cdot\left[\alpha_{1}^{j}\quad\alpha_{2}^{j}\quad,\quad,\quad,\quad\alpha_{m}^{j}\right]
+$$  
+
+$$
+\mathbf{\Lambda}=\left[\begin{array}{c c c c c c}{b_{j}^{1}\alpha_{1}^{j}}&{b_{j}^{1}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{b_{j}^{1}\alpha_{m}^{j}}\\ {b_{j}^{2}\alpha_{1}^{j}}&{b_{j}^{2}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{b_{j}^{2}\alpha_{m}^{j}}\\ {.}&{.}&{.}&{.}&{.}\\ {.}&{.}&{.}&{.}&{.}\\ {.}&{.}&{.}&{.}&{.}\\ {.}&{.}&{.}&{.}&{.}\\ {b_{j}^{d}\alpha_{1}^{j}}&{b_{j}^{d}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{b_{j}^{d}\alpha_{m}^{j}}\end{array}\right]_{d\times m}
+$$  
+
+求和可得：  
+
+$$
+\begin{array}{r l r}{\underset{t=1}{\overset{k}{\sum}}b_{j}\alpha^{j}=\frac{k}{j-1}\left(\left[\begin{array}{l}{b_{1}^{t}}\\ {b_{\nu}^{t}}\\ {\cdot}\\ {\cdot}\\ {b_{i}^{t}}\end{array}\right]\right.}&{\,}&\\ &{=}&{\left[\begin{array}{l l l l l}{\sum_{j=1}^{k}b_{j}^{j}\alpha_{1}^{j}}&{\sum_{j=1}^{k}b_{j}^{j}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{\sum_{j=1}^{k}b_{j}^{j}\alpha_{1}^{j}}\\ {\vdots}&&&&\\ {\left[\begin{array}{l l l l l}{\vdots}&&&&\\ &{\ddots}&&&\\ &&&&{\ddots}&\\ &&&&\\ {\vdots}&&&&&\\ &&&&&{\ddots}&\\ &&&&&\\ &&&&&&{\ddots}&\\ {\sum_{j=1}^{k}b_{j}^{j}\alpha_{1}^{j}}&{\sum_{j=1}^{k}b_{j}^{j}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{\sum_{j=1}^{k}b_{j}^{j}\alpha_{1}^{j}}\end{array}\right]}\\ &{=\left[\begin{array}{l l l l l}{\sum_{j=1}^{k}b_{j}^{j}\alpha_{1}^{j}}&{\sum_{j=1}^{k}b_{j}^{j}\alpha_{2}^{j}}&{\cdot}&{\cdot}&{\sum_{j=1}^{k}b_{j}^{j}\alpha_{1}^{j}}\\ {\vdots}&&&&&\\ &&&&{\ddots}&\\ &&&&&{\cdot}&\\ &&&&&{\ddots}&\\ &&&&&{\cdot}\\ {\vdots}&&&&&&{\ddots}&\\ &&&&&&{\ddots}&\\ &&&&&&{\vdots}\end{array}\right]\mathrm{,}}\end{array}
+$$  
+
+得证。将矩阵B 分解成矩阵列 $b_{j},j=1,2,\ldots,k$ 带来一个好处，即和11.16 的原理相同，矩阵列与列之间无关，因此可以分别优化各个列，即将 $\operatorname*{min}_{\mathbf{B}}\parallel\boldsymbol{\cdot}\boldsymbol{\cdot}\boldsymbol{\cdot}\mathbf{B}\dots\parallel_{F}^{2}$ 转化成了 $\mathrm{min}_{b_{i}}\parallel\cdot\cdot\cdot b_{i}\cdot\cdot\cdot\parallel_{F}^{2}$ ，得到第三行的等式之后，再利用文中介绍的KSVD 算法求解即可。  
+
+# 参考文献  
+
+[1] Wikipedia contributors. Sign function, 2020. URL: https://en.wikipedia.org/wiki/Sign_ function.  
+
+# 第12 章 计算学习理论  
+
+# 公式(12.1)  
+
+$$
+E(h;{\boldsymbol{D}})=P_{\mathbf{x}\sim{\mathcal{D}}}(h(\mathbf{x})\neq y)
+$$  
+
+[解析]：该式为泛化误差的定义式，所谓泛化误差，是指当样本 $x$ 从真实的样本分布 $\mathcal{D}$ 中采样后其预测值 $h(x)$ 不等于真实值 $y$ 的概率。在现实世界中，我们很难获得样本分布 $\mathcal{D}$ ，我们拿到的数据集可以看做是从样本分布 $\mathcal{D}$ 中独立同分布采样得到的。在西瓜书中，我们拿到的数据集，称为样例集 $D[$ 也叫观测集、样本集，注意与花体 $\mathcal{D}$ 的区别]。  
+
+# 公式(12.2)  
+
+$$
+\widehat{E}(h;D)=\frac{1}{m}\sum_{i=1}^{m}\mathbb{I}\left(h\left(\pmb{x}_{i}\right)\neq y_{i}\right)
+$$  
+
+[解析]：该式为经验误差的定义式，所谓经验误差，是指观测集 $D$ 中的样本 $x_{i},i=1,2,\cdots,m$ 的预测值$h(\pmb{x}_{i})$ 和真实值 $y_{i}$ 的期望误差。  
+
+# 公式(12.3)  
+
+$$
+d\left(h_{1},h_{2}\right)=P_{\pmb{x}\sim\mathcal{D}}\left(h_{1}(\pmb{x})\neq h_{2}(\pmb{x})\right)
+$$  
+
+[解析]：假设我们有两个模型 $h_{1}$ 和 $h_{2}$ ，将它们同时作用于样本 $\textbf{\em x}$ 上，那么他们的”不合“度定义为这两个模型预测值不相同的概率。  
+
+# 公式(12.4)  
+
+$$
+f(\mathbb{E}(x))\leqslant\mathbb{E}(f(x))
+$$  
+
+[解析]：Jensen 不等式：这个式子可以做很直观的理解，比如说在二维空间上，凸函数可以想象成开口向上的抛物线，假如我们有两个点 $x_{1},x_{2}$ ，那么 $f(\mathbb{E}(x))$ 表示的是两个点的均值的纵坐标，而 $\mathbb{E}(f(x))$ 表示的是两个点纵坐标的均值，因为两个点的均值落在抛物线的凹处，所以均值的纵坐标会小一些。  
+
+# 公式(12.5)  
+
+$$
+P\left(\frac{1}{m}\sum_{i=1}^{m}x_{i}-\frac{1}{m}\sum_{i=1}^{m}\mathbb{E}\left(x_{i}\right)\geqslant\epsilon\right)\leqslant\exp\left(-2m\epsilon^{2}\right)
+$$  
+
+[解析]：Hoeffding 不等式：对于独立随机变量 $x_{1},x_{2},\cdot\cdot\cdot\,,x_{m}$ 来说，他们观测值 $x_{i}$ 的均值 $\textstyle{\frac{1}{m}}\sum_{i=1}^{m}x_{i}$ 总是和他们期望 $\mathbb{E}(x_{i})$ 的均值 $\textstyle{\frac{1}{m}}\sum_{i=1}^{m}\mathbb{E}\left(x_{i}\right)$ 相近，上式从概率的角度对这样一个结论进行了描述：即它们之间差值不小于 $\epsilon$ 这样的事件出现的概率不大于 $\exp\left(-2m\epsilon^{2}\right)$ ，可以看出当观测到的变量越多，观测值的均值越逼近期望的均值。  
+
+# 公式(12.7)  
+
+$$
+P\left(f\left(x_{1},\ldots,x_{m}\right)-\mathbb{E}\left(f\left(x_{1},\ldots,x_{m}\right)\right)\geqslant\epsilon\right)\leqslant\exp\left({\frac{-2\epsilon^{2}}{\sum_{i}c_{i}^{2}}}\right)
+$$  
+
+[解析]：McDiarmid 不等式：首先解释下前提条件：  
+
+$$
+\operatorname*{sup}_{x_{1},\ldots,x_{m},x_{i}^{\prime}}\left|f\left(x_{1},\ldots,x_{m}\right)-f\left(x_{1},\ldots,x_{i-1},x_{i}^{\prime},x_{i+1},\ldots,x_{m}\right)\right|\leqslant c_{i}
+$$  
+
+表示当函数 $f$ 某个输入 $x_{i}$ 变到 $\ensuremath{\boldsymbol{{x}}}_{i}^{\prime}$ 的时候，其变化的上确sup 仍满足不大于 $c_{i}$ 。所谓上确界sup 可以理解成变化的极限最大值，可能取到也可能无穷逼近。当满足这个条件时，McDiarmid 不等式指出：函数值$f(x_{1},\ldots,x_{m})$ 和其期望值 $\mathbb{E}\left(f(x_{1},\ldots,x_{m})\right)$ 也相近，从概率的角度描述是：它们之间差值不小于 $\epsilon$ 这样的事件出现的概率不大于 $\begin{array}{r}{\exp\left(\frac{-2\epsilon^{2}}{\sum_{i}c_{i}^{2}}\right)}\end{array}$ ，可以看出当每次变量改动带来函数值改动的上限越小，函数值和其期望越相近。  
+
+# 公式(12.9)  
+
+$$
+P(E(h)\leq\epsilon)\geq1-\delta
+$$  
+
+[解析]：PAC 辨识的定义： $E(h)$ 表示算法 $\mathcal{L}$ 在用观测集 $D$ 训练后输出的假设函数 $h$ ，它的泛化误差(见公式12.1)。这个概率定义指出，如果 $h$ 的泛化误差不大于 $\epsilon$ 的概率不小于 $1-\delta$ ，那么我们称学习算法 $\mathcal{L}$ 能从假设空间 $\mathcal{H}$ 中PAC 辨识概念类 $\mathcal{C}$ 。  
+
+从式12.10 到式12.14 的公式是为了回答一个问题：到底需要多少样例才能学得目标概念 $c$ 的有效近似。只要训练集 $D$ 的规模能使学习算法 $\mathcal{L}$ 以概率 $1-\delta$ 找到目标假设的 $\epsilon$ 近似即可。下面就是用数学公式进行抽象  
+
+# 公式(12.10)  
+
+$$
+\begin{array}{r l}&{P(h(\pmb{x})=y)=1-P(h(\pmb{x})\neq y)}\\ &{\qquad\qquad\qquad\qquad=1-E(h)}\\ &{\qquad\qquad\quad\le1-\epsilon}\end{array}
+$$  
+
+[解析]： $P(h(\mathbf{x})=y)=1-P(h(\mathbf{x})\neq y)$ 因为它们是对立事件， $P(h(x)\neq y)=E(h)$ 是泛化误差的定义(见12.1)，由于我们假定了泛化误差 $E(h)>\epsilon$ ，因此有 $1-E(h)<1-\epsilon$ 。  
+
+# 公式(12.11)  
+
+$$
+\begin{array}{c}{P\left(\left(h\left(x_{1}\right)=y_{1}\right)\wedge.\ldots\wedge\left(h\left(x_{m}\right)=y_{m}\right)\right)=(1-P(h(x)\neq y))^{m}}\\ {<(1-\epsilon)^{m}}\end{array}
+$$  
+
+[解析]：先解释什么是 $h$ 与 $D$ “表现一致”，12.2 节开头阐述了这样的概念，如果 $h$ 能将 $D$ 中所有样本按与真实标记一致的方式完全分开，我们称问题对学习算法是一致的。即 $(h\left(\mathbf{x}_{1}\right)=y_{1})\wedge.\ldots\wedge(h\left(\mathbf{x}_{m}\right)=y_{m})$ 为True。因为每个事件是独立的，所以上式可以写成 $\begin{array}{r}{P\left(\left(h\left(\mathbf{x}_{1}\right)=y_{1}\right)\wedge\ldots\wedge\left(h\left(\mathbf{x}_{m}\right)=y_{m}\right)\right)=\prod_{i=1}^{m}P\left(h\left(\mathbf{x}_{i}\right)=y_{i}\right)\circ\left(\mathbf{x}_{m}\right)=\prod_{i=1}^{m}P\left(h\left(\mathbf{x}_{i}\right)=y_{i}\right)\circ\left(\mathbf{x}_{m}\right)=\left(\mathbf{x}_{i}\right)\circ\left(\mathbf{x}_{m}\right).}\end{array}$ 根据对立事件的定义有： $\begin{array}{r}{\prod_{i=1}^{m}P\left(h\left(x_{i}\right)=y_{i}\right)=\prod_{i=1}^{m}\left(1-P\left(h\left(x_{i}\right)\neq y_{i}\right)\right)}\end{array}$ ，又根据公式(12.10)，有  
+
+$$
+\prod_{i=1}^{m}\left(1-P\left(h\left(x_{i}\right)\neq y_{i}\right)\right)<\prod_{i=1}^{m}(1-\epsilon)=(1-\epsilon)^{m}
+$$  
+
+# 公式(12.12)  
+
+$$
+\begin{array}{r}{P(h\in\mathcal{H}:E(h)>\epsilon\wedge\widehat{E}(h)=0)<|\mathcal{H}|(1-\epsilon)^{m}}\\ {<|\mathcal{H}|e^{-m\epsilon}\quad\qquad\qquad\qquad\quad<|\mathcal{H}|e^{-m\epsilon}}\end{array}
+$$  
+
+[解析]：首先解释为什么”我们事先并不知道学习算法 $\mathcal{L}$ 会输出 $\mathcal{H}$ 中的哪个假设“，因为一些学习算法对用一个观察集 $D$ 的输出结果是非确定的，比如感知机就是个典型的例子，训练样本的顺序也会影响感知机学习到的假设 $h$ 参数的值。泛化误差大于 $\epsilon$ 且经验误差为0 的假设(即在训练集上表现完美的假设)出现的概率可以表示为 $P(h\in\mathcal{H}:E(h)>\epsilon\land\widehat{E}(h)=0)$ ，根据式12.11，每一个这样的假设 $h$ 都满足$P(E(h)\,>\,\epsilon\wedge\widehat{E}(h)\,=\,0)\,<\,\left(1-\epsilon\right)^{m}$ ，假设一共 有 $|{\mathcal{H}}|$ 这么多个这样的假设 $h$ ，因为每个假设 $h$ 满足$E(h)>\epsilon$ 且 $\widehat{E}(h)=0$ 是互斥的，因此总的概率 $P(h\in\mathcal{H}:E(h)>\epsilon\land\widehat{E}(h)=0)$ 就是这些互斥事件之和，即  
+
+$$
+\begin{array}{r l}&{P\left(h\in\mathcal{H}:E(h)>\epsilon\wedge\widehat{E}(h)=0\right)=\displaystyle\sum_{i}^{|\mathcal{H}|}P\left(E(h_{i})>\epsilon\wedge\widehat{E}(h_{i})=0\right)}\\ &{\qquad\qquad\qquad\qquad\qquad\qquad<|\mathcal{H}|(1-\epsilon)^{m}}\end{array}
+$$  
+
+小于号依据公式(12.11)。第二个小于号实际上是要证明 $|\mathcal{H}|(1-\epsilon)^{m}<|\mathcal{H}|e^{-m\epsilon}$ ，即证明 $(1-\epsilon)^{m}<e^{-m\epsilon}$ ，其中 $\epsilon\,\in\,(0,1]$ ， $m$ 是正整数，推导如下：[推导]：当 $\epsilon\,=\,1$ 时，显然成立，当 $\epsilon\,\in\,(0,1)$ 时，因为左式和右式的值域均大于0，所以可以左右两边同时取对数，又因为对数函数是单调递增函数，所以即证明$m\ln(1-\epsilon)<-m\epsilon$ ，即证明 $\ln(1-\epsilon)<-\epsilon$ ，这个式子很容易证明：令 $f(\epsilon)=\ln(1-\epsilon)+\epsilon$ ，其中 $\epsilon\in(0,1)$ ，$\begin{array}{r}{f^{\prime}(\epsilon)=1-\frac{1}{1-\epsilon}=0\Rightarrow\epsilon=0}\end{array}$ 取极大值0，因此 $l n(1-\epsilon)<-\epsilon$ 也即 $|\mathcal{H}|(1-\epsilon)^{m}<|\mathcal{H}|e^{-m\epsilon}$ 成立。  
+
+# 公式(12.13)  
+
+$$
+|\mathcal{H}|e^{-m\epsilon}\leqslant\delta
+$$  
+
+[解析]：回到我们要回答的问题：到底需要多少样例才能学得目标概念 $c$ 的有效近似。只要训练集 $D$ 的规模能使学习算法 $\mathcal{L}$ 以概率 $1-\delta$ 找到目标假设的 $\epsilon$ 近似即可。根据式12.12，学习算法 $\mathcal{L}$ 生成的假设大于目标假设的 $\epsilon$ 近似的概率为 $P\left(h\in\mathcal{H}:E(h)>\epsilon\wedge\widehat{E}(h)=0\right)<|\mathcal{H}|e^{-m\epsilon}$ ，因此学习算法 $\mathcal{L}$ 生成的假设落在目标假设的 $\epsilon$ 近似的概率为 $1-P\left(h\in\mathcal{H}:E(h)>\epsilon\wedge\widehat{E}(h)=0\right)\geq1-|\mathcal{H}|e^{-m\epsilon}$ ，这个概率我们希望至少是 $1-\delta$ ，因此 $1-\delta\leqslant1-|\mathcal{H}|e^{-m\epsilon}\Rightarrow|\mathcal{H}|e^{-m\epsilon}\leqslant\delta$  
+
+公式(12.14)  
+
+$$
+m\geqslant\frac{1}{\epsilon}\left(\ln|\mathcal{H}|+\ln\frac{1}{\delta}\right)
+$$  
+
+[推导]：  
+
+$$
+|\mathcal{H}|e^{-m\epsilon}\leqslant\delta
+$$  
+
+$$
+e^{-m\epsilon}\leqslant\frac{\delta}{|\mathcal{H}|}
+$$  
+
+$$
+-m\epsilon\leqslant\ln\delta-\ln|\mathcal{H}|
+$$  
+
+$$
+m\geqslant\frac{1}{\epsilon}\left(\ln|\mathcal{H}|+\ln\frac{1}{\delta}\right)
+$$  
+
+[解析]：这个式子告诉我们，在假设空间 $\mathcal{H}$ 是PAC 可学习的情况下，输出假设 $h$ 的泛化误差 $\epsilon$ 随样本数目 $m$ 增大而收敛到0，收敛速率为 $\textstyle O({\frac{1}{m}})$ 。这也是我们在机器学习中的一个共识，即可供模型训练的观测集样本数量越多，机器学习模型的泛化性能越好。  
+
+公式(12.15)  
+
+$$
+P(\widehat{E}(h)-E(h)\geqslant\epsilon)\leqslant\exp\left(-2m\epsilon^{2}\right)
+$$  
+
+[解析]：参见12.5  
+
+公式(12.16)  
+
+$$
+P(E(h)-\widehat{E}(h)\geqslant\epsilon)\leqslant\exp\left(-2m\epsilon^{2}\right)
+$$  
+
+[解析]：参见12.5  
+
+公式(12.17)  
+
+$$
+P(|E(h)-\widehat{E}(h)|\geqslant\epsilon)\leqslant2\exp\left(-2m\epsilon^{2}\right)
+$$  
+
+[解析]：参见12.6  
+
+公式(12.18)  
+
+$$
+\widehat{E}(h)-\sqrt{\frac{\ln(2/\delta)}{2m}}\leqslant E(h)\leqslant\widehat{E}(h)+\sqrt{\frac{\ln(2/\delta)}{2m}}
+$$  
+
+[推导]：令 $\delta=2e^{-2m\epsilon^{2}}$ ，则 $\begin{array}{r}{\epsilon=\sqrt{\frac{\ln(2/\delta)}{2m}}}\end{array}$ ln(2/δ )，由式12.17  
+
+$$
+\begin{array}{r l}&{P(|E(h)-\widehat{E}(h)|\geqslant\epsilon)\leqslant2\exp\left(-2m\epsilon^{2}\right)}\\ &{P(|E(h)-\widehat{E}(h)|\geqslant\epsilon)\leqslant\delta}\\ &{\qquad P(|E(h)-\widehat{E}(h)|\leqslant\epsilon)\geqslant1-\delta}\\ &{P(-\epsilon\leqslant E(h)-\widehat{E}(h)\leqslant\epsilon)\geqslant1-\delta}\\ &{P(\widehat{E}(h)-\epsilon\leqslant E(h)\leqslant\widehat{E}(h)+\epsilon)\geqslant1-\delta}\end{array}
+$$  
+
+带入ϵ = $\begin{array}{r}{\epsilon=\sqrt{\frac{\ln(2/\delta)}{2m}}}\end{array}$ 得证。这个式子进一步阐明了当观测集样本数量足够大的时候， $h$ 的经验误差是其泛化误差很好的近似。  
+
+公式(12.19)  
+
+$$
+P\left(\left|E(h)-\widehat{E}(h)\right|\leqslant\sqrt{\frac{\ln\left|\mathcal{H}\right|+\ln(2/\delta)}{2m}}\right)\geqslant1-\delta
+$$  
+
+[推导]：令 $h_{1},h_{2},\ldots,h_{|\mathcal{H}|}$ 表示假设空间 $\mathcal{H}$ 中的假设，有  
+
+$$
+\begin{array}{r l}&{\quad P(\exists h\in\mathcal{H}:|E(h)-\widehat{E}(h)|>\epsilon)}\\ &{=\!P\left(\left(\left|E_{h_{1}}-\widehat{E}_{h_{1}}\right|>\epsilon\right)\vee\ldots\vee\left(|E_{h_{|\mathcal{H}|}}-\widehat{E}_{h_{|\mathcal{H}|}|>\epsilon}\right)\right)}\\ &{\leqslant\displaystyle\sum_{h\in\mathcal{H}}P(|E(h)-\widehat{E}(h)|>\epsilon)}\end{array}
+$$  
+
+这一步是很好理解的，存在一个假设 $h$ 使得 $|E(h)-\widehat{E}(h)|>\epsilon$ 的概率可以表示为对假设空间内所有的假设 $h_{i},i\in1,\ldots,|\mathcal{H}|$ ，使得 $\left|E_{h_{i}}-\widehat{E}_{h_{i}}\right|>\epsilon$ 这个事件成 立的” 或” 事件。因为 $P(A\lor B)=P(A)+P(B)-$ $P(A\land B)$ ，而 $P(A\land B)\geqslant0$ ，所以最 后一行的不等式成立。由式12.17：  
+
+$$
+\begin{array}{l}{P(|E(h)-\widehat{E}(h)|\geqslant\epsilon)\leqslant2\exp\left(-2m\epsilon^{2}\right)}\\ {\Rightarrow\displaystyle\sum_{h\in\mathcal{H}}P(|E(h)-\widehat{E}(h)|>\epsilon)\leqslant2|\mathcal{H}|\exp\left(-2m\epsilon^{2}\right)}\end{array}
+$$  
+
+因此：  
+
+$$
+\begin{array}{r l}&{P(\exists h\in\mathcal{H}:|E(h)-\widehat{E}(h)|>\epsilon)\leqslant\underset{h\in\mathcal{H}}{\sum}P(|E(h)-\widehat{E}(h)|>\epsilon)}\\ &{\qquad\qquad\qquad\qquad\qquad\leqslant2|\mathcal{H}|\exp\left(-2m\epsilon^{2}\right)}\end{array}
+$$  
+
+其对立事件：  
+
+$$
+\begin{array}{r l}&{P(\forall h\in\mathcal{H}:|E(h)-\widehat{E}(h)|\leqslant\epsilon)=1-P(\exists h\in\mathcal{H}:|E(h)-\widehat{E}(h)|>\epsilon)}\\ &{\qquad\qquad\qquad\qquad\qquad\geqslant1-2|\mathcal{H}|\exp\left(-2m\epsilon^{2}\right)}\end{array}
+$$  
+
+令 $\delta=2|\mathcal{H}|e^{-2m\epsilon^{2}}$ ，则 $\begin{array}{r}{\epsilon=\sqrt{\frac{\ln|\mathcal{H}|+\ln(2/\delta)}{2m}}}\end{array}$ ln |H|+ln(2/δ)，带入上式中即可得到  
+
+$$
+P\left(\forall h\in\mathcal{H}:|E(h)-\widehat{E}(h)|\leqslant\sqrt{\frac{\ln|\mathcal{H}|+\ln(2/\delta)}{2m}}\right)\geqslant1-\delta
+$$  
+
+其中 $\forall h\in\mathcal{H}$ 这个前置条件可以省略。  
+
+# 公式(12.20)  
+
+$$
+P\left(E(h)-\operatorname*{min}_{h^{\prime}\in\mathcal{H}}E\left(h^{\prime}\right)\leqslant\epsilon\right)\geqslant1-\delta
+$$  
+
+[解析]：这个式子是”不可知PAC 可学习“的定义式，不可知是指当目标概念 $c$ 不在算法 $\mathcal{L}$ 所能生成的假设空间 $\mathcal{H}$ 里。可学习是指如果 $\mathcal{H}$ 中泛化误差最小的假设是 $\arg\operatorname*{min}_{h\in\mathcal{H}}E(h)$ ，且这个假设的泛化误差满足其与目标概念的泛化误差的差值不大于 $\epsilon$ 的概率不小于 $1-\delta$ 。我们称这样的假设空间 $\mathcal{H}$ 是不可知PAC 可学习的。  
+
+# 公式(12.21)  
+
+$$
+\Pi_{\mathcal{H}}(m)=\operatorname*{max}_{\left\{x_{1},\ldots,x_{m}\right\}\subseteq\mathcal{X}}\left|\left\{\left(h\left(\mathbf{x}_{1}\right),\ldots,h\left(\mathbf{x}_{m}\right)\right)\left|h\in\mathcal{H}\right\}\right|
+$$  
+
+[解析]：这个是增长函数的定义式。增长函数 $\Pi_{\mathcal{H}}(m)$ 表示假设空间 $\mathcal{H}$ 对 $\mathrm{m}$ 个样本所能赋予标签的最大可能的结果数。比如对于两个样本的二分类问题，一共有4 中可能的标签组合 $[[0,0],[0,1],[1,0],[1,1]]$ ，如果假设空间 $\mathcal{H}_{1}$ 能赋予这两个样本两种标签组合 $[[0,0],[1,1]]$ ，则 $\Pi_{\mathcal{H}_{1}}(2)=2$ 。显然， $\mathcal{H}$ 对样本所能赋予标签的可能结果数越多， $\mathcal{H}$ 的表示能力就越强。增长函数可以用来反映假设空间 $\mathcal{H}$ 的复杂度。  
+
+# 公式(12.22)  
+
+$$
+P(|E(h)-\widehat{E}(h)|>\epsilon)\leqslant4\Pi_{\mathcal{H}}(2m)\exp\left(-\frac{m\epsilon^{2}}{8}\right)
+$$  
+
+[解析]：这个式子的前提假设有误，应当写成对假设空间 $\mathcal{H}$ ， $m\in\mathbb{N},\ 0<\epsilon<1$ ，存在 $h\in\mathcal H$ 详细证明参 见原论文On the uniform convergence of relative frequencies of events to their probabilities [3]  
+
+# 公式(12.23)  
+
+$$
+\operatorname{VC}(\mathcal{H})=\operatorname*{max}\left\{m:\Pi_{\mathcal{H}}(m)=2^{m}\right\}
+$$  
+
+[解析]：这是VC 维的定义式：VC 维的定义是能被 $\mathcal{H}$ 打散的最大示例集的大小。西瓜书中例12.1 和例12.2 给出了形象的例子。注意，VC 维的定义式上的底数2 表示这个问题是2 分类的问题。如果是 $n$ 分类的问题，那么定义式中底数需要变为 $n$ 。  
+
+公式(12.24)  
+
+$$
+\Pi_{\mathcal{H}}(m)\leqslant\sum_{i=0}^{d}\left(\begin{array}{c}{{m}}\\ {{i}}\end{array}\right)
+$$  
+
+[解析]：首先解释下数学归纳法的起始条件” 当 $m=1,d=0$ 或 $d=1$ 时，定理成立”，当 $m=1,d=0$ 时，由VC 维的定义(式12.23) $\operatorname{VC}(\mathcal{H})=\operatorname*{max}\left\{m:\Pi_{\mathcal{H}}(m)=2^{m}\right\}=0$ 可知 $\Pi_{\mathcal{H}}(1)<2$ ，否则 $d$ 可以取到1，又因为 $\Pi_{\mathcal{H}}(m)$ 为整数，所以 $\Pi_{\mathcal{H}}(1)\in[0,1]$ ，式12.24 右边为 $\begin{array}{r}{\sum_{i=0}^{0}\left(\begin{array}{l}{1}\\ {\it{i}}\end{array}\right)=1}\end{array}$ ，因此不等式成立。当$m=1,d=1$ 时，因为一个样本最多只能有两个类别，所以 $\Pi_{\mathcal{H}}(1)=2$ ，不等式右边为 $\begin{array}{r}{\sum_{i=0}^{1}\left(\begin{array}{l}{1}\\ {\it{i}}\end{array}\right)=2\,.}\end{array}$ ，因此不等式成立。  
+
+再介绍归纳过程，这里采样的归纳方法是假设式12.24 对 $(m-1,d-1)$ 和 $(m-1,d)$ 成立，推导出其对 $(m,d)$ 也成立。证明过程中引入观测集 $D=\{\pmb{x}_{1},\pmb{x}_{2},\dots,\pmb{x}_{m}\}$ 和观测集 $D^{\prime}=\{x_{1},x_{2},\ldots,x_{m-1}\}$ ，其中 $D$ 比 $D^{\prime}$ 多一个样本 $x_{m}$ ，它们对应的假设空间可以表示为：  
+
+$$
+\begin{array}{r l}&{\mathcal{H}_{\left|D}=\left\{\left(h\left(x_{1}\right),h\left(x_{2}\right),\ldots,h\left(x_{m}\right)\right)\left|h\in\mathcal{H}\right\}}\\ &{\mathcal{H}_{\left|D^{\prime}}=\left\{\left(h\left(x_{1}\right),h\left(x_{2}\right),\ldots,h\left(x_{m-1}\right)\right)\left|h\in\mathcal{H}\right\}}\end{array}
+$$  
+
+如果假设 $h\in\mathcal H$ 对 $x_{m}$ 的分类结果为 $+1$ ，或为 $-1$ ，那么任何出现在 $\mathcal{H}_{\mid D^{\prime}}$ 中的串都会在 $\mathcal{H}_{\mid D}$ 中出现一次或者两次。这里举个例子就很容易理解了，假设 $m=3$ ：  
+
+$$
+\begin{array}{l}{{\displaystyle{\mathcal{H}}_{|D}=\{(+,-,-),(+,+,-),(+,+,+),(-,+,-),(-,-,+)\}}}\\ {{\displaystyle{\mathcal{H}}_{|D^{\prime}}=\{(+,+),(+,-),(-,+),(-,-)\}}}\end{array}
+$$  
+
+其中串 $(+,+)$ 在 $\mathcal{H}_{\mid D}$ 中出现了两次 $(+,+,+),(+,+,-)$ ， $\mathcal{H}_{\mid D^{\prime}}$ 中得其他串 $(+,-),(-,+),(-,-)$ 均只在$\mathcal{H}_{\mid D}$ 中出现了一次。这里的原因是每个样本是二分类的，所以多出的样本 $x_{m}$ 要么取 $^+$ ，要么取 $-$ ，要么都取到(至少两个假设 $h$ 对 $x_{m}$ 做出了不一致的判断)。记号 $\mathcal{H}_{D^{\prime}|D}$ 表示在 $\mathcal{H}_{\mid D}$ 中出现了两次的 $\mathcal{H}_{\mid D^{\prime}}$ 组成的集合，比如在上例中 $\mathcal{H}_{D^{\prime}|D}=\{(+,+)\}$ ，有  
+
+$$
+\left|\mathcal{H}_{\mid D}\right|=\left|\mathcal{H}_{\mid D^{\prime}}\right|+\left|\mathcal{H}_{D^{\prime}\mid D}\right|
+$$  
+
+由于 $\mathcal{H}_{\mid D^{\prime}}$ 表示限制在样本集 $D^{\prime}$ 上的假设空间 $\mathcal{H}$ 的表达能力(即所有假设对样本集 $D^{\prime}$ 所能赋予的标记种类数)，样本集 $D^{\prime}$ 的数目为 $m-1$ ，根据增长函数的定义，假设空间 $\mathcal{H}$ 对包含 $m-1$ 个样本的集合所能赋予的最大标记种类数为 $\Pi_{\mathcal{H}}(m-1)$ ，因此 $|\mathcal{H}_{|D^{\prime}}|\leqslant\Pi_{\mathcal{H}}(m-1)$ 。又根据数学归纳法的前提假设，有：  
+
+$$
+\left|\mathcal{H}_{|D^{\prime}}\right|\leqslant\Pi_{\mathcal{H}}(m-1)\leqslant\sum_{i=0}^{d}\left(\begin{array}{c}{{m-1}}\\ {{i}}\end{array}\right)
+$$  
+
+由记号 $\mathcal{H}_{\mid D^{\prime}}$ 的定义可知， $\begin{array}{r}{\left|\mathcal{H}_{\mid D^{\prime}}\right|\geqslant\left\lfloor\frac{\left|\mathcal{H}_{\mid D}\right|}{2}\right\rfloor}\end{array}$ ，又由于 $|\mathcal{H}_{\mid D^{\prime}}|$ 和 $|\mathcal{H}_{D^{\prime}|D}|$ 均为整数，因此 $\begin{array}{r}{\left|\mathcal{H}_{D^{\prime}|D}\right|\leqslant\left\lfloor\frac{|\mathcal{H}_{|D}|}{2}\right\rfloor}\end{array}$ ，由于样本集 $D$ 的大小为 $m$ ，根据增长函数的概念，有 $\begin{array}{r}{\left|\mathcal{H}_{D^{\prime}|D}\right|\leqslant\left\lfloor\frac{|\mathcal{H}_{|D}|}{2}\right\rfloor\leqslant\Pi_{\mathcal{H}}(m-1)}\end{array}$ 。假设 $Q$ 表示能  
+
+被 $\mathcal{H}_{D^{\prime}|D}$ 打散的集合，因为根据 $\mathcal{H}_{D^{\prime}|D}$ 的定义， $H_{D}$ 必对元素 $x_{m}$ 给定了不一致的判定，因此 $Q\cup\{x_{m}\}$ 必能被 $\mathcal{H}_{\mid D}$ 打散，由前提假设 $\mathcal{H}$ 的VC 维为 $d$ ，因此 $\mathcal{H}_{D^{\prime}|D}$ 的VC 维最大为 $d-1$ ，综上有  
+
+$$
+\left|\mathcal{H}_{D^{\prime}|D}\right|\leqslant\Pi_{\mathcal{H}}(m-1)\leqslant\sum_{i=0}^{d-1}\left(\begin{array}{c}{{m-1}}\\ {{i}}\end{array}\right)
+$$  
+
+因此：  
+
+$$
+\begin{array}{r l}&{|\mathcal{H}_{|D^{\prime}}|=\left|\mathcal{H}_{|D^{\prime}}\right|+\left|\mathcal{H}_{D^{\prime}|D}\right|}\\ &{\qquad\leqslant\displaystyle\sum_{i=0}^{d}\left(\begin{array}{c}{m-1}\\ {i}\end{array}\right)+\sum_{i=0}^{d+1}\left(\begin{array}{c}{m-1}\\ {i}\end{array}\right)}\\ &{\qquad=\displaystyle\sum_{i=0}^{d}\left(\left(\begin{array}{c}{m-1}\\ {i}\end{array}\right)+\left(\begin{array}{c}{m-1}\\ {i-1}\end{array}\right)\right)}\\ &{\qquad=\displaystyle\sum_{i=0}^{d}\left(\begin{array}{c}{m}\\ {i}\end{array}\right)}\end{array}
+$$  
+
+注：最后一步依据组合公式，推导如下：  
+
+$$
+\begin{array}{r l}{\left(\begin{array}{c c}{m-1}\\ {i}\end{array}\right)+\left(\begin{array}{c c}{m-1}\\ {i-1}\\ {i-1}\end{array}\right)=\frac{(m-1)!}{(m-1-i)!!}+\frac{(m-1)!}{(m-1-i+1)!(i-1)!}}&{}\\ &{=\frac{(m-1)!(m-i)}{(m-i)!(m-1-i)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i-1)!(i)}&{}\\ {={}\frac{(m-i1)
+$$  
+
+公式(12.25)  
+
+$$
+\left|\mathcal{H}_{\mid D}\right|=\left|\mathcal{H}_{\mid D^{\prime}}\right|+\left|\mathcal{H}_{D^{\prime}\mid D}\right|
+$$  
+
+[解析]：参见12.24  
+
+公式(12.26)  
+
+$$
+\left|\mathcal{H}_{|D^{\prime}}\right|\leqslant\Pi_{\mathcal{H}}(m-1)\leqslant\sum_{i=0}^{d}\left(\begin{array}{c}{{m-1}}\\ {{i}}\end{array}\right)
+$$  
+
+[解析]：参见12.24  
+
+公式(12.27)  
+
+$$
+\left|\mathcal{H}_{D^{\prime}|D}\right|\leqslant\Pi_{\mathcal{H}}(m-1)\leqslant\sum_{i=0}^{d-1}\left(\begin{array}{c}{{m-1}}\\ {{i}}\end{array}\right)
+$$  
+
+[解析]：参见12.24  
+
+# 公式(12.28)  
+
+$$
+\Pi_{\mathcal{H}}(m)\leqslant\left(\frac{e\cdot m}{d}\right)^{d}
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l r}{\lefteqn{\Pi_{\mathcal{H}}(m)\leqslant\frac{\hat{d}}{\displaystyle m}\left(\begin{array}{l}{m}\\ {i}\end{array}\right)}}\\ &{}&{\leqslant\frac{\hat{d}}{\displaystyle m}\left(\begin{array}{l}{m}\\ {i}\end{array}\right)\left(\frac{m}{\displaystyle d}\right)^{d-i}}\\ &{}&{=\left(\frac{m}{\displaystyle d}\right)^{d}\frac{\hat{d}}{\displaystyle m}\left(\begin{array}{l}{m}\\ {i}\end{array}\right)\left(\frac{d}{\displaystyle m}\right)}\\ &{}&{\leqslant\left(\frac{m}{\displaystyle d}\right)^{d}\frac{\sqrt{m}}{\displaystyle m}\left(\begin{array}{l}{m}\\ {i}\end{array}\right)\left(\frac{d}{\displaystyle m}\right)^{d}}\\ &{}&{=\left(\frac{m}{\displaystyle d}\right)^{d}\left(1+\frac{d}{\displaystyle m}\right)^{m}}\\ &{}&{\leqslant\left(\frac{\langle m,m\rangle}{\displaystyle d}\right)^{d}}\end{array}
+$$  
+
+第一步到第二步和第三步到第四步均因为 $m\geqslant d$ ，第四步到第五步是由于二项式定理[4]： $(x+y)^{n}\,=$ $\begin{array}{r}{\sum_{k=0}^{n}\left(\begin{array}{l}{n}\\ {k}\end{array}\right)x^{n-k}y^{k}}\end{array}$ ，其中令 $\begin{array}{r}{k=i,n=m,x=1,y=\frac{d}{m}}\end{array}$ 得 $\begin{array}{r}{\left(\frac{m}{d}\right)^{d}\sum_{i=0}^{m}\left(\begin{array}{c}{m}\\ {i}\end{array}\right)\left(\frac{d}{m}\right)^{i}=\left(\frac{m}{d}\right)^{d}(1+\frac{d}{m})^{m}\,,}\end{array}$ ，最后一步的不等式即需证明 $\begin{array}{r}{\left(1+\frac{d}{m}\right)^{m}\leqslant e^{d}}\end{array}$ ，因为 $\textstyle\left(1+{\frac{d}{m}}\right)^{m}=\left(1+{\frac{d}{m}}\right)^{\frac{m}{d}d}$ ，根据自然对数底数 $e$ 的定义[5]， $\begin{array}{r}{\left(1+\frac{d}{m}\right)^{\frac{m}{d}d}<e^{d}}\end{array}$ ，注意原文中用的是 $\leqslant$ ，但是由于 $\begin{array}{r}{e=\operatorname*{lim}_{{\frac{d}{m}}\to0}\left(1+{\frac{d}{m}}\right)^{\frac{m}{d}}}\end{array}$ 的定义是一个极限，所以应该是用 $<$ 。  
+
+# 公式(12.29)  
+
+$$
+P\left(E(h)-\widehat{E}(h)\leqslant\sqrt{\frac{8d\ln\frac{2e m}{d}+8\ln\frac{4}{\delta}}{m}}\right)\geqslant1-\delta
+$$  
+
+[推导]：这里应该是作者的笔误，根据式12.22， $E(h)-\widehat{E}(h)$ 应当被绝对值符号包裹。将式12.28 带入式12.22 得  
+
+$$
+P\left(|E(h)-\widehat{E}(h)|>\epsilon\right)\leqslant4\bigg(\frac{2e m}{d}\bigg)^{d}\exp\left(-\frac{m\epsilon^{2}}{8}\right)
+$$  
+
+令 $\begin{array}{r}{4\big(\frac{2e m}{d}\big)^{d}\exp\left(-\frac{m\epsilon^{2}}{8}\right)=\delta}\end{array}$ 可解得  
+
+$$
+\delta=\sqrt{\frac{8d\ln\frac{2e m}{d}+8\ln\frac{4}{\delta}}{m}}
+$$  
+
+带入式12.22，则定理得证。这个式子是用VC 维表示泛化界，可以看出，泛化误差界只与样本数量 $m$ 有关，收敛速率为 $\sqrt{\frac{\ln m}{m}}$ (书上简化为 ${\frac{1}{\sqrt{m}}}^{\dagger}$ )。  
+
+# 公式(12.30)  
+
+$$
+\widehat{E}(h)=\operatorname*{min}_{h^{\prime}\in\mathcal{H}}\widehat{E}\left(h^{\prime}\right)
+$$  
+
+[解析]：这个是经验风险最小化的定义式。即从假设空间中找出能使经验风险最小的假设。  
+
+# 公式(12.31)  
+
+$$
+E(g)=\operatorname*{min}_{h\in\mathcal{H}}E(h)
+$$  
+
+[解析]：首先回忆PAC 可学习的概念，见定义12.2，而可知/不可知PAC 可学习之间的区别仅仅在于概念类 $c$ 是否包含于假设空间 $\mathcal{H}$ 中。令  
+
+$$
+\frac{\delta^{\prime}=\frac{\delta}{2}}{\sqrt{\frac{(\ln2/\delta^{\prime})}{2m}}}={\frac{\epsilon}{2}}
+$$  
+
+结合这两个标记的转换，由推论12.1 可知：  
+
+$$
+\widehat E(g)-\frac{\epsilon}{2}\leqslant E(g)\leqslant\widehat E(g)+\frac{\epsilon}{2}
+$$  
+
+至少以 $1-\delta/2$ 的概率成立。写成概率的形式即：  
+
+$$
+P\left(|E(g)-\widehat{E}(g)|\leqslant\frac{\epsilon}{2}\right)\geqslant1-\delta/2
+$$  
+
+即 $\begin{array}{r}{P\left(\left(E(g)-\widehat{E}(g)\leqslant\frac{\epsilon}{2}\right)\wedge\left(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\right)\right)\geqslant1-\delta/2}\end{array}$ ，因此 $\begin{array}{r}{P\left(E(g)-\widehat{E}(g)\leqslant\frac{\epsilon}{2}\right)\geqslant1-\delta/2}\end{array}$ 且$\begin{array}{r}{P\left(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\right)\geqslant1-\delta/2}\end{array}$ 成立。再令  
+
+$$
+\sqrt{\frac{8d\ln{\frac{2e m}{d}}+8\ln{\frac{4}{\delta^{\prime}}}}{m}}={\frac{\epsilon}{2}}
+$$  
+
+由式12.29 可知  
+
+$$
+P\left(\left|E(h)-\widehat{E}(h)\right|\leqslant\frac{\epsilon}{2}\right)\geqslant1-\frac{\delta}{2}
+$$  
+
+同理， $\begin{array}{r}{P\left(E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}\right)\geqslant1{-}\delta/2}\end{array}$ 且 $\begin{array}{r}{P\left(E(h)-\widehat{E}(h)\geqslant-\frac{\epsilon}{2}\right)\geqslant1{-}\delta/2}\end{array}$ 成立。由 $\begin{array}{r}{P\left(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\right)\geqslant}\end{array}$ $1-\delta/2$ 和 $\begin{array}{r}{P\left(E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}\right)\geqslant1-\delta/2}\end{array}$ 均成立可知则事件 $E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}$ 和事件 $\begin{array}{r}{E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}}\end{array}$ 同时成立的概率为：  
+
+$\begin{array}{r l}&{\quad P\left(\Big(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\Big)\wedge\Big(E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}\Big)\right)}\\ &{=P\left(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\right)+P\left(E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}\right)-P\left(\Big(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\right)\vee\Big(E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}\Big)}\\ &{\geqslant1-\delta/2+1-\delta/2-1}\end{array}$ h) ⩽2ϵ =1 −δ  
+
+即  
+
+$$
+P\left(\Big(E(g)-\widehat{E}(g)\geqslant-\frac{\epsilon}{2}\Big)\wedge\Big(E(h)-\widehat{E}(h)\leqslant\frac{\epsilon}{2}\Big)\right)\geqslant1-\delta
+$$  
+
+因此  
+
+$$
+P\left({\widehat{E}}(g)-E(g)+E(h)-{\widehat{E}}(h)\leqslant{\frac{\epsilon}{2}}+{\frac{\epsilon}{2}}\right)=P\left(E(h)-E(g)\leqslant{\widehat{E}}(h)-{\widehat{E}}(g)+\epsilon\right)\geqslant1-\delta
+$$  
+
+再由 $h$ 和 $g$ 的定义， $h$ 表示假设空间中经验误差最小的假设， $g$ 表示泛化误差最小的假设，将这两个假设共用作用于样本集 $D$ ，则一定有 $\widehat{E}(h)\leqslant\widehat{E}(g)$ ，因此上式可以简化为：  
+
+$$
+P\left(E(h)-E(g)\leqslant\epsilon\right)\geqslant1-\delta
+$$  
+
+根据式12.32 和式12.34，可以求出 $m$ 为关于 $(1/\epsilon,1/\delta,\mathrm{size}(x),\mathrm{size}(c))$ 的多项式，因此根据定理12.2，定理12.5，得到结论任何VC 维有限的假设空间 $\mathcal{H}$ 都是(不可知)PAC 可学习的。  
+
+公式(12.32)  
+
+$$
+{\sqrt{\frac{(\ln2/\delta^{\prime})}{2m}}}={\frac{\epsilon}{2}}
+$$  
+
+[解析]：参见12.31  
+
+公式(12.34)  
+
+$$
+\sqrt{\frac{8d\ln{\frac{2e m}{d}}+8\ln{\frac{4}{\delta^{\prime}}}}{m}}={\frac{\epsilon}{2}}
+$$  
+
+[解析]：参见12.31  
+
+# 公式(12.36)  
+
+$$
+\begin{array}{l}{{\displaystyle{\widehat{E}}(h)=\frac{1}{m}\sum_{i=1}^{m}{\mathbb{I}}\left(h\left({\mathbf{}}x_{i}\right)\neq y_{i}\right)}}\\ {{\displaystyle=\frac{1}{m}\sum_{i=1}^{m}\frac{1-y_{i}h\left(x_{i}\right)}{2}}}\\ {{\displaystyle=\frac{1}{2}-\frac{1}{2m}\sum_{i=1}^{m}y_{i}h\left(x_{i}\right)}}\end{array}
+$$  
+
+[解析]：这里解释从第一步到第二步的推导，因为前提假设是2 分类问题， $y_{k}\in\{-1,+1\}$ ，因此 $\mathbb{I}\left(h(x_{i})\neq y_{i}\right)\equiv$ $\textstyle{\frac{1-y_{i}h\left(x_{i}\right)}{2}}$ 。这是因为假如 $y_{i}=+1,h(x_{i})=+1$ 或 $y_{i}=-1,h(x_{i})=-1$ ，有 $\begin{array}{r}{\mathbb{I}\left(h(x_{i})\neq y_{i}\right)=0=\frac{1-y_{i}h(x_{i})}{2}}\end{array}$ ；反之，假如 $y_{i}=-1,h(x_{i})=+1$ 或 $y_{i}=+1,h(x_{i})=-1$ ，有 $\begin{array}{r}{\mathbb{I}\left(h(x_{i})\neq y_{i}\right)=1=\frac{1-y_{i}h(x_{i})}{2}}\end{array}$ 。  
+
+# 公式(12.37)  
+
+$$
+\operatorname*{arg\,max}_{h\in\mathcal{H}}\frac{1}{m}\sum_{i=1}^{m}y_{i}h\left(\pmb{x}_{i}\right)
+$$  
+
+[解析]：由公式12.36 可知，经验误差 $\widehat{E}(h)$ 和 $\textstyle{\frac{1}{m}}\sum_{i=1}^{m}y_{i}h\left(\pmb{x}_{i}\right)$ 呈反比的关系，因此假设空间中能使经验误差最小的假设 $h$ 即是使 $\begin{array}{r}{\frac{1}{m}\sum_{i=1}^{m}y_{i}h\left(\pmb{x}_{i}\right)}\end{array}$ 最大的 $h$ 。  
+
+# 公式(12.38)  
+
+$$
+\operatorname*{sup}_{h\in\mathcal{H}}\frac{1}{m}\sum_{i=1}^{m}\sigma_{i}h\left(\pmb{x}_{i}\right)
+$$  
+
+[解析]：上确界sup 这个概念前面已经解释过，见式12.7 的解析。由于 $\sigma_{i}$ 是随机变量，因此这个式子可以理解为求解和随机生成的标签(即 $\sigma$ ) 最契合的假设(当 $\sigma_{i}$ 和 $h(\pmb{x}_{i})$ 完全一致时，他们的内积最大)。  
+
+公式(12.39)  
+
+$$
+\mathbb{E}_{\pmb{\sigma}}\left[\operatorname*{sup}_{h\in\mathcal{H}}\frac{1}{m}\sum_{i=1}^{m}\sigma_{i}h\left(\pmb{x}_{i}\right)\right]
+$$  
+
+[解析]：这个式子可以用来衡量假设空间 $\mathcal{H}$ 的表达能力，对变量 $\sigma$ 求期望可以理解为当变量 $\sigma$ 包含所有可能的结果时，假设空间 $\mathcal{H}$ 中最契合的假设 $h$ 和变量的平均契合程度。因为前提假设是2 分类的问题，因此 $\sigma_{i}$ 一共有 $2^{m}$ 种，这些不同的 $\sigma_{i}$ 构成了数据集 $D=\{(x_{1},y_{1}),(x_{2},y_{2}),\dots,(x_{m},y_{m})\}$ 的”对分“(12.4节)，如果一个假设空间的表达能力越强，那么就越有可能对于每一种 $\sigma_{i}$ ，假设空间中都存在一个 $h$ 使得$h(x_{i})$ 和 $\sigma_{i}$ 非常接近甚至相同，对所有可能的 $\sigma_{i}$ 取期望即可衡量假设空间的整体表达能力，这就是这个式子的含义。  
+
+# 公式(12.40)  
+
+$$
+\widehat{R}_{Z}(\mathcal{F})=\mathbb{E}_{\pmb{\sigma}}\left[\operatorname*{sup}_{f\in\mathcal{F}}\frac{1}{m}\sum_{i=1}^{m}\sigma_{i}f\left(\boldsymbol{z}_{i}\right)\right]
+$$  
+
+[解析]：对比式12.39，这里使用函数空间 $\mathcal{F}$ 代替了假设空间 $\mathcal{H}$ ，函数 $f$ 代替了假设 $h$ ，很容易理解，因为假设 $h$ 即可以看做是作用在数据 $x_{i}$ 上的一个映射，通过这个映射可以得到标签 $y_{i}$ 。注意前提假设实值函数空间 $\mathcal{F}:\mathcal{Z}\,\rightarrow\,\mathbb{R}$ ，即映射 $f$ 将样本 $z_{i}$ 映射到了实数空间，这个时候所有的 $\sigma_{i}$ 将是一个标量即$\sigma_{i}\in\{+1,-1\}$ 。  
+
+# 公式(12.41)  
+
+$$
+R_{m}({\mathcal{F}})=\mathbb{E}_{Z\subseteq{\mathcal{Z}}:|Z|=m}\left[{\widehat{R}}_{Z}({\mathcal{F}})\right]
+$$  
+
+[解析]：这里所要求的是 $\mathcal{F}$ 关于分布 $\mathcal{D}$ 的Rademacher 复杂度，因此从 $\mathcal{D}$ 中采出不同的样本 $Z$ ，计算这些样本对应的Rademacher 复杂度的期望。  
+
+# 公式(12.42)  
+
+$$
+\begin{array}{r l}&{\mathbb{E}[f(z)]\leqslant\frac{1}{m}\sum_{i=1}^{m}f\left(z_{i}\right)+2R_{m}(\mathcal{F})+\sqrt{\frac{\ln(1/\delta)}{2m}}}\\ &{\mathbb{E}[f(z)]\leqslant\frac{1}{m}\sum_{i=1}^{m}f\left(z_{i}\right)+2\widehat{R}_{Z}(\mathcal{F})+3\sqrt{\frac{\ln(2/\delta)}{2m}}}\end{array}
+$$  
+
+[解析]：首先令记号  
+
+$$
+\begin{array}{r l}&{\widehat{E}_{Z}(f)=\displaystyle\frac{1}{m}\sum_{i=1}^{m}f\left(z_{i}\right)}\\ &{\quad\Phi(Z)=\displaystyle\operatorname*{sup}_{f\in\mathcal{F}}\left(\mathbb{E}[f]-\widehat{E}_{Z}(f)\right)}\end{array}
+$$  
+
+即 $\widehat{E}_{Z}(f)$ 表示函数 $f$ 作为假设下的经验误差， $\Phi(Z)$ 表示经验误差和泛化误差的上确界。再令 $Z^{\prime}$ 为只与$Z$ 有一个示例(样本) 不同的训练集，不妨设 $z_{m}\in Z$ 和 $z_{m}^{\prime}\in Z^{\prime}$ 为不同的示例，那么有  
+
+$$
+\begin{array}{r l}&{\Phi\left(Z^{\prime}\right)-\Phi(Z)=\underset{f\in\mathcal{F}}{\operatorname*{sup}}\left(\mathbb{E}[f]-\widehat{E}_{Z^{\prime}}(f)\right)-\underset{f\in\mathcal{F}}{\operatorname*{sup}}\left(\mathbb{E}[f]-\widehat{E}_{Z}(f)\right)}\\ &{\leqslant\underset{f\in\mathcal{F}}{\operatorname*{sup}}\left(\widehat{E}_{Z}(f)-\widehat{E}_{Z^{\prime}}(f)\right)}\\ &{=\underset{f\in\mathcal{F}}{\operatorname*{sup}}\frac{\sum_{i=1}^{m}f\left(z_{i}\right)-\sum_{i=1}^{m}f\left(z_{i}^{\prime}\right)}{m}}\\ &{=\underset{f\in\mathcal{F}}{\operatorname*{sup}}\frac{f\left(z_{m}\right)-f\left(z_{m}^{\prime}\right)}{m}}\\ &{\leqslant\frac{1}{m}}\end{array}
+$$  
+
+第一个不等式是因为上确界的差不大于差的上确界[2]，第四行的等号由于 $Z^{\prime}$ 与 $Z$ 只有 $z_{m}$ 不相同，最后一行的不等式是因为前提假设 $\mathcal{F}:\mathcal{Z}\rightarrow[0,1]$ ，即 $f(z_{m}),f(z_{m}^{\prime})\in[0,1]$ 。同理  
+
+$$
+\Phi(Z)-\Phi\left(Z^{\prime}\right)=\operatorname*{sup}_{f\in\mathcal{F}}\frac{f\left(z_{m}^{\prime}\right)-f\left(z_{m}\right)}{m}\leqslant\frac{1}{m}
+$$  
+
+综上二式有：  
+
+$$
+|\Phi(Z)-\Phi\left(Z^{\prime}\right)|\leqslant\frac{1}{m}
+$$  
+
+将 $\Phi$ 看做函数 $f$ (注意这里的 $f$ 不是 $\Phi$ 定义里的 $f$ )，那么可以套用McDiarmid 不等式的结论式12.7  
+
+$$
+P\left(\Phi(Z)-\mathbb{E}_{Z}[\Phi(Z)]\geqslant\epsilon\right)\leqslant\exp\left(\frac{-2\epsilon^{2}}{\sum_{i}c_{i}^{2}}\right)
+$$  
+
+令 $\begin{array}{r}{\exp\left(\frac{-2\epsilon^{2}}{\sum_{i}c_{i}^{2}}\right)=\delta}\end{array}$ = δ 可以求得ϵ = $\begin{array}{r}{\epsilon=\sqrt{\frac{\ln(1/\delta)}{2m}}}\end{array}$ ， 所以  
+
+$$
+P\left(\Phi(Z)-\mathbb{E}_{Z}[\Phi(Z)]\geqslant{\sqrt{\frac{\ln(1/\delta)}{2m}}}\right)\leqslant\delta
+$$  
+
+由逆事件的概率定义得  
+
+$$
+P\left(\Phi(Z)-\mathbb{E}_{Z}[\Phi(Z)]\leqslant{\sqrt{\frac{\ln(1/\delta)}{2m}}}\right)\geqslant1-\delta
+$$  
+
+即书中式12.44 的结论。下面来估计 $\mathbb{E}_{Z}[\Phi(Z)]$ 的上界：  
+
+$$
+\begin{array}{r l}&{\mathbb{E}_{Z}[\Phi(Z)]=\mathbb{E}_{Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\left(\mathbb{E}[Z]-\bar{E}_{Z}(Z)\right)\right]}\\ &{=\mathbb{E}_{Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\mathbb{E}_{Z}\left[\bar{E}_{Z}(Z)-\bar{E}_{Z}(Z)\right]\right]}\\ &{\quad\leqslant\mathbb{E}_{Z,Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\left(\bar{E}_{Z}(Z)-\bar{E}_{Z}(Z)\right)\right]}\\ &{\quad=\mathbb{E}_{Z,Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\sum_{i=1}^{n}\left(\int_{0}^{Z}\left(Z\right)-f\left(z_{i}\right)\right)\right]}\\ &{\quad=\mathbb{E}_{Z,Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\sum_{i=1}^{n}\sigma_{i}(f(z_{i}^{t})-f\left(z_{i}\right))\right]}\\ &{\quad\leqslant\mathbb{E}_{W,Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\sum_{i=1}^{n}\sigma_{i}f(z_{i}^{t})\right]+\mathbb{E}_{Z,X}\left[\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\frac{\overline{{\sum}}}{\alpha}-\sigma_{i}f\left(z_{i}\right)\right]}\\ &{\quad=\mathbb{E}_{W,Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\sum_{i=1}^{n}\sigma_{i}f\left(z_{i}\right)\right]}\\ &{\quad=2\mathbb{E}_{W,Z}\left[\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\sum_{i=1}^{n}\sigma_{i}f\left(z_{i}\right)\right]}\\ &{\quad=2R_{Z}\left(\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\right)\left(\operatorname*{sup}_{t\in\mathcal{T}}\frac{1}{Z}\right)}\end{array}
+$$  
+
+第二行等式是外面套了一个对服从分布 $\mathcal{D}$ 的示例集 $Z^{\prime}$ 求期望，因为 $\mathbb{E}_{Z^{\prime}\sim\mathcal{D}}[\widehat{E}_{Z^{\prime}}(f)]\,=\,\mathbb{E}(f)$ ，而采样出来的 $Z^{\prime}$ 和 $Z$ 相互独立，因此有 $\mathbb{E}_{Z^{\prime}\sim\mathcal{D}}[\widehat{E}_{Z}(f)]\,=\,\widehat{E}_{Z}(f)$ 。第三行不等式基 于 上确界函数sup 是个凸函数，将 $\operatorname{sup}_{f\in{\mathcal{F}}}$ 看做是凸函数 $f$ ，将 $\widehat{E}_{Z^{\prime}}(f)\widehat{-}\,\widehat{E}_{Z}(f)$ 看做变量 $x$ 根据Jesen 不等式(式12.4)，有$\mathbb{E}_{Z}\left[\operatorname*{sup}_{f\in\mathcal{F}}\mathbb{E}_{Z^{\prime}}\left[\widehat{E}_{Z^{\prime}}\big(f\big)-\widehat{E}_{Z}(f)\right]\right]\leqslant\mathbb{E}_{Z,Z^{\prime}}\left[\operatorname*{sup}_{f\in\mathcal{F}}\left(\widehat{E}_{Z^{\prime}}(f)-\widehat{E}_{Z}(f)\right)\right]$ ，其中 $\mathbb{E}_{Z,Z^{\prime}}[\cdot]$ 是 $\mathbb{E}_{Z}[\mathbb{E}_{Z^{\prime}}[\cdot]]$ 的简写形式。第五行引 入对Ra demacher 随机变量的期望 ，由于函 数值空间是标量，因为 $\sigma_{i}$ 也是标量，即$\sigma_{i}\in\{-1,+1\}$ ，且 $\sigma_{i}$ 总以相同概率可以取到这两个值，因此可以引入 $\mathbb{E}_{\sigma}$ 而不影响最终结果。第六行利用了上确界的和不小于和的上确界[2]，因为第一项中只含有变量 $z^{\prime}$ ，所以可以将 $\mathbb{E}_{Z}$ 去掉，因为第二项中只含有变量 $z$ ，所以可以将 $\mathbb{E}_{Z^{\prime}}$ 去掉。第七行利用 $\sigma$ 是对称的，所以 $-\sigma$ 的分布和 $\sigma$ 完全一致，所以可以将第二项中的负号去除，又因为 $Z$ 和 $Z^{\prime}$ 均是从 $\mathcal{D}$ 中i.i.d. 采样得到的数据，因此可以将第一项中的$z_{i}^{\prime}$ 替换成 $z$ ，将 $Z^{\prime}$ 替换成 $Z$ 。最后根据定义式12.41 可得 $\mathbb{E}_{Z}[\Phi(Z)]=2\mathcal{R}_{m}(\mathcal{F})$ ，式12.42 得证。  
+
+公式(12.43)  
+
+$$
+\mathbb{E}[f(z)]\leqslant{\frac{1}{m}}\sum_{i=1}^{m}f\left(z_{i}\right)+2{\widehat{R}}_{Z}({\mathcal{F}})+3{\sqrt{\frac{\ln(2/\delta)}{2m}}}
+$$  
+
+[解析]：参见12.42  
+
+公式(12.44)  
+
+$$
+\Phi(Z)\leqslant\mathbb{E}_{Z}[\Phi(Z)]+\sqrt{\frac{\ln(1/\delta)}{2m}}
+$$  
+
+[解析]：参见12.42  
+
+公式(12.45)  
+
+$$
+R_{m}(\mathcal{F})\leqslant\widehat{R}_{Z}(\mathcal{F})+\sqrt{\frac{\ln(2/\delta)}{2m}}
+$$  
+
+[解析]：参见12.42  
+
+公式(12.46)  
+
+$$
+\Phi(Z)\leqslant2\widehat{R}_{Z}(\mathcal{F})+3\sqrt{\frac{\ln(2/\delta)}{2m}}
+$$  
+
+[解析]：参见12.42  
+
+公式(12.52)  
+
+$$
+R_{m}(\mathcal{H})\leqslant\sqrt{\frac{2\ln\Pi_{\mathcal{H}}(m)}{m}}
+$$  
+
+[证明]：比较繁琐，同书上所示，参见Foundations of Machine Learning[1]  
+
+# 公式(12.53)  
+
+$$
+E(h)\leqslant\widehat{E}(h)+\sqrt{\frac{2d\ln\frac{e m}{d}}{m}}+\sqrt{\frac{\ln(1/\delta)}{2m}}
+$$  
+
+[解析]：根据式12.28 有 $\begin{array}{r}{\Pi_{\mathcal{H}}(m)\leqslant\left(\frac{e\cdot m}{d}\right)^{d}}\end{array}$ ，根据式12.52 有 $\begin{array}{r}{R_{m}(\mathcal{H})\leqslant\sqrt{\frac{2\ln\Pi_{\mathcal{H}}(m)}{m}}}\end{array}$ ，因此 $\begin{array}{r}{\Pi_{\mathcal{H}}(m)\leqslant\sqrt{\frac{2d\ln\frac{e m}{d}}{m}}}\end{array}$ 再根据式12.47 E(h) ⩽E(h) + Rm(H) + 即证。  
+
+# 公式(12.57)  
+
+$$
+\begin{array}{r l}&{\quad|\ell\left(\mathfrak{L}_{D},z\right)-\ell\left(\mathfrak{L}_{D^{i}},z\right)|}\\ &{\leqslant|\ell\left(\mathfrak{L}_{D},z\right)-\ell\left(\mathfrak{L}_{D^{\vee i}},z\right)|+\left|\ell\left(\mathfrak{L}_{D^{i},z}\right)-\ell\left(\mathfrak{L}_{D^{\vee i},z}\right)\right|}\\ &{\leqslant2\beta}\end{array}
+$$  
+
+[解析]：根据三角不等式[6]，有 $|a+b|\leq|a|+|b|$ ，将 $a=\ell\left({\mathfrak{L}}_{D},z\right)-\ell\left({\mathfrak{L}}_{D^{i}}\right)$ ， $b=\ell\left(\mathfrak{L}_{D^{i},z}\right)-\ell\left(\mathfrak{L}_{D^{\setminus i},z}\right)$ 带入即可得出第一个不等式，根据 $D^{\backslash i}$ 表示移除 $D$ 中第 $i$ 个样本， $D^{i}$ 表示替换 $D$ 中第 $i$ 个样本，那么$a,b$ 的变动均为一个样本，根据式12.57， $a\leqslant\beta,b\leqslant\beta$ ，因此 $a+b\leqslant2\beta$ 。  
+
+# 公式(12.58)  
+
+$$
+\ell(\mathfrak{L},\mathcal{D})\leqslant\widehat{\ell}(\mathfrak{L},D)+2\beta+(4m\beta+M)\sqrt{\frac{\ln(1/\delta)}{2m}}
+$$  
+
+[证明]：比较繁琐，同书上所示，参见Foundations of Machine Learning[1]  
+
+# 公式(12.59)  
+
+$$
+\ell(\mathfrak{L},\mathcal{D})\leqslant\ell_{l o o}(\mathfrak{L},D)+\beta+(4m\beta+M)\sqrt{\frac{\ln(1/\delta)}{2m}}
+$$  
+
+[证明]：比较繁琐，同书上所示，参见Foundations of Machine Learning[1]  
+
+# 公式(12.60)  
+
+$$
+\ell(\mathfrak{L},\mathcal{D})\leqslant\widehat{\ell}(\mathfrak{L},D)+\frac{2}{m}+(4+M)\sqrt{\frac{\ln(1/\delta)}{2m}}
+$$  
+
+[证明]：将 $\beta=\textstyle{\frac{1}{m}}$ 带入至式12.58 即得证。  
+
+# 定理(12.9)  
+
+若学习算法 $\mathcal{L}$ 是ERM 且是稳定的，则假设空间 $\mathcal{H}$ 可学习。[解析]：首先明确几个概念，ERM 表示算法 $\mathcal{L}$ 满足经验风险最小化(Empirical Risk Minimization)。由于 $\mathcal{L}$ 满足经验误差最小化，则可令 $g$ 表示假设空间中具有最小泛化损失的假设，即  
+
+$$
+\ell(g,\mathscr{D})=\operatorname*{min}_{h\in\mathscr{H}}\ell(h,\mathscr{D})
+$$  
+
+再令  
+
+$$
+\begin{array}{l}{\epsilon^{\prime}=\frac{\epsilon}{2}}\\ {\frac{\delta}{2}=2\exp\left(-2m\left(\epsilon^{\prime}\right)^{2}\right)}\end{array}
+$$  
+
+将 $\begin{array}{r}{\epsilon^{\prime}=\frac{\epsilon}{2}}\end{array}$ 带入到 $\begin{array}{r}{\frac{\delta}{2}=2\exp\left(-2m\left(\epsilon^{\prime}\right)^{2}\right)}\end{array}$ 可以解得 $\begin{array}{r}{m=\frac{2}{\epsilon^{2}}\ln\frac{4}{\delta}}\end{array}$ ，由Hoeffding 不等式12.6，  
+
+$$
+P\left(\left|{\frac{1}{m}}\sum_{i=1}^{m}x_{i}-{\frac{1}{m}}\sum_{i=1}^{m}\mathbb{E}\left(x_{i}\right)\right|\geqslant\epsilon\right)\leqslant2\exp\left(-2m\epsilon^{2}\right)
+$$  
+
+其中 $\begin{array}{r}{\frac{1}{m}\sum_{i=1}^{m}\mathbb{E}\left(x_{i}\right)=\ell(g,\mathcal{D})\,,\;\;\frac{1}{m}\sum_{i=1}^{m}x_{i}=\widehat{\ell}(g,\mathcal{D})}\end{array}$ ，带入可得  
+
+$$
+P(|\ell(g,\mathcal{D})-\widehat{\ell}(g,D)|\geqslant\frac{\epsilon}{2})\leqslant\frac{\delta}{2}
+$$  
+
+根据逆事件的概率可得  
+
+$$
+P(|\ell(g,\mathcal{D})-\widehat{\ell}(g,D)|\leqslant\frac{\epsilon}{2})\geqslant1-\frac{\delta}{2}
+$$  
+
+即文中 $\begin{array}{r}{|\ell(g,\mathcal{D})-\widehat{\ell}(g,D)|\leqslant\frac{\epsilon}{2}}\end{array}$ 至少以 $1-\delta/2$ 的概率成立。由 $\begin{array}{r}{\frac{2}{m}+(4+M)\sqrt{\frac{\ln(2/\delta)}{2m}}=\frac{\epsilon}{2}}\end{array}$ 可以求解出  
+
+$$
+\sqrt{m}={\frac{(4+M)\sqrt{{\frac{\ln(2/\delta)}{2}}}+\sqrt{(4+M)^{2}{\frac{\ln(2/\delta)}{2}}-4\times{\frac{\epsilon}{2}}\times(-2)}}{2\times{\frac{\epsilon}{2}}}}
+$$  
+
+即 $\begin{array}{r}{m=O\left(\frac{1}{\epsilon^{2}}\ln\frac{1}{\delta}\right)}\end{array}$ 。  
+
+由 $\begin{array}{r}{P(|\ell(g,\mathcal{D})-\widehat{\ell}(g,D)|\leqslant\frac{\epsilon}{2})\geqslant1-\frac{\delta}{2}}\end{array}$ 可以按照同公式12.31 中介绍的相同的方法推导出  
+
+$$
+P(\ell(\mathfrak{L},\mathcal{D})-\ell(g,\mathcal{D})\leqslant\epsilon)\geqslant1-\delta
+$$  
+
+又因为 $m$ 为与 $(1/\epsilon,1/\delta,\mathrm{size}(x),\mathrm{size}(c))$ 相关的多项式的值，因此根据定理12.2，定理12.5，得到结论 $\mathcal{H}$ 是(不可知)PAC 可学习的。  
+
+# 参考文献  
+
+[1] Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar. Foundations of machine learning. 2018. URL: https://cs.nyu.edu/\~mohri/mlbook/.   
+[2] robjohn. Supremum of the difference of two functions, 2013. URL: https://math.stackexchange. com/questions/246015/supremum-of-the-difference-of-two-functions.   
+[3] Vladimir N Vapnik and A Ya Chervonenkis. On the uniform convergence of relative frequencies of events to their probabilities. In Measures of complexity, pages 11–30. Springer, 2015.   
+[4] Wikipedia contributors. Binomial theorem, 2020. URL: https://zh.wikipedia.org/zh-hans/%E4% BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86.   
+[5] Wikipedia contributors. E, 2020. URL: https://en.wikipedia.org/wiki/E_(mathematical_ constant).   
+[6] Wikipedia contributors. Triangle inequality, 2020. URL: https://en.wikipedia.org/wiki/ Triangle_inequality.  
+
+# 第13 章 半监督学习  
+
+# 公式(13.1)  
+
+$$
+p(\pmb{x})=\sum_{i=1}^{N}\alpha_{i}\cdot p\left(\pmb{x}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)
+$$  
+
+[解析]：高斯混合分布的定义式。  
+
+# 公式(13.2)  
+
+$$
+{\begin{array}{r l}&{f(\mathbf{x})={\underset{j\in\mathcal{Y}}{\operatorname{arg\,max}}}p(y=j|\mathbf{x})}\\ &{\qquad={\underset{j\in\mathcal{Y}}{\operatorname{arg\,max}}}\displaystyle\sum_{i=1}^{N}p(y=j,\Theta=i|\mathbf{x})}\\ &{\qquad={\underset{j\in\mathcal{Y}}{\operatorname{arg\,max}}}\displaystyle\sum_{i=1}^{N}p(y=j|\Theta=i,\mathbf{x})\cdot p(\Theta=i|\mathbf{x})}\end{array}}
+$$  
+
+[解析]：从公式第1 行到第2 行是对概率进行边缘化(marginalization)；通过引入 $\Theta$ 并对其求和 $\sum_{i=1}^{N}$ 以抵消引入的影响。从公式第2 行到第3 行推导如下  
+
+$$
+\begin{array}{r l r}{p(y=j,\Theta=i|x)=\cfrac{p(y=j,\Theta=i,x)}{p(\pmb{x})}}&{}&\\ {=\cfrac{p(y=j,\Theta=i,x)}{p(\Theta=i,x)}\cdot\cfrac{p(\Theta=i,\pmb{x})}{p(\pmb{x})}}&{}&\\ {=p(y=j|\Theta=i,\pmb{x})\cdot p(\Theta=i|\pmb{x})}&{}&\end{array}
+$$  
+
+# 公式(13.3)  
+
+$$
+p(\Theta=i|\pmb{x})=\frac{\alpha_{i}\cdot p\left(\pmb{x}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}{\sum_{i=1}^{N}\alpha_{i}\cdot p\left(\pmb{x}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}
+$$  
+
+[解析]：根据13.1  
+
+$$
+p(\pmb{x})=\sum_{i=1}^{N}\alpha_{i}\cdot p\left(\pmb{x}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)
+$$  
+
+因此  
+
+$$
+\begin{array}{r l r}{\lefteqn{p(\Theta=i|\pmb{x})=\frac{p(\Theta=i,\pmb{x})}{P(\pmb{x})}}}\\ &{}&{=\frac{\alpha_{i}\cdot p\,(\pmb{x}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}{\sum_{i=1}^{N}\alpha_{i}\cdot p\,(\pmb{x}|\pmb{\mu}_{i},\pmb{\Sigma}_{i})}}\end{array}
+$$  
+
+# 公式(13.4)  
+
+$$
+\begin{array}{r l}&{L L\left(D_{l}\cup D_{u}\right)=\displaystyle\sum_{(x_{j},y_{j})\in D_{l}}\ln\left(\displaystyle\sum_{i=1}^{N}\alpha_{i}\cdot p\left(x_{j}|\mu_{i},\boldsymbol{\Sigma}_{i}\right)\cdot p\left(y_{j}|\Theta=i,\boldsymbol{x}_{j}\right)\right)}\\ &{\qquad\qquad\qquad+\displaystyle\sum_{x_{j}\in D_{u}}\ln\left(\displaystyle\sum_{i=1}^{N}\alpha_{i}\cdot p\left(x_{j}|\mu_{i},\boldsymbol{\Sigma}_{i}\right)\right)}\end{array}
+$$  
+
+[解析]：第二项很好解释，当不知道类别信息的时候，样本 $x_{j}$ 的概率可以用式13.1 表示，所有无类别信息的样本 $D_{u}$ 的似然是所有样本的乘积，因为 $\ln$ 函数是单调的，所以也可以将ln 函数作用于这个乘积消除因为连乘产生的数值计算问题。第一项引入了样本的标签信息，由  
+
+$$
+p(y=j|\Theta=i,\mathbf{x})=\left\{\begin{array}{l l}{1,}&{i=j}\\ {0,}&{i\neq j}\end{array}\right.
+$$  
+
+可知，这项限定了样本 $x_{j}$ 只可能来自于 $y_{j}$ 所对应的高斯分布。  
+
+# 公式(13.5)  
+
+$$
+\gamma_{j i}=\frac{\alpha_{i}\cdot p\left(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}{\sum_{i=1}^{N}\alpha_{i}\cdot p\left(\pmb{x}_{j}|\pmb{\mu}_{i},\pmb{\Sigma}_{i}\right)}
+$$  
+
+[解析]：参见式13.3，这项可以理解成样本 $x_{j}$ 属于类别标签 $i$ (或者说由第 $i$ 个高斯分布生成) 的后验概率。其中 $\alpha_{i},\pmb{\mu}_{i}\Sigma_{i}$ 可以通过有标记样本预先计算出来。即：  
+
+$$
+\begin{array}{r l}&{\alpha_{i}=\frac{l_{i}}{|D_{l}|},\mathrm{~where~}\left|D_{l}\right|=\sum_{i=1}^{N}l_{i}}\\ &{\pmb{\mu}_{i}=\frac{1}{l_{i}}\sum_{\left(\pmb{x}_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}\pmb{x}_{j}}\\ &{\pmb{\Sigma}_{i}=\frac{1}{l_{i}}\sum_{\left(\pmb{x}_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}\left(\pmb{x}_{j}-\pmb{\mu}_{i}\right)\left(\pmb{x}_{j}-\pmb{\mu}_{i}\right)^{\top}}\end{array}
+$$  
+
+公式(13.6)  
+
+$$
+\pmb{\mu}_{i}=\frac{1}{\sum_{\pmb{x}_{j}\in D_{u}}\gamma_{j i}+l_{i}}\left(\sum_{\pmb{x}_{j}\in D_{u}}\gamma_{j i}\pmb{x}_{j}+\sum_{(\pmb{x}_{j},\pmb{y}_{j})\in D_{l}\land y_{j}=i}\pmb{x}_{j}\right)
+$$  
+
+[推导]：这项可以由  
+
+$$
+{\frac{\partial L L(D_{l}\cup D_{u})}{\partial\mu_{i}}}=0
+$$  
+
+而得，将式13.4 的两项分别记为：  
+
+$$
+\begin{array}{r l}&{L L(D_{l})=\displaystyle\sum_{(x_{j},y_{j}\in D_{l})}\ln\left(\displaystyle\sum_{s=1}^{N}\alpha_{s}\cdot p(x_{j}|\mu_{s},\Sigma_{s})\cdot p(y_{i}|\Theta=s,x_{j})\right)}\\ &{\qquad\qquad=\displaystyle\sum_{(x_{j},y_{j}\in D_{l})}\ln\left(\alpha_{y_{j}}\cdot p(x_{j}|\mu_{y_{j}},\Sigma_{y_{j}})\right)}\\ &{L L(D_{u})=\displaystyle\sum_{x_{j}\in D_{u}}\ln\left(\displaystyle\sum_{s=1}^{N}\alpha_{s}\cdot p(x_{j}|\mu_{s},\Sigma_{s})\right)}\end{array}
+$$  
+
+首先， $L L(D_{l})$ 对 $\pmb{\mu}_{i}$ 求偏导， $L L(D_{l})$ 求和号中只有 $y_{j}=i$ 的项能留下来，即  
+
+$$
+\frac{\partial L L\left(D_{l}\right)}{\partial\mu_{i}}=\underset{\left(x_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}{\sum}\frac{\partial\ln\left(\alpha_{i}\cdot p\left(x_{j}\vert\mu_{i},\Sigma_{i}\right)\right)}{\partial\mu_{i}}}\\ {=}&{\underset{\left(x_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}{\sum}\frac{1}{p\left(x_{j}\vert\mu_{i},\Sigma_{i}\right)}\cdot\frac{\partial p\left(x_{j}\vert\mu_{i},\Sigma_{i}\right)}{\partial\mu_{i}}}\\ {=}&{\underset{\left(x_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}{\sum}\frac{1}{p\left(x_{j}\vert\mu_{i},\Sigma_{i}\right)}\cdot p\left(x_{j}\vert\mu_{i},\Sigma_{i}\right)\cdot\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)}\\ {=}&{\underset{\left(x_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}{\sum}\underset{\left(x_{j}-\mu_{i}\right)}{\sum}\left(x_{j}-\mu_{i}\right)}\end{array}
+$$  
+
+$L L(D_{u})$ 对 $\mu_{i}$ 求导，参考9.33 的推导：  
+
+$$
+{\begin{array}{c}{{\displaystyle{\frac{\partial L L\left(D_{u}\right)}{\partial\mu_{i}}}=\sum_{x_{j}\in D_{u}}{\frac{\alpha_{i}}{\sum_{s=1}^{N}\alpha_{s}\cdot p\left(x_{j}|\mu_{s},\Sigma_{s}\right)}}\cdot p\left(x_{j}|\mu_{i},\Sigma_{i}\right)\cdot\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)}}\\ {{\displaystyle=\sum_{x_{j}\in D_{u}}\gamma_{j i}\cdot\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)}}\end{array}}
+$$  
+
+综上，  
+
+$$
+\frac{\partial L L\left(D_{l}\cup D_{u}\right)}{\partial\mu_{i}}=\underset{\left(x_{j},y_{j}\right)\in D_{l}\setminus y_{j}=i}{\sum}\,\pmb{\Sigma}_{i}^{-1}\left(x_{j}-\mu_{i}\right)+\underset{x_{j}\in D_{u}}{\sum}\,\gamma_{j i}\cdot\pmb{\Sigma}_{i}^{-1}\left(\pmb{x}_{j}-\mu_{i}\right)}\\ {=\pmb{\Sigma}_{i}^{-1}\left(\underset{\left(x_{j},y_{j}\right)\in D_{l}\setminus y_{j}=i}{\sum}\,(\pmb{x}_{j}-\mu_{i})+\underset{x_{j}\in D_{u}}{\sum}\,\gamma_{j i}\cdot\left(\pmb{x}_{j}-\mu_{i}\right)\right)}\\ {=\pmb{\Sigma}_{i}^{-1}\left(\underset{\left(x_{j},y_{j}\right)\in D_{l}\setminus y_{j}=i}{\sum}\,\pmb{x}_{j}+\underset{x_{j}\in D_{u}}{\sum}\,\gamma_{j i}\cdot\pmb{x}_{j}-\underset{\left(x_{j},y_{j}\right)\in D_{l}\setminus y_{j}=i}{\sum}\,\mu_{i}-\underset{x_{j}\in D_{u}}{\sum}\,\gamma_{j i}\cdot\mu_{i}\right)}\end{array}
+$$  
+
+∂LL(Dl∪Du)= 0，两边同时左乘Σi 并移项：  
+
+$$
+\sum_{{\pmb x}_{j}\in{\cal D}_{u}}\gamma_{j i}\cdot{\pmb\mu}_{i}+\sum_{({\pmb x}_{j},{\pmb y}_{j})\in{\cal D}_{l}\wedge y_{j}=i}{\pmb\mu}_{i}=\sum_{{\pmb x}_{j}\in{\cal D}_{u}}\gamma_{j i}\cdot{\pmb x}_{j}+\sum_{({\pmb x}_{j},{\pmb y}_{j})\in{\cal D}_{l}\wedge y_{j}=i}{\pmb x}_{j}
+$$  
+
+上式中， $\pmb{\mu}_{i}$ 可以作为常量提到求和号外面，而 $\sum_{(x_{j},y_{j})\in D_{l}\land y_{j}=i}1=l_{i}$ ，即第 $i$ 类样本的有标记样本数目，因此  
+
+$$
+\left(\sum_{x_{j}\in D_{u}}\gamma_{j i}+\sum_{(x_{j},y_{j})\in D_{l}\land y_{j}=i}1\right)\mu_{i}=\sum_{x_{j}\in D_{u}}\gamma_{j i}\cdot x_{j}+\sum_{(x_{j},y_{j})\in D_{l}\land y_{j}=i}x_{j}
+$$  
+
+即得式13.6。  
+
+# 公式(13.7)  
+
+$$
+\begin{array}{c}{{\Sigma_{i}=\displaystyle\frac{1}{\sum_{x_{j}\in D_{u}}\gamma_{j i}+l_{i}}\left(\displaystyle\sum_{{x_{j}\in D_{u}}}\gamma_{j i}\cdot\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}\right.}}\\ {{\displaystyle\left.+\displaystyle\sum_{\left(x_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}\right)}}\end{array}
+$$  
+
+[推导]：首先 $L L(D_{l})$ 对 $\Sigma_{i}$ 求偏导，类似于13.6  
+
+$$
+\begin{array}{r l}{\frac{\partial L L\left(D_{l}\right)}{\partial\Sigma_{i}}=\underset{\left(\alpha_{j},y_{j}\right)\in D_{l}\times y_{j}=i}{\sum}\frac{\partial\ln\left(\alpha_{i}\cdot p\left(x_{j}\vert\mu_{i},\,\Sigma_{i}\right)\right)}{\partial\Sigma_{i}}}\\ {=\underset{\left(\alpha_{j},y_{j}\right)\in D_{l}\times y_{j}=i}{\sum}\frac{1}{p\left(x_{j}\vert\mu_{i},\,\Sigma_{i}\right)}\cdot\frac{\partial p\left(x_{j}\vert\mu_{i},\,\Sigma_{i}\right)}{\partial\Sigma_{i}}}\\ {=\underset{\left(\alpha_{j},y_{j}\right)\in D_{l}\times y_{j}=i}{\sum}\frac{1}{p\left(x_{j}\vert\mu_{i},\,\Sigma_{i}\right)}\cdot p\left(x_{j}\vert\mu_{i},\,\Sigma_{i}\right)\cdot\left(\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}-I\right)\cdot\frac{1}{2}\Sigma}\\ {=\underset{\left(\alpha_{j},y_{j}\right)\in D_{l}\times y_{j}=i}{\sum}\left(\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}-I\right)\cdot\frac{1}{2}\Sigma_{i}^{-1}}\end{array}
+$$  
+
+然后 $L L(D_{u})$ 对 $\Sigma_{i}$ 求偏导，类似于9.35  
+
+$$
+\frac{\partial L L\left(D_{u}\right)}{\partial\pmb{\Sigma}_{i}}=\sum_{\substack{x_{j}\in D_{u}}}\gamma_{j i}\cdot\left(\pmb{\Sigma}_{i}^{-1}\left(\pmb{x}_{j}-\pmb{\mu}_{i}\right)\left(\pmb{x}_{j}-\pmb{\mu}_{i}\right)^{\top}-\pmb{I}\right)\cdot\frac{1}{2}\pmb{\Sigma}_{i}^{-1}
+$$  
+
+综合可得：  
+
+$$
+\begin{array}{c}{\displaystyle\frac{\partial L L\left(D_{l}\cup D_{u}\right)}{\partial\Sigma_{i}}=\displaystyle\sum_{\mathbf{x}_{j}\in D_{u}}\gamma_{j i}\cdot\left(\mathbf{\Sigma}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}-I\right)\cdot\frac1{2}\mathbf{\Sigma}_{i}^{-1}}\\ {\displaystyle+\sum_{\mathbf{\mu}_{\left(x_{j},y_{j}\right)\in D_{l}\setminus y_{j}=i}}\left(\mathbf{\Sigma}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}-I\right)\cdot\frac1{2}\mathbf{\Sigma}_{i}^{-1}}\\ {\displaystyle=\left(\sum_{x_{j}\in D_{u}}\gamma_{j i}\cdot\left(\mathbf{\Sigma}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}-I\right)\right.}\\ {\displaystyle+\left.\sum_{\left(x_{j},y_{j}\right)\in D_{l}\setminus y_{j}=i}\left(\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}-I\right)\right)\cdot\frac1{2}\mathbf{\Sigma}_{i}^{-1}}\end{array}
+$$  
+
+∂LL(Dl∪Du)= 0，两边同时右乘2Σi 并移项：  
+
+$$
+\begin{array}{r l}{\lefteqn{\sum_{x_{j}\in D_{u}}\gamma_{j i}\cdot\sum_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}+\sum_{\scriptstyle(x_{j},y_{j}\in D_{l}\wedge y_{j}=i}\Sigma_{i}^{-1}\left(x_{j}-\mu_{i}\right)\left(x_{j}-\mu_{i}\right)^{\top}}}\\ &{=\displaystyle\sum_{x_{j}\in D_{u}}\gamma_{j i}\cdot I+\sum_{\scriptstyle(x_{j},y_{j})\in D_{l}\wedge y_{j}=i}I}\\ &{=\left(\displaystyle\sum_{x_{j}\in D_{u}}\gamma_{j i}+l_{i}\right)I}\end{array}
+$$  
+
+两边同时左乘以 $\Sigma_{i}$ ：  
+
+$$
+\sum_{\mathbf{v}_{j}\in D_{u}}{\gamma_{j i}\cdot\left(\mathbf{x}_{j}-\mu_{i}\right)\left(\mathbf{x}_{j}-\mu_{i}\right)^{\top}}+\sum_{\substack{\left(\mathbf{x}_{j},y_{j}\right)\in D_{l}\wedge y_{j}=i}}\left(\mathbf{x}_{j}-\mu_{i}\right)\left(\mathbf{x}_{j}-\mu_{i}\right)^{\top}=\left(\sum_{\mathbf{x}_{j}\in D_{u}}\gamma_{j i}+l_{i}\right)\sum_{i}\mathbf{\mu}_{i}\cdot\left(\mathbf{x}_{i}-\mu_{i}\right)^{\top}
+$$  
+
+即得式13.7。  
+
+# 公式(13.8)  
+
+$$
+\alpha_{i}=\frac{1}{m}\left(\sum_{x_{j}\in D_{u}}\gamma_{j i}+l_{i}\right)
+$$  
+
+[推导]：类似于式9.36，写出 $L L(D_{l}\cup D_{u})$ 的拉格朗日形式  
+
+$$
+\begin{array}{r l r}{\lefteqn{\mathcal{L}\left(D_{l}\cup D_{u},\lambda\right)=L L\left(D_{l}\cup D_{u}\right)+\lambda\left(\sum_{s=1}^{N}\alpha_{s}-1\right)}}\\ &{}&{=L L\left(D_{l}\right)+L L\left(D_{u}\right)+\lambda\left(\displaystyle\sum_{s=1}^{N}\alpha_{s}-1\right)}\end{array}
+$$  
+
+类似于式9.37，对 $\alpha_{i}$ 求偏导。对于 $L L(D_{u})$ ，求导结果与式9.37 的推导过程一样  
+
+$$
+\frac{\partial L L\left(D_{u}\right)}{\partial\alpha_{i}}=\sum_{\boldsymbol{x}_{j}\in D_{u}}\frac{1}{\sum_{\boldsymbol{s}=1}^{N}\alpha_{\boldsymbol{s}}\cdot\boldsymbol{p}\left(\boldsymbol{x}_{j}|\boldsymbol{\mu}_{\boldsymbol{s}},\boldsymbol{\Sigma}_{\boldsymbol{s}}\right)}\cdot\boldsymbol{p}\left(\boldsymbol{x}_{j}|\boldsymbol{\mu}_{i},\boldsymbol{\Sigma}_{i}\right)
+$$  
+
+对于 $L L(D_{l})$ ，类似于13.6 和13.7 的推导过程  
+
+$$
+\begin{array}{r l}{\lefteqn{\frac{\partial L L(D_{l})}{\partial\alpha_{i}}=\sum_{\scriptstyle y,y\atop\scriptstyle(x_{j},y_{j})\in D_{l}\wedge y_{j}=i}\frac{\partial\ln\big(\alpha_{i}\cdot p\,(x_{j}|\mu_{i},\Sigma_{i})\big)}{\partial\alpha_{i}}}\quad}&{}\\ &{=\quad\quad\quad\sum_{\scriptstyle(x_{j},y_{j})\in D_{l}\wedge y_{j}=i}\frac{1}{\alpha_{i}\cdot p\,(x_{j}|\mu_{i},\Sigma_{i})}\cdot\frac{\partial\big(\alpha_{i}\cdot p\,(x_{j}|\mu_{i},\Sigma_{i})\big)}{\partial\alpha_{i}}}\\ &{=\quad\quad\quad\sum_{\scriptstyle(x_{j},y_{j})\in D_{l}\wedge y_{j}=i}\frac{1}{\alpha_{i}\cdot p\,(x_{j}|\mu_{i},\Sigma_{i})}\cdot p\,(x_{j}|\mu_{i},\Sigma_{i})}\\ &{=\quad\quad\quad\sum_{\scriptstyle(x_{j},y_{j})\in D_{l}\wedge y_{j}=i}\frac{1}{\alpha_{i}}=\frac{1}{\alpha_{i}}\cdot\sum_{\scriptstyle(x_{j},y_{j})\in D_{l}\wedge y_{j}=i}1=\frac{l_{i}}{\alpha_{i}}}\end{array}
+$$  
+
+上式推导过程中，重点注意变量是 $\alpha_{i}$ ， $p(x_{j}|\mu_{i},\Sigma_{i})$ 是常量；最后一行 $\alpha_{i}$ 相对于求和变量为常量，因此作为公因子提到求和号外面； $l_{i}$ 为第 $i$ 类样本的有标记样本数目。综合两项结果：  
+
+$$
+\frac{\partial\mathcal{L}\left(D_{l}\cup D_{u},\lambda\right)}{\partial\alpha_{i}}=\frac{l_{i}}{\alpha_{i}}+\sum_{\boldsymbol{x}_{j}\in D_{u}}\frac{p\left(\boldsymbol{x}_{j}|\boldsymbol{\mu}_{i},\boldsymbol{\Sigma}_{i}\right)}{\sum_{s=1}^{N}\alpha_{s}\cdot p\left(x_{j}|\boldsymbol{\mu}_{s},\boldsymbol{\Sigma}_{s}\right)}+\lambda
+$$  
+
+${\frac{\partial L L(D_{l}\cup D_{u})}{\partial\alpha_{i}}}=0$ 并且两边同乘以 $\alpha_{i}$ ，得  
+
+$$
+\alpha_{i}\cdot\frac{l_{i}}{\alpha_{i}}+\sum_{\substack{{\bf x}_{j}\in{\cal D}_{u}}}\frac{\alpha_{i}\cdot p\left({\bf x}_{j}|{\pmb{\mu}}_{i},{\pmb{\Sigma}}_{i}\right)}{\sum_{s=1}^{N}\alpha_{s}\cdot p\left({\pmb x}_{j}|{\pmb{\mu}}_{s},{\pmb{\Sigma}}_{s}\right)}+\lambda\cdot\alpha_{i}=0
+$$  
+
+结合式9.30 发现，求和号内即为后验概率 $\gamma_{j i}$ , 即  
+
+$$
+l_{i}+\sum_{x_{i}\in D_{u}}\gamma_{j i}+\lambda\alpha_{i}=0
+$$  
+
+对所有混合成分求和，得  
+
+$$
+\sum_{i=1}^{N}l_{i}+\sum_{i=1}^{N}\sum_{x_{i}\in D_{u}}\gamma_{j i}+\sum_{i=1}^{N}\lambda\alpha_{i}=0
+$$  
+
+这里 $\textstyle\sum_{i=1}^{N}\alpha_{i}=1$ ，因此 $\begin{array}{r}{\sum_{i=1}^{N}\lambda\alpha_{i}=\lambda\sum_{i=1}^{N}\alpha_{i}=\lambda}\end{array}$ ，根据9.30 中 $\gamma_{j i}$ 表达式可知  
+
+$$
+\sum_{i=1}^{N}\gamma_{j i}=\sum_{i=1}^{N}\frac{\alpha_{i}\cdot p(x_{j}|\mu_{i},\Sigma_{i})}{\Sigma_{s=1}^{N}\alpha_{s}\cdot p(x_{j}|\mu_{s},\Sigma_{s})}\mathop{=}\frac{\sum_{i=1}^{N}\alpha_{i}\cdot p(x_{j}|\mu_{i},\Sigma_{i})}{\sum_{s=1}^{N}\alpha_{s}\cdot p(x_{j}|\mu_{s},\Sigma_{s})}=1
+$$  
+
+再结合加法满足交换律，所以  
+
+$$
+\sum_{i=1}^{N}\sum_{x_{i}\in D_{u}}\gamma_{j i}=\sum_{x_{i}\in D_{u}}\sum_{i=1}^{N}\gamma_{j i}=\sum_{x_{i}\in D_{u}}1=u
+$$  
+
+以上分析过程中， $\sum_{x_{j}\in D_{u}}$ 形式与 $\textstyle\sum_{j=1}^{u}$ 等价，其中 $\mathrm{u}$ 为未标记样本集的样本个数； $\textstyle\sum_{i=1}^{N}l_{i}=l$ 其中 $l$ 为有标记样本集的样本个数；将这些结果代入  
+
+$$
+\sum_{i=1}^{N}l_{i}+\sum_{i=1}^{N}\sum_{x_{i}\in D_{u}}\gamma_{j i}+\sum_{i=1}^{N}\lambda\alpha_{i}=0
+$$  
+
+解出 $l+u+\lambda=0$ 且 $l+u=m$ 其中 $m$ 为样本总个数，移项即得 $\lambda=-m$ 最后带入整理解得  
+
+$$
+l_{i}+\sum_{x_{j}\in D_{u}}\gamma_{j i}-\lambda\alpha_{i}=0
+$$  
+
+整理即得式13.8。  
+
+# 公式(13.9)  
+
+$$
+\displaystyle\operatorname*{min}_{w,b,y,\xi}\frac{1}{2}\|w\|_{2}^{2}+C_{l}\sum_{i=1}^{l}\xi_{i}+C_{u}\sum_{i=l+1}^{m}\xi_{i}\qquad\hat{y}_{i}\left(w^{\mathrm{T}}x_{i}+b\right)\geqslant1-\xi_{i},\quad i=1,2,\dots,l
+$$  
+
+[解析]：这个公式和公式6.35 基本一致，除了引入了无标记样本的松弛变量 $\xi_{i},i=l+1,\cdots m$ 和对应的权重系数 $C_{u}$ 和无标记样本的标记指派 $\hat{y}_{i}$ 。  
+
+# 公式(13.12)  
+
+$$
+\begin{array}{l}{{\displaystyle E(f)=\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}\left(f\left({\pmb x}_{i}\right)-f\left({\pmb x}_{j}\right)\right)^{2}}\ ~}\\ {{\displaystyle~~~~~=\frac{1}{2}\left(\sum_{i=1}^{m}d_{i}f^{2}\left({\pmb x}_{i}\right)+\sum_{j=1}^{m}d_{j}f^{2}\left({\pmb x}_{j}\right)-2\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}f\left({\pmb x}_{i}\right)f\left({\pmb x}_{j}\right)\right)}\ ~}\\ {{\displaystyle~~~~~=\sum_{i=1}^{m}d_{i}f^{2}\left({\pmb x}_{i}\right)-\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}f\left({\pmb x}_{i}\right)f\left({\pmb x}_{j}\right)}\ ~}\\ {{\displaystyle~~~~~=f^{\mathrm{T}}({\bf D}-{\bf W})f}\ ~}\end{array}
+$$  
+
+[解析]：首先解释下这个能量函数的定义。原则上，我们希望能量函数 $E(f)$ 越小越好，对于节点 $i,j$ ，如果它们不相邻，则 $(\mathbf{W})_{i j}=0$ ，如果它们相邻，则最小化能量函数要求 $f(x_{i})$ 和 $f(x_{j})$ 尽量相似，和逻辑相符。下面进行公式的推导，首先由二项展开可得：  
+
+$$
+\begin{array}{l}{{\displaystyle{\cal E}(f)=\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}\left(f\left(x_{i}\right)-f\left(x_{j}\right)\right)^{2}}}\\ {~~}\\ {{\displaystyle~=\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}\left(f^{2}\left(x_{i}\right)-2f\left(x_{i}\right)f\left(x_{j}\right)+f^{2}\left(x_{j}\right)\right)}}\\ {~~}\\ {{\displaystyle~=\frac{1}{2}\left(\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}f^{2}\left(x_{i}\right)+\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}f^{2}\left(x_{j}\right)-2\sum_{i=1}^{m}\sum_{j=1}^{m}({\bf W})_{i j}f\left(x_{i}\right)f\left(x_{j}\right)\right)}}\end{array}
+$$  
+
+由于W 是一个对称矩阵，可以通过变量替换得到  
+
+$$
+\begin{array}{r l r}&{}&{\displaystyle\sum_{i=1}^{m}\sum_{j=1}^{m}(\mathbf W)_{i j}f^{2}\left(\pmb x_{j}\right)=\sum_{j=1}^{m}\sum_{i=1}^{m}(\mathbf W)_{j i}f^{2}\left(\pmb x_{i}\right)}\\ &{}&{\displaystyle=\sum_{i=1}^{m}\sum_{j=1}^{m}(\mathbf W)_{i j}f^{2}\left(\pmb x_{i}\right)}\\ &{}&{\displaystyle=\sum_{i=1}^{m}\sum_{j=1}^{m}(\mathbf W)_{i j}f^{2}\left(\pmb x_{j}\right)}\end{array}
+$$  
+
+因此 $E(f)$ 可化简为  
+
+$$
+E(f)=\sum_{i=1}^{m}\sum_{j=1}^{m}(\mathbf{W})_{i j}f^{2}\left(\pmb{x}_{i}\right)-\sum_{i=1}^{m}\sum_{j=1}^{m}(\mathbf{W})_{i j}f\left(\pmb{x}_{i}\right)f\left(\pmb{x}_{j}\right)
+$$  
+
+根据定义 $\begin{array}{r}{d_{i}=\sum_{j=1}^{l+u}\left(\mathbf{W}\right)_{i j}}\end{array}$ ，且 $m=l+u$ 则  
+
+$$
+\begin{array}{r l r}{\lefteqn{E\big(f\big)=\sum_{i=1}^{m}d_{i}f^{2}\left(\pmb{x}_{i}\right)-\sum_{i=1}^{m}\sum_{j=1}^{m}(\mathbf{W})_{i j}f\left(\pmb{x}_{i}\right)f\left(\pmb{x}_{j}\right)}}\\ &{}&{=f^{\mathrm{T}}\mathbf{D}f-f^{\mathrm{T}}\mathbf{W}f}\\ &{}&{=f^{\mathrm{T}}(\mathbf{D}-\mathbf{W})f}\end{array}
+$$  
+
+公式(13.13)  
+
+$$
+\begin{array}{r}{E(f)=\left(f_{l}^{\mathrm{T}}f_{u}^{\mathrm{T}}\right)\left(\left[\begin{array}{l l}{\mathbf{D}_{l l}}&{\mathbf{0}_{l u}}\\ {\mathbf{0}_{u l}}&{\mathbf{D}_{u u}}\end{array}\right]-\left[\begin{array}{l l}{\mathbf{W}_{l l}}&{\mathbf{W}_{l u}}\\ {\mathbf{W}_{u l}}&{\mathbf{W}_{u u}}\end{array}\right]\right)\left[\begin{array}{l}{f_{l}}\\ {f_{u}}\end{array}\right]}\\ {=f_{l}^{\mathrm{T}}\left(\mathbf{D}_{l l}-\mathbf{W}_{l l}\right)f_{l}-2f_{u}^{\mathrm{T}}\mathbf{W}_{u l}f_{l}+f_{u}^{\mathrm{T}}\left(\mathbf{D}_{u u}-\mathbf{W}_{u u}\right)f_{u}}\end{array}
+$$  
+
+[解析]：这里第一项西瓜书中的符号有歧义，应该表示成 $\left[\begin{array}{l l}{\pmb{f}_{l}^{\mathrm{T}}}&{\pmb{f}_{u}^{\mathrm{T}}}\end{array}\right]$ 即一个 $\mathbb{R}^{1\times(l+u)}$ 的行向量。根据矩阵乘法的定义，有：  
+
+$$
+\begin{array}{r l}&{E(f)=\left[\begin{array}{l l}{f_{l}^{\mathrm{T}}}&{f_{u}^{\mathrm{T}}}\end{array}\right]\left[\begin{array}{l l}{D_{l l}-W_{l l}}&{\quad-W_{l u}}\\ {\quad-W_{u l}}&{D_{u u}-W_{u u}}\end{array}\right]\left[\begin{array}{l}{f_{l}}\\ {f_{u}}\end{array}\right]}\\ &{\quad\quad=\left[\begin{array}{l l}{f_{l}^{\mathrm{T}}\left(D_{l l}-W_{l l}\right)-f_{u}^{\mathrm{T}}W_{u l}}&{-f_{l}^{\mathrm{T}}W_{l u}+f_{u}^{\mathrm{T}}\left(D_{u u}-W_{u u}\right)}\end{array}\right]\left[\begin{array}{l}{f_{l}}\\ {f_{u}}\end{array}\right]}\\ &{\quad\quad=\left(f_{l}^{\mathrm{T}}\left(D_{l l}-W_{l l}\right)-f_{u}^{\mathrm{T}}W_{u l}\right)f_{l}+\left(-f_{l}^{\mathrm{T}}W_{l u}+f_{u}^{\mathrm{T}}\left(D_{u u}-W_{u u}\right)\right)f_{u}}\\ &{\quad\quad=f_{l}^{\mathrm{T}}\left(D_{l l}-W_{l l}\right)f_{l}-f_{u}^{\mathrm{T}}W_{u l}f_{l}-f_{l}^{\mathrm{T}}W_{l u}f_{u}+f_{u}^{\mathrm{T}}\left(D_{u u}-W_{u u}\right)f_{u}}\\ &{\quad\quad=f_{l}^{\mathrm{T}}\left(D_{l l}-W_{l l}\right)f_{l}-2f_{u}^{\mathrm{T}}W_{u l}f_{l}+f_{u}^{\mathrm{T}}\left(D_{u u}-W_{u u}\right)f_{u}}\end{array}
+$$  
+
+其中最后一步， $f_{l}^{\mathrm{T}}W_{l u}f_{u}=\left(f_{l}^{\mathrm{T}}W_{l u}f_{u}\right)^{\mathrm{T}}=f_{u}^{\mathrm{T}}W_{u l}f_{l}$ ，因为这个式子的结果是一个标量。  
+
+公式(13.14)  
+
+$$
+\begin{array}{r}{E(f)=\left(f_{l}^{\mathrm{T}}f_{u}^{\mathrm{T}}\right)\left(\left[\begin{array}{l l}{\mathbf{D}_{l l}}&{\mathbf{0}_{l u}}\\ {\mathbf{0}_{u l}}&{\mathbf{D}_{u u}}\end{array}\right]-\left[\begin{array}{l l}{\mathbf{W}_{l l}}&{\mathbf{W}_{l u}}\\ {\mathbf{W}_{u l}}&{\mathbf{W}_{u u}}\end{array}\right]\right)\left[\begin{array}{l}{f_{l}}\\ {f_{u}}\end{array}\right]}\\ {=f_{l}^{\mathrm{T}}\left(\mathbf{D}_{l l}-\mathbf{W}_{l l}\right)f_{l}-2f_{u}^{\mathrm{T}}\mathbf{W}_{u l}f_{l}+f_{u}^{\mathrm{T}}\left(\mathbf{D}_{u u}-\mathbf{W}_{u u}\right)f_{u}}\end{array}
+$$  
+
+[解析]：参考13.13  
+
+# 公式(13.15)  
+
+$$
+\mathbf{\boldsymbol{f}}_{u}=\left(\mathbf{D}_{u u}-\mathbf{W}_{u u}\right)^{-1}\mathbf{W}_{u l}\mathbf{\boldsymbol{f}}_{l}
+$$  
+
+[解析]：由13.13，有  
+
+$$
+\begin{array}{r}{\begin{array}{r l r}&{\displaystyle\frac{\partial E(f)}{\partial f_{u}}=\frac{\partial f_{l}^{\mathrm{T}}\left(\boldsymbol{D}_{l l}-\boldsymbol{W}_{l l}\right)f_{l}-2f_{u}^{\mathrm{T}}\boldsymbol{W}_{u l}f_{l}+\boldsymbol{f}_{u}^{\mathrm{T}}\left(\boldsymbol{D}_{u u}-\boldsymbol{W}_{u u}\right)f_{u}}{\partial f_{u}}}&\\ &{\quad\quad\quad=-2\boldsymbol{W}_{u l}f_{l}+2\left(\boldsymbol{D}_{u u}-\boldsymbol{W}_{u u}\right)f_{u}}\end{array}}\end{array}
+$$  
+
+令结果等于0 即得13.15。  
+
+# 公式(13.16)  
+
+$$
+\begin{array}{r l}&{\mathbf{P}=\mathbf{D}^{-1}\mathbf{W}=\left[\begin{array}{l l}{\mathbf{D}_{l l}^{-1}}&{\mathbf{0}_{l u}}\\ {\mathbf{0}_{u l}}&{\mathbf{D}_{u u}^{-1}}\end{array}\right]\left[\begin{array}{l l}{\mathbf{W}_{l l}}&{\mathbf{W}_{l u}}\\ {\mathbf{W}_{u l}}&{\mathbf{W}_{u u}}\end{array}\right]}\\ &{\quad=\left[\begin{array}{l l}{\mathbf{D}_{l l}^{-1}\mathbf{W}_{l l}}&{\mathbf{D}_{l l}^{-1}\mathbf{W}_{l u}}\\ {\mathbf{D}_{u u}^{-1}\mathbf{W}_{u l}}&{\mathbf{D}_{u u}^{-1}\mathbf{W}_{u u}}\end{array}\right]}\end{array}
+$$  
+
+[解析]：根据矩阵乘法的定义计算可得该式，其中需要注意的是，对角矩阵 $\mathbf{D}$ 的拟等于其各个对角元素的倒数。  
+
+公式(13.17)  
+
+$$
+\begin{array}{r l}&{\pmb{f}_{u}=\left(\mathbf{D}_{u u}\left(\mathbf{I}-\mathbf{D}_{u u}^{-1}\mathbf{W}_{u u}\right)\right)^{-1}\mathbf{W}_{u l}\pmb{f}_{l}}\\ &{\quad\quad=\left(\mathbf{I}-\mathbf{D}_{u u}^{-1}\mathbf{W}_{u u}\right)^{-1}\mathbf{D}_{u u}^{-1}\mathbf{W}_{u l}\pmb{f}_{l}}\\ &{\quad\quad=\left(\mathbf{I}-\mathbf{P}_{u u}\right)^{-1}\mathbf{P}_{u l}\pmb{f}_{l}}\end{array}
+$$  
+
+[解析]：第一项到第二项是根据矩阵乘法逆的定义： $(\mathbf{A}\mathbf{B})^{-1}=\mathbf{B}^{-1}\mathbf{A}^{-1}$ ，在这个式子中  
+
+$$
+\begin{array}{r}{\mathbf{P}_{u u}=\mathbf{D}_{u u}^{-1}\mathbf{W}_{u u}}\\ {\mathbf{P}_{u l}=\mathbf{D}_{u u}^{-1}\mathbf{W}_{u l}}\end{array}
+$$  
+
+均可以根据 $\mathbf{W}_{i j}$ 计算得到，因此可以通过标记 $\mathbf{f}_{l}$ 计算未标记数据的标签 $\mathbf{f}_{u}$ 。  
+
+# 公式(13.20)  
+
+$$
+\mathbf{F}^{*}=\operatorname*{lim}_{t\rightarrow\infty}\mathbf{F}(t)=(1-\alpha)(\mathbf{I}-\alpha\mathbf{S})^{-1}\mathbf{Y}
+$$  
+
+[解析]：由13.19  
+
+$$
+\mathbf{F}(t+1)=\alpha\mathbf{S}\mathbf{F}(t)+(1-\alpha)\mathbf{Y}
+$$  
+
+当t 取不同的值时，有：  
+
+$$
+{\begin{array}{r l}&{t=0:\mathbb{F}(1)=\alpha\mathbb{S}\mathbb{F}(0)+(1-\alpha)\mathbf{Y}}\\ &{\qquad\qquad=\alpha\mathbb{S}\mathbf{Y}+(1-\alpha)\mathbf{Y}}\\ &{t=1:\mathbb{F}(2)=\alpha\mathbb{S}\mathbf{F}(1)+(1-\alpha)\mathbf{Y}=\alpha\mathbf{S}(\alpha\mathbf{S}\mathbf{Y}+(1-\alpha)\mathbf{Y})+(1-\alpha)\mathbf{Y}}\\ &{\qquad\qquad\qquad=(\alpha\mathbf{S})^{2}\mathbf{Y}+(1-\alpha)\left({\frac{1}{\binom{1}{\log(\alpha\mathbf{S})}^{\prime}}}\right)\mathbf{Y}}\\ &{t=2:\mathbb{F}(3)=\alpha\mathbb{S}\mathbf{F}(2)+(1-\alpha)\mathbf{Y}}\\ &{\qquad\qquad=\alpha\mathbf{S}\left((\alpha\mathbf{S})^{2}\mathbf{Y}+(1-\alpha)\left({\displaystyle\sum_{i=0}^{1}}(\alpha\mathbf{S})^{i}\right)\mathbf{Y}\right)+(1-\alpha)\mathbf{Y}}\\ &{\qquad\qquad=(\alpha\mathbf{S})^{3}\mathbf{Y}+(1-\alpha)\left({\displaystyle\sum_{i=0}^{2}}(\alpha\mathbf{S})^{i}\right)\mathbf{Y}}\end{array}}
+$$  
+
+可以观察到规律  
+
+$$
+\mathbf{F}(t)=(\alpha\mathbf{S})^{t}\mathbf{Y}+(1-\alpha)\left(\sum_{i=0}^{t-1}(\alpha\mathbf{S})^{i}\right)\mathbf{Y}
+$$  
+
+则  
+
+$$
+\mathbf{F}^{*}=\operatorname*{lim}_{t\to\infty}\mathbf{F}(t)=\operatorname*{lim}_{t\to\infty}(\alpha\mathbf{S})^{t}\mathbf{Y}+\operatorname*{lim}_{t\to\infty}(1-\alpha)\left(\sum_{i=0}^{t-1}(\alpha\mathbf{S})^{i}\right)\mathbf{Y}
+$$  
+
+其中第一项由于 $\mathbf{S}=\mathbf{D}^{-\frac{1}{2}}\mathbf{W}\mathbf{D}^{-\frac{1}{2}}$ 的特征值介于[-1, 1] 之间[1]，而 $\alpha\in(0,1)$ ，所以 $\begin{array}{r}{\operatorname*{lim}_{t\to\infty}(\alpha\mathbf{S})^{t}=0}\end{array}$ ，第二项由等比数列公式  
+
+$$
+\operatorname*{lim}_{t\rightarrow\infty}\sum_{i=0}^{t-1}(\alpha\mathbf{S})^{i}=\frac{\mathbf{I}-\operatorname*{lim}_{t\rightarrow\infty}(\alpha\mathbf{S})^{t}}{\mathbf{I}-\alpha\mathbf{S}}=\frac{\mathbf{I}}{\mathbf{I}-\alpha\mathbf{S}}=(\mathbf{I}-\alpha\mathbf{S})^{-1}
+$$  
+
+综合可得式13.20。  
+
+# 参考文献  
+
+[1] Wikipedia contributors. Laplacian matrix, 2020. URL: https://en.wikipedia.org/wiki/ Laplacian_matrix.  
+
+# 第14 章 概率图模型  
+
+# 公式(14.1)  
+
+$$
+P\left(x_{1},y_{1},\ldots,x_{n},y_{n}\right)=P\left(y_{1}\right)P\left(x_{1}|y_{1}\right)\prod_{i=2}^{n}P\left(y_{i}|y_{i-1}\right)P\left(x_{i}|y_{i}\right)
+$$  
+
+[解析]：所有的相乘关系都表示概率的相互独立。三种概率 $P\left(y_{i}\right),P\left(x_{i}|y_{i}\right),P\left(y_{i}|y_{i-1}\right)$ 分别表示初始状态概率，输出观测概率和条件转移概率。  
+
+公式(14.2)  
+
+$$
+P(\mathbf{x})=\frac{1}{Z}\prod_{Q\in C}\psi_{Q}\left(\mathbf{x}_{Q}\right)
+$$  
+
+[解析]：因为各个团之间概率分布相互独立，因此它们连乘可以表示最终的概率。  
+
+# 公式(14.3)  
+
+$$
+P(\mathbf{x})=\frac{1}{Z^{*}}\prod_{Q\in C^{*}}\psi_{Q}\left(\mathbf{x}_{Q}\right)
+$$  
+
+[解析]：意义同式14.2, 区别在于此处的团为极大团。  
+
+公式(14.4)  
+
+$$
+P\left(x_{A},x_{B},x_{C}\right)=\frac{1}{Z}\psi_{A C}\left(x_{A},x_{C}\right)\psi_{B C}\left(x_{B},x_{C}\right)
+$$  
+
+[解析]：将图14.3 分解成 $x_{A},x_{C}$ 和 $x_{B},x_{C}$ 两个团。  
+
+公式(14.5)  
+
+$$
+P\left(x_{A},x_{B}|x_{C}\right)=\frac{\psi_{A C}\left(x_{A},x_{C}\right)}{\sum_{x_{A}^{\prime}}\psi_{A C}\left(x_{A}^{\prime},x_{C}\right)}\cdot\frac{\psi_{B C}\left(x_{B},x_{C}\right)}{\sum_{x_{B}^{\prime}}\psi_{B C}\left(x_{B}^{\prime},x_{C}\right)}
+$$  
+
+[推导]：参见原书推导。  
+
+公式(14.6)  
+
+$$
+P\left(x_{A}|x_{C}\right)=\frac{\psi_{A C}\left(x_{A,}x_{C}\right)}{\sum_{x_{A}}\psi_{A C}\left(x_{A}^{\prime},x_{C}\right)}
+$$  
+
+[推导]：参见原书推导。  
+
+公式(14.7)  
+
+$$
+P\left(x_{A},x_{B}|x_{C}\right)=P\left(x_{A}|x_{C}\right)P\left(x_{B}|x_{C}\right)
+$$  
+
+[解析]：可由14.5、14.6 联立可得。  
+
+# 公式(14.8)  
+
+$$
+\psi_{Q}\left(\mathbf{x}_{Q}\right)=e^{-H_{Q}\left(\mathbf{x}_{Q}\right)}
+$$  
+
+[解析]：此为势函数的定义式，即将势函数写作指数函数的形式。指数函数满足非负性，且便于求导，因此在机器学习中具有广泛应用，例如西瓜书公式8.5 和13.11。  
+
+公式(14.9)  
+
+$$
+H_{Q}\left(\mathbf{x}_{Q}\right)=\sum_{u,v\in Q,u\neq v}\alpha_{u v}x_{u}x_{v}+\sum_{v\in Q}\beta_{v}x_{v}
+$$  
+
+[解析]：此为定义在变量 $\mathbf{x}_{Q}$ 上的函数 $H_{Q}\left(\cdot\right)$ 的定义式，第二项考虑单节点，第一项考虑每一对节点之间的关系。  
+
+# 公式(14.10)  
+
+$$
+P\left(y_{v}|\mathbf x,\mathbf y_{V\setminus\{v\}}\right)=P\left(y_{v}|\mathbf x,\mathbf y_{n(v)}\right)
+$$  
+
+[解析]：根据局部马尔科夫性，给定某变量的邻接变量，则该变量独立与其他变量，即该变量只与其邻接变量有关，所以式14.10 中给定变量 $v$ 以外的所有变量与仅给定变量 $v$ 的邻接变量是等价的。  
+
+# 公式(14.14)  
+
+$$
+\begin{array}{l}{P\left(x_{5}\right)=\displaystyle\sum_{x_{4}}\sum_{x_{3}}\sum_{x_{2}}\sum_{x_{1}}P\left(x_{1},x_{2},x_{3},x_{4},x_{5}\right)}\\ {\quad\quad=\displaystyle\sum_{x_{4}}\sum_{x_{3}}\sum_{x_{2}}\sum_{x_{1}}P\left(x_{1}\right)P\left(x_{2}|x_{1}\right)P\left(x_{3}|x_{2}\right)P\left(x_{4}|x_{3}\right)P\left(x_{5}|x_{3}\right)}\end{array}
+$$  
+
+[解析]：在消去变量的过程中，在消去每一个变量时需要保证其依赖的变量已经消去，因此消去顺序应该是有向概率图中的一条以目标节点为终点的拓扑序列。  
+
+# 公式(14.15)  
+
+$$
+\begin{array}{l}{P\left(x_{5}\right)=\displaystyle\sum_{x_{3}}P\left(x_{5}|x_{3}\right)\displaystyle\sum_{x_{4}}P\left(x_{4}|x_{3}\right)\displaystyle\sum_{x_{2}}P\left(x_{3}|x_{2}\right)\displaystyle\sum_{x_{1}}P\left(x_{1}\right)P\left(x_{2}|x_{1}\right)}\\ {\quad\qquad=\displaystyle\sum_{x_{3}}P\left(x_{5}|x_{3}\right)\displaystyle\sum_{x_{4}}P\left(x_{4}|x_{3}\right)\displaystyle\sum_{x_{2}}P\left(x_{3}|x_{2}\right)m_{12}\left(x_{2}\right)}\end{array}
+$$  
+
+[解析]：变量消去的顺序为从右至左求和号的下标，应当注意 $x_{4}$ 与 $x_{5}$ 相互独立，因此可与 $x_{3}$ 的消去顺序互换，对最终结果无影响。  
+
+# 公式(14.16)  
+
+$$
+{\begin{array}{c}{P\left(x_{5}\right)=\displaystyle\sum_{x_{3}}P\left(x_{5}|x_{3}\right)\sum_{x_{4}}P\left(x_{4}|x_{3}\right)m_{23}\left(x_{3}\right)}\\ {=\displaystyle\sum_{x_{3}}P\left(x_{5}|x_{3}\right)m_{23}\left(x_{3}\right)\sum_{x_{4}}P\left(x_{4}|x_{3}\right)}\\ {=\displaystyle\sum_{x_{3}}P\left(x_{5}|x_{3}\right)m_{23}\left(x_{3}\right)}\\ {=m_{35}\left(x_{5}\right)}\end{array}}
+$$  
+
+[解析]：注意到 $\begin{array}{r}{\sum_{x_{4}}P\left(x_{4}|x_{3}\right)=1}\end{array}$ 。  
+
+# 公式(14.17)  
+
+$$
+P\left(x_{1},x_{2},x_{3},x_{4},x_{5}\right)=\frac{1}{Z}\psi_{12}\left(x_{1},x_{2}\right)\psi_{23}\left(x_{2},x_{3}\right)\psi_{34}\left(x_{3},x_{4}\right)\psi_{35}\left(x_{3},x_{5}\right)
+$$  
+
+[解析]：忽略图 $14.7(a)$ 中的箭头，然后把无向图中的每条边的两个端点作为一个团将其分解为四个团因子的乘积。 $Z$ 为规范化因子确保所有可能性的概率之和为1。  
+
+# 公式(14.18)  
+
+$$
+{\begin{array}{l}{P\left(x_{5}\right)={\cfrac{1}{Z}}\displaystyle\sum_{x_{3}}\psi_{35}\left(x_{3},x_{5}\right)\sum_{x_{4}}\psi_{34}\left(x_{3},x_{4}\right)\sum_{x_{2}}\psi_{23}\left(x_{2},x_{3}\right)\sum_{x_{1}}\psi_{12}\left(x_{1},x_{2}\right)}\\ {\displaystyle={\cfrac{1}{Z}}\sum_{x_{3}}\psi_{35}\left(x_{3},x_{5}\right)\sum_{x_{4}}\psi_{34}\left(x_{3},x_{4}\right)\sum_{x_{2}}\psi_{23}\left(x_{2},x_{3}\right)m_{12}\left(x_{2}\right)}\\ {\displaystyle=\cdots}\\ {\displaystyle={\cfrac{1}{Z}}m_{35}\left(x_{5}\right)}\end{array}}
+$$  
+
+[解析]：原理同式14.15, 区别在于把条件概率替换为势函数。  
+
+# 公式(14.19)  
+
+$$
+m_{i j}\left(x_{j}\right)=\sum_{x_{i}}\psi\left(x_{i},x_{j}\right)\prod_{k\in n\left(i\right)\backslash j}m_{k i}\left(x_{i}\right)
+$$  
+
+[解析]：该式表示从节点 $i$ 传递到节点 $j$ 的过程，求和号表示要考虑节点 $i$ 的所有可能取值。连乘号解释见式14.20。应当注意这里连乘号的下标不包括节点 $j$ ，节点 $i$ 只需要把自己知道的关于 $j$ 以外的消息告诉节点 $j$ 即可。  
+
+# 公式(14.20)  
+
+$$
+P\left(x_{i}\right)\propto\prod_{k\in n\left(i\right)}m_{k i}\left(x_{i}\right)
+$$  
+
+[解析]：应当注意这里是正比于而不是等于，因为涉及到概率的规范化。可以这么解释，每个变量可以看作一个有一些邻居的房子，每个邻居根据其自己的见闻告诉你一些事情(消息)，任何一条消息的可信度应当与所有邻居都有相关性，此处这种相关性用乘积来表达。  
+
+# 公式(14.22)  
+
+$$
+\hat{f}=\frac{1}{N}\sum_{i=1}^{N}f\left(x_{i}\right)
+$$  
+
+[推导]：假设 $x$ 有M 种不同的取值， $x_{i}$ 的采样数量为 $m_{i}$ (连续取值可以采用微积分的方法分割为离散的取值)，则  
+
+$$
+\begin{array}{l}{\displaystyle\hat{f}=\frac{1}{N}\sum_{j=1}^{M}f\left(x_{j}\right)\cdot m_{j}}\\ {\displaystyle}\\ {\displaystyle}\\ {\displaystyle}\\ {\displaystyle}\\ {\displaystyle\approx\sum_{j=1}^{M}f\left(x_{j}\right)\cdot\frac{m_{j}}{N}}\\ {\displaystyle}\\ {\displaystyle\approx\sum_{j=1}^{M}f\left(x_{j}\right)\cdot p(x_{j})}\\ {\displaystyle}\\ {\displaystyle\approx\int f(x)p(x)d x}\end{array}
+$$  
+
+# 公式(14.26)  
+
+$$
+p\left(\mathbf{x}^{t}\right)T\left(\mathbf{x}^{t-1}\mid\mathbf{x}^{t}\right)=p\left(\mathbf{x}^{t-1}\right)T\left(\mathbf{x}^{t}\mid\mathbf{x}^{t-1}\right)
+$$  
+
+[解析]：假设变量 $\mathbf{x}$ 所在的空间有 $n$ 个状态 $\left(s_{1},s_{2},..,s_{n}\right)$ , 定义在该空间上的一个转移矩阵 $\mathbf{T}\in\mathbb{R}^{n\times n}$ 满足一定的条件则该马尔可夫过程存在一个稳态分布 $\pi$ , 使得  
+
+$$
+\pi\mathbf{T}=\pi
+$$  
+
+其中, $\pi$ 是一个是一个 $n$ 维向量，代表 $s_{1},s_{2},..,s_{n}$ 对应的概率. 反过来, 如果我们希望采样得到符合某个分布 $\pi$ 的一系列变量 $\mathbf{x}^{1},\mathbf{x}^{2},..,\mathbf{x}^{t}$ , 应当采用哪一个转移矩阵 $\mathbf{T}\in\mathbb{R}^{n\times n}$ 呢？  
+
+事实上，转移矩阵只需要满足马尔可夫细致平稳条件  
+
+$$
+\pi_{i}\mathbf{T}_{i j}=\pi_{j}\mathbf{T}_{j i}
+$$  
+
+即公式14.26，这里采用的符号与西瓜书略有区别以便于理解. 证明如下  
+
+$$
+\pi\mathbf{T}_{j}.=\sum_{i}\pi_{i}\mathbf{T}_{i j}=\sum_{i}\pi_{j}\mathbf{T}_{j i}=\pi_{j}
+$$  
+
+假设采样得到的序列为 $\mathbf{x}^{1},\mathbf{x}^{2},..,\mathbf{x}^{t-1},\mathbf{x}^{t}$ ，则可以使用 $M H$ 算法来使得 $\mathbf{x}^{t-1}$ (假设为状态 $s_{i}$ ) 转移到 $\mathbf{x}^{t}$ (假设为状态 $s_{j}$ ) 的概率满足式。  
+
+# 公式(14.27)  
+
+$$
+p\left(\mathbf{x}^{t-1}\right)Q\left(\mathbf{x}^{*}|\mathbf{x}^{t-1}\right)A\left(\mathbf{x}^{*}|\mathbf{x}^{t-1}\right)=p\left(\mathbf{x}^{*}\right)Q\left(\mathbf{x}^{t-1}|\mathbf{x}^{*}\right)A\left(\mathbf{x}^{t-1}|\mathbf{x}^{*}\right)
+$$  
+
+[解析]：这里把式14.26 中的函数 $T$ 拆分为两个函数 $Q$ 和 $A$ 之积，即先验概率和接受概率，便于实际算法的实现。  
+
+# 公式(14.28)  
+
+$$
+A(x^{*}|x^{t-1})=\operatorname*{min}\left(1,{\frac{p(x^{*})Q(x^{t-1}|x^{*})}{p(x^{t-1})Q(x^{*}|x^{t-1})}}\right)
+$$  
+
+[推导]：这个公式其实是拒绝采样的一个trick，因为基于式14.27 只需要  
+
+$$
+\begin{array}{l}{{A(x^{*}|x^{t-1})=p(x^{*})Q(x^{t-1}|x^{*})}}\\ {{A(x^{t-1}|x^{*})=p(x^{t-1})Q(x^{*}|x^{t-1})}}\end{array}
+$$  
+
+即可满足式14.26，但是实际上等号右边的数值可能比较小，比如各为0.1 和0.2，那么好不容易才到的样本只有百分之十几得到利用，所以不妨将接受率设为0.5 和1，则细致平稳分布条件依然满足，样本利用率大大提高, 所以可以改进为  
+
+$$
+\begin{array}{l}{A(x^{*}|x^{t-1})=\frac{p\left(x^{*}\right)Q\left(x^{t-1}|x^{*}\right)}{n o r m}}\\ {A(x^{t-1}|x^{*})=\frac{p\left(x^{t-1}\right)Q\left(x^{*}|x^{t-1}\right)}{n o r m}}\end{array}
+$$  
+
+其中  
+
+$$
+n o r m=\operatorname*{max}\left(p(x^{t-1})Q(x^{*}|x^{t-1}),p(x^{*})Q(x^{t-1}|x^{*})\right)
+$$  
+
+即西瓜书中的14.28。  
+
+# 公式(14.29)  
+
+$$
+p(\mathbf{x}|\boldsymbol{\Theta})=\prod_{i=1}^{N}\sum_{\mathbf{z}}p\left(x_{i},\mathbf{z}|\boldsymbol{\Theta}\right)
+$$  
+
+[解析]：连乘号是因为 $N$ 个变量的生成过程相互独立。求和号是因为每个变量的生成过程需要考虑中间隐变量的所有可能性，类似于边际分布的计算方式。  
+
+# 公式(14.30)  
+
+$$
+\ln p(\mathbf{x}|\boldsymbol{\Theta})=\sum_{i=1}^{N}\ln\left\{\sum_{\mathbf{z}}p\left(x_{i},\mathbf{z}|\boldsymbol{\Theta}\right)\right\}
+$$  
+
+[解析]：对式14.29 取对数。  
+
+# 公式(14.31)  
+
+$$
+\begin{array}{l}{{\displaystyle{\Theta}^{t+1}=\arg\operatorname*{max}_{{\Theta}}\mathcal{Q}\left({\Theta};{\Theta}^{t}\right)}\ ~}\\ {{\displaystyle~~~~~~=\arg\operatorname*{max}_{{\Theta}}\sum_{{\bf z}}p\left({\bf z}|{\bf x},{\Theta}^{t}\right)\ln p({\bf x},{\bf z}|{\Theta})}}\end{array}
+$$  
+
+[解析]：EM 算法中的M 步，参见7.6 节。  
+
+# 公式(14.32)  
+
+$$
+\ln p(x)={\mathcal{L}}(q)+\mathrm{KL}(q\parallel p)
+$$  
+
+[推导]：根据条件概率公式 $p(x,z)=p(z|x)*p(x)$ ，可以得到 $\begin{array}{r}{p(x)=\frac{p(x,z)}{p(z|x)}}\end{array}$ 然后两边同时作用ln 函数，可得 $\begin{array}{r}{\ln p(x)=\ln\!\frac{p(x,z)}{p(z|x)}}\end{array}$ 因为 $q(z)$ 是概率密度函数，所以 $\begin{array}{r}{1=\int q(z)d z}\end{array}$ 等式|两边同时乘以 $\mathrm{ln}p(x)$ ，因为 $\mathrm{ln}p(x)$ 是不关于变量 $z$ 的函数，所以 $\mathrm{ln}p(x)$ 可以拿进积分里面，得到 $\begin{array}{r}{\ln p(x)=\int q(z)\mathrm{ln}p(x)d z}\end{array}$  
+
+$$
+\begin{array}{r l}&{\ln p(x)=\int q(z)\ln p(x)d z}\\ &{\qquad=\int q(z)\ln\frac{p(x,z)}{p(z|x)}}\\ &{\qquad=\int q(z)\ln\Biggl\{\frac{p(x,z)}{q(z)}\cdot\frac{q(z)}{p(z|x)}\Biggr\}}\\ &{\qquad=\int q(z)\Biggl(\ln\frac{p(x,z)}{q(z)}-\ln\frac{p(z|x)}{q(z)}\Biggr)}\\ &{\qquad=\int q(z)\ln\Biggl\{\frac{p(x,z)}{q(z)}\Biggr\}-\int q(z)\ln\frac{p(z|x)}{q(z)}}\\ &{\qquad=\mathcal{L}(q)+\mathrm{KL}(q\parallel p)}\end{array}
+$$  
+
+最后一行是根据 $\mathcal{L}$ 和KL 的定义。  
+
+# 公式(14.33)  
+
+$$
+{\mathcal{L}}(q)=\int q({\mathbf{z}})\ln\left\{{\frac{p({\mathbf{x}},{\mathbf{z}})}{q({\mathbf{z}})}}\right\}\mathrm{d}{\mathbf{z}}
+$$  
+
+[解析]：见14.32 解析。  
+
+$$
+\mathrm{KL}(q\|p)=-\int q(\mathrm{z})\ln\frac{p(\mathrm{z}|\mathrm{x})}{q(\mathrm{z})}\mathrm{d}\mathrm{z}
+$$  
+
+[解析]：见14.32 解析。  
+
+# 公式(14.35)  
+
+$$
+q(\mathbf{z})=\prod_{i=1}^{M}q_{i}\left(\mathbf{z}_{i}\right)
+$$  
+
+[解析]：再一次，条件独立的假设。可以看到，当问题复杂是往往简化问题到最简单最容易计算的局面，实际上往往效果不错。  
+
+公式(14.36)  
+
+$$
+\begin{array}{l}{{\displaystyle{\mathcal L}(q)=\int\prod_{i}q_{i}\Biggl\{\ln p({\bf x},{\bf z})-\sum_{i}\ln q_{i}\Biggr\}d{\bf z}}\ ~}\\ {{\displaystyle~~~~~=\int q_{j}\Biggl\{\int p(x,z)\prod_{i\ne j}q_{i}d{\bf z_{i}}\Biggr\}d{\bf z_{j}}-\int q_{j}\ln q_{j}d{\bf z_{j}}+\mathrm{const}}\ ~}\\ {{\displaystyle~~~~~=\int q_{j}\ln\tilde{p}({\bf x},{\bf z_{j}})d{\bf z_{j}}-\int q_{j}\ln q_{j}d{\bf z_{j}}+\mathrm{const}}\ ~}\end{array}
+$$  
+
+[推导]：  
+
+$$
+\mathcal{L}(q)=\int\prod_{i}q_{i}\bigg\{\ln p(\mathbf{x},\mathbf{z})-\sum_{i}\ln q_{i}\bigg\}d\mathbf{z}=\int\prod_{i}q_{i}\ln p(\mathbf{x},\mathbf{z})d\mathbf{z}-\int\prod_{i}q_{i}\sum_{i}\ln q_{i}d\mathbf{z}
+$$  
+
+公式可以看做两个积分相减，我们先来看左边积分 $\begin{array}{r}{\int\prod_{i}q_{i}\mathrm{ln}p(\mathbf{x},\mathbf{z})d\mathbf{z}}\end{array}$ 的推导。  
+
+$$
+\begin{array}{l}{{\displaystyle\int\prod_{i}q_{i}\mathrm{ln}p({\bf x},{\bf z})d{\bf z}=\int q_{j}\prod_{i\ne j}q_{i}\mathrm{ln}p({\bf x},{\bf z})d{\bf z}}\ ~}\\ {{\displaystyle~~~~~~~~~~~~~~~~~=\int q_{j}\left\{\int\mathrm{ln}p({\bf x},{\bf z})\prod_{i\ne j}q_{i}d{\bf z_{i}}\right\}d{\bf z_{j}}}}\end{array}
+$$  
+
+即先对 $\mathbf{z_{j}}$ 求积分，再对 $\mathbf{z_{i}}$ 求积分，这个就是教材中的14.36 左边的积分部分。我们现在看下右边积分的推导 $\begin{array}{r}{\int\prod_{i}q_{i}\sum_{i}\ln q_{i}d\mathbf{z}}\end{array}$ 的推导。在此之前我们看下 $\int\prod_{i}q_{i}\mathrm{ln}q_{k}d\mathbf{z}$ 的计算  
+
+$$
+\begin{array}{l}{{\displaystyle\int\prod_{i}q_{i}\mathrm{ln}q_{k}d{\bf z}=\int q_{i^{\prime}}\prod_{i\ne i^{\prime}}q_{i}\mathrm{ln}q_{k}d{\bf z}}}\\ {{\displaystyle\qquad\qquad\qquad=\int q_{i^{\prime}}\Bigg\{\int\prod_{i\ne i^{\prime}}q_{i}\mathrm{ln}q_{k}d{\bf z_{i}}\Bigg\}d{\bf z_{i^{\prime}}}}}\end{array}
+$$  
+
+第一个等式是一个展开项，选取一个变量 $q_{i^{\prime}},i^{\prime}\neq k$ ，由于 $\left\{\int\prod_{i\neq i^{\prime}}q_{i}\mathrm{ln}q_{k}d{\bf z_{i}}\right\}$ 部分与变量 $q_{i^{\prime}}$ 无关，所以可以拿到积分外面。又因为 $\int q_{i^{\prime}}d\mathbf{z_{i^{\prime}}}=1$ ，所以  
+
+$$
+\begin{array}{l}{{\displaystyle\int\prod_{i}q_{i}\mathrm{ln}q_{k}d{\bf z}=\int\prod_{i\ne i^{\prime}}q_{i}\mathrm{ln}q_{k}d{\bf z_{i}}}}\\ {{\displaystyle\qquad\qquad\qquad=\int q_{k}\mathrm{ln}q_{k}d{\bf z_{k}}}}\end{array}
+$$  
+
+即所有 $k$ 以外的变量都可以通过上面的方式消除, 有了这个结论，我们再来看公式  
+
+$$
+\begin{array}{l}{\displaystyle\int\prod_{i}q_{i}\sum_{i}\ln q_{i}d{\bf z}=\int\prod_{i}q_{i}\ln q_{j}d{\bf z}+\sum_{k\ne j}\int\prod_{i}q_{i}\ln q_{k}d{\bf z}}\\ {\displaystyle\qquad\qquad\qquad=\int q_{j}\ln q_{j}d{\bf z_{j}}+\sum_{z\ne j}\int q_{k}\ln q_{k}d{\bf z_{k}}}\\ {\displaystyle\qquad\qquad\qquad=\int q_{j}\ln q_{j}d{\bf z_{j}}+\mathrm{const}}\end{array}
+$$  
+
+其中第二个等式是依据上述规律进行消除，最后将与 $q_{j}$ 无关的部分写作const，这个就是14.36 右边的积分部分。  
+
+# 公式(14.37)  
+
+$$
+\ln\tilde{p}\left({\bf x},{\bf z}_{j}\right)=\mathbb{E}_{i\neq j}[\ln p({\bf x},{\bf z})]+\mathrm{~const}
+$$  
+
+[解析]：参见14.36  
+
+# 公式(14.38)  
+
+$$
+\mathbb{E}_{i\neq j}[\ln p({\bf x},{\bf z})]=\int\ln p({\bf x},{\bf z})\prod_{i\neq j}q_{i}\mathrm{d}{\bf z}_{i}
+$$  
+
+[解析]：参见14.36  
+
+# 公式(14.39)  
+
+$$
+\ln q_{j}^{*}\left(\mathbf{z}_{j}\right)=\mathbb{E}_{i\neq j}[\ln p(\mathbf{x},\mathbf{z})]+\mathrm{const}
+$$  
+
+[解析]：散度取得极值的条件是两个概率分布相同，见附录 $C.3$ 。  
+
+# 公式(14.40)  
+
+$$
+q_{j}^{*}(\mathbf{z}_{j})=\frac{\exp\left(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\right)}{\int\exp\left(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\right)\mathrm{d}\mathbf{z}_{j}}
+$$  
+
+[推导]：由14.39 去对数并积分  
+
+$$
+\begin{array}{r l}&{\displaystyle\int q_{j}^{*}(\mathbf{z}_{j})\mathrm{d}\mathbf{z}_{j}=\int\exp\left(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\right)\cdot\exp(c o n s t)\,\mathrm{d}\mathbf{z}_{j}}\\ &{\displaystyle\qquad\qquad=\exp(c o n s t)\int\exp\left(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\right)\,\mathrm{d}\mathbf{z}_{j}}\\ &{=1}\end{array}
+$$  
+
+所以  
+
+$$
+\exp(c o n s t)=\frac{1}{\int\exp\left(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\right)\,\mathrm{d}\mathbf{z}_{j}}
+$$  
+
+$$
+\begin{array}{r l}&{q_{j}^{*}(\mathbf{z}_{j})=\exp\left(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\right)\cdot\exp(c o n s t)}\\ &{\quad\quad\quad=\frac{\exp\big(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\big)}{\int\exp\big(\mathbb{E}_{i\neq j}[\ln(p(\mathbf{x},\mathbf{z}))]\big)\,\mathrm{d}\mathbf{z}_{j}}}\end{array}
+$$  
+
+# 公式(14.41)  
+
+$$
+p(W,z,\beta,\theta|\alpha,\eta)=\prod_{t=1}^{T}p(\theta_{t}|\alpha)\prod_{k=1}^{K}p(\beta_{k}|\eta)(\prod_{n=1}^{N}P(w_{t,n}|z_{t,n},\beta_{k})P(z_{t,n}|\theta_{t}))
+$$  
+
+[解析]：此式表示LDA 模型下根据参数 $\alpha,\eta$ 生成文档 $W$ 的概率。其中 $z,\beta,\theta$ 是生成过程的中间变量。具体的生成步骤可见概率图14.12，图中的箭头和式14.41 中的条件概率中的因果项目一一对应。这里共有三个连乘符号，表示三个相互独立的概率关系。第一个连乘表示T 个文档每个文档的话题分布都是相互独立的。第二个连乘表示K 个话题每个话题下单词的分布是相互独立的。最后一个连乘号表示每篇文档中的所有单词的生成是相互独立的。  
+
+# 公式(14.42)  
+
+$$
+p\left(\Theta_{t}|\alpha\right)=\frac{\Gamma\left(\sum_{k}\alpha_{k}\right)}{\prod_{k}\Gamma\left(\alpha_{k}\right)}\prod_{k}\Theta_{t,k}^{\alpha_{k}-1}
+$$  
+
+[解析]：参见附录 $C1.6$ 。  
+
+# 公式(14.43)  
+
+$$
+L L(\alpha,\eta)=\sum_{t=1}^{T}\ln p\left(w_{t}|\alpha,\eta\right)
+$$  
+
+[解析]：对数似然函数。参见7.2 极大似然估计。  
+
+# 公式(14.44)  
+
+$$
+p(\mathbf{z},\boldsymbol{\beta},\boldsymbol{\Theta}|\mathbf{W},\alpha,\boldsymbol{\eta})=\frac{p(\mathbf{W},\mathbf{z},\boldsymbol{\beta},\boldsymbol{\Theta}|\alpha,\boldsymbol{\eta})}{p(\mathbf{W}|\alpha,\boldsymbol{\eta})}
+$$  
+
+[解析]：分母为边际分布，需要对变量 $\mathbf{z},\beta,\Theta$ 积分或者求和，所以往往难以直接求解。  
+
+# 第15 章 规则学习  
+
+# 公式(15.2)  
+
+$$
+\mathrm{LRS}=2\cdot\left(\hat{m}_{+}\log_{2}\frac{\left(\frac{\hat{m}_{+}}{\hat{m}_{+}+\hat{m}_{-}}\right)}{\left(\frac{m_{+}}{m_{+}+m_{-}}\right)}+\hat{m}_{-}\log_{2}\frac{\left(\frac{\hat{m}_{-}}{\hat{m}_{+}+\hat{m}_{-}}\right)}{\left(\frac{m_{-}}{m_{+}+m_{-}}\right)}\right)
+$$  
+
+[解析]：似然率统计量(Likelihood Ratio Statistics) 的定义式。  
+
+# 公式(15.3)  
+
+$$
+\mathrm{F-Gain}\ =\hat{m}_{+}\times\left(\log_{2}\frac{\hat{m}_{+}}{\hat{m}_{+}+\hat{m}_{-}}-\log_{2}\frac{m_{+}}{m_{+}+m_{-}}\right)
+$$  
+
+[解析]：FOIL 增益(FOIL gain) 的定义式。  
+
+# 公式(15.6)  
+
+$$
+(A\lor B)-\{B\}=A
+$$  
+
+[解析]：析合范式的删除操作定义式，表示在 $A$ 和 $B$ 的析合式中删除成分 $B$ ，得到成分 $A$ 。  
+
+公式(15.7)  
+
+$$
+C=(C_{1}-\{L\})\lor(C_{2}-\{\neg L\})
+$$  
+
+[解析]： $C=A\lor B$ ，把 $A=C_{1}-\{L\}$ 和 $L=C_{2}-\{\lnot L\}$ 带入即得。  
+
+公式(15.9)  
+
+$$
+C_{2}=(C-(C_{1}-\{L\}))\vee\{\neg L\}
+$$  
+
+[解析]：由式15.7 可知  
+
+$$
+C_{2}-\{\neg L\}=C-(C_{1}-\{L\})
+$$  
+
+由式15.6 移项即证得。  
+
+# 公式(15.10)  
+
+$$
+\frac{p\leftarrow A\land B\quad q\leftarrow A}{p\leftarrow q\land B\quad q\leftarrow A}
+$$  
+
+[解析]：吸收(absorption) 操作的定义。  
+
+# 公式(15.11)  
+
+$$
+\frac{p\leftarrow A\land B\quad p\leftarrow A\land q}{q\leftarrow B\quad p\leftarrow A\land q}
+$$  
+
+[解析]：辨识(identification) 操作的定义。  
+
+# 公式(15.12)  
+
+$$
+\frac{p\leftarrow A\land B\quad p\leftarrow A\land q}{q\leftarrow B\quad p\leftarrow A\land q\quad q\leftarrow C}
+$$  
+
+[解析]：内构(intra-construction) 操作的定义。  
+
+# 公式(15.13)  
+
+$$
+{\frac{p\leftarrow A\land B\quad q\leftarrow r\land C}{p\leftarrow r\land B\quad r\leftarrow A\quad q\leftarrow r\land C}}
+$$  
+
+[解析]：互构(inter-construction) 操作的定义。  
+
+# 公式(15.14)  
+
+$$
+C=\left(C_{1}-\{L_{1}\}\right)\theta\vee\left(C_{2}-\{L_{2}\}\right)\theta
+$$  
+
+[解析]：由式15.7，分别对析合的两个子项进行归结即得证。  
+
+# 公式(15.16)  
+
+$$
+C_{2}=\left(C-\left(C_{1}-\{L_{1}\}\right)\theta_{1}\vee\{\neg L_{1}\theta_{1}\}\right)\theta_{2}^{-1}
+$$  
+
+[推导]： $\theta_{1}$ 为作者笔误，由15.9  
+
+$$
+C_{2}=(C-(C_{1}-\{L_{1}\}))\vee\{L_{2}\}
+$$  
+
+因为 $L_{2}=(\neg L_{1}\theta_{1})\theta_{2}^{-1}$ ，替换得证。  
+
+# 第16 章 强化学习  
+
+# 公式(16.2)  
+
+$$
+Q_{n}(k)=\frac{1}{n}\left((n-1)\times Q_{n-1}(k)+v_{n}\right)
+$$  
+
+[推导]：  
+
+$$
+{\begin{array}{r l}&{Q_{n}(k)={\cfrac{1}{n}}\,\sum_{i=1}^{n}v_{i}}\\ &{\qquad={\cfrac{1}{n}}\,\left(\,\sum_{i=1}^{n-1}v_{i}+v_{n}\right)}\\ &{\qquad={\cfrac{1}{n}}\,((n-1)\times Q_{n-1}(k)+v_{n})}\\ &{\qquad=Q_{n-1}(k)+{\cfrac{1}{n}}\,(v_{n}-Q_{n-1}(k))}\end{array}}
+$$  
+
+公式(16.3)  
+
+$$
+\begin{array}{l}{{\displaystyle Q_{n}(k)=\frac{1}{n}\left((n-1)\times Q_{n-1}(k)+v_{n}\right)}}\\ {{\displaystyle=Q_{n-1}(k)+\frac{1}{n}\left(v_{n}-Q_{n-1}(k)\right)}}\end{array}
+$$  
+
+[推导]：参见16.2  
+
+公式(16.4)  
+
+$$
+P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}
+$$  
+
+[解析]：  
+
+$$
+P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}\propto e^{\frac{Q(k)}{\tau}}\propto\frac{Q(k)}{\tau}\propto\frac{1}{\tau}
+$$  
+
+公式(16.7)  
+
+$$
+\begin{array}{l}{{\displaystyle V_{T}^{\pi}(x)=\mathbb{E}_{\pi}[\frac{1}{T}\sum_{t=1}^{T}r_{t}\ |\ x_{0}=x]}}\\ {{\displaystyle\ }}\\ {{\displaystyle\ }=\mathbb{E}_{\pi}[\frac{1}{T}r^{1}+\frac{T-1}{T}\frac{1}{T-1}\sum_{t=2}^{T}r_{t}\ |\ x_{0}=x]}}\\ {{\displaystyle\ }}\\ {{\displaystyle\ }=\sum_{a\in A}\pi(x,a)\sum_{x^{\prime}\in X}P_{x\to x^{\prime}}^{a}(\frac{1}{T}R_{x\to x^{\prime}}^{a}+\frac{T-1}{T}\mathbb{E}_{\pi}[\frac{1}{T-1}\sum_{t=1}^{T-1}r_{t}\ |\ x_{0}=x^{\prime}])}}\\ {{\displaystyle\ }=\sum_{a\in A}\pi(x,a)\sum_{x^{\prime}\in X}P_{x\to x^{\prime}}^{a}(\frac{1}{T}R_{x\to x^{\prime}}^{a}+\frac{T-1}{T}V_{T-1}^{\pi}(x^{\prime})|)}}\end{array}
+$$  
+
+[解析]：因为  
+
+$$
+\pi(x,a)=P(a c t i o n=a|s t a t e=x)
+$$  
+
+表示在状态 $x$ 下选择动作 $a$ 的概率，又因为动作事件之间两两互斥且和为动作空间，由全概率展开公式  
+
+$$
+P(A)=\sum_{i=1}^{\infty}P(B_{i})P(A\mid B_{i})
+$$  
+
+可得  
+
+$$
+\begin{array}{l}{{\displaystyle\mathbb{E}_{\pi}[\frac{1}{T}r_{1}+\frac{T-1}{T}\frac{1}{T-1}\sum_{t=2}^{T}r_{t}\ |\ x_{0}=x]}}\\ {{\displaystyle=\sum_{a\in A}\pi(x,a)\sum_{x^{\prime}\in X}P_{x\to x^{\prime}}^{a}(\frac{1}{T}R_{x\to x^{\prime}}^{a}+\frac{T-1}{T}\mathbb{E}_{\pi}[\frac{1}{T-1}\sum_{t=1}^{T-1}r_{t}\ |\ x_{0}=x^{\prime}])}}\end{array}
+$$  
+
+其中  
+
+$$
+r_{1}=\pi(x,a)P_{x\to x^{\prime}}^{a}R_{x\to x^{\prime}}^{a}
+$$  
+
+最后一个等式用到了递归形式。  
+
+# 公式(16.8)  
+
+$$
+V_{\gamma}^{\pi}(x)=\sum_{a\in A}\pi(x,a)\sum_{x^{\prime}\in X}P_{x\to x^{\prime}}^{a}(R_{x\to x^{\prime}}^{a}+\gamma V_{\gamma}^{\pi}(x^{\prime}))
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l}&{V_{\gamma}^{\pi}(x)=\mathbb{E}_{\pi}\big[\displaystyle\sum_{t=0}^{\infty}\gamma^{t}r_{t+1}\;|\;x_{0}=x\big]}\\ &{\qquad=\mathbb{E}_{\pi}\big[r_{1}+\displaystyle\sum_{t=1}^{\infty}\gamma^{t}r_{t+1}\;|\;x_{0}=x\big]}\\ &{\qquad=\mathbb{E}_{\pi}\big[r_{1}+\gamma\displaystyle\sum_{t=1}^{\infty}\gamma^{t-1}r_{t+1}\;|\;x_{0}=x\big]}\\ &{\qquad=\displaystyle\sum_{\alpha\in A}\pi(x,a)\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{a}(R_{x\rightarrow x^{\prime}}^{a}+\gamma\mathbb{E}_{\pi}|\displaystyle\sum_{t=0}^{\infty}\gamma^{t}r_{t+1}\;|\;x_{0}=x^{\prime}|)}\\ &{\qquad=\displaystyle\sum_{\alpha\in A}\pi(x,a)\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{a}(R_{x\rightarrow x^{\prime}}^{a}+\gamma V_{\tau}^{\pi}(x^{\prime}))}\end{array}
+$$  
+
+# 公式(16.10)  
+
+$$
+\left\{\begin{array}{l l}{Q_{T}^{\pi}(x,a)=\sum_{x^{\prime}\in X}P_{x\to x^{\prime}}^{a}\left(\frac{1}{T}R_{x\to x^{\prime}}^{a}+\frac{T-1}{T}V_{T-1}^{\pi}\left(x^{\prime}\right)\right)}\\ {Q_{\gamma}^{\pi}(x,a)=\sum_{x^{\prime}\in X}P_{x\to x^{\prime}}^{a}\left(R_{x\to x^{\prime}}^{a}+\gamma V_{\gamma}^{\pi}\left(x^{\prime}\right)\right)}\end{array}\right.
+$$  
+
+[推导]：参见16.7, 16.8  
+
+# 公式(16.14)  
+
+$$
+V^{*}(x)=\operatorname*{max}_{a\in A}Q^{\pi^{*}}(x,a)
+$$  
+
+[解析]：为了获得最优的状态值函数 $V$ ，这里取了两层最优，分别是采用最优策略 $\pi^{*}$ 和选取使得状态动作值函数 $Q$ 最大的状态 $\operatorname*{max}_{a\in A}$ 。  
+
+# 公式(16.16)  
+
+$$
+V^{\pi}(x)\leq V^{\pi^{\prime}}(x)
+$$  
+
+[推导]：  
+
+$$
+\begin{array}{r l}{V^{\pi}(x)\leq Q^{\pi}(x,\pi^{\prime}(x))}\\ &{\qquad=\displaystyle\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}(R_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}+\gamma V^{\pi}(x^{\prime}))}\\ &{\qquad\leq\displaystyle\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}(R_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}+\gamma Q^{\pi}(x^{\prime},\pi^{\prime}(x^{\prime})))}\\ &{\qquad=\displaystyle\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}(R_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}+\gamma\displaystyle\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x^{\prime})}(R_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x^{\prime})}+\gamma V^{\pi}(x^{\prime})))}\\ &{\qquad=\displaystyle\sum_{x^{\prime}\in X}P_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}(R_{x\rightarrow x^{\prime}}^{\pi^{\prime}(x)}+\gamma V^{\pi^{\prime}}(x^{\prime}))}\\ &{\qquad=V^{\pi^{\prime}(x)}\,}\end{array}
+$$  
+
+其中，使用了动作改变条件  
+
+$$
+Q^{\pi}(x,\pi^{\prime}(x))\geq V^{\pi}(x)
+$$  
+
+以及状态-动作值函数  
+
+$$
+Q^{\pi}(x^{\prime},\pi^{\prime}(x^{\prime}))=\sum_{x^{\prime}\in X}P_{x^{\prime}\to x^{\prime}}^{\pi^{\prime}(x^{\prime})}(R_{x^{\prime}\to x^{\prime}}^{\pi^{\prime}(x^{\prime})}+\gamma V^{\pi}(x^{\prime}))
+$$  
+
+于是，当前状态的最优值函数为  
+
+$$
+V^{*}(x)=V^{\pi^{\prime}}(x)\geq V^{\pi}(x)
+$$  
+
+# 公式(16.31)  
+
+$$
+Q_{t+1}^{\pi}(x,a)=Q_{t}^{\pi}(x,a)+\alpha(R_{x\rightarrow x^{\prime}}^{a}+\gamma Q_{t}^{\pi}(x^{\prime},a^{\prime})-Q_{t}^{\pi}(x,a))
+$$  
+
+[推导]：对比公式16.29  
+
+$$
+Q_{t+1}^{\pi}(x,a)=Q_{t}^{\pi}(x,a)+\frac{1}{t+1}(r_{t+1}-Q_{t}^{\pi}(x,a))
+$$  
+
+以及由  
+
+$$
+{\frac{1}{t+1}}=\alpha
+$$  
+
+可知，若下式成立，则公式16.31 成立  
+
+$$
+r_{t+1}=R_{x\rightarrow x^{\prime}}^{a}+\gamma Q_{t}^{\pi}(x^{\prime},a^{\prime})
+$$  
+
+而 $r_{t+1}$ 表示 $t+1$ 步的奖赏，即状态 $x$ 变化到 $x^{\prime}$ 的奖赏加上前面 $t$ 步奖赏总和 $Q_{t}^{\pi}(x^{\prime},a^{\prime})$ 的 $\gamma$ 折扣，因此这个式子成立。  

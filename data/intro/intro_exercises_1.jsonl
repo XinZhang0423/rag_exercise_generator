@@ -1,0 +1,226 @@
+{"id": 0, "question_type": "freeform", "question": "定义一个基于图灵模型的计算机。", "choices": null}
+{"id": 1, "question_type": "freeform", "question": "定义一个基于冯·诺依曼模型的计算机。", "choices": null}
+{"id": 2, "question_type": "freeform", "question": "在基于图灵模型的计算机中，程序的作用是什么？", "choices": null}
+{"id": 3, "question_type": "freeform", "question": "在基于冯·诺依曼模型的计算机中，程序的作用是什么？", "choices": null}
+{"id": 4, "question_type": "freeform", "question": "计算机中有哪些子系统?", "choices": null}
+{"id": 5, "question_type": "freeform", "question": "计算机中存储器子系统的功能是什么？", "choices": null}
+{"id": 6, "question_type": "freeform", "question": "计算机中ALU子系统的功能是什么？", "choices": null}
+{"id": 7, "question_type": "freeform", "question": "计算机中控制单元子系统的功能是什么？", "choices": null}
+{"id": 8, "question_type": "freeform", "question": "计算机中输人/输出子系统的功能是什么？", "choices": null}
+{"id": 9, "question_type": "freeform", "question": "简述个时代的计算机。", "choices": null}
+{"id": 10, "question_type": "freeform", "question": "定义一个数字系统。", "choices": null}
+{"id": 11, "question_type": "freeform", "question": "辨析位置化和非位置化数字系统。", "choices": null}
+{"id": 12, "question_type": "freeform", "question": "定义位置化数字系统中的底或基数。位置化数字系统中，底与符号的数量有什么关系?", "choices": null}
+{"id": 13, "question_type": "freeform", "question": "简述十进制系统。为什么称作十进制？该系统的底是多少？", "choices": null}
+{"id": 14, "question_type": "freeform", "question": "简述二进制系统。为什么称作二进制？该系统的底是多少？", "choices": null}
+{"id": 15, "question_type": "freeform", "question": "简述八进制系统。为什么称作八进制？该系统的底是多少？", "choices": null}
+{"id": 16, "question_type": "freeform", "question": "简述十六进制系统。为什么称作十六进制？该系统的底是多少？", "choices": null}
+{"id": 17, "question_type": "freeform", "question": "为什么二进制和十六进制互换很容易？", "choices": null}
+{"id": 18, "question_type": "freeform", "question": "十六进制系统中个数码表示二进制系统中的几位？", "choices": null}
+{"id": 19, "question_type": "freeform", "question": "八进制系统中个数码表示二进制系统中的几位？", "choices": null}
+{"id": 20, "question_type": "freeform", "question": "说出种计算机可以处理的数据。。", "choices": null}
+{"id": 21, "question_type": "freeform", "question": "位模式的长度如何与其能表示的符号数量相关？", "choices": null}
+{"id": 22, "question_type": "freeform", "question": "位图方法是如何以位模式来表示一个图像的？", "choices": null}
+{"id": 23, "question_type": "freeform", "question": "矢量图方法优于位图方法的优点是什么？其缺点又是什么？", "choices": null}
+{"id": 24, "question_type": "freeform", "question": "将音频数据转换为位模式需要哪些步骤？", "choices": null}
+{"id": 25, "question_type": "freeform", "question": "比较和对照在无符号、符号加绝对值以及二进制补码格式中的正整数的表示法。", "choices": null}
+{"id": 26, "question_type": "freeform", "question": "比较和对照在无符号、符号加绝对值以及二进制补码格式中的负整数的表示法。", "choices": null}
+{"id": 27, "question_type": "freeform", "question": "比较和对照在符号加绝对值、二进制补码格式和余码格式中的的表示法。", "choices": null}
+{"id": 28, "question_type": "freeform", "question": "讨论在符号加绝对值和二进制补码格式中最左位扮演的角色。", "choices": null}
+{"id": 29, "question_type": "multichoice", "question": "回答以下关于实数浮点表示法的问题：", "choices": "a.为什么需要规范化？"}
+{"id": 31, "question_type": "freeform", "question": "b什么是尾数？", "choices": null}
+{"id": 32, "question_type": "freeform", "question": "c数字在规范化以后，何种信息被计算机存储在内存中？", "choices": null}
+{"id": 33, "question_type": "freeform", "question": "算术运算和逻辑运算有什么区别？", "choices": null}
+{"id": 34, "question_type": "freeform", "question": "在二进制补码格式的整数相加中，最左边一列是怎样进位的？", "choices": null}
+{"id": 35, "question_type": "freeform", "question": "n的位分配单元可以等于吗？为什么？", "choices": null}
+{"id": 36, "question_type": "freeform", "question": "解释“溢出”这个词。", "choices": null}
+{"id": 37, "question_type": "freeform", "question": "在浮点数的加法运算中，怎样调整指数不同的数的表示方法？", "choices": null}
+{"id": 38, "question_type": "freeform", "question": "一元运算和二元运算有何不同？", "choices": null}
+{"id": 39, "question_type": "freeform", "question": "二元逻辑运算有哪些？", "choices": null}
+{"id": 40, "question_type": "freeform", "question": "什么是真值表？", "choices": null}
+{"id": 41, "question_type": "freeform", "question": "NOT运算符的作用是什么？", "choices": null}
+{"id": 42, "question_type": "freeform", "question": "AND运算符的结果何时为真？", "choices": null}
+{"id": 43, "question_type": "freeform", "question": "OR运算符的结果何时为真？", "choices": null}
+{"id": 44, "question_type": "freeform", "question": "XOR运算符的结果何时为真？", "choices": null}
+{"id": 45, "question_type": "freeform", "question": "说出 AND运算符本章讨论的一个重要特性。：", "choices": null}
+{"id": 46, "question_type": "freeform", "question": "说出OR运算符本章讨论的一个重要特性。", "choices": null}
+{"id": 47, "question_type": "freeform", "question": "说出XOR运算符本章讨论的一个重要特性。", "choices": null}
+{"id": 48, "question_type": "freeform", "question": "何种二元运算可以用来置位？掩码应该用什么位模式？", "choices": null}
+{"id": 49, "question_type": "freeform", "question": "何种二元运算可以用来复位？掩码应该用什么位模式？", "choices": null}
+{"id": 50, "question_type": "freeform", "question": "何种二元运算可以用来反转？掩码应该用什么位模式？", "choices": null}
+{"id": 51, "question_type": "freeform", "question": "逻辑和算术移位间的区别是什么？", "choices": null}
+{"id": 52, "question_type": "freeform", "question": "计算机由哪三个子系统组成？", "choices": null}
+{"id": 53, "question_type": "freeform", "question": "CPU田哪儿个部分组成？", "choices": null}
+{"id": 54, "question_type": "freeform", "question": "ALU的功能是什么？", "choices": null}
+{"id": 55, "question_type": "freeform", "question": "控制单元的功能是什么？", "choices": null}
+{"id": 56, "question_type": "freeform", "question": "主存的功能是什么？", "choices": null}
+{"id": 57, "question_type": "freeform", "question": "定义 RAM、ROM、SRAM、DRAM、PROM、EPROM 和 EEPROM", "choices": null}
+{"id": 58, "question_type": "freeform", "question": "高速缓冲存储器的作用是什么？", "choices": null}
+{"id": 59, "question_type": "freeform", "question": "描述一下磁盘的物理组成。", "choices": null}
+{"id": 60, "question_type": "freeform", "question": "磁盘和磁带表面是怎样组织的？", "choices": null}
+{"id": 61, "question_type": "freeform", "question": "比较分析CD-R、CD-RW和DVD。", "choices": null}
+{"id": 62, "question_type": "freeform", "question": "比较分析SCSI、火线和USB控制器。", "choices": null}
+{"id": 63, "question_type": "freeform", "question": "比较分析两种/设备寻址的方法。", "choices": null}
+{"id": 64, "question_type": "freeform", "question": "比较分析三种同步CPU和I/O设备的方法。", "choices": null}
+{"id": 65, "question_type": "freeform", "question": "比较分析CISC体系结构和RISC体系结构。", "choices": null}
+{"id": 66, "question_type": "freeform", "question": "描述流水线及其作用。", "choices": null}
+{"id": 67, "question_type": "freeform", "question": "描述并行处理及其作用。", "choices": null}
+{"id": 68, "question_type": "freeform", "question": "本章讨论的需要遵循达成双向通信的协议分层首要原则是什么？", "choices": null}
+{"id": 69, "question_type": "freeform", "question": "在TCP/IP协议族中，当我们考虑应用层的逻辑连接时，发送方和接收方网站的相同对象是什么?", "choices": null}
+{"id": 70, "question_type": "multichoice", "question": "使用TCP/IP协议族的一台主机和另一台主机通信时，在以下各层中发送或接收的数据单元分别是什么？", "choices": "a.应用层 b.网络层 c.数据链路层"}
+{"id": 72, "question_type": "multichoice", "question": "下列哪个数据单元以帧来封装？", "choices": "a.用户数据报 b.数据报 c.段"}
+{"id": 74, "question_type": "multichoice", "question": "下列哪个数据单元从用户数据报解封？", "choices": "a.数据报 b.段 c.消息"}
+{"id": 76, "question_type": "multichoice", "question": "下列哪个数据单元有应用层的消息加上第层的头?", "choices": "a.帧 b.用户数据报 c.位"}
+{"id": 78, "question_type": "multichoice", "question": "在以下各层中各使用何种地址（标识符）类型？", "choices": "a.应用层 b.网络层 c.数据链路层"}
+{"id": 80, "question_type": "freeform", "question": "在周末，Alice经常要通过她的笔记本电脑访问保存在办公室台式机上的文件。上周她在办公室台式机上安装了一个FTP服务器程序的副本，在家里的笔记本电脑上安装了FTP客户机程序的副本。她很失望周末无法访问到她的文件。这可能出现什么差错了？", "choices": null}
+{"id": 81, "question_type": "freeform", "question": "大多数安装在个人计算机上的操作系统带有几个客户端进程，但通常没有服务器进程，请解释原因。新的应用程序将会使用客户端机－服务器模式设计。如果仅有少量消息需要在客户机和服务器之间交换，且不用担心消息丢失或损坏，你推荐哪种传输层协议呢？", "choices": null}
+{"id": 82, "question_type": "freeform", "question": "为什么网络层的职责是路由？换言之，为什么路由不能在传输层或数据链路层实现?", "choices": null}
+{"id": 83, "question_type": "freeform", "question": "请区分网络层的通信和数据链路层的通信。", "choices": null}
+{"id": 84, "question_type": "freeform", "question": "什么是拨号调制解调器技术？列出本章讨论过的通用调制解调器标准，给出它们的数据速率。", "choices": null}
+{"id": 85, "question_type": "freeform", "question": "为什么蓝牙通常被称为无线个人域网（WPAN），而不是无线局域网？", "choices": null}
+{"id": 86, "question_type": "freeform", "question": "当频率给定时，如何求正弦波的周期？", "choices": null}
+{"id": 87, "question_type": "multichoice", "question": "以下哪个物理量用干度量信号的值？", "choices": "a.振幅 b.频率 c.相位"}
+{"id": 89, "question_type": "freeform", "question": "定义模拟传输。", "choices": null}
+{"id": 90, "question_type": "freeform", "question": "在TCP/IP协议族中，传输介质在什么位置？", "choices": null}
+{"id": 91, "question_type": "freeform", "question": "指出传输介质两大类别的名称。", "choices": null}
+{"id": 92, "question_type": "freeform", "question": "导向介质的三大类别是什么？", "choices": null}
+{"id": 93, "question_type": "freeform", "question": "应用程序和操作系统的不同点是什么？", "choices": null}
+{"id": 94, "question_type": "freeform", "question": "操作系统的组成是什么？", "choices": null}
+{"id": 95, "question_type": "freeform", "question": "单道程序和多道程序之间有何区别？", "choices": null}
+{"id": 96, "question_type": "freeform", "question": "分页调度与分区调度有什么差别？", "choices": null}
+{"id": 97, "question_type": "freeform", "question": "为什么请求分页调度比常规页面调度更有效率？", "choices": null}
+{"id": 98, "question_type": "freeform", "question": "程序和作业之间有何联系？作业和进程之间有何联系？程序和进程之间的联系又如何?", "choices": null}
+{"id": 99, "question_type": "freeform", "question": "程序驻留在哪里？作业驻留在哪里？进程驻留在哪里?", "choices": null}
+{"id": 100, "question_type": "freeform", "question": "作业调度器和进程调度器有什么区别?", "choices": null}
+{"id": 101, "question_type": "freeform", "question": "为什么操作系统需要队列？", "choices": null}
+{"id": 102, "question_type": "freeform", "question": "死锁和饿死有何区别？", "choices": null}
+{"id": 103, "question_type": "freeform", "question": "算法的正式定义是什么？", "choices": null}
+{"id": 104, "question_type": "freeform", "question": "给出用于结构化程序设计中的三种结构的定义。", "choices": null}
+{"id": 105, "question_type": "freeform", "question": "UML图与算法有何关系？", "choices": null}
+{"id": 106, "question_type": "freeform", "question": "伪代码与算法有何关系？", "choices": null}
+{"id": 107, "question_type": "freeform", "question": "排序算法的用途是什么？", "choices": null}
+{"id": 108, "question_type": "freeform", "question": "本章有哪三种基本排序算法？", "choices": null}
+{"id": 109, "question_type": "freeform", "question": "查找算法的用途是什么？", "choices": null}
+{"id": 110, "question_type": "freeform", "question": "本章讨论的基本查找算法主要有哪两种？", "choices": null}
+{"id": 111, "question_type": "freeform", "question": "给出迭代过程的定义和一个例子。", "choices": null}
+{"id": 112, "question_type": "freeform", "question": "给出递归过程的定义和一个例子。", "choices": null}
+{"id": 113, "question_type": "freeform", "question": "汇编语言与机器语言有哪些区别？", "choices": null}
+{"id": 114, "question_type": "freeform", "question": "汇编语言与高级语言有哪些区别？", "choices": null}
+{"id": 115, "question_type": "freeform", "question": "哪种计算机语言与计算机直接相关，并被计算机理解？", "choices": null}
+{"id": 116, "question_type": "freeform", "question": "区分编译和解释。", "choices": null}
+{"id": 117, "question_type": "freeform", "question": "列出编程语言翻译中的个步骤。", "choices": null}
+{"id": 118, "question_type": "freeform", "question": "列出种常见的计算机语言模式。", "choices": null}
+{"id": 119, "question_type": "freeform", "question": "比较和对照过程式模式与面向对象模式。", "choices": null}
+{"id": 120, "question_type": "freeform", "question": "定义面向对象语言中的类和方法，这两个概念间的联系是什么？它们与对象概念间的联系又是什么?", "choices": null}
+{"id": 121, "question_type": "freeform", "question": "定义函数式模式。", "choices": null}
+{"id": 122, "question_type": "freeform", "question": "定义说明式模式。", "choices": null}
+{"id": 123, "question_type": "freeform", "question": "定义“软件生命周期”。", "choices": null}
+{"id": 124, "question_type": "freeform", "question": "区分瀑布模型和增量开发模型。", "choices": null}
+{"id": 125, "question_type": "freeform", "question": "软件开发的个阶段是什么？", "choices": null}
+{"id": 126, "question_type": "freeform", "question": "说明分析阶段的目标，描述此阶段中的两种趋势。", "choices": null}
+{"id": 127, "question_type": "freeform", "question": "说明设计阶段的目标，描述此阶段中的两种趋势。", "choices": null}
+{"id": 128, "question_type": "freeform", "question": "描述模块化，说出与模块化有关的两个问题。", "choices": null}
+{"id": 129, "question_type": "freeform", "question": "描述耦合和内聚之间的区别。", "choices": null}
+{"id": 130, "question_type": "freeform", "question": "说明实现阶段的目标，描述此阶段中的质量问题。", "choices": null}
+{"id": 131, "question_type": "freeform", "question": "说明测试阶段的目标，列出两类测试。", "choices": null}
+{"id": 132, "question_type": "freeform", "question": "描述白盒测试和黑盒测试之间的区别。", "choices": null}
+{"id": 133, "question_type": "freeform", "question": "给出数据结构的三种类型名称。", "choices": null}
+{"id": 134, "question_type": "freeform", "question": "数组元素和记录元素的区别是什么？", "choices": null}
+{"id": 135, "question_type": "freeform", "question": "数组元素和链表元素的区别是什么？", "choices": null}
+{"id": 136, "question_type": "freeform", "question": "为什么用索引而不是下标来标注数组元素？", "choices": null}
+{"id": 137, "question_type": "freeform", "question": "数组元素在内存中如何存储？", "choices": null}
+{"id": 138, "question_type": "freeform", "question": "记录中域的定义是什么？", "choices": null}
+{"id": 139, "question_type": "freeform", "question": "在链表中节点的域是什么？", "choices": null}
+{"id": 140, "question_type": "freeform", "question": "链表中指针的功能是什么？", "choices": null}
+{"id": 141, "question_type": "freeform", "question": "如何指向链表中的第一个节点？", "choices": null}
+{"id": 142, "question_type": "freeform", "question": "链表中最后一个节点的指针指向什么？", "choices": null}
+{"id": 143, "question_type": "freeform", "question": "什么是抽象数据类型？在抽象数据类型中，什么是已知的？什么是隐藏的？", "choices": null}
+{"id": 144, "question_type": "freeform", "question": "什么是栈？本章定义的种栈的基本操作是什么？", "choices": null}
+{"id": 145, "question_type": "freeform", "question": "什么是队列？本章定义的种队列的基本操作是什么？", "choices": null}
+{"id": 146, "question_type": "freeform", "question": "什么是广义线性表？本章定义的种广义线性表的基本操作是什么？", "choices": null}
+{"id": 147, "question_type": "freeform", "question": "定义一棵树，区分树和二叉树，区分二叉树和二叉搜索树。", "choices": null}
+{"id": 148, "question_type": "freeform", "question": "二叉树的深度优先遍历和广度优先遍历有何不同？", "choices": null}
+{"id": 149, "question_type": "freeform", "question": "什么是图？有向图和无向图的区别是什么？", "choices": null}
+{"id": 150, "question_type": "freeform", "question": "列出栈和队列的一些应用。", "choices": null}
+{"id": 151, "question_type": "freeform", "question": "列出广义线性表的一些应用。", "choices": null}
+{"id": 152, "question_type": "freeform", "question": "列出二叉树和二叉搜索树的一些应用。", "choices": null}
+{"id": 153, "question_type": "freeform", "question": "通常文件有哪两种存取方式？", "choices": null}
+{"id": 154, "question_type": "freeform", "question": "新主文件和旧主文件之间是什么关系？", "choices": null}
+{"id": 155, "question_type": "freeform", "question": "在顺序文件更新时，事务文件的作用是什么？", "choices": null}
+{"id": 156, "question_type": "freeform", "question": "描述随机文件存取的地址函数。", "choices": null}
+{"id": 157, "question_type": "freeform", "question": "在索引文件中，索引是如何关联数据文件的？", "choices": null}
+{"id": 158, "question_type": "freeform", "question": "在文件直接散列法中键和地址之间是什么关系？", "choices": null}
+{"id": 159, "question_type": "freeform", "question": "在文件除余散列法中键和地址之间是什么关系？", "choices": null}
+{"id": 160, "question_type": "freeform", "question": "在文件数字析取散列法中键和地址之间是什么关系？", "choices": null}
+{"id": 161, "question_type": "freeform", "question": "给出三种解决冲突的方法。", "choices": null}
+{"id": 162, "question_type": "freeform", "question": "文本文件和二进制文件之间的区别是什么？", "choices": null}
+{"id": 163, "question_type": "freeform", "question": "数据库管理系统的个必要的组成部分是什么?", "choices": null}
+{"id": 164, "question_type": "freeform", "question": "数据库有哪三种数据库模型？哪种是目前流行的?", "choices": null}
+{"id": 165, "question_type": "freeform", "question": "什么叫关系数据库中的关系？", "choices": null}
+{"id": 166, "question_type": "freeform", "question": "在一个关系中，什么称为属性？什么称为元组？", "choices": null}
+{"id": 167, "question_type": "freeform", "question": "列出关系数据库中的一些一元操作。", "choices": null}
+{"id": 168, "question_type": "freeform", "question": "列出关系数据库中的一些二元操作。", "choices": null}
+{"id": 169, "question_type": "freeform", "question": "什么是SQL?什么是XML？哪一个是关系数据库的查询语言？哪一个是面向对象数据库的查询", "choices": null}
+{"id": 170, "question_type": "freeform", "question": "语言？", "choices": null}
+{"id": 171, "question_type": "freeform", "question": "数据压缩方法有哪两种类别?", "choices": null}
+{"id": 172, "question_type": "freeform", "question": "无损压缩和有损压缩有什么不同？", "choices": null}
+{"id": 173, "question_type": "freeform", "question": "什么是游程长度编码？", "choices": null}
+{"id": 174, "question_type": "freeform", "question": "LZ编码方法是怎样减少需要传输的位的数量的？", "choices": null}
+{"id": 175, "question_type": "freeform", "question": "什么是赫夫曼编码？", "choices": null}
+{"id": 176, "question_type": "freeform", "question": "字典在LZ编码中担当什么角色？", "choices": null}
+{"id": 177, "question_type": "freeform", "question": "相对于赫夫曼编码，LZ编码的优点是什么？", "choices": null}
+{"id": 178, "question_type": "freeform", "question": "有损压缩的三种方法是什么？", "choices": null}
+{"id": 179, "question_type": "freeform", "question": "什么时候用JPEG格式，什么时候用MPEG格式？", "choices": null}
+{"id": 180, "question_type": "freeform", "question": "JPEG和MPEG有什么关系？", "choices": null}
+{"id": 181, "question_type": "freeform", "question": "在JIPEG格式中分块有什么作用？", "choices": null}
+{"id": 182, "question_type": "freeform", "question": "在JPEG格式中为什么需要离散余弦变换？", "choices": null}
+{"id": 183, "question_type": "freeform", "question": "量化对于数据压缩有何贡献?", "choices": null}
+{"id": 184, "question_type": "freeform", "question": "在MPEG压缩中什么是帧？", "choices": null}
+{"id": 185, "question_type": "freeform", "question": "相对于时间压缩而言空间压缩是什么？", "choices": null}
+{"id": 186, "question_type": "freeform", "question": "讨论MPEG格式中三种不同类型的帧。", "choices": null}
+{"id": 187, "question_type": "multichoice", "question": "以下哪种攻击对机密性有威胁？", "choices": "a.嗅探 b.伪装 c.抵赖"}
+{"id": 189, "question_type": "multichoice", "question": "以下哪种攻击对完整性有威胁？", "choices": "a.篡改 b.重复 c.拒绝服务"}
+{"id": 191, "question_type": "multichoice", "question": "以下哪种攻击对可用性有威胁？", "choices": "a.抵赖 b.拒绝服务 c.篡改"}
+{"id": 193, "question_type": "multichoice", "question": "以下哪个词汇意思是“秘密书写”，哪个是“掩饰书写”？", "choices": "a.密码术 b.隐写术"}
+{"id": 195, "question_type": "freeform", "question": "当密封的信件从Alice发给Bob时，这是一个使用密码术或隐写术来保障机密性的例子吗？", "choices": null}
+{"id": 196, "question_type": "freeform", "question": "从 Alice 发给Bob 的信件使用只有这两人理解的语言写成，这是一个使用密码术或隐写术的例子吗？", "choices": null}
+{"id": 197, "question_type": "freeform", "question": "Alice 找到一个秘密写给Bob 的方法。每次她都用一个新的文本，比如报纸上的一篇文章，但会在单词之间插人或个空格，单空格表示二进制，双空格表示二进制。Bob 抽取这些二进制数码,并用ASCII码译解。这是一个使用密码术或隐写术的例子吗？请说明。", "choices": null}
+{"id": 198, "question_type": "freeform", "question": "Alice 和 Bob 互相交换机密信息。他们共享一个非常大的数字作为双向的加密和解密密钥。这是一个使用对称密钥或非对称密钥密码术的例子吗？请说明。", "choices": null}
+{"id": 199, "question_type": "freeform", "question": "Alice加密信息发送给Bob以及解密收到Bob的信息都使用了同样的密钥。这是一个使用对称密钥或非对称密钥密码术的例子吗？请说明。", "choices": null}
+{"id": 200, "question_type": "freeform", "question": "区分替换密码和置换密码。", "choices": null}
+{"id": 201, "question_type": "freeform", "question": "在密码中，所有明文中的 A变化成密文中的D并且所有明文中的D变化成密文中的 $\\mathbf{H}$ 。这是一个单字母或多字母的替换密码吗？请说明。", "choices": null}
+{"id": 202, "question_type": "freeform", "question": "单字母或多字母密码，哪个更容易破解？", "choices": null}
+{"id": 203, "question_type": "freeform", "question": "假设 Alice 和 Bob 使用模  的加法密码算法。人侵者 Eve 要通过尝试所有可能的密钥来破解（蛮力攻击），她要平均尝试多少个密钥？", "choices": null}
+{"id": 204, "question_type": "multichoice", "question": "假设我们有一个字符的纯文本。按照下列密码，各需要多少密钥来加密或解密这些信息？", "choices": "a.加法密码 b.单字母密码 c.自动密钥密码"}
+{"id": 206, "question_type": "multichoice", "question": "根据流和密码块的定义，找出下列密码哪个是流密码？", "choices": "a.加法密码 b.单字母密码 c.自动密钥密码"}
+{"id": 208, "question_type": "freeform", "question": "如果一次一密乱码（如图-所示）是最简单和最安全的密码，为什么不一直使用?", "choices": null}
+{"id": 209, "question_type": "freeform", "question": "为什么你认为非对称密钥密码术只用于少量信息？", "choices": null}
+{"id": 210, "question_type": "multichoice", "question": "在一个非对称密钥密码中，哪个密钥用于加密，哪个密钥用于解密？", "choices": "a.公钥 b.私钥"}
+{"id": 212, "question_type": "freeform", "question": "在RSA密码中，为什么Bob不能选择作为公钥e?", "choices": null}
+{"id": 213, "question_type": "freeform", "question": "如图-所示，加人散列函数中的密钥（MAC）扮演了什么角色？请说明。", "choices": null}
+{"id": 214, "question_type": "freeform", "question": "区别信息验证和实体验证。", "choices": null}
+{"id": 215, "question_type": "multichoice", "question": "Alice为她发送给Bob的信息签名以证明她是该信息的发送者。Alice需要使用以下哪个密钥？", "choices": "a.Alice 的公钥 b.Alice 的私钥"}
+{"id": 217, "question_type": "multichoice", "question": "Alice 需要给 人的组群发信息。如果 Alice 需要使用信息验证，你推荐以下哪种方式：", "choices": "a. MAC b.数字签名"}
+{"id": 219, "question_type": "multichoice", "question": "数字签名不支持以下哪种服务？", "choices": "a.信息验证 b.机密性 c.不可抵赖性"}
+{"id": 221, "question_type": "freeform", "question": "在简单语言中，有三种基本语句是其他语句的基础，说出它们的名字，并描述它们的功能。", "choices": null}
+{"id": 222, "question_type": "freeform", "question": "说明如何用三种基本语句把一个变量的值赋给另一个变量。", "choices": null}
+{"id": 223, "question_type": "freeform", "question": "图灵机和简单语言间有何关系？", "choices": null}
+{"id": 224, "question_type": "freeform", "question": "说明图灵机的组成和每一部件的功能。", "choices": null}
+{"id": 225, "question_type": "freeform", "question": "图灵机磁带是如何划定数据界限的？", "choices": null}
+{"id": 226, "question_type": "freeform", "question": "当读/写头完成读或写一个符号后，下一步是什么？", "choices": null}
+{"id": 227, "question_type": "freeform", "question": "状态转移图与图灵机控制器有何联系？", "choices": null}
+{"id": 228, "question_type": "freeform", "question": "转移图与转移表有何联系？它们有相同的信息吗？谁包含的信息要多些？", "choices": null}
+{"id": 229, "question_type": "freeform", "question": "什么是歌德尔数？怎样用歌德尔数证明停机问题是不可解决的？", "choices": null}
+{"id": 230, "question_type": "freeform", "question": "比较并区分多项式可解问题和非多项式可解问题的复杂度。", "choices": null}
+{"id": 231, "question_type": "freeform", "question": "描述图灵测试。你认为该测试能用来准确地定义一个智能系统吗？", "choices": null}
+{"id": 232, "question_type": "freeform", "question": "定义一个智能系统，列出两大类智能体。", "choices": null}
+{"id": 233, "question_type": "freeform", "question": "比较人工智能中使用的语言LISP和PROLOG。", "choices": null}
+{"id": 234, "question_type": "freeform", "question": "描述知识表示的需要，列出本章所讨论的种不同的表示方法。", "choices": null}
+{"id": 235, "question_type": "freeform", "question": "比较谓词逻辑和命题逻辑。", "choices": null}
+{"id": 236, "question_type": "freeform", "question": "比较框架和语义网。", "choices": null}
+{"id": 237, "question_type": "freeform", "question": "定义一个基于规则的系统，并与语义网进行比较。", "choices": null}
+{"id": 238, "question_type": "freeform", "question": "比较专家系统和平凡系统。", "choices": null}
+{"id": 239, "question_type": "freeform", "question": "列出图像处理的步骤。", "choices": null}
+{"id": 240, "question_type": "freeform", "question": "列出语言处理的步骤。", "choices": null}
+{"id": 241, "question_type": "freeform", "question": "定义神经网络，它是如何模仿人类的学习过程的？", "choices": null}
+{"id": 242, "question_type": "freeform", "question": "定义感知器。", "choices": null}

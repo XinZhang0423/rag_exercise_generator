@@ -1,0 +1,322 @@
+{"question_type": "freeform", "question": "写出下列随机试验的样本空间S：记录一个班一次数学考试的平均分数（设以百分制记分）。"}
+{"question_type": "freeform", "question": "写出下列随机试验的样本空间S：生产产品直到有10件正品为止，记录生产产品的总件数。"}
+{"question_type": "freeform", "question": "写出下列随机试验的样本空间S：对某工厂出厂的产品进行检查，合格的记上“正品”，不合格的记上“次品”，如连续查出了2件次品就停止检查，或检查了4件产品就停止检查，记录检查的结果。"}
+{"question_type": "freeform", "question": "写出下列随机试验的样本空间S：在单位圆内任意取一点，记录它的坐标。"}
+{"question_type": "freeform", "question": "设 $A,B,C$ 为三个事件，用A，B，C的运算关系表示下列各事件：A发生： $B$ 与 $C$ 不发生。"}
+{"question_type": "freeform", "question": "设 $A,B,C$ 为三个事件，且 $P(A)=P(B)=P(C)=1/4,,P(AB)=P(BC)=0,,$ $P(AC)=1/8$ ，求 $A,B,C$ 至少有一个发生的概率。"}
+{"question_type": "freeform", "question": "已知 $P(A)=1/2,P(B)=1/3,P(C)=1/5,P(AB)=1/10,P(AC)=1/15,P(BC)=1/3,P(AB)=1/3,P(C)=1/3,P(C)=1/3.$ $1/20,,P(ABC)=1/30$ 求 $Abigcup B,overrightarrow{A}overrightarrow{B}Abigcup Bbigcup C,overrightarrow{A}overrightarrow{B}overrightarrow{C}overrightarrow{A}overrightarrow{B}C,overrightarrow{A}overrightarrow{B}bigcup C$ 的概率。"}
+{"question_type": "freeform", "question": "设 $A,B$ 是两个事件。已知 $Aoverline{B}=overline{A}B$ ，验证 $A=B$。"}
+{"question_type": "freeform", "question": "设 $A,B$ 是两个事件。验证事件A和事件B恰有一个发生的概率为P（A)+P（B)一2P（AB)。"}
+{"question_type": "freeform", "question": "在房间里有10个人，分别佩戴从1号到10号的纪念章，任选3人记录其纪念章的号码。"}
+{"question_type": "freeform", "question": "某油漆公司发出17桶油漆，其中白漆10桶、黑漆4桶、红漆3桶，在搬运中所有标签脱落，交货人随意将这些油漆发给顾客.问-一个订货为4桶白漆、3桶黑漆和2桶红漆的顾客，能按所订颜色如数得到订货的概率是多少？"}
+{"question_type": "freeform", "question": "在1500件产品中有400件次品、1100件正品.任取200件.求恰有90件次品的概率。"}
+{"question_type": "freeform", "question": "在1500件产品中有400件次品、1100件正品.任取200件.求至少有2件次品的概率。"}
+{"question_type": "freeform", "question": "从5双不同的鞋子中任取4只，问这4只鞋子中至少有两只配成一双的概率是多少？"}
+{"question_type": "freeform", "question": "在11张卡片上分别写上probability这11个字母，从中任意连抽7张，求其排列结果为ability的概率。"}
+{"question_type": "freeform", "question": "将3只球随机地放人4个杯子中去，求杯子中球的最大个数分别为1，2，3的概率。"}
+{"question_type": "freeform", "question": "50只铆钉随机地取来用在10个部件上，其中有3只铆钉强度太弱.每个部件用3只铆钉.若将3只强度太弱的铆钉都装在一个部件上，则这个部件强度就太弱.问发生一个部件强度太弱的概率是多少？"}
+{"question_type": "freeform", "question": "在其中任选4名学生，求一、二、三、四年级的学生各一名的概率。"}
+{"question_type": "freeform", "question": "在其中任选5名学生，求一、二、三、四年级的学生均包含在内的概率。"}
+{"question_type": "freeform", "question": "已知 $P(overline{A})=0.3,P(B)=0.4,P(Arightarrow B)$ 求条件概率 $P(B,|,A,cup,{overline{B}})$。"}
+{"question_type": "freeform", "question": "已知 $P(A)=1/4,P(B|A)=1/3,P(A|B)=1/2$ ，求 $P(Acup B)$。"}
+{"question_type": "freeform", "question": "掷两颗骰子，已知两颗骰子点数之和为7，求其中有一颗为1点的概率（用两种方法）。"}
+{"question_type": "freeform", "question": "据以往资料表明，某一3口之家，患某种传染病的概率有以下规律：$P{$ 孩子得病 $}=0.6,P{$ 母亲得病孩子得病 $)=0.5$ $P{$ 父亲得病母亲及孩子得病 $}=0.4$ 求母亲及孩子得病但父亲未得病的概率。"}
+{"question_type": "freeform", "question": "已知在10件产品中有2件次品，在其中取两次，每次任取一件，作不放回抽样.求下列事件的概率：两件都是正品。"}
+{"question_type": "freeform", "question": "已知在10件产品中有2件次品，在其中取两次，每次任取一件，作不放回抽样.求下列事件的概率：两件都是次品。"}
+{"question_type": "freeform", "question": "已知在10件产品中有2件次品，在其中取两次，每次任取一件，作不放回抽样.求下列事件的概率：一件是正品，一件是次品。"}
+{"question_type": "freeform", "question": "某人忘记了电话号码的最后一个数字，因而他随意地拨号.求他拨号不超过三次而接通所需电话的概率。若已知最后一个数字是奇数，那么此概率是多少？"}
+{"question_type": "freeform", "question": "设甲袋中装有 $pi$ 只白球、 $m$ 只红球：乙袋中装有 $N$ 只白球、 $M$ 只红球.今从甲袋中任意取一只球放人乙袋中，再从乙袋中任意取一只球.问取到白球的概率是多少？"}
+{"question_type": "freeform", "question": "第一只盒子装有5只红球，4只白球；第二只盒子装有4只红球，5只白球.先从第一盒中任取2只球放人第二盒中去，然后从第二盒中任取一只球.求取到白球的概率。"}
+{"question_type": "freeform", "question": "某种产品的商标为“MAXAM”，其中有2个字母脱落，有人捡起随意放回，求放回后仍为“MAXAM”的概率。"}
+{"question_type": "freeform", "question": "已知男子有 $5%$ 是色盲患者，女子有 $0.25%$ 是色盲患者.今从男女人数相等的人群中随机地挑选一人，恰好是色盲者，问此人是男性的概率是多少？"}
+{"question_type": "freeform", "question": "一学生接连参加同一课程的两次考试.第一次及格的概率为 $phi$ ，若第一次及格则第二次及格的概率也为 $phi$ ；若第一次不及格则第二次及格的概率为 $scriptstyle{p/2}$。"}
+{"question_type": "freeform", "question": "将两信息分别编码为 $A$ 和 $B$ 传送出去，接收站收到时， $A$ 被误收作 $B$ 的概率为0.02，而 $boldsymbol{B}$ 被误收作A的概率为0.01.信息A与信息 $B$ 传送的频繁程度为 $2:1.$ 若接收站收到的信息是A，问原发信息是 $A$ 的概率是多少？！"}
+{"question_type": "freeform", "question": "有两箱同种类的零件，第一箱装50只，其中10只一等品；第二箱装30只，其中18只一等品.今从两箱中任挑出一箱，然后从该箱中取零件两次，每次任取一只，作不放回抽样.求第一次取到的零件是一等品的概率。"}
+{"question_type": "freeform", "question": "在其中任选4名学生，求一、二、三、四年级的学生各一名的概率。"}
+{"question_type": "freeform", "question": "病树的主人外出，委托邻居浇水，设已知如果不浇水，树死去的概率为0.8.若浇水则树死去的概率为0.15.有0.9的把握确定邻居会记得浇水。"}
+{"question_type": "freeform", "question": "设本题涉及的事件均有意义.设 $A,B$ 都是事件.已知 $P(A)!gg!0$ 证明 $P(A B|A){geq}P(A B|Abigcup B)$。"}
+{"question_type": "freeform", "question": "设事件A，B，C相互独立，证明（i）C与AB相互独立.（ii）C与AUB相互独立。"}
+{"question_type": "freeform", "question": "有两种花籽，发芽率分别为0.8，0.9，从中各取一颗，设各花籽是否发芽相互独立.求这两颗花籽都能发芽的概率。"}
+{"question_type": "freeform", "question": "根据报道美国人血型的分布近似地为：A型为37%，O型为44%，B型为13%，AB型为6%.夫妻拥有的血型是相互独立的。随机地取一对夫妇，求妻为B型夫为A型的概率。随机地取一对夫妇，求其中一人为A型，另一人为B型的概率。随机地取一对夫妇，求其中至少有一人是A型的概率。"}
+{"question_type": "freeform", "question": "设事件A，B的概率均大于零，说明以下的叙述（1）必然对.（2）必然错.（3）可能对.并说明理由。"}
+{"question_type": "freeform", "question": "设事件 $A,B$ 的例子，使得(i)P(A|B)<P(A)，(ii) P(A|B)=P(A)，(iii) P(A|B)>P(A)。"}
+{"question_type": "freeform", "question": "设事件A的概率P（A）=0，证明对于任意另一事件B，有A，B相互独立。"}
+{"question_type": "freeform", "question": "证明事件 $A,B$ 相互独立的充要条件是 $P(A,|,B)=P(A,|,bar{B})$。"}
+{"question_type": "freeform", "question": "设根据以往记录的数据分析，某船只运输的某种物品损坏的情况共有三种：损坏 $tilde{Delta}tilde{gamma}_{tilde{0}}^{prime}$ （这一事件记为A），损坏10%（事件A2），损坏90%（事件As），且知P（A）=0.8，P（A2）=0.15，P(A_{3})=0.05. 现在从已被运输的物品中随机地取3件，发现这3件都是好的（这一事件记为 $E_{i}$ .试求 $P(A_{1}mid B),,P(A_{bar{z}}mid B),,P(A_{3}mid B)$。"}
+{"question_type": "freeform", "question": "将A、B、C三个字母之一输人信道，输出为原字母的概率为 $alpha$ 而输出为其他一字母的概率都是 $(1-alpha)/2$，今将字母串AAAA，BBBB，CCCC之一输人信道，输人AAAA，BBBB，CCCC的概率分别为 $phi_{1},,phi_{2},,phi_{3},(phi_{1}+phi_{2}+phi_{3}=1)$ ，已知输出为ABCA，问输人的是AAAA的概率是多少？"}
+{"question_type": "freeform","question": "考虑为期一年的一张保险单，若投保人在投保后一年内因意外死亡，则公司赔付20万元，若投保人因其他原因死亡，则公司赔付5万元，若投保人在投保期末生存，则公司无需付给任何费用.若投保人在一年内因意外死亡的概率为0.0002，因其他原因死亡的概率为0.0010，求公司赔付金额的分布律。"}
+{"question_type": "freeform","question": "（1）一袋中装有5只球，编号为1，2，3，4，5.在袋中同时取3只，以X表示取出的3只球中的最大号码，写出随机变量 $X$ 的分布律。"}
+{"question_type": "freeform","question": "（2）将一颗般子抛掷两次，以X表示两次中得到的小的点数，试求X的分布律，"}
+{"question_type": "freeform","question": "设在15只同类型的零件中有2只是次品，在其中取3次，每次任取1只，作不放回抽样.以 $X^{prime}$ 表示取出的次品的只数，（1）求 $X$ 的分布律。（2）画出分布律的图形"}
+{"question_type": "freeform","question": "进行重复独立试验，设每次试验的成功概率为p，失败概率为9=1一P（0<p<1).（1）将试验进行到出现一次成功为止，以X表示所需的试验次数，求X的分布律.（此时称 $X$ 服从以 $hat{P}$ 为参数的几何分布.）"}
+{"question_type": "freeform","question": "进行重复独立试验，设每次试验的成功概率为p，失败概率为9=1一P（0<p<1).（2）将试验进行到出现r次成功为止，以Y表示所需的试验次数，求Y的分布律.（此时称 $Y^{prime}$ 服从以 $r^{}vec{P}$ 为参数的巴斯卡分布或负二项分布.）"}
+{"question_type": "freeform","question": "进行重复独立试验，设每次试验的成功概率为p，失败概率为9=1一P（0<p<1).（3）一篮球运动员的投篮命中率为45%.以X表示他首次投中时累计已投篮的次数，写出 $X$ 的分布律，并计算 $x$ 取偶数的概率。"}
+{"question_type": "freeform","question": "一房间有3扇同样大小的窗子，其中只有一扇是打开的.有一只鸟自开着的窗子飞人了房间，它只能从开着的窗子飞出去.鸟在房子里飞来飞去，试图飞出房间.假定鸟是没有记忆的，它飞向各扇窗子是随机的，（1）以 $X_{epsilon}$ 表示鸟为了飞出房间试飞的次数，求 $X$ 的分布律，"}
+{"question_type": "freeform","question": "一房间有3扇同样大小的窗子，其中只有一扇是打开的.有一只鸟自开着的窗子飞人了房间，它只能从开着的窗子飞出去.鸟在房子里飞来飞去，试图飞出房间.假定鸟是没有记忆的，它飞向各扇窗子是随机的，（2）户主声称，他养的一只鸟是有记忆的，它飞向任一窗子的尝试不多于一次.以 $Y^{r}$ 表示这只聪明的鸟为了飞出房间试飞的次数.如户主所说是确实的，试求 $Y$ 的分布律。"}
+{"question_type": "freeform","question": "一房间有3扇同样大小的窗子，其中只有一扇是打开的.有一只鸟自开着的窗子飞人了房间，它只能从开着的窗子飞出去.鸟在房子里飞来飞去，试图飞出房间.假定鸟是没有记忆的，它飞向各扇窗子是随机的，（3）求试飞次数 $X$ 小于 $Y$ 的概率和试飞次数 $Y^{prime}$ 小于 $X^{r}$ 的概率"}
+{"question_type": "freeform","question": "一大楼装有5台同类型的供水设备.设各台设备是否被使用相互独立.调查表明在任一时刻 $t$ 每台设备被使用的概率为0.1，问在同一时刻，（1）恰有2台设备被使用的概率是多少？"}
+{"question_type": "freeform","question": "一大楼装有5台同类型的供水设备.设各台设备是否被使用相互独立.调查表明在任一时刻 $t$ 每台设备被使用的概率为0.1，问在同一时刻，（2）至少有3台设备被使用的概率是多少？"}
+{"question_type": "freeform","question": "一大楼装有5台同类型的供水设备.设各台设备是否被使用相互独立.调查表明在任一时刻 $t$ 每台设备被使用的概率为0.1，问在同一时刻，（3）至多有3台设备被使用的概率是多少？"}
+{"question_type": "freeform","question": "一大楼装有5台同类型的供水设备.设各台设备是否被使用相互独立.调查表明在任一时刻 $t$ 每台设备被使用的概率为0.1，问在同一时刻，（4）至少有1台设备被使用的概率是多少？"}
+{"question_type": "freeform","question": "设事件 $A$ 在每次试验发生的概率为0.3.A发生不少于3次时，指示灯发出信号.（1）进行了5次重复独立试验，求指示灯发出信号的概率."}
+{"question_type": "freeform","question": "设事件 $A$ 在每次试验发生的概率为0.3.A发生不少于3次时，指示灯发出信号.（2）进行了7次重复独立试验，求指示灯发出信号的概率，"}
+{"question_type": "freeform","question": "甲、乙两人投篮，投中的概率分别为0.6，0.7.今各投3次.求（1）两人投中次数相等的概率；"}
+{"question_type": "freeform","question": "甲、乙两人投篮，投中的概率分别为0.6，0.7.今各投3次.求（2）甲比乙投中次数多的概率。"}
+{"question_type": "freeform","question": "有一大批产品，其验收方案如下，先作第一次检验：从中任取10件，经检验无次品接受这批产品，次品数大于2拒收；否则作第二次检验，其做法是从中再任取5件，仅当5件中无次品时接受这批产品.若产品的次品率为 $10,%$ ，求（1）这批产品经第一次检验就能接受的概率（2）需作第二次检验的概率，（3）这批产品按第二次检验的标准被接受的概率。"}
+{"question_type": "freeform","question": "有一大批产品，其验收方案如下，先作第一次检验：从中任取10件，经检验无次品接受这批产品，次品数大于2拒收；否则作第二次检验，其做法是从中再任取5件，仅当5件中无次品时接受这批产品.若产品的次品率为 $10,%$ ，求（4）这批产品在第一次检验未能作决定且第二次检验时被通过的概率，"}
+{"question_type": "freeform","question": "有一大批产品，其验收方案如下，先作第一次检验：从中任取10件，经检验无次品接受这批产品，次品数大于2拒收；否则作第二次检验，其做法是从中再任取5件，仅当5件中无次品时接受这批产品.若产品的次品率为 $10,%$ ，求（5）这批产品被接受的概率，"}
+{"question_type": "freeform","question": "有甲、乙两种味道和颜色都极为相似的名酒各4杯.如果从中挑4杯，能将甲种酒全部挑出来，算是试验成功一次.（1）某人随机地去猜，问他试验成功一次的概率是多少？"}
+{"question_type": "freeform","question": "有甲、乙两种味道和颜色都极为相似的名酒各4杯.如果从中挑4杯，能将甲种酒全部挑出来，算是试验成功一次.（2）某人声称他通过品尝能区分两种酒.他连续试验10次，成功3次.试推断他是猜对的，还是他确有区分的能力（设各次试验是相互独立的）。"}
+{"question_type": "freeform","question": "尽管在几何教科书中已经讲过仅用圆规和直尺三等分一个任意角是不可能的，但每一年总是有一些“发明者”撰写关于仅用圆规和直尺将角三等分的文章.设某地区每年撰写此类文章的篇数 $X$ 服从参数为6的泊松分布.求明年没有此类文章的概率："}
+{"question_type": "freeform","question": "一电话总机每分钟收到呼唤的次数服从参数为4的泊松分布.求（1）某一分钟恰有8次呼唤的概率："}
+{"question_type": "freeform","question": "一电话总机每分钟收到呼唤的次数服从参数为4的泊松分布.求（2）某一分钟的呼唤次数大于3的概率。"}
+{"question_type": "freeform","question": "某一公安局在长度为 $ddagger$ 的时间间隔内收到的紧急呼救的次数 $x^{2}$ 服从参数为 $(1/2)_{t}$ 的泊松分布，而与时间间隔的起点无关（时间以小时计）.（1）求某一天中午12时至下午3时未收到紧急呼救的概率，（2）求某一天中午12时至下午5时至少收到1次紧急呼救的概率。"}
+{"question_type": "freeform","question": "某人家中在时间间隔（小时）内接到电话的次数 $chi$ 服从参数为 $boldsymbol{beta}$ 的泊松分布.（1）若他外出计划用时10分钟，问其间有电话铃响一次的概率是多少？"}
+{"question_type": "freeform","question": "某人家中在时间间隔（小时）内接到电话的次数 $chi$ 服从参数为 $boldsymbol{beta}$ 的泊松分布.（2）若他希望外出时没有电话的概率至少为0.5，问他外出应控制最长时间是多少？"}
+{"question_type": "freeform","question": "保险公司在一天内承保了5000张相同年龄，为期一年的寿险保单，每人一份.在合同有效期内若投保人死亡，则公司需赔付3万元.设在一年内，该年龄段的死亡率为0.0015，且各投保人是否死亡相互独立.求该公司对于这批投保人的赔付总额不超过30万元的概率（利用泊松定理计算）。"}
+{"question_type": "freeform","question": "有一繁忙的汽车站，每天有大量汽车通过，设一辆汽车在一天的某段时间内出事故的概率为0.0001.在某天的该时间段内有1000辆汽车通过.问出事故的车辆数不小于2的概率是多少？（利用泊松定理计算）（1）设X服从（0-1)分布，其分布律为P{X=k}=p*（1-p)-*，k=0，1，求X的分布函数，并作出其图形."}
+{"question_type": "freeform","question": "有一繁忙的汽车站，每天有大量汽车通过，设一辆汽车在一天的某段时间内出事故的概率为0.0001.在某天的该时间段内有1000辆汽车通过.问出事故的车辆数不小于2的概率是多少？（利用泊松定理计算）（1）设X服从（0-1)分布，其分布律为P{X=k}=p*（1-p)-*，k=0，1，求X的分布函数，并作出其图形.（2）求第2题（1）中的随机变量的分布函数，"}
+{"question_type": "freeform","question": "在区间[0，a]上任意投掷一个质点，以X表示这个质点的坐标.设这个质点落在[0，a]中任意小区间内的概率与这个小区间的长度成正比例.试求X的分布函数。"}
+{"question_type": "freeform","question": "以 $X$ 表示某商店从早晨开始营业起直到第一个顾客到达的等待时间（以分计)， $X$ 的分布函数是"}
+{"question_type": "freeform","question": "求下述概率：(1) $P{$ 至多3分钟 $}$，(2) $P$ 至少4分钟 $}$，(3) $P{3$ 分钟至4分钟之间 $}$，(4) $P$ （至多3分钟或至少4分钟），(5) $P{$ 恰好2.5分钟 $}$"}
+{"question_type": "freeform","question": "设随机变量 $X$ 的分布函数为（1）求 $P{X{<}2}P{0{<}X{leqslant}3}P{2{<}X{<}5/2}$（2）求概率密度 $f_{X}(x)$"}
+{"question_type": "freeform","question": "设随机变量 $X$ 的概率密度为求 $X$ 的分布函数 $Fleft(xright)$ ，并画出（2）中的 $f(x)$ 及 $F(mathcal{X})$ 的图形"}
+{"question_type": "freeform","question": "（1）分子运动速度的绝对值 $X$ 服从麦克斯韦（Maxwell）分布，其概率密度为"}
+{"question_type": "freeform","question": "（2）研究了英格兰在1875年 $sim!1951$ 年期间，在矿山发生导致不少于10人死亡的事故的频繁程度，得知相继两次事故之间的时间 $T$ （日）服从指数分布，其概率密度为"}
+{"question_type": "freeform","question": "求分布函数 $F_{T}(vec{t})$ ，并求概率 $P{50!<!T!<!100}$"}
+{"question_type": "freeform","question": "某种型号器件的寿命 $X$ （以小时计）具有概率密度"}
+{"question_type": "freeform","question": "现有一大批此种器件（设各器件损坏与否相互独立），任取5只，问其中至少有2只寿命大于1500小时的概率是多少？"}
+{"question_type": "freeform","question": "设顾客在某银行的窗口等待服务的时间 $X(,mathrm{min})$ 服从指数分布，其概率密度为"}
+{"question_type": "freeform","question": "某顾客在窗口等待服务，若超过 $10,mathrm{min}$ 他就离开.他一个月要到银行5次.以 $Y^{'}$ 表示一个月内他未等到服务而离开窗口的次数.写出 $Y^{star}$ 的分布律，并求 $P{}rranglerranglerranglerrangle$"}
+{"question_type": "freeform","question": "设 ${cal{H}}$ 在（0，5）服从均匀分布，求 $mathcal{X}$ 的方程有实根的概率。"}
+{"question_type": "freeform","question": "设 $X{sim}N(3,2^{2})$ （1）求 $P{,2<Xll5},,P{,-,4<Xll10},,P{mid Xmid>2},,P{,X!>!3},.$"}
+{"question_type": "freeform","question": "设 $X{sim}N(3,2^{2})$ （2）确定 $ell^{+}$ ·使得 $P{X{>}c},{=},P{X{leqslant}c}$"}
+{"question_type": "freeform","question": "设 $X{sim}N(3,2^{2})$ （3）设 $boldsymbol{d}$ 满足 $P{X!>!d}!gg!0.9$ 问 $alpha$ 至多为多少？"}
+{"question_type": "freeform","question": "某地区18岁的女青年的血压（收缩压，以 $mathrm{mmHg}$ 计）服从 $N(110,12^{2})$ ）分布.在该地区任选一18岁的女青年，测量她的血压 $X_{i}$ 求(1) $P{X{leqslant}105},,P{100{<}X{leqslant}120}$(2）确定最小的 $mathcal{X}$ 使 $P{X!>!x}!leqslant!0.;05.$"}
+{"question_type": "freeform","question": "由某机器生产的螺栓的长度 $left(mathbb{C}Piright)$ 服从参数 $mu!=!10,,05,,sigma!=!0,,06$ 的正态分布.规定长度在范围 $10,,05pm0,,12$ 内为合格品，求一螺栓为不合格品的概率。"}
+{"question_type": "freeform","question": "一工厂生产的某种元件的寿命 $X$ （以小时计）服从参数为 $mu!=!160,,sigma(sigma!>!0)$ 的正态分布.若要求 $P{120{<}X{leqslant}200}{geq}0.,80$ 允许 $sigma$ 最大为多少？"}
+{"question_type": "freeform","question": "设在一电路中，电阻两端的电压（V）服从 $N(120,,2^{2})$ ），今独立测量了5次，试确定有2次测定值落在区间[118，1221之外的概率，"}
+{"question_type": "freeform","question": "某人上班，自家里去办公楼要经过一交通指示灯，这一指示灯有 $80%$ 时间亮红灯，此时他在指示灯旁等待直至绿灯亮，等待时间在区间[0，30以秒计）服从均匀分布.以 $X$ 表示他的等待时间，求 $X$ 的分布函数 $Fleft(xright)$ .画出 $F(x)$ 的图形，并问 $X$ 是否为连续型随机变量，是否为离散型的？（要说明理由）"}
+{"question_type": "freeform","question": "设 $f(x),g(x)$ 都是概率密度函数，求证"}
+{"question_type": "freeform","question": "$$ h(x)!=!alpha f(x)!+!(1!-!alpha)g(x),quad0!leqslant!alpha!leqslant!1 $$ 也是一个概率密度函数"}
+{"question_type": "freeform","question": "设随机变量 $X^{+}$ 的分布律为"}
+{"question_type": "freeform","question": "求 $mathbf{V}=mathbf{X}^{s}$ 的分布律."}
+{"question_type": "freeform","question": "设随机变量 $X^{r}$ 在区间（0，1）服从均匀分布（1）求 $mathbb{Y}=mathbb{e}^{mathbb{X}}$ 的概率密度."}
+{"question_type": "freeform","question": "设随机变量 $X^{r}$ 在区间（0，1）服从均匀分布（2）求 $mathrm{Y}{=}-2ln,X$ 的概率密度."}
+{"question_type": "freeform","question": "设 $X{sim},{mathrm{~N~}}(0,1)$ （1）求 $mathbb{Y}^{tau}{=},mathbf{e}^{X}$ 的概率密度。"}
+{"question_type": "freeform","question": "设 $X{sim},{mathrm{~N~}}(0,1)$ （2）求 $!Y!^{prime}!=!2X^{!1}+1$ 的概率密度."}
+{"question_type": "freeform","question": "设 $X{sim},{mathrm{~N~}}(0,1)$ （3）求 $Y=left|begin{array}{l}{mathbf{Y}} {mathbf{bar{Y}}}end{array}right|$ 的概率密度."}
+{"question_type": "freeform","question": "（1）设随机变量X的概率密度为f（x)，一∞o<x<∞.求Y=X”的概率密度."}
+{"question_type": "freeform","question": "（2）设随机变量 $X$ 的概率密度为 求 $mathrm{Y}^{prime}{=},X^{prime}$ 的概率密度."}
+{"question_type": "freeform","question": "设随机变量 $X$ 的概率密度为求 $Y!=!sin,X$ 的概率密度."}
+{"question_type": "freeform","question": "设电流1是一个随机变量，它均匀分布在9A～11A之间.若此电流通过2Q的电阻，在其上消耗的功率 $W=2~I^{2}$ .求 $W$ 的概率密度。"}
+{"question_type": "freeform","question": "某物体的温度T(°F)是随机变量，且有T～N(98.6，2)，已知@= $Theta!=!frac{5}{9},(,T!-!32)$ ，试求$Theta(mathsf{C}^{top})$ 的概率密度。"}
+{"question_type": "freeform","question": "在一箱子中装有12只开关，其中2只是次品，在其中取两次，每次任取一只，考虑两种试验：（1）放回抽样：（2）不放回抽样.我们定义随机变量 $X,Y$ 如下：$X{mathrel{=}}left{{0atop1}right.$ 若第一次取出的是正品，若第一次取出的是次品：$begin{array}{r}{Y=binom{0}{1}}end{array}$ 若第二次取出的是正品，若第二次取出的是次品。试分别就（1）、（2）两种情况，写出 $X$ 和 $mathbf{Y}$ 的联合分布律."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 的概率密度为 $$f(x,y)=;{binom{k(6-x-y)}{0}},,$$ （1）确定常数 $k$ （2）求 $P{X{<}1,}{<}3}$ （3）求 $P{X{le}1,5}$ （4）求 $P{X+Y{leqslant4}$"}
+{"question_type": "freeform","question": "设 $X,Y^{prime}$ 都是非负的连续型随机变量，它们相互独立.（1）证明 $P{X{<}Y}=int_{mathbb{S}}^{infty}F_{x}left(xright)f_{Y}left(xright)mathrm{d}x,$ 其中 $F_{X}left(xright)$ 是 $X^{r}$ 的分布函数， $f_{Y}^{*}(y)$ 是 $r$ 的概率密度。"}
+{"question_type": "freeform","question": "设二维随机变量 $(X,Y)$ 的概率密度为 $$f(x,y)=left{{4.8y(2-x)}quad0leqslant xleqslant1,0leqslant yleqslant x,right. 求边缘概率密度."}
+{"question_type": "freeform","question": "设二维随机变量 $(X,Y)$ 的概率密度为 $$f(x,y)=left{{mathrm{e}}^{-y}quad0<x<y,right. 求边缘概率密度，"}
+{"question_type": "freeform","question": "设二维随机变量 $(X,Y)$ 的概率密度为 $$f(x,y)=left{{alpha}^{z}y,quad x^{2}leqslant yleqslant1,right. （1）确定常数 $c$ （2）求边缘概率密度."}
+{"question_type": "freeform","question": "将某-医药公司8月份和9月份收到的青霉素针剂的订货单数分别记为X和Y.据以往积累的资料知 $X$ 和 $Y$ 的联合分布律为"}
+{"question_type": "freeform","question": "在下列句子中随机地取一个单词，以X表示取到的单词所包含的字母个数，写出$X^{+}$ 的分布律并求 $E(X)$ 'THE GIRL PUT ON HER BEAUTIFUL RED HAT'."}
+{"question_type": "freeform","question": "在上述句子的30个字母中随机地取一个字母，以 $mathbf{bar{Y}}$ 表示取到的字母所在单词所包含的字母数，写出 $Y^{r}$ 的分布律并求 $E(Y)$."}
+{"question_type": "freeform","question": "一人掷般子，如得6点则掷第2次，此时得分为6十第二次得到的点数；否则得分为他第一次掷得的点数，且不能再掷，求得分 $X$ 的分布律及 $E(X)$."}
+{"question_type": "freeform","question": "某产品的次品率为0.1，检验员每天检验4次.每次随机地取10件产品进行检验，如发现其中的次品数多于1，就去调整设备.以X表示一天中调整设备的次数，试求E（X）."}
+{"question_type": "freeform","question": "有3只球，4个盒子，盒子的编号为1，2，3，4.将球逐个独立地，随机地放人4个盒子中去.以X表示其中至少有一只球的盒子的最小号码，试求 $E(X)$."}
+{"question_type": "freeform","question": "设随机变量x的分布律为P{x=(-1+}=j=1,2,说明X的数学期望不存在."}
+{"question_type": "freeform","question": "一盒中装有一只黑球，一只白球，作摸球游戏，规则如下：一次从盒中随机摸一只球，若摸到白球，则游戏结束，摸到黑球放回再放人一只黑球，然后再从盒中随机地摸一只球.试说明要游戏结束的摸球次数 $X$ 的数学期望不存在."}
+{"question_type": "freeform","question": "设在某一规定的时间间隔里，某电气设备用于最大负荷的时间 $X^{r}$ （以min计）是一个随机变量，其概率密度为 $$ f(x)=left{begin{array}{l l}{displaystylefrac{1}{1 500^{2}}x,,}&{0leqslant xleqslant1 500,,} {displaystylefrac{-1}{1 500^{2}}(x-3 000),,}&{1 500<xleqslant3 000,,} {displaystyle0,,}&{mathfrak{K H L}.}end{array}right. $$ 求 $E(X)$."}
+{"question_type": "freeform","question": "设随机变量 $X$ 的分布律为 求 $E(X),,E(X^{2},),,E(,3X^{2},+,5,)$."}
+{"question_type": "freeform","question": "设随机变量 $X_{1},,,X_{2},,,cdots,,X_{n}$ 相互独立，且都服从（0，1）上的均匀分布，(i)求 ${boldsymbol{U}}=$ $operatorname*{max}{X_{1},,X_{2},,cdots,X_{n}}$ 的数学期望，(ii)求 $V=operatorname*{min}{X_{1},,X_{2},,cdots,,X_{n}}$ 的数学期望."}
+{"question_type": "freeform","question": "设随机变量 ${X,Y}$ 的分布律为 (1)求 $E(X),E(Y)$ (2)设 $z{=}Y/X$ 求 $E(Z)$ (3)设 $scriptstyle{mathcal{Z}}=(X-Y)^{z}$ 求 $E(Z)$."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 的概率密度为 $$ f(x,y),=,left{!!begin{array}{l l}{{12y^{2},,}}&{{0leqslant yleqslant xleqslant1,,}} {{0,,}}&{{exists{underline{{tau}}},mathcal{H}underline{{mathrm{t}}}.}}end{array}!!right. $$ 求 $E(,X),,E(Y),,E(,X Y),,E(,X^{2}+Y^{2},)$."}
+{"question_type": "freeform","question": "设随机变量 $X,Y$ 的联合密度为 $$ f!(x,y)!=!!left{begin{array}{l l}{{displaystyle1}}&{{x!>!0,y!>!0,}} {{y}}&{{}} {{0,}}&{{nexistsmathcal{H}mathcal{H}.}}end{array}right. $$ 求 $E(X),,E(Y),,E(,Xmathbf{Y})$."}
+{"question_type": "freeform","question": "设随机变量 $Xsim N(0,1),,Ysim N(0,1)$ 且 $X,Y$ 相互独立.求 $E[X^{2}/(X^{2}!+!Y^{2})]$."}
+{"question_type": "freeform","question": "一飞机进行空投物资作业，设目标点为原点O（0，0），物资着陆点为（X，Y），X，Y相互独立，且设 $Xsim N(0,,{sigma}^{2},),,Ysim N(0,,{sigma}^{2},)$ *求原点到点 $(X,Y)$ 间距离的数学期望."}
+{"question_type": "freeform","question": "一工厂生产的某种设备的寿命 $X$ （以年计）服从指数分布，概率密度为 $$ f(x)={binom{frac{1}{4}mathrm{e}^{-x/4}}{0}}quad x>0,,quad $$ 工厂规定，出售的设备若在售出一年之内损坏可予以调换.若工厂售出一台设备赢利100元，调换一台设备厂方需花费300元.试求厂方出售一台设备净赢利的数学期望."}
+{"question_type": "freeform","question": "某车间生产的圆盘直径在区间（a，6）服从均匀分布，试求圆盘面积的数学期望."}
+{"question_type": "freeform","question": "设电压（以V计）X~N（0，9）.将电压施加于一检波器，其输出电压为Y=5X²，求输出电压 $Y$ 的均值."}
+{"question_type": "freeform","question": "设随机变量X：，X的概率密度分别为 $$ f_{1}left(xright)=leftlbrack!!begin{array}{l l}{2mathrm{e}^{-2x},,}&{x>0,,} {0,,}&{xleqslant0,,}end{array}right.,,f_{2}left(xright)=leftlbrace!!begin{array}{l l}{4mathrm{e}^{-4x},,}&{x>0,,} {0,,}&{xleqslant0,.}end{array}right. $$ (1)求 $E(X_{1}+X_{2}),E(2X_{1}-3X_{2}^{2})$ (2)又设 $X_{1}=X_{2}$ 相互独立，求 $E(X_{1}X_{2})$."}
+{"question_type": "freeform","question": "将n只球（1～n号）随机地放进n个盒子（1～n号）中去，一个盒子装一只球.若一只球装人与球同号的盒子中，称为一个配对.记X为总的配对数，求E（X）."}
+{"question_type": "freeform","question": "若有n把看上去样子相同的钥匙，其中只有一把能打开门上的锁，用它们去试开门上的锁.设取到每只钥匙是等可能的.若每把钥匙试开一次后除去，试用下面两种方法求试开次数 $chi$ 的数学期望."}
+{"question_type": "freeform","question": "设X为随机变量，C是常数，证明D(X)<E[(X-C)²]，对于C≠E(X)."}
+{"question_type": "freeform","question": "设随机变量X服从瑞利分布，其概率密度为 $$ f(x)={left{frac{x}{sigma^{2}}{mathrm{e}}^{-x^{2}left/(2{bar{a}}^{2}right.)}right.}quad x>0,,} $$ 其中 $sigma^{-}mathrm{v}$ 是常数.求 $E(X),D(X)$."}
+{"question_type": "freeform","question": "设随机变量 $X$ 服从 $Gamma$ 分布，其概率密度为 $$ f(x)!=!left{!!begin{array}{l l}{{displaystyle{frac{1}{beta^{alpha}}}Gamma(alpha)}!!!x^{a-1},mathrm e^{-x/beta},,}&{ x!!>!0,,} {{displaystyle0,,}}&{ x!!leq!0,,}end{array}right. $$ 其中 $alpha{geq}0,beta{>}0$ 是常数.求 $E(X),D(X)$."}
+{"question_type": "freeform","question": "设随机变量 $X$ 服从几何分布，其分布律为 $$ P{X=k}=phi(1-p)^{k-1},,quad k=1,2,cdots, $$ 其中 $0leqbeta<pm1$ 是常数.求 $E(X),D(X)$."}
+{"question_type": "freeform","question": "设长方形的高（以 $boldsymbol{Pi}$ 计） $Xsim U(0,2)$ ，已知长方形的周长（以 $textcircled{111}$ 计）为20.求长方形面积 $A$ 的数学期望和方差."}
+{"question_type": "freeform","question": "设随机变量 $X_{1},,X_{2},,X_{3},,X_{4}$ 相互独立，且有 $E(X_{i})!=!i,D(X_{i})!=!5!-!i,i!=!1,2,3$ 4.设 $Y!!=!2X_{1}-X_{2}+3X_{3}-frac{1}{2}X_{4}$ 求 $overline{{E}}(boldsymbol{mathrm{Y}}),,D(boldsymbol{mathrm{Y}})$."}
+{"question_type": "freeform","question": "设随机变量 $X,Y^{prime}$ 相互独立，且 $Xsim,N(720,,30^{2})$ $mathrm{Y}^{prime}sim,N(,640,,25^{2},)$ ，求 $Z_{1}=2X^{+}Y,Z_{2}$ $=X-Y$ 的分布，并求概率 $P{X!>!Y}P{X{+}Y{>}1 400}$."}
+{"question_type": "freeform","question": "五家商店联营，它们每两周售出的某种农产品的数量（以 $k_{E}$ 计）分别为 $X_{1}X_{2}X_{3}$ $X_{4}cdot X_{5}$ .已知 $X_{1}!sim!N(200,225)$ $X_{2}sim N(,240,,240,)$ ${X_{3}}mathrm{{sim}},N(180,,225)$ $X_{4}!sim!N(260,265)$ $X_{5}!sim!N(320,,270),,X_{i},,X_{bar{z}},,X_{3},,X_{4},,X_{5}$ 相互独立."}
+{"question_type": "freeform","question": "卡车装运水泥，设每袋水泥重量 $X$ （以 $log$ 计）服从 $N(50,2,,5^{2})$ ，问最多装多少袋水泥使总重量超过2000的概率不大于0.05."}
+{"question_type": "freeform","question": "设随机变量 $X,Y$ 相互独立，且都服从（0，1)上的均匀分布."}
+{"question_type": "freeform","question": "设随机变量 $X_{1} ,X_{2} ,X_{3}$ 相互独立，且有 $X_{1}!sim!b(4,,1/2),,X_{2}!sim!b(6,,1/3),,X_{3}!sim!b$ $(6,1/3)$ ，求 $P{X_{1}=2,,X_{2}=2,,X_{3}=5},,E(,X_{1},X_{2},X_{3},)$"}
+{"question_type": "freeform","question": "设 $X+Y$ 是随机变量，且有 $E(X)!=!3,E(Y)!=!1,D(X)!=!4,D(Y)!=!9$ 令 $z{=}5X{-}Y{+}$ 15，分别在下列3种情况下求 $E(Z)$ 和 $D(Z)$."}
+{"question_type": "freeform","question": "下列各对随机变量 $X^{r}$ 和 $mathbf{vec{Y}}$ ，问哪几对是相互独立的？哪几对是不相关的."}
+{"question_type": "freeform","question": "设二维随机变量 $(X,Y)$ 的概率密度为 $$ f(x,y)!=!left{!!{frac{1}{pi}}!quad x^{2}!+!y^{2}!ll!1,!right. $$ 试验证 $X$ 和 $Y^{r}$ 是不相关的，但 $X$ 和 $Y$ 不是相互独立的."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 的分布律为 验证 $X$ 和 $mathbf{Y}^{r}$ 是不相关的，但 $X^{prime}$ 和 $Y$ 不是相互独立的."}
+{"question_type": "freeform","question": "设 $A$ 和 $B$ 是试验 $E$ 的两个事件，且 $P(A){>}0,,P(B){>}0$ ，并定义随机变量 $X,Y^{prime}$ 如下： $$ X{=}left{{1,atop0,}right. $$ $$ begin{array}{r}{mathbf{Y}{=}left{{O^{1}}begin{array}{l}{mathbf{Sigma}}end{array}right.}end{array} $$ 证明若 $rho_{mathrm{xy}},{=},0$ ，则 $X$ 和 $Y$ 必定相互独立."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 具有概率密度 $$ f(x,y)=left{!!begin{array}{c l}{{1,}}&{{mathrm{~|~}y,|<x,0<x<1,,}} {{0,,}}&{{mathrm{~###.}}}end{array}right. $$ 求 $E(X),,E(Y),,operatorname{Cov}(X,Y)$."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 具有概率密度 $$ f(x,y)=left{frac{1}{8}(x+y),,quad0leqslant xleqslant2,,0leqslant yleqslant2,,right. $$ 求 $E(X),,E(Y),,!operatorname{Cov}(X,Y),,!rho_{x Y},,!D(X!+!Y).$"}
+{"question_type": "freeform","question": "设随机变量 ${cal X}{sim}N({mu}{,}{sigma}^{2}){,}{,}{cal Y}{sim}N({mu}{,}{sigma}^{2})$ ，且设 $X,Y$ 相互独立，试求 $Z_{1},{=},_{alpha}X{+},betabar{Y}$ 和 $Z_{2}$ $=_{alpha}mathbf{X}!-!betamathbf{Y}$ 的相关系数(其中 $alphacdotbeta$ 是不为零的常数）."}
+{"question_type": "freeform","question": "设随机变量 $W{=}(a X{+}3Y)^{2}$ $begin{array}{r}{E(X)!=!E(Y)!=!0,D(X)!=!4,D(Y)!=!16,,rho_{x Y}!=!-0.5.}end{array}$ 求常数 $alpha$ 使 $E(W)$ 为最小，并求 $E(W)$ 的最小值."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 服从二维正态分布，且有 $D(X)=sigma_{x}^{2};,D(Y)=sigma_{Y}^{2}$ .证明当 $bar{alpha}^{2}=$ $sigma_{X}^{2}/sigma_{Y}^{2}$ 时，随机变量 $W{=}X{-}_{ensuremath{alpha}}Y$ 与 $V!=!X!+!a,Y$ 相互独立."}
+{"question_type": "freeform","question": "设随机变量 $(X,Y)$ 服从二维正态分布，且 $X{sim}N(0,3),,Y{sim}N(0,4)$ ,相关系数 $bar{rho}_{mathrm{xy}}=$ $-1/4$ ，试写出 $X$ 和 $Y^{r}$ 的联合概率密度."}
+{"question_type": "freeform","question": "已知正常男性成人血液中，每一毫升白细胞数平均是7300，均方差是700.利用切比雪夫不等式估计每毫升含白细胞数在 $5~200!sim!9~400$ 之间的概率 $phi$."}
+{"question_type": "freeform","question": "对于两个随机变量 $V,W$ ，若 $E(V^{2}),,E(W^{2})$ 存在，证明 $$ [E(V W)]^{2}leqslant E(V^{2})E(W^{2}). $$ 这一不等式称为柯西一施瓦茨（Cauchy-Schwarz）不等式."}
+{"question_type": "freeform","question": "中位数. 对于任意随机变量 $X$ ，满足以下两式 $$ P{Xleqslant x}!ge!frac12,qquad P{X!!ge!x}!!leqslant!frac12 $$ 的 $mathcal{L}$ 称为 $X$ 的中位数，记为 $x=frac{1}{2}$ 或 $M.$ 它是反映集中位置的一个数字特征，中位数总是存在的."}
+{"question_type": "freeform","question": "设 $x^{*}$ 的概率密度为 $$ f!left(xright)=left{{2{bf e}^{-i x}}qquadquad x!geq!0,right. $$ 试求 $X$ 的中位数 $M$."}
+{"question_type": "freeform","question": "设 $X$ 服从柯西分布，其概率密度为 $$ f(x)!=frac{b}{pi[(x!-!a)^{2}!+!b^{2}]}b!>!0. $$ 试求 $X$ 的中位数 $M$."}
+{"question_type": "freeform","question": "据以往经验，某种电器元件的寿命服从均值为100h的指数分布，现随机地取16只，设它们的寿命是相互独立的.求这16只元件的寿命的总和大于 $1920,mathrm{~h~}$ 的概率。"}
+{"question_type": "freeform","question": "（1）一保险公司有10000个汽车投保人，每个投保人索赔金额的数学期望为280美元，标准差为800美元，求索赔总金额超过2700000美元的概率，"}
+{"question_type": "freeform","question": "（2）一公司有50张签约保险单，各张保险单的索赔金额为X；，i=1，2，，50（以千美元计）服从韦布尔（Weibull）分布，均值E（X：）=5，方差D（X：）=6，求50张保险单索赔的合计金额大于300的概率（设各保险单索赔金额是相互独立的）."}
+{"question_type": "freeform","question": "计算器在进行加法时，将每个加数舍人最靠近它的整数，设所有舍人误差相互独立且在 $(-0.5,0,5)$ 上服从均匀分布。"}
+{"question_type": "freeform","question": "计算器在进行加法时，将每个加数舍人最靠近它的整数，设所有舍人误差相互独立且在 $(-0.5,0,5)$ 上服从均匀分布。（1）将1500个数相加，问误差总和的绝对值超过15的概率是多少？"}
+{"question_type": "freeform","question": "计算器在进行加法时，将每个加数舍人最靠近它的整数，设所有舍人误差相互独立且在 $(-0.5,0,5)$ 上服从均匀分布。（2）最多可有几个数相加使得误差总和的绝对值小于10的概率不小于0.90？"}
+{"question_type": "freeform","question": "设各零件的重量都是随机变量，它们相互独立，且服从相同的分布，其数学期望为$0.5,mathrm{bf~kg}$ ，均方差为 $0.1~mathrm{kg}$ ，问5000只零件的总重量超过 $mathrm{~2~510~kg~}$ 的概率是多少？"}
+{"question_type": "freeform","question": "有一批建筑房屋用的木柱，其中80%的长度不小于3m，现从这批木柱中随机地取100根，求其中至少有30根短于 $smash{frac{5}{3} m}$ 的概率。"}
+{"question_type": "freeform","question": "一食品店有三种蛋糕出售，由于售出哪一种蛋糕是随机的，因而售出一只蛋糕的价格是一个随机变量，它取1元、1.2元、1.5元各个值的概率分别为0.3、0.2、0.5.若售出300只蛋糕，"}
+{"question_type": "freeform","question": "一食品店有三种蛋糕出售，由于售出哪一种蛋糕是随机的，因而售出一只蛋糕的价格是一个随机变量，它取1元、1.2元、1.5元各个值的概率分别为0.3、0.2、0.5.若售出300只蛋糕，（1）求收人至少400元的概率。"}
+{"question_type": "freeform","question": "一食品店有三种蛋糕出售，由于售出哪一种蛋糕是随机的，因而售出一只蛋糕的价格是一个随机变量，它取1元、1.2元、1.5元各个值的概率分别为0.3、0.2、0.5.若售出300只蛋糕，（2）求售出价格为1.2元的蛋糕多于60只的概率，"}
+{"question_type": "freeform","question": "一复杂的系统由100个相互独立起作用的部件所组成，在整个运行期间每个部件损坏的概率为0.10.为了使整个系统起作用，至少必须有85个部件正常工作，求整个系统起作用的概率。"}
+{"question_type": "freeform","question": "已知在某十字路口，一周事故发生数的数学期望为2.2，标准差为1.4.（1）以又表示一年（以52周计）此十字路口事故发生数的算术平均，试用中心极限定理求 $vec{X}$ 的近似分布，并求 $P{bar{X}{<}2}$"}
+{"question_type": "freeform","question": "已知在某十字路口，一周事故发生数的数学期望为2.2，标准差为1.4.（2）求一年事故发生数小于100的概率。"}
+{"question_type": "freeform","question": "某种小汽车氧化氮的排放量的数学期望为0.9g/km，标准差为1.9g/km，某汽车公司有这种小汽车100辆，以 $overline{{X}}$ 表示这些车辆氧化氮排放量的算术平均，问当 $L$ 为何值时 $overline{{X}}>$ $L$ 的概率不超过0.01."}
+{"question_type": "freeform","question": "随机地选取两组学生，每组80人，分别在两个实验室里测量某种化合物的 $mathbb{P H}.$ 各人测量的结果是随机变量，它们相互独立，服从同一分布，数学期望为5，方差为0.3，以X，Y分别表示第一组和第二组所得结果的算术平均."}
+{"question_type": "freeform","question": "随机地选取两组学生，每组80人，分别在两个实验室里测量某种化合物的 $mathbb{P H}.$ 各人测量的结果是随机变量，它们相互独立，服从同一分布，数学期望为5，方差为0.3，以X，Y分别表示第一组和第二组所得结果的算术平均.（1）求 $P{4,,9{<}overline{{X}}{<}5.,1}$"}
+{"question_type": "freeform","question": "随机地选取两组学生，每组80人，分别在两个实验室里测量某种化合物的 $mathbb{P H}.$ 各人测量的结果是随机变量，它们相互独立，服从同一分布，数学期望为5，方差为0.3，以X，Y分别表示第一组和第二组所得结果的算术平均.（2）求 $P{-0.1{<}overline{{X}}{-}overline{{Y}}{<}0.1}$"}
+{"question_type": "freeform","question": "一公寓有200户住户，一户住户拥有汽车辆数 $X$ 的分布律为"}
+{"question_type": "freeform","question": "问需要多少车位，才能使每辆汽车都具有一个车位的概率至少为0.95."}
+{"question_type": "freeform","question": "某种电子器件的寿命（小时）具有数学期望μ（未知），方差²=400.为了估计μ，随机地取n只这种器件，在时刻t=0投人测试（测试是相互独立的）直到失效，测得其寿命为X，$X_{i}cdots,X_{n}$ 以 ${overline{{X}}}={frac{1}{n}}sum_{i=1}^{n}X_{i}$ 作为 $mu$ 的估计，为使 $P{midoverline{{X}}-mumid<1}geq0. 95,,$ $n$ 至少为多少？"}
+{"question_type": "freeform","question": "某药厂断言，该厂生产的某种药品对于医治一种疑难血液病的治愈率为0.8，医院任意抽查100个服用此药品的病人，若其中多于75人治愈，就接受此断言，否则就拒绝此断言."}
+{"question_type": "freeform","question": "某药厂断言，该厂生产的某种药品对于医治一种疑难血液病的治愈率为0.8，医院任意抽查100个服用此药品的病人，若其中多于75人治愈，就接受此断言，否则就拒绝此断言.（1）若实际上此药品对这种疾病的治愈率是0.8.问接受这一断言的概率是多少？"}
+{"question_type": "freeform","question": "在总体 N(52,5,3^{2}) 中随机抽取一容量为36的样本，求样本均值 x^{+} 落在50.8到53.8之间的概率，"}
+{"question_type": "freeform","question": "在总体 N(12,4) 中随机抽一容量为5的样本 X_{1},,X_{2},,X_{3},,X_{4},,X_{5}（1）求样本均值与总体均值之差的绝对值大于1的概率。"}
+{"question_type": "freeform","question": "求总体 N(20,3) 的容量分别为10，15的两独立样本均值差的绝对值大于0.3的概率。"}
+{"question_type": "freeform","question": "设样本 X_{mathrm{I}},,;X_{mathrm{2}},,;cdots,;X_{mathrm{6}} 来自总体 N;(;0,,;1;),,;Y,=,(,X_{1};+;X_{2};+;X_{3};)^{2}$ $+(X_{4}+X_{5}+X_{6})^{ast}$ ，试确定常数 C 使 C Y 服从 x^{2} 分布。"}
+{"question_type": "freeform","question": "设样本 X_{1},,X_{2},,cdots,X_{5} 来自总体 N(0,,1),,Y!=!frac{C(,X_{1}!+!X_{2},)}{(X_{3}^{2}!+!X_{4}^{2}!+!X_{5}^{2},)^{1/2}} 试确定常数 C 使 Y 服从 scriptstyle{frac{1}{E}} 分布."}
+{"question_type": "freeform","question": "已知某种能力测试的得分服从正态分布 N(mu,bar{sigma}^{bar{z}}) ，随机取10个人参与这一测试.求他们得分的联合概率密度，并求这10个人得分的平均值小于 f^{l} 的概率，在（1)中设 scriptstylemu=62,,sigma^{2},=,25 ，若得分超过70就能得奖，求至少有一人得奖的概率."}
+{"question_type": "freeform","question": "在（1)中设 scriptstylemu=62,,sigma^{2},=,25 ，若得分超过70就能得奖，求至少有一人得奖的概率."}
+{"question_type": "freeform","question": "设总体 X{sim}b(1,p),X_{1},,X_{2},,{cdots}X_{n} 是来自 X 的样本（1）求 (X_{1},,X_{2},,cdots,X_{n}) 的分布律."}
+{"question_type": "freeform","question": "设总体 X{sim}{chi}^{2}left(nright),X_{1},,X_{2},,{cdots},,X_{10} 是来自 X 的样本，求 E(overrightharpoon{X}),,D(overrightharpoon{X}),,E(,S^{2},)"}
+{"question_type": "freeform","question": "设总体 X{sim}N(mu{,}sigma^{2}),{,}X_{mathrm{I}};{,},X_{mathrm{2}};,;cdots{,}X_{10} 是来自 X 的样本.（1）写出 X_{1}X_{2}cdots,X_{10} 的联合概率密度，"}
+{"question_type": "freeform","question": "设在总体 N(mu,sigma^{2}) 中抽得一容量为16的样本，这里 mu*sigma^{2} 均未知。（1）求 P{S^{bar{z}}/sigma^{bar{z}}{leqslant}2.,041} ，其中 S^{z} 为样本方差。"}
+{"question_type": "freeform","question": "试求第10题的30个数据的 α!=!0,2 的截尾均值，"}
+{"question_type": "freeform","question": "随机地取8只活塞环，测得它们的直径为（以 $tt m m$ 计）试求总体均值 $f^{prime}$ 及方差 $vec{sigma}^{sharp}$ 的矩估计值，并求样本方差 $s^{frac{eta}{2}}$"}
+{"question_type": "freeform","question": "设 $X_{1},,X_{2},,cdots,X_{n}$ 为总体的一个样本， $:x_{1},,x_{2},,cdots,,x_{n}$ 为一相应的样本值.求下列各总体的概率密度或分布律中的未知参数的矩估计量和矩估计值."}
+{"question_type": "freeform","question": "(1) $f(x)=left{begin{array}{l l}{theta c^{theta}x^{-(theta+1)},,}&{x>c,,} {0,,}&{exists,#,#,,}end{array}right.$ 其中 $c^{2}!!>!!0$ 为已知， $theta>1,theta$ 为未知参数(2) $f(x)=left{{sqrt{theta}} x^{{sqrt{delta}}-1},,quad0leqslant xleqslant1,,right.$ √x6-1，0≤x<1,其中θ>0,θ为未知参数。"}
+{"question_type": "freeform","question": "(3) $P{X!=!x}!=!{binom{m}{x}}p^{x}(1!-!p)^{m-x},,x!=!0,,1,,2,,cdots,m$ ，其中 $0{<}p{<}1,p$ 为未知参数."}
+{"question_type": "freeform","question": "求上题中各未知参数的最大似然估计值和估计量."}
+{"question_type": "freeform","question": "（1）设总体 $X$ 具有分布律 $$frac{textit{X}}{textit{textbf{textit{X}}}}leftvertbegin{array}{c c c c}{mathrm{~textit{1}~}}&{}&{mathrm{~textit{2}~}}&{mathrm{~textit{3}~}} {theta^{2}}&{mathrm{~textit{2}~}theta(1!-!theta)}&{mathrm{~textit{(1!-!theta)}~}^{2}}end{array}right.$$ 其中 $theta;(0{<}theta{<}1)$ 为未知参数.已知取得了样本值 $x_{1}=1,x_{2}=2,x_{3}=1.$ 试求 $hat{theta}$ 的矩估计值和最大似然估计值."}
+{"question_type": "freeform","question": "（2）设 $X_{1}X_{2}cdots,X_{n}$ 是来自参数为 $lambda$ 的泊松分布总体的一个样本，试求 $lambda$ 的最大似然估计量及矩估计量."}
+{"question_type": "freeform","question": "（3）设随机变量 $X$ 服从以 $r,p$ 为参数的负二项分布，其分布律为 $$P{X!=!x_{k}}=binom{x_{k}!-!1}{r!-!1},p^{r}(1!-!p)^{x_{k}-r},,quad x_{k}!=!r,r!+!1,cdots,$$ 其中 $r$ 已知， $vec{P}$ 未知.设有样本值 $x_{1}x_{2}cdots,x_{n}$ ，试求 $hat{p}$ 的最大似然估计值."}
+{"question_type": "freeform","question": "设某种电子器件的寿命（以 $h$ 计） $T$ 服从双参数的指数分布，其概率密度为 $$f(t)=left{{frac{1}{theta}}mathrm{e}^{-(t-c)/theta}quad tgeqslant c,right.$$ 其中 $c,thetaleft(c,theta!>!0right)$ 为未知参数.自一批这种器件中随机地取 $pi$ 件进行寿命试验.设它们的失效时间依次为 $x_{1}leqslant x_{2}leqslantcdotsleqslant x_{n}$"}
+{"question_type": "freeform","question": "（1）求 $hat{theta}$ 与 $bar{C}$ 的最大似然估计值.（2）求 $vec{theta}$ 与 $bar{C}^{*}$ 的矩估计量，"}
+{"question_type": "freeform","question": "一地质学家为研究密歇根湖湖滩地区的岩石成分，随机地自该地区取100个样品，每个样品有10块石子，记录了每个样品中属石灰石的石子数.假设这100次观察相互独立，并且由过去经验知，它们都服从参数为 $m!=!10,, p$ 的二项分布， $vec{P}$ 是这地区一块石子是石灰石的概率.求 $phi$ 的最大似然估计值，该地质学家所得的数据如下："}
+{"question_type": "freeform","question": "（1）设X，X2，X是来自总体X的一个样本，且X~π（A），求P{X=0}的最大似然估计值."}
+{"question_type": "freeform","question": "（2）某铁路局证实一个扳道员在五年内所引起的严重事故的次数服从泊松分布.求一个扳道员在五年内未引起严重事故的概率P的最大似然估计.使用下面122个观察值.下表中，$r^{*}$ 表示一扳道员五年中引起严重事故的次数， $bar{s}$ 表示观察到的扳道员人数。"}
+{"question_type": "freeform","question": "（1）设 $X_{1}X_{2}cdots,X_{n}$ 是来自概率密度为 $$f(x;theta)=left{{theta}.x^{theta-1},,quad0{<}x{<}1,,right.$$ 的总体的样本， $hat{theta}$ 未知，求 $U!=! e^{-1/theta}$ 的最大似然估计值."}
+{"question_type": "freeform","question": "（2）设X，X2，X是来自正态总体N（μ，1）的样本.μ未知，求θ=P{X>2}的最大似然估计值。"}
+{"question_type": "freeform","question": "（3）设z1,Z2，n 是来自总体6(m,0)的样本值，又θ= (1+β),求β的最大似然估计值。"}
+{"question_type": "freeform","question": "（1）验证教材第六章3定理四中的统计量 $$S_{w}^{2}=frac{n_{1}-1}{n_{1}+n_{2}-2}S_{1}^{2}+frac{n_{2}-1}{n_{1}+n_{2}-2}S_{2}^{2}=frac{(n_{1}-1)S_{1}^{2}+(n_{2}-1)S_{2}^{2}}{n_{1}+n_{2}-2}$$ 是两总体公共方差。²的无偏估计量（S称为。的合并估计）."}
+{"question_type": "freeform","question": "（2）设总体X的数学期望为μ，X，X2，，X是来自X的样本，a，a2，，an是任意常数，验证( $sum_{i=1}^{n}a_{i}X_{i})Biggl/sum_{i=1}^{n}a_{i}($ 其中 $sum_{i=1}^{n}a_{i}neq0)$ $beta^{l,l}$ 的无偏估计量。"}
+{"question_type": "freeform","question": "设X，X2，，X是来自总体X的一个样本，设E（X）=μ，D（X）=o².（1）确定常数 $c$ 使 $csum_{i=1}^{n-1}(X_{i+1}-X_{i})^{2}$ 为 $mathcal{F}^{mathrm{g}}$ 的无偏估计（2）确定常数c使(X)²一cS是²的无偏估计（X,S是样本均值和样本方差)."}
+{"question_type": "freeform","question": "设总体 $X^{r}$ 的概率密度为 $$f(x;theta)!=!!left{!{frac{1}{theta}}x^{(1-theta)/theta},,!quad!0!<!x{<}1,,!quad!0!<!theta!<!+infty,!!$$ $X_{1},,X_{2},,cdots,X_{n}$ 是来自总体 $X$ 的样本."}
+{"question_type": "freeform","question": "（1）验证θ的最大似然估计量是θ=二1 ${hat{theta}}={frac{-1}{n}}sum_{i=1}^{n}ln,X_{i}.$"}
+{"question_type": "freeform","question": "（2）证明 $vec{theta}$ 是 $hat{theta}$ 的无偏估计量，"}
+{"question_type": "freeform","question": "设 $X_{1}X_{2}X_{3}X_{4}$ 是来自均值为 $theta$ 的指数分布总体的样本，其中 $bar{theta}$ 未知.设有估计量 $$T_{1}={frac{1}{6}}(X_{1}+X_{2})+{frac{1}{3}}(X_{3}+X_{4}),$$ $$T_{scriptscriptstyle2}=(,X_{1}+2,X_{scriptscriptstyle2}+3,X_{3}+4,X_{4},)big/5,,$$ $$T_{3}=(X_{1}+X_{2}+X_{3}+X_{4})big/4.$$"}
+{"question_type": "freeform","question": "（1）指出 $T_{1}T_{2}T_{3}$ 中哪几个是 $bar{theta}$ 的无偏估计量，"}
+{"question_type": "freeform","question": "（2）在上述 $bar{theta}$ 的无偏估计中指出哪-个较为有效."}
+{"question_type": "freeform","question": "（1）设 $hat{boldsymbol{theta}}$ 是参数 $hat{theta}$ 的无偏估计，且有 $D(hat{theta})>0$ ，试证"}
+{"question_type": "freeform","question": "（2）试证明均匀分布 $$f(x)!=!!left{!{frac{1}{theta}}!!begin{array}{l l}{0!<!x!ll!theta,} {quad} {0,!!}end{array}right.$$ 中未知参数 $theta$ 的最大似然估计量不是无偏的."}
+{"question_type": "freeform","question": "设从均值为μ，方差为²>0的总体中分别抽取容量为nn的两独立样本.X和X分别是两样本的均值.试证：对于任意常数a，6（a+6=1)，Y=aX+bX2都是μ的无偏估计并确定常数 $alpha,b$ 使 $D(Y)$ 达到最小。"}
+{"question_type": "freeform","question": "设有 $k$ 台仪器，已知用第 $i$ 台仪器测量时，测定值总体的标准差为 $sigma_{i},(i!=!1,2,cdots,k)$ 用这些仪器独立地对某一物理量 $hat{theta}$ 各观察一次，分别得到 $X_{1},,X_{2},,cdots,X_{k}$ .设仪器都没有系统误差，即 $E(X_{i})!=!theta;(i!=!1,2,cdots,k).$ 问 $a_{1}+a_{2}+cdots,a_{k}$ 取何值，方能使使用 $widehat{theta},=,sum_{i=1}^{k}!a_{i}X_{i}$ 估计 $bar{theta}$ 时，0是无偏的，并且 $Dhat{(theta)}$ 最小？"}
+{"question_type": "freeform","question": "设某种清漆的9个样品，其干燥时间（以h计）分别为设干燥时间总体服从正态分布N（μ，o²）.求μ的置信水平为0.95的置信区间，（1）若由以往经验知 $sigma!=!0,,6(mathrm{h})$ ，(2）若 $sigma$ 为未知。"}
+{"question_type": "freeform","question": "分别使用金球和铂球测定引力常数（单位： $10^{-11},mathrm{m^{3}},cdot,mathrm{kg^{-1}},cdot,mathrm{s^{-2}},)$ （1）用金球测定观察值为（2）用铂球测定观察值为设测定值总体为N（μ，o²），μo²均为未知.试就（1），（2）两种情况分别求的置信水平为0.9的置信区间，并求 $vec{sigma}^{vec{i}}$ 的置信水平为0.9的置信区间."}
+{"question_type": "freeform","question": "随机地取某种炮弹9发做试验，得炮口速度的样本标准差s=11m/s.设炮口速度服从正态分布.求这种炮弹的炮口速度的标准差。的置信水平为0.95的置信区间."}
+{"question_type": "freeform","question": "设 $X_{1}X_{2}cdots,X_{n}$ 是来自分布 $Nleft(mu,sigma^{2}right)$ 的样本， $beta^{t}$ 已知， $pmb{mathcal{D}}$ 未知."}
+{"question_type": "freeform","question": "设 $X_{1}X_{2}cdots,X_{n}$ 是来自分布 $Nleft(mu,sigma^{2}right)$ 的样本， $beta^{t}$ 已知， $pmb{mathcal{D}}$ 未知.（1）验证 $sum_{i=1}^{n}(X_{i}-mu)^{2}/sigma^{2}simchi^{2}left(nright)$ ．利用这一结果构造 $sigma^{2}$ 的置信水平为 $1-alpha$ 的置信区间。"}
+{"question_type": "freeform","question": "设 $X_{1}X_{2}cdots,X_{n}$ 是来自分布 $Nleft(mu,sigma^{2}right)$ 的样本， $beta^{t}$ 已知， $pmb{mathcal{D}}$ 未知.（2）设 $mu!=!6,5$ ，且有样本值7.5，2.0，12.1，8.8,9.4，7.3，1.9，2.8，7.0，7.3.试求 $vec{sigma}$ 的置信水平为0.95的置信区间."}
+{"question_type": "freeform","question": "在第17题中，设用金球和用铂球测定时测定值总体的方差相等.求两个测定值总体均值差的置信水平为0.90的置信区间."}
+{"question_type": "freeform","question": "随机地从 $A$ 批导线中抽4根，又从 ${cal{B}}$ 批导线中抽5根，测得电阻 $(Omega)$ 为设测定数据分别来自分布 $N(mu_{1},,sigma^{2},),,N(mu_{2},,sigma^{2},)$ ，且两样本相互独立.又 $mu_{1}cdotmu_{2}={sigma}^{2}$ 均为未知.试求 $mu_{1}-mu_{2}$ 的置信水平为0.95的置信区间."}
+{"question_type": "freeform","question": "研究两种固体燃料火箭推进器的燃烧率.设两者都服从正态分布，并且已知燃烧率的标准差均近似地为0.05cm/s，取样本容量为n=n2=20.得燃烧率的样本均值分别为=18cm/s，x2=24cm/s，设两样本独立.求两燃烧率总体均值差μ1一μ2的置信水平为0.99的置信区间."}
+{"question_type": "freeform","question": "设两位化验员A，B独立地对某种聚合物含氯量用相同的方法各做10次测定，其测定值的样本方差依次为s=0.5419，s=0.6065.设oA，o分别为A，B所测定的测定值总体的方差.设总体均为正态的，且两样本独立.求方差比A/的置信水平为0.95的置信区间."}
+{"question_type": "freeform","question": "在一批货物的容量为100的样本中，经检验发现有16只次品，试求这批货物次品率的置信水平为0.95的置信区间."}
+{"question_type": "freeform","question": "在一批货物的容量为100的样本中，经检验发现有16只次品，试求这批货物次品率的置信水平为0.95的置信区间.（1）求第16题中 $mu$ 的置信水平为0.95的单侧置信上限."}
+{"question_type": "freeform","question": "在一批货物的容量为100的样本中，经检验发现有16只次品，试求这批货物次品率的置信水平为0.95的置信区间.（2）求第21题中 $mu_{1}-mu_{2}$ 的置信水平为0.95的单侧置信下限."}
+{"question_type": "freeform","question": "在一批货物的容量为100的样本中，经检验发现有16只次品，试求这批货物次品率的置信水平为0.95的置信区间.（3）求第23题中方差比 $sigma_{A}^{2}/sigma_{B}^{2}$ 的置信水平为0.95的单侧置信上限."}
+{"question_type": "freeform","question": "为研究某种汽车轮胎的磨损特性，随机地选择16只轮胎，每只轮胎行驶到磨坏为止，记录所行驶的路程（以 $operatorname{km}$ 计）如下：41250 40187 43 175 41010 39265 4187242654 41287 38970 40200 42550 41095 4068043500.39775 40400"}
+{"question_type": "freeform","question": "假设这些数据来自正态总体N(μ，o²），其中μ，²未知，试求μ的置信水平为0.95的单侧置信下限。"}
+{"question_type": "freeform","question": "科学上的重大发现往往是由年轻人做出的.下面列出了自16世纪中叶至20世纪早期的十二项重大发现的发现者和他们发现时的年龄：5.燃烧是与氧气联系着的 拉瓦锡（Lavoisier） 1774 31 6.地球是渐进过程演化成的 莱尔（Lyell) 1830 33 7.自然选择控制演化的证据 达尔文（Darwin） 1858 49 8.光的场方程 麦克斯韦（Maxwell） 1864 33 9.放射性 居里（Curie） 1896 34 10.量子论 普朗克（Plank） 1901 43 11. 狭义相对论， $E!=!m v^{*}$ 爱因斯坦（Einstein） 1905 26 12.量子论的数学基础 薛定谔（Schrodinger） 1926 39"}
+{"question_type": "freeform","question": "设样本来自正态总体，试求发现者的平均年龄的置信水平为0.95的单侧置信上限."}
+{"question_type": "freeform","question": "某批矿砂的5个样品中的镍含量，经测定为 $(tilde{0}0)$ 3.25 3.273.243.263.24 设测定值总体服从正态分布，但参数均未知，问在 $alpha!=!0,,01$ 下能否接受假设：这批矿砂的镍含量的均值为3.25."}
+{"question_type": "freeform","question": "如果一个矩形的宽度 $mathcal{D E}$ 与长度 $l$ 的比 (√5-1)≈0.618,这样的矩形称为黄金矩形.这种尺寸的矩形使人们看上去有良好的感觉.现代的建筑构件（如窗架）、工艺品（如图片镜框），甚至司机的执照、商业的信用卡等常常都是采用黄金矩形.下面列出某工艺品工厂随机取的20个矩形的宽度与长度的比值： 0.693 0.749 0.654 0.670 0.662 0.672 0.615 0.606 0.6900.628 0.668 0.611 0.606 0.609 0.601 0.553 0.570 0.844 0.576 0.933 设这一工厂生产的矩形的宽度与长度的比值总体服从正态分布，其均值为 $beta^{l}$ ，方差为 $sigma^{2}cdotmucdotsigma^{2}$ 均未知.试检验假设（取 $alpha!=!0,,05)$ H_{circ}:mu{=}0. 618,,quad H_{1}:mu{=}neq0. 618."}
+{"question_type": "freeform","question": "要求一种元件平均使用寿命不得低于 $1 mathrm{0oob}$ ，生产者从一批这种元件中随机抽取25件，测得其寿命的平均值为 $950,mathrm{,h}$ 已知该种元件寿命服从标准差为 $sigma,{=},100,mathrm{~h~}$ 的正态分布.试在显著性水平 $alpha!=!0,,05$ 下判断这批元件是否合格？设总体均值为 $mu+mu$ 未知.即需检验假设$H_{0}:mugeq1000,,H_{1}:muleq1 000."}
+{"question_type": "freeform","question": "下面列出的是某工厂随机选取的20只部件的装配时间 $(widehat{mathbf{m}}_{mathrm{in}})$ 9.8 10.4 10.6 9.6 9.7 9.9 10.9 11.1 9.6 10.2 10.3 9.6 9.9 11.2 10.6 9.8 10.5 10.1 10.5 9.7 设装配时间的总体服从正态分布 $N(mu,sigma^{2}),,mu,sigma^{2}$ 均未知.是否可以认为装配时间的均值显著大于10（取 $a=0,05$ ）？"}
+{"question_type": "freeform","question": "按规定， $100~mathrm{g}$ 罐头番茄汁中的平均维生素C含量不得少于 $21~mathrm{mg/g}$ .现从工厂的产品中抽取17个罐头，其 $100~mathrm{g}$ 番茄汁中，测得维生素 $C$ 含量 $left(etamathbf{g}/mathbf{g}right)$ 记录如下： 设维生素含量服从正态分布 ${cal N}(mu,sigma^{2}),,mu,sigma^{2}$ 均未知，问这批罐头是否符合要求（取显著性水平$alpha!=!0,,05;"}
+{"question_type": "freeform","question": "下表分别给出两位文学家马克·吐温（MarkTwain）的8篇小品文以及斯诺特格拉斯（Snodgrass）的10篇小品文中由3个字母组成的单字的比例。 设两组数据分别来自正态总体，且两总体方差相等，但参数均未知.两样本相互独立.问两位作家所写的小品文中包含由3个字母组成的单字的比例是否有显著的差异（取 $alpha!=!0,,05)!cdot$"}
+{"question_type": "freeform","question": "在20世纪70年代后期人们发现，在酿造啤酒时，在麦芽干燥过程中形成致癌物质亚硝基二甲胺（NDMA）.到了20世纪80年代初期开发了一种新的麦芽于燥过程.下面给出分别在新老两种过程中形成的NDMA含量（以10亿份中的份数计）： 设两样本分别来自正态总体，且两总体的方差相等，但参数均未知.两样本独立.分别以μ·$mu_{perp}$ 记对应于老、新过程的总体的均值，试检验假设 $[alpha!=!0,,05)$ H_{0}:mu_{1}-mu_{2}leqslant2,quad H_{1}:mu_{1}-mu_{2}>2."}
+{"question_type": "freeform","question": "随机地选了8个人，分别测量了他们在早晨起床时和晚上就寝时的身高（cm），得到以下的数据。 设各对数据的差D=X-Y：（i=1，2，,8）是来自正态总体N（μ）的样本，μDo均未知.问是否可以认为早晨的身高比晚上的身高要高（取 $_{a}!=!0,,05)cdot$"}
+{"question_type": "freeform","question": "为了比较用来做鞋子后跟的两种材料的质量，选取了15名男子（他们的生活条件各不相同），每人穿一双新鞋，其中一只是以材料 $A$ 做后跟，另一只以材料 $B$ 做后跟，其厚度均为 $mathrm{10~mm}$ 过了一个月再测量厚度，得到数据如下： 设 $D_{i},{=},bar{X}_{i},{-},mathbf{Y}_{i}$ $(i!=!1,2,cdots,15)$ 是来自正态总体 $N(mu_{D}sigma_{D}^{i})$ 的样本， $mu_{D}cdotbar{sigma}_{D}^{bar{ell}}$ 均未知.问是否可以认为以材料 $A$ 制成的后跟比材料 $B$ 的耐穿（取 $alpha!=!0,,05)$"}
+{"question_type": "freeform","question": "为了试验两种不同的某容物的种子的优劣，选取了10块土质不同的土地，并将每块土地分为面积相同的两部分，分别种植这两种种子.设在每块土地的两部分人工管理等条件完全一样.下面给出各块土地上的单位面积产量： 设 $D_{i}=X_{i}-Y_{i}$ $(i!=!1,2,cdots,!10)$ 是来自正态总体 $N(mu_{D}sigma_{D}^{2})$ 的样本， $mu_{D}=sigma_{D}^{2}$ 均未知.问以这两 种种子种植的谷物的产量是否有显著的差异（取 $alpha!=!0,,05)$"}
+{"question_type": "freeform","question": "一种混杂的小麦品种，株高的标准差为 $sigma_{0},{=},14~mathrm{cm}$ ，经提纯后随机抽取10株，它们的株高（以 $mathbf{mathbb{C}m}$ 计）为 考察提纯后群体是否比原群体整齐？取显著性水平α=0.01，并设小麦株高服从N（μ，o²）."}
+{"question_type": "freeform","question": "某种导线，要求其电阻的标准差不得超过 $0,,005,Omega$ ，今在生产的一批导线中取样品9根，测得 $_5!=!0.007 Omega$ ，设总体为正态分布，参数均未知.问在显著性水平 $a!=!0,,05$ 下能否认为这批导线的标准差显著地偏大？"}
+{"question_type": "freeform","question": "在第2题中记总体的标准差为 $Bar{sigma}$ ，试检验假设（取 $alpha^{=}0,,05,;$ H_{vartheta}:!sigma^{2}!=!0.,11^{2},,quad H_{1}:!sigma^{2}!neq!0.,11^{2},."}
+{"question_type": "freeform","question": "测定某种溶液中的水分，它的10个测定值给出s=0.037%，设测定值总体为正态分布， $sigma^{frac{gamma}{2}}$ 为总体方差， $sigma^{2}$ 未知.试在显著性水平 $a^{=}{=},0.,05$ 下检验假设 H_{0}:sigma!!geq!0,,04,%,,quad H_{1}:sigma!<!0,,04,%,."}
+{"question_type": "freeform","question": "在第6题中分别记两个总体的方差为 $sigma_{1}^{z}$ 和 $bar{mathcal{Q}}_{2}^{2}$ .试检验假设（取 $alpha!=!0,,05$ H_{circ}:sigma_{1}^{2}!=!sigma_{2}^{2},,quad H_{1}:sigma_{1}^{bar{z}}!neq!sigma_{2}^{2},."}
+{"question_type": "freeform","question": "在第7题中分别记两个总体的方差为 $sigma_{1}^{i}$ 和 $vec{sigma}_{2}^{2}$ 试检验假设（取 $a!!equiv!0,,05,$ H_{9}:sigma_{1}^{2}=sigma_{2}^{2};,;;;;H_{1}:sigma_{1}^{2}neqsigma_{2}^{2};."}
+{"question_type": "freeform","question": "两种小麦品种从播种到抽穗所需的天数如下： ${cfrac{textit{x}left|101 100quad99quad99quad98quad100quad98quad99quad99quad99}{textit{y}}} 设两样本依次来自正态总体N(μo²），N（μ2，o²），μi，o:（i=1，2）均未知，两样本相互独立. （1）试检验假设 $H_{0}:sigma_{1}^{2}!=!sigma_{2}^{2}$ $H_{1}:sigma_{1}^{2}neqsigma_{2}^{2}$ （取 $bar{alpha}^{=}bar{0}bar{0}5;$ （2）若能接受 $H_{0}$ ,接着检验假设 $H_{0}^{prime}:mu_{1}=mu_{2}:,H_{1}^{prime}:mu_{1}neqmu_{2}$ （取 $alpha!=!0,,05)$"}
+{"question_type": "freeform","question": "用一种叫“混乱指标”的尺度去衡量工程师的英语文章的可理解性，对混乱指标的打分越低表示可理解性越高.分别随机选取13篇刊载在工程杂志上的论文，以及10篇未出版的学术报告，对它们的打分列于下表： 设数据 $mathbb{I}cdotmathbb{I}$ 分别来自正态总体 $N(mu_{1},,sigma_{1}^{2},),,N(mu_{2},,sigma_{2}^{2},),,mu_{1},,mu_{2},,sigma_{1}^{2},,sigma_{2}^{2}$ 均未知，两样本独立. （1）试检验假设 $H_{circ}:sigma_{1}^{z},{=},sigma_{2}^{2},,H_{1}:sigma_{1}^{2},{neq},sigma_{2}^{z}$ （取 $alpha!=!0,1)$ （2）若能接受H，接着检验假设H：μ=μ2，H1:μ1≠μ（取α=0.1）."}
+{"question_type": "freeform","question": "有两台机器生产金属部件.分别在两台机器所生产的部件中各取一容量 $n_{1}=60,n_{2}$ $=40$ 的样本，测得部件重量（以 $k_{E}$ 计)的样本方差分别为 $s_{1}^{2},{=},15,,46,,s_{2}^{2},{=},9,,66.$ 设两样本相互独立.两总体分别服从 $N(mu_{1},,sigma_{1}^{2}),,N(mu_{2},,sigma_{2}^{2},)$ 分布. $mu_{i}astbar{sigma}_{i}^{2}$ $(i=1,2)$ 均未知.试在显著性水平 $alpha$ $=0.05$ 下检验假设 H_{9}:sigma_{1}^{2}!leqslant!sigma_{2}^{2},,quad H_{1}:sigma_{1}^{2}!>!sigma_{2}^{2},."}
+{"question_type": "freeform","question": "设需要对某一正态总体的均值进行假设检验 H_{0}:mu!!geq!15,,quad H_{1}:mu!<!15. 已知²=2.5.取α=0.05.若要求当H中的μ≤13时犯第Ⅱ类错误的概率不超过β=0.05，求所需的样本容量."}
+{"question_type": "freeform","question": "电池在货架上滞留的时间不能太长.下面给出某商店随机选取的8只电池的货架滞留时间（以天计）： 设数据来自正态总体 $N(mu,bar{sigma}^{2}),,mu,,bar{sigma}^{2}$ 未知. （1）试检验假设 $H_{0}:mu!!lesssim!125,,H_{1}:mu!!>!125$ ，取 $alpha!=!0,,05$ （2）若要求在上述 $H_{1}$ 中 $(mu{-}125)/sigma{geq}1.4$ 时，犯第 $mathbb{I}$ 类错误的概率不超过 $beta!=!0,1$ ，求所需的样本容量."}
+{"question_type": "freeform","question": "一药厂生产一种新的止痛片，厂方希望验证服用新药片后至开始起作用的时间间隔较原有止痛片至少缩短一半，因此厂方提出需检验假设/ H_{0}:!mu_{1}!leqslant!2mu_{2},,quad H_{1}:!mu_{1}!>!2mu_{2},. 此处 $mu_{1}cdotmu_{2}$ 分别是服用原有止痛片和服用新止痛片后至起作用的时间间隔的总体的均值.设两总体均为正态且方差分别为已知值o，o.现分别在两总体中取一样本X，X2，X，和$Y_{1}=Y_{2},,cdots,Y_{n_{2}}$ ，设两个样本独立.试给出上述假设 $H_{0}$ 的拒绝域，取显著性水平为 $pi$"}
+{"question_type": "freeform","question": "检查了一本书的100页，记录各页中印刷错误的个数，其结果为 问能否认为一页的印刷错误的个数服从泊松分布（取 $bar{alpha}^{=}bar{0},bar{0}5)$"}
+{"question_type": "freeform","question": "在-一批灯泡中抽取300只作寿命试验，其结果如下： 取 $alpha!=!0,,05$ ，试检验假设 $H_{0}$ ：灯泡寿命服从指数分布 f(t)=left{begin{array}{l l}{0.;005mathrm{e}^{-0.005t}}&{t{geq0,,} {0,,}&{t{<}0.}end{array}right."}
+{"question_type": "freeform","question": "下面给出了随机选取的某大学一年级学生（200名）一次数学考试的成绩. （1）画出数据的直方图 （2）试取 $pi!=!0,1$ 检验数据来自正态总体 $N(60,{,}15^{2})$"}
+{"question_type": "freeform","question": "袋中装有8只球，其中红球数未知.在其中任取3只，记录红球的只数 $X$ 然后放回，再任取3只，记录红球的只数，然后放回.如此重复进行了112次，其结果如下： 试取 $alpha!=!0,,05$ 检验假设 $H_{0}:X$ 服从超几何分布 Pleft{X!=!k,right}!=!{binom{5}{k}}{binom{3}{3-k}}!left/{binom{8}{3}},,quad k!=!0,1,2,3. 即检验假设 $H_{mathrm{{5}}}$ ：红球的只数为5."}
+{"question_type": "freeform","question": "一农场10年前在一鱼塘中按比例 $20:15:40:25$ 投放了四种鱼：鲑鱼、鲈鱼、竹夹鱼和鱼的鱼苗，现在在鱼塘里获得一样本如下： 试取 $alpha!=!0,,05$ ，检验各类鱼数量的比例较10年前是否有显著的改变，"}
+{"question_type": "freeform","question": "某种鸟在起飞前，双足齐跳的次数X服从几何分布，其分布律为 P{,X!=!x}!=!p^{x^{-1}}(1!-!p),,quad x!=!1,2,,cdots!. 今获得一样本如下： （1）求 $phi$ 的最大似然估计值.(2）取 $alpha!=!0,,05$ ，检验假设： $H_{0}$ ：数据来自总体 $P{X{=}x},{=},p^{x{-}1},(1{-}p),,nonumber$ $_{x=1,2,cdots}$"}
+{"question_type": "freeform","question": "分别抽查了两球队部分队员行李的重量 $(mathtt{k}mathtt{g})$ 为： 设两样本独立且1，2两队队员行李重量总体的概率密度至多差一个平移.记两总体的均值分别为 $mu_{mathrm{f}},mathfrak{p}_{f}mu_{mathrm{d}}$ ,且 $mu_{1}=mu_{i}$ 均未知.试检验假设： $H_{circ}:mu_{1}=mu_{2},,H_{1}:mu_{1}<mu_{2}$ (取 $_{tilde{a}}!=!0,,05)$"}
+{"question_type": "freeform","question": "下面给出两种型号的计算器充电以后所能使用的时间（h）： 设两样本独立且数据所属的两总体的概率密度至多差一个平移，试问能否认为型号A的计算器平均使用时间比型号 $B$ 来得长 $(alpha!=!0,,01),!?"}
+{"question_type": "freeform","question": "下面给出两个工人五天生产同一种产品每天生产的件数： 设两样本独立且数据所属的两总体的概率密度至多差一个平移.问能否认为工人 $A$ 、工人 $B$ 平均每天完成的件数没有显著差异 $(alpha!=!0,1)?$"}
+{"question_type": "freeform","question": "（1）设总体服从 $N(iota,100),iotaiota$ 未知，现有样本： $scriptstyle n,=,16$ $bar{x}!=!13,,5$ ，试检验假设 $H_{0}:mu^{leq}$ 10, $H_{1}$ $mu_{-}>10$ (i)取 $a!=!0,,05$ (i)取 $alpha!=!0,,10$ ,(ii) $H_{0}$ 可被拒绝的最小显著性水平. （2）考察生长在老鼠身上的肿块的大小.以 $X^{prime}$ 表示在老鼠身上生长了15天的肿块的直径（以 $mathrm{mm}$ 计)，设 $X{sim}N(mu,sigma^{2});,mu,{circ},sigma^{2}$ 均未知.今随机地取9只老鼠（在它们身上的肿块都长了15天），测得 $overline{{x}}!=!4,,3,,s!=!1,,2,,$ 试取 $alpha!=!0,,05$ ，用 $phi$ 值检验法检验假设 $H_{circ}:mu!=!4.,0,,H_{mathrm{I}}:muoverline{{tau}}^{perp}$ 4.0，求出 $phi$ 值. （3）用 $phi$ 值检验法检验 $hat{mathrm{~g~}}hat{mathrm{~z~}}$ 例 $4$ 的检验问题（4）用 $phi$ 值检验法检验第27题中的检验问题"}
+{"question_type": "freeform","question": "利用抛掷-枚硬币的试验定义一随机过程。假设 P(H)=P(T)=frac{1}{2} 试确定 X(t) 的（1）一维分布函数 Fleft(x;frac{1}{2}right),Fleft(x;1right) （2）二维分布函数F（x,x"}
+{"question_type": "freeform","question": "设随机过程 X(t)= e^{-lambda t} t^{because}{geq}0 ，其中 A 是在区间 {0,a} 上服从均匀分布的随机变量，试求 X(t) 的均值函数和自相关函数."}
+{"question_type": "freeform","question": "设随机过程 mathbb{X}(t)equivmathbb{X} （随机变量）， E(X)=a,,bar{D}(X)=sigma^{2}, (sigma>0) ，试求 X(t) 的均值函数和协方差函数."}
+{"question_type": "freeform","question": "已知随机过程 {X(t),tin T} 的均值函数 mu_{X}(t) 和协方差函数 C_{X}(t_{1}t_{2}),varphi(t) 是普通的函数，试求随机过程 mathbf{boldsymbol{Y}}(t)=mathbf{boldsymbol{X}}(t)+boldsymbol{varphi}(t) 的均值函数和协方差函数."}
+{"question_type": "freeform","question": "设 Z(t)=mathbf{X}+mathbf{Y}t -infty<t<+infty ，若已知二维随机变量 {X,Y} 的协方差矩阵为 left[begin{array}{c c}{sigma_{1}^{2}}&{rhosigma_{1}sigma_{2}} {}&{} {sigma_{1}sigma_{2}}&{sigma_{2}^{2}}end{array}right] 试求 sum(t) 的协方差函数，"}
+{"question_type": "freeform","question": "设 X(t)=A t+B,-infty<t<+infty ，式中 Acdot B 相互独立，且都服从正态分布 N(0,sigma^{2}) 的随机变量，试证明 X(t) 是一正态过程，并求出它的相关函数（协方差函数）"}
+{"question_type": "freeform","question": "设随机过程 X(t) 与 mathrm{Y}(t),tin T 不相关，试用它们的均值函数与协方差函数来表示随机过程 Z(t)=a(t)X(t)+b(t)Y(t)+c(t),tin T 的均值函数和自协方差函数，其中 ensuremath{boldsymbol{a}}(t),ensuremath{boldsymbol{b}}(t),ensuremath{boldsymbol{c}}(t) 是普通的函数："}
+{"question_type": "freeform","question": "设 X(t) 和 boldsymbol{mathrm{Y}}(t)~(t>0) 是两个相互独立的，分别具有强度 7 和 mu 的泊松过程，试证 S(t)=X(t)+Y(t) 是具有强度 lambda+mu 的泊松过程"}
+{"question_type": "freeform","question": "设 {W(t),tgg0} 是以 sigma^{i} 为参数的维纳过程，求下列过程的协方差函数： (1) mathbb{W}(t)+A t boldsymbol{A} 为常数） （2） W(t)+X t,X 为与 {W(t),tmathcal{Z}(} 相互独立的标准正态变量， (3) amathbb{W}(t/a^{2}),,a 为正常数"}
+{"question_type": "freeform","question": "从数 $1ldots2,cdots,N$ 中任取一数：记为 $X_{i}$ 再从 $1,2,cdots,X_{i}$ 中任取一数，记为 $X_{2}$ ：如此继续·从 $mathbb{1}+mathcal{Z}operatorname{Pi}^{dots}operatorname{Pi}^{N}dots$ 中任取一数，记为 $X_{nu}$ .说明 ${X_{n}n}}$ 构成一齐次马氏链，并写出它的状态空间和一步转移概率矩阵。"}
+{"question_type": "freeform","question": "说明第十二章 $S 1$ 例5中的随机过程都是齐次马氏链，并写出它们的状态空间和一步转移概率矩阵."}
+{"question_type": "freeform","question": "设 $X_{i}=1,,X_{i},,X_{bar{z}},,cdots,X_{n},,$ 是相互独立且都以概率 $hat{P}$ $(0!leqslant p!in!1)$ 取值1.以概率 $q!=!1$ $cdotshat{P}$ 取值0 的随机变量序列，令 $S_{n}=sum_{k=0}^{n}X_{k}$ ，证明 ${S_{n}n}=0}$ 构成一马氏链,并写出它的状态空间和一步转移概率矩阵。"}
+{"question_type": "freeform","question": "（传染模型）有 $N$ 个人及某种传染病，假设（1）在每个单位时间内此 $N$ 个人中恰有两人互相接触，且一切成对的接触是等可能的.（2）当健康者与患病者接触时，被传染上病的概率为 $pi$（3）患病者康复的概率是0.健康者如果不与患病者接触，得病的概率也为0.现以 $X_{n}$ 表示第 $gamma_{l}$ 个单位时间内的患病人数.试说明这种传染过程，即 ${X_{eta}mathrel{mathop:}n}geq0}$ 是一马氏链，并写出它的状态空间及一步转移概率矩阵."}
+{"question_type": "freeform","question": "设马氏链 ${X_{n}n}=0}$ 的状态空间为 $I!=!{1,2,3}$ ，初始分布为 $phi_{1}left(0right)=1/4,,,phi_{2}left(0right)=1/$ $2,p_{3}left(0right)=1/4$ ，一步转移概率矩阵为 $$begin{array}{r l}{1}&{2}&{3} {1left[1/4right.}&{3/4}&{left.0} {P!!!!/=2left[1/3!!!!/right.}&{1/3}&{1/3} {3left.!!!/right.}&{1/4}&{3/4}end{array}right]}$$ （1）计算 $Pleft{X_{0},{=},1,X_{1},{=},2,X_{2},{=},2right}$ (2）证明 $P,{,X_{1}=2,,X_{2}=2mid X_{0}=1,}=hat{p}_{12},hat{p}_{22},.$ (3）计算 $P_{12}left(2right){=}Pleft{,X_{2}{=}2left|,X_{0}{=}1,right}$ （4）计算 $phi_{mathrm{2}}left(mathrm{2}right)mathrm{{=}},Pleft{,X_{mathrm{2}},mathrm{{=}},mathrm{{2}},right}$"}
+{"question_type": "freeform","question": "证明 $hat{textbf{y}}_{2}$ 中公式（2.5）."}
+{"question_type": "freeform","question": "设任意相继的两天中，雨天转晴天的概率为 $1/3$ ，晴天转雨天的概率为 $1/2$ 任一天晴或雨是互为逆事件.以0表示晴天状态，以1表示雨天状态， $X_{n}$ 表示第 $^{n}$ 天的状态（0或1），试写出马氏链 ${X_{n}n}geq1}$ 的一步转移概率矩阵：又若已知5月1日为晴天，问5月3日为晴天，5月5日为雨天的概率各等于多少？"}
+{"question_type": "freeform","question": "在一计算系统中，每一循环具有误差的概率取决于先前一个循环是否有误差.以0表示误差状态·以1表示无误差状态.设状态的一步转移概率矩阵为 $$begin{array}{r}{{bf p}!=!frac{0}{1}!left[!!begin{array}{c c}{0.;75}&{0.;25} {0.;5}&{0.;5}end{array}!!right]!.}end{array}$$ 试证明相应齐次马氏链是遍历的，并求其极限分布（平稳分布）."}
+{"question_type": "freeform","question": "试证第5题中的马氏链具有遍历性，并求其极限分布."}
+{"question_type": "freeform","question": "设齐次马氏链的一步转移概率矩阵为 $$begin{array}{r}{pmb{{p}}_{=}left[begin{array}{l l l}{pmb{q}}&{pmb{beta}}&{0} {pmb{q}}&{0}&{pmb{beta}} {0}&{pmb{q}}&{pmb{beta}}end{array}right],quadpmb{q}_{=1-beta,0<pmb{p}<1.}}end{array}$$ 试证明此链具有遍历性，并求其平稳分布."}
+{"question_type": "freeform","question": "设马氏链的一步转移概率矩阵为 $$P!!=!left[!!{begin{array}{c c c}{1/2}&{1/2}&{0} {1/2}&{1/2}&{0} {0}&{0}&{1}end{array}}!!right],$$ 试证此链不是遍历的。"}
+{"question_type": "freeform","question": "设有随机过程 $X(t)=Acos(omega t+phi)$ $-00<t<+infty$ ，其中 $A$ 是服从瑞利分布的随机变量，其概率密度为 $$ f(a)=left{frac{a}{sigma^{2}}mathrm{e}^{-a^{2}int(2a^{2})},,quad a>0,,right.quadquadquadquadleft.0,,right.$$ $widehat{Theta}$ 是在 $(0,2pi)$ 上服从均匀分布且与 $A$ 相互独立的随机变量， $mathcal{C P}$ 是一常数，问 $X(t)$ 是不是平稳过程？"}
+{"question_type": "freeform","question": "设 $X(t)$ 与 $Y(t)$ 是相互独立的平稳过程.试证以下随机过程也是平稳过程： (1) $Z_{1}(t)=X(t)Y(t)$ $Z_{z}(t)=X(t)+Y(t).$"}
+{"question_type": "freeform","question": "设 ${X(t),-infty<t<+infty}$ 是平稳过程， $R_{X}(tau)$ 是其自相关函数， $ddot{a}$ 是常数，试问随机过程 $$ mathbf{boldsymbol{Y}}(t)=boldsymbol{X}(t+bar{boldsymbol{a}})-boldsymbol{X}(t) $$ 是不是平稳过程？为什么？"}
+{"question_type": "freeform","question": "设 ${N(t),tge0}$ 是强度为 $lambda$ 的泊松过程，定义随机过程 $Y(t)=N(t+L)-N(t)$ ，其中常数L>0.试求Y（t）的均值函数和自相关函数，并问Y（t）是否是平稳过程？"}
+{"question_type": "freeform","question": "设平稳过程 ${X(t),-infty<t<+infty}$ 的自相关函数为 $R_{x}(tau)=e^{-bar{alpha}|tau|}(1+a|tau|)$ ,其中常数 $bar{a}_{*}^{intercal}[bar{mathbf{Gamma}}]$ ，而 $E[X(t)]equiv0$ .试问 $X(t)$ 的均值是否具有各态历经性？为什么？"}
+{"question_type": "freeform","question": "第1题中的随机过程 $X(t)=Acos(omega t+Theta)$ 是否是各态历经过程？为什么？"}
+{"question_type": "freeform","question": "(1）设 $C_{X}(tau)$ 是平稳过程 $X(t)$ 的协方差函数.试证：若 $C_{X}(tau)$ 绝对可积，即 $$ int_{-infty}^{+infty}|C_{x}(tau)|mathrm{d}tau<+infty,, $$ 则 $X(t)$ 的均值具有各态历经性， (2) 证明第十四章 $^mathrm{~mathsection~}_{5}mathrm{~]~}$ 例2中的随机相位周期过程 $X(,t)=s!!backslash!!backslash t!+!!!backslash!!!Theta!!rangle$ 是各态历经过程."}
+{"question_type": "freeform","question": "设X（t）是随机相位周期过程，下图表示它的一个样本函数r（t)，其中周期T和波幅A都是常数，而相位 $vec{f}_{bar{i}}$ 是在 $(0,T)$ 上服从均匀分布的随机变量。 (1) 求 $mu_{X}=Psi_{X}^{n}$ .(2) 求 $X(t)$ 和 $X^{pm}(t)$"}
+{"question_type": "freeform","question": "设平稳过程 $X(t)$ 的自相关函数为 $R_{X}(tau)$ ，证明： $$ Pleft{|X(t+tau)-X(t)|geqslant aright}leqslant 2left[R_{x}(0)-R_{x}(tau)right]Bigg/a^{2},,quad a>0."}
+{"question_type": "freeform","question": "设 $X(t)$ 为平稳过程，其自相关函数 $R_{X}(tau)$ 是以 $T_{0}$ 为周期的函数.证明： $X(t)$ 是周期为 $T_{i}$ 的平稳过程。"}
+{"question_type": "freeform","question": "设 $X(t)$ 是雷达的发射信号，遇目标后返回接收机的微弱信号是 $alpha X(t-tau_{1}),a{leq1,tau_{!}$ 是信号返回时间，由于接收到的信号总是伴有噪声的，记噪声为 $N(t)$ ·于是接收到的全信号为 $$ Y(t)=a X(t-tau_{1})+N(t). $$ (1) 若 $X(t)$ 和 $N(t)$ 是平稳相关，证明 $X(t)$ 和 $mathbb{Y}(t)$ 也平稳相关. (2) 在（1）的条件下，假设N（t）的均值为零且与X（t）是相互独立的，求Rxv（t）（这是利用互相关函数从全信号中检测小信号的相关接收法）."}
+{"question_type": "freeform","question": "平稳过程 ${X(t),-infty<t<+infty}$ 的自相关函数为 $$ R_{X}(tau)=4mathrm{e}^{-1tau!}cospitau^{+}cos3pitau, $$ 求：(1) $X(t)$ 的均方值：(2) $X(t)$ 的谱密度."}
+{"question_type": "freeform","question": "已知平稳过程 $X(t)$ 的谱密度为 $$ S_{X}(omega)=frac{omega^{2}}{omega^{4}+3omega^{2}+2} $$ 求 $X(t)$ 的均方值"}
+{"question_type": "freeform","question": "已知平稳过程 $X(t)$ 的自相关函数为 $$ R_{X}(tau)=left{begin{array}{l l}{{displaystyle1-frac{|tau|}{T}}}&{{|tau|leqslant T,}} {{displaystyle0,}}&{{|tau|>T,}}end{array}right. $$ 求谱密度 $S_{X}(omega)$"}
+{"question_type": "freeform","question": "已知平稳过程 $X(t)$ 的谱密度为 $$ S_{x}(omega)=left{begin{array}{l l}{{8delta(omega)+20left(1-frac{big|omegabig|}{10}right),}}&{{mathrm{~vertomegavert<10,,}}} {{0,}}&{{mathrm{~mathbb{Z}/mathrm{i}/mathrm{i},,}}}end{array}right. $$ 求 $X(t)$ 的自相关函数。"}
+{"question_type": "freeform","question": "记随机过程 $$ Y(t)=X(t)cos(omega_{0},t+Theta),,quad!-cos<t<+infty,, $$ 其中 $X(t)$ 是平稳过程， $textcircled{H}$ 为在区间 $(0,2pi)$ 上均匀分布的随机变量， $omega_{D}$ 为常数，且 $X(t)$ 与 $boldsymbol{Theta}$ 相互独立.记 $X(t)$ 的自相关函数为 $R_{X}(tau)$ ，功率谱密度为 $S_{X}(omega)$ .试证： (1) $mathrm{Y}(t)$ 是平稳过程，且它的自相关函数 $$ R_{Y}(tau)=frac{1}{2}R_{X}(tau)cosomega_{0}tau. $$ (2) $Y(t)$ 的功率谱密度为 $$ S_{Y}(omega)=frac{1}{4}big[S_{X}(omega-omega_{0})+S_{X}(omega+omega_{0})big]. $$"}
+{"question_type": "freeform","question": "设平稳过程X（t)的谱密度为Sx（co），证明：Y（t）=X（t)+X（t-T）的谱密度是 $$ S_{Y}(omega)=2S_{scriptscriptstyle X}(omega)(1+cosomega T). $$"}
+{"question_type": "freeform","question": "设 $X(t)$ 和 $Y(t)$ 是两个平稳相关的过程，证明 $$ colon S_{Y X}(omega)=operatorname{Re},S_{X Y}(omega),quadoperatorname{Im},S_{Y X}(omega)=-operatorname{Im},S_{X Y}(omega). $$"}
+{"question_type": "freeform","question": "设两个平稳过程 $X(t)=acos(omega_{0}t+theta)$ $Y(t)=bsin(omega_{0}t+Theta),,quad!-infty<t<+infty,,$ 其中 $a*b*omega_{0}$ 均为常数，而 $boldsymbol{Theta}$ 是 $(0,2pi)$ 上均匀分布的随机变量，试求互相关函数 $R_{mathrm{XY}}(tau) R_{Y X}(tau)$ 和互谱密度 $S_{mathrm{XY}}(omega),S_{mathrm{YY}}(omega)$"}
+{"question_type": "freeform","question": "设 $X(t)$ 和 $Y(t)$ 是两个相互独立的平稳过程，均值 $rho_{X}$ 和 $f_{mathrm{{F}}}$ 都不为零，定义 $$ Z(t)=X(t)+Y(t). $$ 试计算 $S_{X Y}(omega)$ 和 $S_{X Z}(omega)$"}

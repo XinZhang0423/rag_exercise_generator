@@ -1,0 +1,112 @@
+{"id": 70, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 70, "type": "预测", "question": "如果一个系统在发送数据时没有使用加密，那么它发送的数据将会是什么形式?", "answer": "明文形式"}
+{"id": 70, "type": "解释", "question": "TELNET协议在最初的设计中是为了做什么目的？", "answer": "代替TELNET"}
+{"id": 71, "type": "比较", "question": "NaN", "answer": "NaN"}
+{"id": 71, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 71, "type": "解释", "question": "什么是一个集中 P2P 网络的例子？", "answer": "Napster"}
+{"id": 72, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 72, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 72, "type": "解释", "question": "哪种P2P网络中，节点随机地连在一起？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "在未结构化的P2P网络中进行搜索不有效的原因是什么？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "吉牛网和新飞网是哪种网络的例子？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "结构化的网络使用什么技术来链接节点？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "分布式散列表（DHT）在哪些应用中使用？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "BT下载是一个使用什么技术的P2P文件共享协议？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "传输层位于TCP/IP协议族的哪两个层次之间？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "传输层的主要作用是什么？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "传输层在图6-19中展示了什么思想？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "Alice和Bob在传输层建立逻辑连接时，两个公司是如何进行通信的？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "传输层可以提供哪些服务？", "answer": "NaN"}
+{"id": 72, "type": "解释", "question": "为什么UDP是一个极简单同时开销最少的协议？", "answer": "NaN"}
+{"id": 73, "type": "因果", "question": "What is the reason that UDP user datagrams have a shorter overall length?", "answer": "UDP user datagrams have a shorter overall length because they are stored within an IP datagram that has a total length of 65535 bytes."}
+{"id": 73, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 73, "type": "评估", "question": "question", "answer": "answer"}
+{"id": 73, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 73, "type": "解释", "question": "谁在目标主机处接收网络层数据包，并解除有效负荷的封装将其传输至相应的传输层?", "answer": "目标主机"}
+{"id": 74, "type": "因果", "question": "为什么一个传输层数据包到达的顺序可能与发送的顺序不同?", "answer": "因为每个数据包可能依照不同的路径到达目的地。"}
+{"id": 74, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 74, "type": "评估", "question": "What are the pros and cons of IPv4", "answer": "NaN"}
+{"id": 74, "type": "解释", "question": "在无连接传递中，网络层对每个数据包的处理方式是怎样的？", "answer": "网络层对每个数据包的处理是单独的。"}
+{"id": 75, "type": "预测", "question": "IPv6数据报的头长是多少字节?", "answer": "40字节"}
+{"id": 75, "type": "解释", "question": "哪个协议的数据包叫做数据报？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "IPv4 数据报的格式在哪个图中展示？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "数据报包括哪两部分？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "头的长度是多少字节？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "IPv6地址使用多少位来定义任何连接到网络的设备？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "IPv6地址显示为哪种格式？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "IPv6数据报的格式在哪个图中展示？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "数据链路层是网络中的哪个区域？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "数据链路层的通信是节点对节点的还是端到端的？", "answer": "NaN"}
+{"id": 75, "type": "解释", "question": "局域网（LAN）是为哪个地理区域设计的计算机网络？", "answer": "NaN"}
+{"id": 77, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 77, "type": "预测", "question": "What is the theoretical maximum upstream data rate of ADSL without high-level noise interference?", "answer": "1.44 Mbps"}
+{"id": 78, "type": "评估", "question": "What are the advantages and disadvantages of satellite networks?", "answer": "Satellite networks provide communication from one point to another on Earth, offer high-quality communication, and do not require significant investment in ground infrastructure."}
+{"id": 78, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 78, "type": "解释", "question": "哪种设备可以提供地球上一点到另一点的通信?", "answer": "NaN"}
+{"id": 79, "type": "比较", "question": "NaN", "answer": "NaN"}
+{"id": 79, "type": "预测", "question": "问题：传输介质具体指的是什么?", "answer": "答案：任何可以将信息从源传输到目标的介质"}
+{"id": 79, "type": "解释", "question": "什么是传输介质？", "answer": "NaN"}
+{"id": 80, "type": "预测", "question": "如果将IPv4地址的长度从32位增加到128位，那么这种地址空间的版本将是什么？", "answer": "IPv6"}
+{"id": 80, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 81, "type": "因果", "question": "NaN", "answer": "NaN"}
+{"id": 81, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 82, "type": "比较", "question": "一个设备以1000bps的速率发送10位数据和发送一个字符（8位）的时间哪个更长？", "answer": "发送10位数据的时间更长。"}
+{"id": 82, "type": "条件", "question": "question", "answer": "answer"}
+{"id": 82, "type": "评估", "question": "question", "answer": "answer"}
+{"id": 82, "type": "预测", "question": "如果设备在相同速率下发送10000位数据，需要多长时间?", "answer": "10秒"}
+{"id": 82, "type": "解释", "question": "一个设备以多少bps的速率发送数据?", "answer": "NaN"}
+{"id": 83, "type": "比较", "question": "question", "answer": "answer"}
+{"id": 83, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 83, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 83, "type": "解释", "question": "在多道程序中，每个作业可以分到一段时间来使用资源，这种时间分配的机制是什么？", "answer": "分时的概念"}
+{"id": 84, "type": "因果", "question": "为什么多道程序技术中程序可以在内存和硬盘之间多次交换数据？", "answer": "多道程序技术中程序可以在内存和硬盘之间多次交换数据，是因为它属于交换范畴，即在程序运行过程中，程序的部分内容可以从内存中移出并存储到硬盘上，当需要时再从硬盘加载回内存。"}
+{"id": 84, "type": "条件", "question": "如果操作系统采用请求分页调度技术，程序在内存中是如何运行的?", "answer": "程序被分成页，页可以依次载入内存、运行，然后被另一个页代替。来自同一个程序的连续页可以不必载入同一个帧，一个页可以载入任何一个空闲帧。"}
+{"id": 84, "type": "预测", "question": "如果将内存分成大小相等的部分，这种内存管理技术通常被称为什么？", "answer": "分页技术"}
+{"id": 84, "type": "解释", "question": "哪个技术允许程序在内存和硬盘之间多次交换数据？", "answer": "NaN"}
+{"id": 84, "type": "解释", "question": "多道程序中的第一种技术是什么？", "answer": "NaN"}
+{"id": 84, "type": "解释", "question": "分页调度和请求分页调度之间有什么区别？", "answer": "NaN"}
+{"id": 85, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 85, "type": "解释", "question": "谁是作业调度器负责从作业中创建的一个进程？", "answer": "NaN"}
+{"id": 86, "type": "条件", "question": "如果操作系统没有对进程的资源进行限制，将会发生什么?", "answer": "将会发生死锁。"}
+{"id": 86, "type": "评估", "question": "What are the benefits and drawbacks of the queues and strategies in the operating system process management?", "answer": "The queues, such as the job queue, ready queue, and I/O queue, benefit the system by improving efficiency, but they may also add complexity. Multiple strategies for process management provide flexibility and adjustability, but selecting the right strategy can be challenging. Deadlocks can cause system resource unavailability, while starvation can prevent certain processes from executing due to limited resource allocation. Device management enhances efficiency but can add system complexity."}
+{"id": 86, "type": "预测", "question": "如果I/O队列中的某个进程需要等待的I/O设备被占用，该进程将如何处理？", "answer": "进程将保持在I/O队列中等待，直到I/O设备变得可用。"}
+{"id": 86, "type": "预测", "question": "如果I/O队列中的某个进程需要等待的I/O设备被占用，该进程将如何处理?", "answer": "进程将保持在I/O队列中等待，直到I/O设备变得可用。"}
+{"id": 86, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 87, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 87, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 89, "type": "程序", "question": "NaN", "answer": "NaN"}
+{"id": 89, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 90, "type": "因果", "question": "NaN", "answer": "NaN"}
+{"id": 90, "type": "条件", "question": "如果内存容量为 $\\tt{128M B}$ ，操作系统需要 8 MB 内存，那么该计算机执行一个程序可用的最大内存为多少?", "answer": "如果内存容量为 $\\tt{128M B}$ ，操作系统需要 8 MB 内存，可用的最大内存为 $\\tt{120M B}$。"}
+{"id": 90, "type": "评估", "question": "NaN", "answer": "NaN"}
+{"id": 90, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 91, "type": "因果", "question": "为什么算法需要一步一步地处理整数，而不是一次性找到最大值?", "answer": "算法需要一步一步地处理整数，是因为在每一步中，它需要比较当前找到的最大值与剩余的整数，以确保找到的确是最大值。一次性找到最大值的方法在处理大量数据时可能不可行，且不能保证找到正确的最大值。"}
+{"id": 91, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 91, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 92, "type": "程序", "question": "问题", "answer": "答案"}
+{"id": 92, "type": "因果", "question": "为什么要在算法中引入循环结构来解决求最大值的问题？", "answer": "因为当处理的整数数目较多时，简单地重复每一步操作会导致操作步骤过多，而循环结构允许计算机自动重复执行相同的步骤，从而简化算法并提高效率。"}
+{"id": 92, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 93, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 93, "type": "解释", "question": "哪个算法需要使用图8-5中介绍的概念来编写？", "answer": "NaN"}
+{"id": 94, "type": "因果", "question": "为什么需要排序算法？", "answer": "需要排序算法是因为在数据无序的情况下，查找信息会非常困难，耗费大量时间。排序算法可以帮助我们快速找到需要的信息。"}
+{"id": 95, "type": "评估", "question": "question", "answer": "answer"}
+{"id": 95, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 95, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 95, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 97, "type": "因果", "question": "为什么折半查找需要列表是排序的?", "answer": "折半查找需要列表是排序的，因为它是通过比较中间元素和目标值来定位目标位置的，只有当列表是有序的，才能保证每次比较都能有效地缩小查找范围。"}
+{"id": 97, "type": "评估", "question": "question", "answer": "answer"}
+{"id": 97, "type": "解释", "question": "哪种查找方法可以在任意列表中定位数据项？", "answer": "顺序查找"}
+{"id": 98, "type": "比较", "question": "由于没有找到可比实体和它们之间的共同属性，我将输出 'NaN' 作为 <question", "answer": "NaN"}
+{"id": 98, "type": "因果", "question": "NaN", "answer": "NaN"}
+{"id": 98, "type": "条件", "question": "question", "answer": "answer"}
+{"id": 98, "type": "评估", "question": "question", "answer": "answer"}
+{"id": 98, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 98, "type": "解释", "question": "question", "answer": "answer"}
+{"id": 99, "type": "因果", "question": "为什么汇编语言被称为符号语言，后来又被称为汇编语言？", "answer": "汇编语言被称为符号语言，因为它们使用带符号或助记符的指令和地址代替二进制码。这些符号使得语言更容易阅读和理解，因此后来这些语言被称为汇编语言。"}
+{"id": 99, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 99, "type": "评估", "question": "What are the pros and cons of assembly language", "answer": "The pros of assembly language include its ability to improve programming efficiency and focus on hardware. The cons include the need for programmers to spend a significant amount of effort on hardware, and the monotony of programming in assembly language where each machine instruction must be coded individually."}
+{"id": 99, "type": "预测", "question": "question", "answer": "answer"}
+{"id": 99, "type": "解释", "question": "哪些语言被提及为最著名的高级语言？", "answer": "BASIC、COBOL、Pascal、Ada、C、C++ 和 Java"}
+{"id": 100, "type": "条件", "question": "NaN", "answer": "NaN"}
+{"id": 100, "type": "评估", "question": "NaN", "answer": "NaN"}
+{"id": 100, "type": "预测", "question": "如果一种编程方法将程序视为主动主体操纵被动对象，那么这种方法通常被称为什么?", "answer": "过程式编程"}

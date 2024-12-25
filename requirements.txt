@@ -1,0 +1,40 @@
+numpy
+pyyaml
+gensim
+openai
+deepeval
+rank_bm25
+faiss-cpu
+scikit-learn
+transformers
+langchain-huggingface
+sentence-transformers
+
+你只需要实现最后的main.py中的一个函数用于串联起前面所有的流程。总流程如下
+已完成的部分
+1. 将pdf文件转换为md文件(目前是只有两个文件，包括数理统计和计算机导论两个教材，每个是400 pages） 
+2. 对md文件进行数据处理：
+    1. 使用智谱glm-4-flash api对数据进行修正，并将修正后的结果保存到md文件中（公式，乱码等进行修改） 效果待调整
+    2. 手动规则+使用gpt4o-mini api抽取教材中的习题，练习题 效果待调整
+3. 对教材文件进行分块（2000 chunk size， 200 overlap) 
+4. 将分块文本使用bce embedding向量化
+5. 使用faiss-cpu进行对向量进行索引并保存
+
+未完成的部分
+1. 将每一个习题也进行向量化（这里的习题非常短，不清楚会有什么影响吗？）
+实现大模型生题的流程方案，方案1：
+1. 随机抽取一个chunk，使用LLM判断检索到的chunk是否是knowlegde intensive的chunk（本质上是一个二分类任务）
+    函数1：输入一个index_path，输出一个文本：random_chunk
+    函数2：输入一个random_chunk，输出一个boolen：is_knowledge_intensive
+2. 如果是rich的，用大模型标注这个chunk对应的catagory，subcatagory,以及对应的知识点 
+    函数1：输入一个random_chunk，输出一个文本：catagory,subcatagory,知识点
+3. 用这个chunk分别用Faiss去召回相似op10 chunk以及top10习题
+    函数1：输入一个random_chunk，输出一个文本列表：top10 chunk
+4. 人为5个设计出题策略（reason types)，以及两种题型freeform,multiple choice，使用大模型判断当前的chunk适合哪些策略（本质上是一个多标签分类任务，可以出or不可以出）
+    函数1：输入一个chunk，classifier_prompt，解析出当前chunk适合哪些策略
+5. 对于可以出题的策略，对召回的chunk和top10进行rerank,保留top3个适合用来辅助出题的chunk
+    输入一个chunk，策略，rerank 方式，输出一个文本列表：top3 chunk
+6. 使用大模型生成题目的prompt 把对应的chunk和例题一起输入
+    输入一个chunk,和策略，top3 chunk，输出一个文本：生成的题目
+7. 使用evaluator(一个prompt)来评估出题的质量
+    输入生成的题目，输出得分
